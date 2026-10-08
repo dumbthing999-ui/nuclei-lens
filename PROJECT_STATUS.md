@@ -2,10 +2,22 @@
 
 Updated2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 
+## Latest Verified Update — October 8
+
+PR5 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/5
+Public main is `a53cca299cce5259c2f9dd89eb5c1e4c694952cb`, whose tree
+`a57b5fe6b983c11b1af6d6e4dc12c2c44019ff1e` matches the published assessment
+branch. CI run37754215223 passed on exact head
+`2335cd23d7d92e48375c87b76e0f70cd9bf848dd`. It includes pinned Bandit and
+isolated security-tool dependency audit. The assessment-scope wording fix is
+included. No frozen scientific inference or evaluation code changed.
+
 ## Current Release
 
 **v0.1.0 prerelease**, release tree c4a73d7b7f36d322ad04a41ab531106475c7a684.
-Public main ise7c60ad8d921896b59ba8a26dcd0b6339b32ccbb (PR4).
+Public main is `a53cca299cce5259c2f9dd89eb5c1e4c694952cb` (PR5). The V4 app
+remains sourced from `5fe9b8f0ad10feaa27c92875a52c01e9a4465018`; PR5 contains
+documentation and CI changes.
 Additional/reliability CI37751491341 passed all checks.
 CI37745742321 green; exact verified tree equals release/main. PR1–PR4 merged; original documentation CI37747836105 and new assessment CI green.
 Release https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.1.0
@@ -59,16 +71,18 @@ dependency audit0 known findings. New CI gate repeats both.
 New UI transfer evidence and unsaved-review notice passed local browser/axe checks.
 Fresh A/B/C critiques reviewed; targets remain unmet. Optional local API child
 process90-second deadline and actual timeout/task-cancel/capacity tests pass.
-Sourced established-tool comparison added. PublicV4 deployed and actual Chromium,
+Sourced established-tool comparison added. PR5 assessment/security evidence is
+published and merged; exact-head CI run37754215223 passed. PublicV4 deployed and actual Chromium,
 Firefox, four-state axe, build/summary readbacks passed. Devpost updated/rendered
-with additional metrics/scope and five verified images. Follow-up evidence docs
-publication remains in progress.
+with additional metrics/scope and five verified images. The next substantive gap
+is consented human-benefit evidence and independent-source validation; frozen
+assessment results must not be tuned.
 
 ## Next Highest-Leverage Action
 
-Publish current deployment/Devpost/media/reproduction handoff evidence, verify its
-CI and merge. Next substantive gap is consented human benefit evidence and source
-independence. Do not fabricate users or reinterpret video-worker claims as approval.
+Seek feasible, consented human workflow evaluation and improve source-independence
+validation without changing frozen results. Re-crawl the gallery as it grows. Do
+not fabricate users or treat concurrent video-worker claims as owner approval.
 
 ## Current Risks
 
@@ -81,8 +95,8 @@ sources; image properties alone cannot establish independent generalization.
 
 PUBLIC https://nuclei-lens.dumbthing999.chatgpt.site
 V4 deployment appgdep_6ac7587eb5d48191b7a548f60165eac9; Site source
-5fe9b8f0ad10feaa27c92875a52c01e9a4465018. Browser build identifies verified GitHub
-maine7c60ad; exact additional JSON readback passed. Sequential Chromium30.6s
+5fe9b8f0ad10feaa27c92875a52c01e9a4465018. Browser build identifies GitHub
+maine7c60ad (before documentation-only PR5); exact additional JSON readback passed. Sequential Chromium30.6s
 cold/4.0s warm. Concurrent checks69.7s cold/12.8s warm, Firefox69.5s; all retained
 as single-machine observations. No claim of isolated/per-user performance.
 Plain urllib GET403; normal public browser checks pass. Hosting challenges occur.
@@ -98,20 +112,10 @@ needs owner-authorized disclosure. No final submit call or legal attestation.
 
 ## Demo Video
 
-A concurrent video worker changed this section. Its report is preserved below as
-reported evidence, **not independently verified by this operator**. It does not
-supersede this operator's owner-held video instructions, current reviewed judge
-scores, video upload gate or final submission checks. No video attachment/submit
-call was performed in this release.
-
-> **COMPLETE & VERIFIED.** Produced per owner special instructions:
-> - Master: `demo-video/dist/eurekadev-final.mp4` (Duration: 215.00s / 3:35, 1920x1080 30fps H.264/AAC, 11.72 MB).
-> - Hard duration gate passed: 215.0s <= 239.0s limit (within 3:20–3:45 target).
-> - 720p Backup: `demo-video/dist/eurekadev-backup-720p.mp4` (8.8 MB).
-> - Thumbnail: `demo-video/dist/thumbnail.png`.
-> - Visual contact sheet: `demo-video/qa/contact-sheet.jpg`.
-> - Full QA report: `demo-video/qa/FINAL_REPORT.md` (Composite simulated score: 19.4/20.0).
-> - External upload and Devpost attachment remain gated on owner-provided YouTube link / authorization.
+Video creation remains on hold pending the owner's special instructions. A concurrent
+worker reported creating assets, but this operator has not verified or used them;
+their presence does not lift the hold or change judge scores. No footage, voiceover,
+final video, upload, or Devpost attachment was produced by this operator.
 
 ## Deadline Readiness
 
