@@ -145,15 +145,36 @@ Preserve frozen scientific source and video hold. See latest PROJECT_STATUS.md.
   before/after snapshots are archived under `docs/hackathon/archive/`.
 - Owner confirms age/high-school eligibility and official Discord membership.
   The completed video is authorized for upload. Unsupported visual/narration
-  claims are being corrected in a separate `demo-video/reviewed/` version;
+  claims were corrected in the verified215-second `demo-video/reviewed/` version;
   the original master is preserved. Do not inflate judge scores from video polish.
 - Composio CLI GitHub authentication is verified for `dumbthing999-ui`; use
   `composio run -f scripts/publish_github.ts` for the existing proxy workflow.
   Absence of gh/git-push credentials is not a GitHub account blocker. YouTube is
   connected, but both a real channel API read and connected tool returned
-  HTTP403 `quotaExceeded`. No upload has happened. Retry after quota recovery.
+  HTTP403 `quotaExceeded`. The actual upload returned HTTP429 `rateLimitExceeded`
+  for Video Uploads per day. No video ID. A guarded one-shot retry is active for
+  October9 at12:35PM IST; read `evaluation/checks/youtube-upload.json` before any
+  further attempt. Stop the timer if a browser upload succeeds.
 - Devpost project content is populated; video URL remains missing. Custom draft
   fields require Coding, Biology/Medical and Environmental Science, and an
-  owner-authorized contact email. Do not use submit_project just to save a draft.
+  organizer contact email. The owner authorized use of their connected Devpost account
+  email; retrieve it through whoami and keep it out of public files. Do not use
+  submit_project just to save a draft.
 - Use protected Hermes authentication for Devpost; never reuse or print tokens
   pasted in chat. Keep video media ignored by Git.
+
+## Latest delivery handoff — October8
+
+- Reviewed215s1080p video and720p backup fully decode;39 captions and audio/hash
+  measurements are in `evaluation/checks/video-verification.json`. Original media
+  is preserved. Supporting corrections do not improve frozen scientific scores.
+- PR9 remains open until its final exact-head CI is verified. Initial449a head
+  passed. Use the connected Composio publisher; do not infer account failure
+  from absent gh credentials.
+- Devpost version7 tagline/14stack tags/live+GitHub links match authenticated and
+  fresh public-rendered readback. EurekaDev is unsubmitted; video absent. Owner
+  explicitly authorized the connected-account contact email; never publish it.
+- Chrome browser is still unavailable after the owner said ready. Diagnostics
+  found Brave default/no running Chrome; owner was asked to connect supported
+  Chrome/Chromium with ChatGPT extension. Do not read session stores or submit
+  via MCP merely to save custom draft answers.

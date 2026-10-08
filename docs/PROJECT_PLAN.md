@@ -59,8 +59,8 @@ The first implementation priority is the offline graph/evaluation slice. Use val
 - Classical segmentation can be stably wrong; the audit cannot detect everything.
 - A single U2OS experiment does not demonstrate generalization or clinical utility.
 - Review-area/oracle comparisons do not measure actual human effort.
-- Public repository and production origin exist. Source/CI release verification continues; authenticated Devpost draft and video remain owner/account gates.
+- Public repository and production origin exist. Source/CI release verification continues; Devpost draft is verified; video playback and final entry fields remain pending.
 
 ## Verified milestone update — October 8
 
-M0/M1/M2/M3/M4 have working artifacts: concept/architecture, real image analysis, browser review/undo/export, and complete frozen test. The validation ranking gate rejected graph superiority and NNLS; object disagreement is the selected default and graphs explain competing objects. M5/M6 continue with accessibility, production parity, remote CI, and recovery verification. M8 video production is explicitly on hold by owner instruction. No milestone implies official acceptance or a19+/20 score.
+M0/M1/M2/M3/M4 have working artifacts: concept/architecture, real image analysis, browser review/undo/export, and complete frozen test. The validation ranking gate rejected graph superiority and NNLS; object disagreement is the selected default and graphs explain competing objects. M5/M6 continue with accessibility, production parity, remote CI, and recovery verification. The owner released the M8 video hold; the reviewed215-second video and720p backup fully decode. Actual YouTube upload was rejected by the daily upload quota; a single local retry is scheduled for October9 at12:35PM IST. Devpost project content is saved; custom draft answers need the browser connection. No milestone implies official acceptance or a19+/20 score.

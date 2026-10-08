@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-08T17:37:12.158606+00:00",
+  "unit": "nucleilens-youtube-retry-20261009.timer",
+  "active_state": "active",
+  "sub_state": "waiting",
+  "scheduled_utc": "2026-10-09T07:05:00+00:00",
+  "scheduled_ist": "2026-10-09T12:35:00+05:30",
+  "one_shot": true,
+  "persists_across_reboot": false,
+  "requires_running_user_session": true,
+  "script": "scripts/retry_youtube_upload.py",
+  "automatically_attaches_to_devpost": false,
+  "upload_verified": false,
+  "checks": {
+    "parser_and_reset_assertions_passed": 6,
+    "pre_reset_invocation_refused_without_api_call": true,
+    "ruff_passed": true
+  }
+}

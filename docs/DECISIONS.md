@@ -82,3 +82,34 @@ related source groups may remain. Retain37 fields below F1 0.5 and original labe
 Consequence: present bounded additional-image evidence, not universal validity or
 human benefit. Add actual public Firefox verification and an explicit unsaved-review
 notice; neither changes inference. Required video remains owner-held.
+
+
+## October 8 — completed-video publication and judge entry clarity
+
+The owner explicitly released the earlier video hold and requested upload, a PR,
+and completed Devpost fields. Preserve the original completed master and correct
+unsupported presentation claims in a separate reviewed version before upload.
+Use the real audit schema, smaller-area overlap definition, native timing labels,
+and bounded research/education claims. See `docs/hackathon/video-review.md`.
+
+Composio provides working GitHub authentication and repository push permission;
+local git/gh authentication alone was insufficient evidence to declare the account
+blocked. PR9 is open and its initial exact commit passed Actions. YouTube is
+connected; channel reads return HTTP403 quotaExceeded and an actual upload returned
+HTTP429 rateLimitExceeded for Video Uploads per day. A guarded single local retry
+is scheduled after reset, October9 at12:35PM IST; uncertain/successful outcomes
+must not be repeated. Public playback remains unverified. The owner authorized
+use of the connected Devpost account email
+for organizer contact; keep the value out of public files. The available MCP has
+no separate draft-answer writer, so do not submit simply to save draft answers.
+
+Update the public Devpost tagline to explain microscopy and the concrete review
+workflow while retaining “See beyond the count.” Synchronize the actual technology
+stack and place the live demo first in project links. The API uses the first link
+as the entry website; authenticated readback confirms the demo URL is primary.
+This improves judge understanding without changing scientific claims or scores.
+
+The corrected215-second upload master and720p backup fully decode. Captions,
+audio measurements, exact hashes and review corrections are recorded separately
+from the original preserved owner video. Timers/metadata/media checks do not
+establish an upload, submission or higher judge score.

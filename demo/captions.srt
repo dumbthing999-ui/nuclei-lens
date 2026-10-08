@@ -1,0 +1,155 @@
+1
+00:00:00,300 --> 00:00:03,492
+Two nuclei merge into one. Somewhere else, one splits
+
+2
+00:00:03,532 --> 00:00:06,724
+into two. The total count remains unchanged, but the
+
+3
+00:00:06,764 --> 00:00:09,956
+biological measurement is broken.
+
+4
+00:00:13,300 --> 00:00:16,900
+Across fifty held-out microscopy fields, four had the exact
+
+5
+00:00:16,940 --> 00:00:20,540
+reference count, yet retained one hundred unmatched instance errors:
+
+6
+00:00:20,580 --> 00:00:24,180
+fifty false positives and fifty false negatives.
+
+7
+00:00:29,300 --> 00:00:32,248
+We built NucleiLens to expose the hidden assumptions behind
+
+8
+00:00:32,288 --> 00:00:35,236
+every automated count.
+
+9
+00:00:39,300 --> 00:00:43,544
+Instead of trusting a single black-box output, NucleiLens runs
+
+10
+00:00:43,584 --> 00:00:47,828
+nine deterministic sensitivity probes. A sparse bipartite correspondence graph
+
+11
+00:00:47,868 --> 00:00:52,112
+matches objects across runs, isolating count-changing splits and merges
+
+12
+00:00:52,152 --> 00:00:56,396
+from simple boundary noise.
+
+13
+00:01:00,300 --> 00:01:04,898
+Everything runs entirely inside your browser using WebAssembly. In
+
+14
+00:01:04,938 --> 00:01:09,536
+this real field, baseline segmentation counts seventy-four nuclei. But
+
+15
+00:01:09,576 --> 00:01:14,174
+look at Tile thirteen: an alternate sensitivity run also
+
+16
+00:01:14,214 --> 00:01:18,812
+counts seventy-four, yet contains opposing split and merge alternatives.
+
+17
+00:01:23,300 --> 00:01:27,444
+Reviewers inspect competing outlines and confirm a sensitivity alternative.
+
+18
+00:01:27,484 --> 00:01:31,628
+Candidates remain hypotheses. Conflicting overlaps are rejected, fresh IDs
+
+19
+00:01:31,668 --> 00:01:35,812
+are assigned, and edits can be undone.
+
+20
+00:01:45,300 --> 00:01:48,716
+Export an unsigned thirty-two-bit label TIFF and a JSON
+
+21
+00:01:48,756 --> 00:01:52,172
+audit linking the input, configuration, edits, and mask hash.
+
+22
+00:01:52,212 --> 00:01:55,628
+Human choices remain unvalidated.
+
+23
+00:02:00,300 --> 00:02:04,452
+Marker-controlled watershed runs NumPy, SciPy, and scikit-image in a
+
+24
+00:02:04,492 --> 00:02:08,644
+dedicated browser worker. Uploaded images stay on your device.
+
+25
+00:02:08,684 --> 00:02:12,836
+Hosting and library downloads still use the network.
+
+26
+00:02:23,300 --> 00:02:27,724
+We evaluated NucleiLens across all fifty held-out test images
+
+27
+00:02:27,764 --> 00:02:32,188
+of the Broad Institute's BBBC039 benchmark. The pipeline achieves
+
+28
+00:02:32,228 --> 00:02:36,652
+a mean count absolute error of 5.12 and an
+
+29
+00:02:36,692 --> 00:02:41,116
+instance F1 score of 0.827.
+
+30
+00:02:45,300 --> 00:02:49,324
+Crucially, our review queue prioritizes where human attention is
+
+31
+00:02:49,364 --> 00:02:53,388
+needed most. At a twenty-percent review budget, object disagreement
+
+32
+00:02:53,428 --> 00:02:57,452
+captures 45.8% of all annotated errors, more than double
+
+33
+00:02:57,492 --> 00:03:01,516
+random review. And when our graph-ranking hypothesis fell short
+
+34
+00:03:01,556 --> 00:03:05,580
+at 39.5%, we reported the negative result and chose
+
+35
+00:03:05,620 --> 00:03:09,644
+the stronger queue.
+
+36
+00:03:13,300 --> 00:03:17,092
+NucleiLens is an open-source prototype for research and education.
+
+37
+00:03:17,132 --> 00:03:20,924
+Chromium and Firefox workflows are tested. Human time savings
+
+38
+00:03:20,964 --> 00:03:24,756
+and clinical use are unvalidated.
+
+39
+00:03:28,300 --> 00:03:32,580
+Don't just count nuclei. See beyond the count. NucleiLens.

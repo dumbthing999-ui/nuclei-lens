@@ -8,8 +8,13 @@ The owner authorized publishing the completed video and creating the PR.
 Composio GitHub authentication is now verified for the repository owner; the
 previous claim that GitHub was unavailable based on git/gh checks was incomplete.
 Publication is proceeding through the existing Composio proxy workflow. YouTube
-is connected, but both its channel API and connected read tool returned HTTP403
-`quotaExceeded`. Video upload is pending quota recovery, not reconnection.
+is connected. Channel reads returned HTTP403 `quotaExceeded`; the actual upload
+returned HTTP429 `rateLimitExceeded` for Video Uploads per day. A single guarded
+retry is scheduled for October9 at12:35PM IST. No video ID or public playback yet.
+
+PR9 is open: https://github.com/dumbthing999-ui/nuclei-lens/pull/9. Initial
+head449a076767433c500287e7b39c4b1b05722a6947 passed CI37814446018; final
+reviewed-media/docs changes require their own exact-head CI before merge.
 
 PR8 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/8
 Public main `ae26a89c214a4a93636663e60de52c4e6f17b12f`, tree
@@ -99,13 +104,14 @@ not be tuned.
 
 Seek feasible consented human workflow/source-independence evidence and improve
 the judge journey from observed use. Re-crawl the gallery as it grows. Do not
-tune frozen results or treat concurrent video claims as owner approval.
+tune frozen results. Complete public video playback and browser-saved entry
+answers; preserve the explicit owner video/contact-email authorizations.
 
 ## Current Risks
 
 Unknown biological-source independence, stable-but-wrong masks, unknown human effort,~39MB runtime.
 Mask alternatives are not automatically correct. Browser/device breadth limited.
-Video/contact/legal gates remain. BBBC038 mixes modalities and possible related
+Video playback and custom draft-answer persistence remain; contact email is authorized. BBBC038 mixes modalities and possible related
 sources; image properties alone cannot establish independent generalization.
 
 ## Deployment
@@ -125,32 +131,47 @@ Local recovery archive/checksum retained; no separate backup origin verified.
 ## Devpost
 
 https://devpost.com/software/nucleilens — project1470185, submission1224432.
-Version5 is published. The description now explains that mask edits/undo display
+Version7 is published; the tagline, actual stack and links were synchronized.
+The live demo is the primary website link in the authenticated readback. The description now explains that mask edits/undo display
 the changed mask count while the review-tally total stays separate. Authenticated
 API readback and fresh Firecrawl (`max-age 0`) public-rendered readback match; the
 before-update copy and rendered page are archived. Five gallery images remain
 verified. The EurekaDev draft remains `submitted_at=null`. Its current required
 video URL is absent; track/category answers are prepared; required contact
-field28009 needs owner-authorized disclosure. No final submit call or legal
-attestation.
+field28009 is now owner-authorized from the connected Devpost account. Its value
+is kept out of public files. No final submit call or legal attestation.
 
 ## Demo Video
 
-Owner authorized use of the completed video on October 8. Inspected
-`demo-video/dist/eurekadev-final.mp4`: 214.167 seconds, 1920x1080, 30 fps, H.264
-video/AAC stereo audio, 22,375,538 bytes; SHA-256
-`cf07f35bd59174c7b7fae33fd057f55193576210a74e01d2ae43c9fdaff72d70`. The
-provided 12-scene contact sheet shows actual product and workflow footage. The
-duration complies with Devpost's four-minute maximum. The separate QA report's
-self-awarded judge score is not independent evidence and is excluded. YouTube
-is connected through Composio but returns HTTP403 `quotaExceeded`. Do not attach
-a placeholder/private link. A reviewed version is being prepared separately to
-correct unsupported privacy, timing, overlap-threshold, export and impact labels.
-The full MP4 decodes successfully; its 45 SRT cues are monotonic and end at
-212.320 seconds. Neither YouTube upload nor Devpost video attachment is verified.
+Owner authorized completed-video upload on October8. Original master is preserved
+unchanged at `demo-video/dist/eurekadev-final.mp4` (214.167s), SHA256
+`cf07f35bd59174c7b7fae33fd057f55193576210a74e01d2ae43c9fdaff72d70`.
+Reviewed upload master: `demo-video/reviewed/eurekadev-reviewed.mp4`, exactly215s,
+1920×1080,30fps,H.264/AAC48kHz stereo,60,856,253bytes; SHA256
+`8f4a0c306d2e0027992954d7da28abda90026d2c78cbd859940890fc4ab69f85`.
+Full MP4 decode passed;39 burned captions are monotonic, final end212.580s.
+Measured audio -16.22LUFS/-1.45dBTP/7.7LU LRA.720p backup fully decodes.
+Real browser startup trims are labeled and run at original speed; actual undo
+footage is included. Corrected claims/review scope are documented in
+`docs/hackathon/video-review.md`; media measurements and hashes are in
+`evaluation/checks/video-verification.json`; public caption copy `demo/captions.srt`.
+Self-awarded video scores are excluded. Frozen scientific source hashes match.
+
+The actual Composio upload returned HTTP429 rateLimitExceeded for Video Uploads
+per day, with no video ID. This is distinct from earlier channel-read quota errors.
+A verified active one-shot user timer retries at October9,2026,12:35PM IST
+(07:05UTC), using `scripts/retry_youtube_upload.py`. It validates the media hash,
+locks concurrent attempts and refuses uncertain/successful retries. Six parser/
+reset assertions and a no-API pre-reset refusal passed. The machine/user session
+must stay running; this transient timer is not guaranteed across reboot.
+See `evaluation/checks/youtube-upload.json` for the actual upload outcome and
+`evaluation/checks/youtube-upload-retry.json` for timer evidence. No public
+playback or Devpost video attachment is verified. If uploaded through a browser,
+stop the timer and record its ID before further action.
 
 ## Deadline Readiness
 
 FreezeOct19; deadlineOct20 17:00CDT / Oct21 03:30IST. Not submission-ready;
-YouTube upload/video URL and owner-only contact email remain outstanding. 19+/20
+YouTube upload/video URL and persistence of the custom entry answers remain
+outstanding. Contact-email use is owner-authorized. 19+/20
 target and human evidence remain unachieved. Continue autonomous improvements.

@@ -1,0 +1,14 @@
+{
+  "title": "NucleiLens — See Beyond the Count | EurekaDev 2026 Demo",
+  "description": "NucleiLens is an open-source research and education prototype for inspecting the segmentation assumptions behind microscopy counts. Nine deterministic sensitivity runs expose split and merge alternatives; reviewers can inspect competing outlines, confirm mask replacements, reject conflicting overlaps, undo edits, and export a uint32 label TIFF with a SHA-256-linked audit. Alternatives are hypotheses, not ground truth.\n\nOn all 50 held-out BBBC039 test fields, count MAE was 5.12 and mean instance F1 was 0.827. At a 20% tile-review budget, the validation-selected object-disagreement queue captured 45.8% of annotated FP+FN error mass versus 20.0% expected random capture. Graph ranking captured 39.5%; this negative result is preserved. Four fields had exact total counts while retaining 100 unmatched instance errors (50 FP + 50 FN). These are benchmark measurements, not proven human time savings.\n\nLive app: https://nuclei-lens.dumbthing999.chatgpt.site\nPublic code and reproducible evaluation: https://github.com/dumbthing999-ui/nuclei-lens\nDevpost: https://devpost.com/software/nucleilens\nDataset (CC0): https://bbbc.broadinstitute.org/BBBC039\nAssociated study: https://doi.org/10.1002/cyto.a.23863\n\nScope: nucleus-stained fluorescence images; Chromium and Firefox workflows tested. Broader device compatibility, clinical use, and human review-time benefits are unvalidated. Uploaded images are analyzed locally; hosting/runtime downloads still make network requests. Native Python benchmark timing is not browser-startup timing.\n\nProduction disclosure: AI-assisted narration and graphics; the browser walkthrough is actual product footage. The opening microscopy animation is a labeled schematic. Core inference/evaluation artifacts were frozen before test assessment and are unchanged by this video review.",
+  "tags": [
+    "EurekaDev2026",
+    "NucleiLens",
+    "microscopy",
+    "bioimage analysis",
+    "open source",
+    "WebAssembly"
+  ],
+  "categoryId": "28",
+  "privacyStatus": "unlisted"
+}

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-08T17:29:31.075462+00:00",
+  "sha256": "8f4a0c306d2e0027992954d7da28abda90026d2c78cbd859940890fc4ab69f85",
+  "tool": "YOUTUBE_MULTIPART_UPLOAD_VIDEO",
+  "return_code": 0,
+  "phase": "rejected_quota",
+  "reason": "YouTube returned HTTP 429 rateLimitExceeded: Video Uploads per day quota exhausted.",
+  "http_status": 429,
+  "api_reason": "rateLimitExceeded",
+  "quota_metric": "Video Uploads",
+  "quota_limit": "Video Uploads per day",
+  "attempt_count": 1,
+  "rejection_confirmed": true,
+  "video_id": null,
+  "public_playback_verified": false,
+  "devpost_video_attached": false,
+  "retry_not_before": "2026-10-09T07:05:00+00:00"
+}
