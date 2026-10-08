@@ -4,7 +4,15 @@ Updated2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 
 ## Latest Verified Update — October 8
 
-PR5 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/5
+PR7 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/7
+Public main `73499b9b9e3075ae013331c4bdabbc03a12eb752`; exact branch head
+`5e84c2501ec0635589a07060b32b0632f9705a6c` passed CI run37810217463. The UI
+now states the unchanged review-tally total beside mask split/merge and undo
+feedback, and labels it “Review tally total.” Judge scores were not raised.
+PR5's pinned Bandit/dependency checks and scope wording remain in main. Frozen
+scientific inference and evaluation code are unchanged.
+
+Historical PR5 release evidence:
 Public main is `a53cca299cce5259c2f9dd89eb5c1e4c694952cb`, whose tree
 `a57b5fe6b983c11b1af6d6e4dc12c2c44019ff1e` matches the published assessment
 branch. CI run37754215223 passed on exact head
@@ -15,9 +23,9 @@ included. No frozen scientific inference or evaluation code changed.
 ## Current Release
 
 **v0.1.0 prerelease**, release tree c4a73d7b7f36d322ad04a41ab531106475c7a684.
-Public main is `a53cca299cce5259c2f9dd89eb5c1e4c694952cb` (PR5). The V4 app
-remains sourced from `5fe9b8f0ad10feaa27c92875a52c01e9a4465018`; PR5 contains
-documentation and CI changes.
+Public main is recorded in the latest verified update above. The public V4 app
+remains sourced from `5fe9b8f0ad10feaa27c92875a52c01e9a4465018`; PR5–PR7 are
+documentation, CI, and frontend clarity changes not yet deployed.
 Additional/reliability CI37751491341 passed all checks.
 CI37745742321 green; exact verified tree equals release/main. PR1–PR4 merged; original documentation CI37747836105 and new assessment CI green.
 Release https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.1.0
@@ -80,9 +88,11 @@ assessment results must not be tuned.
 
 ## Next Highest-Leverage Action
 
-Seek feasible, consented human workflow evaluation and improve source-independence
-validation without changing frozen results. Re-crawl the gallery as it grows. Do
-not fabricate users or treat concurrent video-worker claims as owner approval.
+Complete static Site packaging so the merged UI can be deployed to the existing
+production project, verify the browser readback, and update Devpost with the proven
+workflow. Continue seeking feasible consented human workflow evidence and source-
+independence validation without changing frozen results. Do not fabricate users
+or treat concurrent video-worker claims as owner approval.
 
 ## Current Risks
 

@@ -14,6 +14,10 @@ mobile-layout states. This is local-preview evidence; production readback and
 remote CI are pending. Current screenshots and machine-readable run reports are
 under `artifacts/screenshots/` and `evaluation/checks/`.
 
+The Sites package helper also accepted the generated `dist/` archive, including
+the existing Site ID manifest and static entry point. This validates packaging
+format only; no new production deployment has occurred yet.
+
 | Check | Actual result | Evidence / scope |
 |---|---|---|
 | Python unit/integration suite |33 passed on additional-assessment/reliability branch; v0.1.0 build27 | `pytest`; core, graph, matching, decoding, bounded local API |
