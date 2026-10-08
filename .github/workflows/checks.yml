@@ -32,7 +32,7 @@ jobs:
       - run: npx --prefix frontend playwright install --with-deps chromium
       - name: Real browser workflow and on-device inference
         run: |
-          npm run dev --prefix frontend > /tmp/nucleilens-vite.log 2>&1 &
+          npm run preview --prefix frontend -- --port 5173 > /tmp/nucleilens-vite.log 2>&1 &
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:5173 > /dev/null && break; sleep 1; done
           node frontend/tests/browser-smoke.mjs
       - uses: actions/upload-artifact@v4
@@ -40,5 +40,5 @@ jobs:
         with:
           name: browser-check-evidence
           path: |
-            artifacts/screenshots/
-            evaluation/checks/browser-smoke.json
+            artifacts/ci-screenshots/
+            evaluation/checks/browser-smoke-ci.json

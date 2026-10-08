@@ -71,3 +71,31 @@ Primary source: organizer-maintained EurekaDev pages hosted on Devpost. Snapshot
 - Gallery still displayed 37 entries across two pages. Full listing coverage was refreshed; detailed implementation coverage is still 10 entries only.
 - Resources still lists support/Discord; no public updates or discussion topics were visible.
 - Owner eligibility/Discord confirmation persists. Private announcements, authenticated draft, registration, and submission remain unverified.
+
+
+## Authenticated refresh — October 8, 2026, 07:26 UTC
+
+Official Devpost MCP rules, requirements, dates, and announcements were retrieved
+with authenticated account access. Rules and submission deadline remain consistent
+with the public snapshot. The account lists no prior EurekaDev project; a fresh
+NucleiLens draft was created and read back (project1470185, submission1224432).
+This is a draft, not a completed submission. No registration or legal attestation
+was made by the agent. No organizer announcements were returned.
+
+Exact custom submission fields:
+
+| ID | Field | Required | Selected / pending |
+|---|---|---|---|
+|28007|Track|Yes|Coding|
+|28008|Category|Yes|Biology/Medical and Environmental Science|
+|28009|Contact email|Yes|Owner-authorized disclosure pending|
+|28010|Discord username|No|Omitted pending owner preference|
+
+The configured judging and winner dates unexpectedly use **2027**, while the
+submission deadline is October20, **2026**,22:00UTC. Record this discrepancy; do
+not infer an organizer correction or delay the submission. Official dates endpoint
+returned judgingOct27–Nov5,2027 and winnersNov6,2027.
+
+Sources: official https://eurekadev.devpost.com/rules and authenticated
+`get_hackathon_rules`, `get_submission_requirements`, `get_key_dates`,
+`get_announcements` for `eurekadev`. Private raw API responses are excluded from Git.

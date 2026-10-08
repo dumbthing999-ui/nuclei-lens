@@ -1,93 +1,83 @@
 # Current Status
 
-Updated: 2026-10-08. Active workspace: `/home/kali/Downloads/euradev`.
+Updated: 2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 
 ## Current Release
 
-NucleiLens functional vertical slice; no submission release tagged. Original code
-began October 8. Public GitHub repository created and read back; first source
-publication is in preparation. Demo video production is on hold by owner instruction.
+Functional NucleiLens prototype. Public source published; no submission tag.
+Current branch: `fix/ci-dependency-audit`. Remote CI repair in progress.
 
 ## Winning Thesis
 
-Expose the local object mistakes that total nuclei counts can conceal. Nine
-segmentation sensitivity runs, sparse object-correspondence graphs, actual mask
-alternatives, browser-local execution, and auditable human review form the workflow.
-Graph superiority is unproven: the initial ranking hypothesis failed its target.
-The bounded four-feature NNLS ranker was rejected (43.56% validation capture, no positive advantage over object disagreement). Object disagreement is now the default; graphs explain the alternatives and a real same-total split/merge witness. No probability, clinical benefit, or time-savings claim.
+Expose count-changing object alternatives that an unchanged total hides, using
+nine deterministic segmentations and sparse correspondence graphs. Human review
+is auditable; established methods are acknowledged. Object disagreement is the
+measured default queue; graph ranking and a learned ranker failed their gates.
 
 ## Latest Judge Scores
 
-Initial independent Gemini technical/skeptical simulation: Innovation 3.1,
-Impact 3.4, Execution 4.1, Presentation 2.6 = 13.2/20. This is a simulation,
-not official judging. Its document contains factual overstatements that need review.
-Video is deliberately deferred. Weakest actionable category: innovation/evidence.
+Three separate AI simulations completed, not official judging. Impact judge B:
+16.7/20 (4.2 innovation,4.1 impact,4.6 execution,3.8 presentation). Skeptical judge C:
+14.9/20 (3.8,3.7,4.6,2.8). Historical A13.2 includes reviewed factual errors.
+Targets are not met. Actual mask correction and human-use evidence remain gaps.
 
 ## Completed
 
-- Owner confirmed age/high-school eligibility and official Discord membership.
-- Refreshed public rules/resources/updates/discussions and both gallery pages Oct8.
-- Captured all 37 gallery listings; 10 detailed pages, 27 listing-only (limits recorded).
-- Sourced problem discovery, 25-concept tournament, five adversarial finalists,
-  original concept selection, architecture, innovation/decision/plan/category docs.
-- Workspace instructions propagate to Codex, Antigravity, and Hermes project context.
-- Verified official BBBC039 CC0 archives and 100/50/50 splits; author decoder checked.
-- Implemented deterministic segmentation, nine probes, sparse correspondence graph,
-  five review comparators, equal-budget evaluation, paired bootstrap intervals.
-- Preserved initial failures and later robustness experiments; no examples excluded.
-- Implemented React/TypeScript UI, sample loading, alternative overlays, region zoom,
-  object-event highlights, candidate selection, manual counts, undo, audit JSON export.
-- Actual browser-local analysis produced 74 nuclei on the first training sample,
-  matching the native run; review/undo/audit/mobile checks passed.
-- Native dependency audit initially found Pillow12.2 findings; upgraded to12.3 and
-  reran: zero known vulnerabilities. Browser runtime now excludes Pillow entirely;
-  TIFF decoding uses GeoTIFF.js, PNG/JPEG use bounded browser decoding, output PNG
-  encoding uses a small pure numerical encoder. This revised path is being checked.
-- Added optional bounded local FastAPI companion; restricted loopback hosts/origins,
-  two ingestion/computation slots, body limits, image dimensions, no persistence.
-- Created README, MIT license, changelog, contributing/security docs, pinned locks,
-  and CI definition. CI has not yet run remotely.
-- Authenticated connected GitHub account: `dumbthing999-ui`; created fresh PUBLIC
-  `https://github.com/dumbthing999-ui/nuclei-lens` and verified returned state.
+- Owner-confirmed high-school/age eligibility and official Discord membership.
+- Live rules refreshed, all37 public gallery project descriptions reviewed; public
+  matrix records page-claim evidence and unverified demo/repository limitations.
+- Sourced problem discovery,25-concept tournament,top-five critique and decision.
+- Classical segmentation,9 sensitivity runs,sparse graphs and6 review comparators.
+- Frozen50-field test: MAE5.12, mean instanceF1.827. At20% review budget, object
+  error capture45.8%, graph39.5%, random20%. All fields and negative results retained.
+- Browser-local analysis, real sample library, alternatives, manual tally, undo,
+  compatible review reruns, JSON audit and responsive layout.
+- Native26 tests/frontend4 tests passed; scoped dependency audits report0 known
+  findings. Browser workflow passed locally and on deployed V2; remote CI pending.
+- Fresh public GitHub source, live public deployment, architecture/security/research
+  docs, three judge critiques,30-item red team.
+- Devpost authentication repaired using protected Hermes environment. Actual account
+  read confirmed; no prior EurekaDev project listed. Fresh NucleiLens draft created
+  and read back, initial response archived. No final submission made.
 
 ## In Progress
 
-- Full training/validation extraction and rejected ranker experiment complete. Frozen 50-image test complete: MAE5.12, F1.827, default capture45.8%, graph39.5%, random20%. Source/config hashes match the pre-test protocol.
-- Candidate-count UX and browser decoder verification after security hardening.
-- Scientific claims, independent judge critique, red-team, and source docs need readback.
-- GitHub source publication, production deployment, local Devpost draft package.
+Remote CI timeout diagnostics and production-build browser workflow. Live source
+parity/release packaging, branding/attribution and actual mask-edit workflow next.
 
 ## Next Highest-Leverage Action
 
-Publish exact application/evaluation source, verify remote CI and updated production workflow, finish independent judge reports, and synchronize the prepared Devpost package once authentication is repaired.
+Obtain green remote CI, then add explicit human-confirmed graph-component mask
+replacement, undo and lossless label TIFF export with strict overlap conflicts.
+Do not change the frozen scientific inference or tune against held-out test results.
 
 ## Current Risks
 
-- Graph captures38.4% primary error mass at20% budget versus44.0% object disagreement
-  on current50-image validation; paired difference−5.6points withCI belowzero.
-- Initial full-validation countMAE25.06; current saturation-gated revision5.10,
-  meaninstanceF1.824. These are development results, not held-out test evidence.
-- Stable-but-wrong masks, one-dataset scope, coarse tiles/centroid boundaries,
-  largefirst-load runtime, and unmeasured human effort remain material limitations.
-- Devpost nativeOAuth fails; saved Hermes JWT is rejected despite a future recorded expiry. Its issuer differs from current official authorization metadata; official refresh returned invalid_grant. No tokens exposed or global credentials changed. Draft remains unverified; welcome email confirms registration was previously completed.
-- Connected Composio Gmail read found the EurekaDev welcome/registration email and Discord requirement; no extra rule change found in the scoped result.
-- Remote CI, public production health, browser current-source parity, and video are
-  not yet verified. The package is not submission-ready or19+/20.
+One dataset, stable-but-wrong masks, unmeasured human effort, large first runtime
+download. Current edits change tallies only. Judge targets remain unmet. CI run1
+failed audit scope (corrected); run2 timed out browser inference on Vite devserver;
+production-preview CI and diagnostic evidence are being checked. Contact-email
+disclosure, video and rendered Devpost verification remain final gates.
 
 ## Deployment
 
-PUBLIC: https://nuclei-lens.dumbthing999.chatgpt.site — first deployment succeeded and real browser workflow passed. Updated same-total witness/default ordering/test-evidence build is being published. Production build staging:127.0.0.1:5174.
+PUBLIC https://nuclei-lens.dumbthing999.chatgpt.site
+V2 deployment succeeded; real workflow passed (cold22.7s,warm3.5s on one local
+Chromium environment). Not a cross-platform latency claim. Hosting injected a
+challenge POST; image processing remains in the worker. Local recovery CLI exists.
 
 ## Devpost
 
-Authenticated draft/registration unverified. No draft overwritten or submission made.
+Draft https://devpost.com/software/nucleilens — project1470185, submission1224432.
+API readback confirms name, tagline, actual description, no video, draft state and
+EurekaDev association. Rendered verification not yet performed. Track/category
+answers prepared locally; contact email requires owner-authorized disclosure.
 
 ## Demo Video
 
-**ON HOLD.** Owner will provide special instructions; no production/upload meanwhile.
+**ON HOLD.** Await owner special instructions. No footage, voiceover or upload.
 
 ## Deadline Readiness
 
-FeaturefreezeOct19. SubmissiondeadlineOct20 17:00CDT / Oct21 03:30IST.
-Continue autonomous project work. Submission requires video, legal/eligibility checks,
-public source, live links, complete QA, and verified rendered Devpost state.
+FreezeOct19; submit beforeOct20 17:00CDT / Oct21 03:30IST. Not submission-ready.
+No claim of19+/20, scientific novelty, user validation or final release.

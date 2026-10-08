@@ -1,0 +1,55 @@
+{
+  "status": "Saved Devpost draft; authenticated API readback verified; rendered page verification pending",
+  "title": "NucleiLens",
+  "tagline": "See beyond the count.",
+  "track": "Coding Track",
+  "category": "Biology/Medical and Environmental Science",
+  "description_file": "docs/hackathon/devpost-draft.md",
+  "technologies": [
+    "Python",
+    "NumPy",
+    "SciPy",
+    "scikit-image",
+    "React",
+    "TypeScript",
+    "Vite",
+    "Pyodide",
+    "WebAssembly",
+    "GeoTIFF.js",
+    "FastAPI"
+  ],
+  "repo_url": "https://github.com/dumbthing999-ui/nuclei-lens",
+  "live_url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "video_url": null,
+  "video_status": "Owner-requested hold",
+  "screenshots": [
+    "artifacts/screenshots/desktop.png",
+    "artifacts/screenshots/review-detail.png",
+    "artifacts/screenshots/live-analysis.png"
+  ],
+  "account_gate": "Authenticated whoami, project listing, create and get_project succeeded on October 8. No previous EurekaDev project was listed. Final submission remains pending.",
+  "safety_gates": [
+    "Archive existing account draft before any write",
+    "Reconfirm official fields/category and owner-only legal declarations",
+    "Required video and final judge/release gates still outstanding",
+    "Never mark synchronized/submitted without account readback and rendered verification"
+  ],
+  "project_id": 1470185,
+  "project_slug": "nucleilens",
+  "project_url": "https://devpost.com/software/nucleilens",
+  "submission_id": 1224432,
+  "custom_answers": [
+    {
+      "submission_field_id": 28007,
+      "value": "Coding"
+    },
+    {
+      "submission_field_id": 28008,
+      "value": "Biology/Medical and Environmental Science"
+    }
+  ],
+  "owner_only_fields": [
+    "Required contact email field 28009: obtain owner authorization before disclosure",
+    "Optional Discord username field 28010: omit unless owner requests disclosure"
+  ]
+}
