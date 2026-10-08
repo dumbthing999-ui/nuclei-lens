@@ -1,8 +1,8 @@
 # NucleiLens
 
-**Tagline:** See beyond the count.
+**Tagline:** See beyond the count: inspect microscopy nuclei, compare split/merge alternatives, and export reviewed masks with an audit trail.
 
-Prepared for EurekaDev on October8,2026. The authorized update automatically published the project page; authenticated readback shows EurekaDev submitted_at=null and no video. The existing public rendered project was verified. Final competition submission remains pending. Initial and updated account states are archived under `archive/`. Video remains on hold.
+Prepared for EurekaDev on October8,2026. The authorized update automatically published the project page; authenticated readback shows EurekaDev submitted_at=null and no video. The existing public rendered project was verified. Final competition submission remains pending. Initial and updated account states are archived under `archive/`. The owner authorized completed-video upload; the reviewed215s video is locally verified, but the actual YouTube upload was rejected by the daily video-upload quota. One guarded local retry is scheduled for October9 at12:35PM IST. The contact email is owner-authorized from the connected Devpost account and kept out of this public document.
 
 ## Inspiration
 
@@ -18,7 +18,7 @@ Open a real bundled field or your own single-field image. NucleiLens runs nine d
 
 The signature example is real: two runs both count 74 nuclei, yet the graph contains a 1 → 2 split alternative and a 2 → 1 merge alternative. Click each explanation to inspect it. Neither alternative is automatically declared correct.
 
-A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
+A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. After each mask confirmation or undo, the interface reports the new mask-instance count beside the unchanged review-tally total. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
 
 ## How we built it
 

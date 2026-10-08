@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-08T17:17:30.450046+00:00",
+  "project_id": 1470185,
+  "project_url": "https://devpost.com/software/nucleilens",
+  "version": 7,
+  "tagline": "See beyond the count: inspect microscopy nuclei, compare split/merge alternatives, and export reviewed masks with an audit trail.",
+  "built_with": [
+    "python",
+    "typescript",
+    "react",
+    "pyodide",
+    "webassembly",
+    "numpy",
+    "scipy",
+    "scikit-image",
+    "geotiff",
+    "vite",
+    "fastapi",
+    "pytest",
+    "vitest",
+    "playwright"
+  ],
+  "primary_website": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "repo_url": "https://github.com/dumbthing999-ui/nuclei-lens",
+  "authenticated_readback": true,
+  "fresh_public_rendered_readback": true,
+  "firecrawl_scrape_id": "01a11c83-7efe-707c-a86c-af4d4431ed2b",
+  "video_url": null,
+  "eurekadev_submitted_at": null,
+  "owner_authorized_connected_account_contact_email": true,
+  "email_value_stored_in_public_files": false
+}

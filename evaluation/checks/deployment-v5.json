@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-08",
+  "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+  "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_9f3b835cf7208191888263011933875e",
+  "version_number": 5,
+  "source_commit": "af6ed858c23a42aa0d63b59e42c40646164a3822",
+  "source_tree": "6546d28e0bb3ae58aabc45b36f7d2bfb7f050e90",
+  "source_parent": "5fe9b8f0ad10feaa27c92875a52c01e9a4465018",
+  "github_main_commit": "ae26a89c214a4a93636663e60de52c4e6f17b12f",
+  "github_main_tree": "6546d28e0bb3ae58aabc45b36f7d2bfb7f050e90",
+  "archive": {
+    "format": "tar",
+    "sha256": "sha256:84cc96885a6bb7da063ce21924725339bd090447636776147ca6a978ed71320d",
+    "size_bytes": 5253120,
+    "files": 79
+  },
+  "deployment": {
+    "id": "appgdep_6ac7c9c4b2e481918e4616d9c4c76eaa",
+    "status": "succeeded",
+    "type": "publish",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_9f3b835cf7208191888263011933875e"
+  },
+  "site": {
+    "status": "active",
+    "latest_version_number": 5,
+    "current_live_url": "https://nuclei-lens.dumbthing999.chatgpt.site"
+  }
+}

@@ -4,13 +4,27 @@ Updated2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 
 ## Latest Verified Update — October 8
 
-PR7 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/7
-Public main `73499b9b9e3075ae013331c4bdabbc03a12eb752`; exact branch head
-`5e84c2501ec0635589a07060b32b0632f9705a6c` passed CI run37810217463. The UI
-now states the unchanged review-tally total beside mask split/merge and undo
-feedback, and labels it “Review tally total.” Judge scores were not raised.
-PR5's pinned Bandit/dependency checks and scope wording remain in main. Frozen
-scientific inference and evaluation code are unchanged.
+The owner authorized publishing the completed video and creating the PR.
+Composio GitHub authentication is now verified for the repository owner; the
+previous claim that GitHub was unavailable based on git/gh checks was incomplete.
+Publication is proceeding through the existing Composio proxy workflow. YouTube
+is connected. Channel reads returned HTTP403 `quotaExceeded`; the actual upload
+returned HTTP429 `rateLimitExceeded` for Video Uploads per day. A single guarded
+retry is scheduled for October9 at12:35PM IST. No video ID or public playback yet.
+
+PR9 is open: https://github.com/dumbthing999-ui/nuclei-lens/pull/9. Initial
+head449a076767433c500287e7b39c4b1b05722a6947 passed CI37814446018; final
+reviewed-media/docs changes require their own exact-head CI before merge.
+
+PR8 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/8
+Public main `ae26a89c214a4a93636663e60de52c4e6f17b12f`, tree
+`6546d28e0bb3ae58aabc45b36f7d2bfb7f050e90`; exact PR8 head
+`e3ed1a730a8a7e06e3c34d1499b4fee4a8ea67b1` passed CI run37810941831. The PR7
+mask/tally clarity fix and reproducible static package are included. Public Sites
+V5 is live; deployment succeeded and its saved source tree matches GitHub main.
+The Devpost project copy was updated and freshly rendered with Firecrawl. Frozen
+scientific inference/evaluation code is unchanged and judge scores remain as
+reviewed.
 
 Historical PR5 release evidence:
 Public main is `a53cca299cce5259c2f9dd89eb5c1e4c694952cb`, whose tree
@@ -23,9 +37,9 @@ included. No frozen scientific inference or evaluation code changed.
 ## Current Release
 
 **v0.1.0 prerelease**, release tree c4a73d7b7f36d322ad04a41ab531106475c7a684.
-Public main is recorded in the latest verified update above. The public V4 app
-remains sourced from `5fe9b8f0ad10feaa27c92875a52c01e9a4465018`; PR5–PR7 are
-documentation, CI, and frontend clarity changes not yet deployed.
+Public main and Site V5 source provenance are recorded above. The deployed Site
+source commit `af6ed858c23a42aa0d63b59e42c40646164a3822` has the exact GitHub-main
+tree; its parent is the prior V4 source commit.
 Additional/reliability CI37751491341 passed all checks.
 CI37745742321 green; exact verified tree equals release/main. PR1–PR4 merged; original documentation CI37747836105 and new assessment CI green.
 Release https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.1.0
@@ -79,55 +93,85 @@ dependency audit0 known findings. New CI gate repeats both.
 New UI transfer evidence and unsaved-review notice passed local browser/axe checks.
 Fresh A/B/C critiques reviewed; targets remain unmet. Optional local API child
 process90-second deadline and actual timeout/task-cancel/capacity tests pass.
-Sourced established-tool comparison added. PR5 assessment/security evidence is
-published and merged; exact-head CI run37754215223 passed. PublicV4 deployed and actual Chromium,
-Firefox, four-state axe, build/summary readbacks passed. Devpost updated/rendered
-with additional metrics/scope and five verified images. The next substantive gap
-is consented human-benefit evidence and independent-source validation; frozen
-assessment results must not be tuned.
+Sourced established-tool comparison added. PR5–PR8 assessment/security/UX evidence
+is published and merged; each exact-head CI gate passed. Public V5 deployment
+succeeded. Frontend tests/build, local Chromium split/merge/undo/export workflow,
+and four-state axe scan passed. Devpost copy/media readback is current. Human
+benefit and independent-source validation remain unmeasured; frozen results must
+not be tuned.
 
 ## Next Highest-Leverage Action
 
-Complete static Site packaging so the merged UI can be deployed to the existing
-production project, verify the browser readback, and update Devpost with the proven
-workflow. Continue seeking feasible consented human workflow evidence and source-
-independence validation without changing frozen results. Do not fabricate users
-or treat concurrent video-worker claims as owner approval.
+Seek feasible consented human workflow/source-independence evidence and improve
+the judge journey from observed use. Re-crawl the gallery as it grows. Do not
+tune frozen results. Complete public video playback and browser-saved entry
+answers; preserve the explicit owner video/contact-email authorizations.
 
 ## Current Risks
 
 Unknown biological-source independence, stable-but-wrong masks, unknown human effort,~39MB runtime.
 Mask alternatives are not automatically correct. Browser/device breadth limited.
-Video/contact/legal gates remain. BBBC038 mixes modalities and possible related
+Video playback and custom draft-answer persistence remain; contact email is authorized. BBBC038 mixes modalities and possible related
 sources; image properties alone cannot establish independent generalization.
 
 ## Deployment
 
 PUBLIC https://nuclei-lens.dumbthing999.chatgpt.site
-V4 deployment appgdep_6ac7587eb5d48191b7a548f60165eac9; Site source
-5fe9b8f0ad10feaa27c92875a52c01e9a4465018. Browser build identifies GitHub
-maine7c60ad (before documentation-only PR5); exact additional JSON readback passed. Sequential Chromium30.6s
+V5 deployment `appgdep_6ac7c9c4b2e481918e4616d9c4c76eaa` succeeded; saved version
+`appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_9f3b835cf7208191888263011933875e`.
+See `evaluation/checks/deployment-v5.json` for exact source-tree, archive, and
+deployment readbacks. V4 `appgdep_6ac7587eb5d48191b7a548f60165eac9` is historical.
+Sequential Chromium30.6s
 cold/4.0s warm. Concurrent checks69.7s cold/12.8s warm, Firefox69.5s; all retained
-as single-machine observations. No claim of isolated/per-user performance.
+as earlier single-machine observations. Current PR7 local-preview run recorded
+21.642s cold and5.901s warm; no claim of isolated/per-user performance.
 Plain urllib GET403; normal public browser checks pass. Hosting challenges occur.
 Local recovery archive/checksum retained; no separate backup origin verified.
 
 ## Devpost
 
 https://devpost.com/software/nucleilens — project1470185, submission1224432.
-update_project auto-published the project page. API shows EurekaDev submitted_at=null,
-video absent. Public rendered additional copy, five distinct media IDs/captions and links checked with max-age0
-to avoid scraper cache. Track/category answers prepared; required contact field28009
-needs owner-authorized disclosure. No final submit call or legal attestation.
+Version7 is published; the tagline, actual stack and links were synchronized.
+The live demo is the primary website link in the authenticated readback. The description now explains that mask edits/undo display
+the changed mask count while the review-tally total stays separate. Authenticated
+API readback and fresh Firecrawl (`max-age 0`) public-rendered readback match; the
+before-update copy and rendered page are archived. Five gallery images remain
+verified. The EurekaDev draft remains `submitted_at=null`. Its current required
+video URL is absent; track/category answers are prepared; required contact
+field28009 is now owner-authorized from the connected Devpost account. Its value
+is kept out of public files. No final submit call or legal attestation.
 
 ## Demo Video
 
-Video creation remains on hold pending the owner's special instructions. A concurrent
-worker reported creating assets, but this operator has not verified or used them;
-their presence does not lift the hold or change judge scores. No footage, voiceover,
-final video, upload, or Devpost attachment was produced by this operator.
+Owner authorized completed-video upload on October8. Original master is preserved
+unchanged at `demo-video/dist/eurekadev-final.mp4` (214.167s), SHA256
+`cf07f35bd59174c7b7fae33fd057f55193576210a74e01d2ae43c9fdaff72d70`.
+Reviewed upload master: `demo-video/reviewed/eurekadev-reviewed.mp4`, exactly215s,
+1920×1080,30fps,H.264/AAC48kHz stereo,60,856,253bytes; SHA256
+`8f4a0c306d2e0027992954d7da28abda90026d2c78cbd859940890fc4ab69f85`.
+Full MP4 decode passed;39 burned captions are monotonic, final end212.580s.
+Measured audio -16.22LUFS/-1.45dBTP/7.7LU LRA.720p backup fully decodes.
+Real browser startup trims are labeled and run at original speed; actual undo
+footage is included. Corrected claims/review scope are documented in
+`docs/hackathon/video-review.md`; media measurements and hashes are in
+`evaluation/checks/video-verification.json`; public caption copy `demo/captions.srt`.
+Self-awarded video scores are excluded. Frozen scientific source hashes match.
+
+The actual Composio upload returned HTTP429 rateLimitExceeded for Video Uploads
+per day, with no video ID. This is distinct from earlier channel-read quota errors.
+A verified active one-shot user timer retries at October9,2026,12:35PM IST
+(07:05UTC), using `scripts/retry_youtube_upload.py`. It validates the media hash,
+locks concurrent attempts and refuses uncertain/successful retries. Six parser/
+reset assertions and a no-API pre-reset refusal passed. The machine/user session
+must stay running; this transient timer is not guaranteed across reboot.
+See `evaluation/checks/youtube-upload.json` for the actual upload outcome and
+`evaluation/checks/youtube-upload-retry.json` for timer evidence. No public
+playback or Devpost video attachment is verified. If uploaded through a browser,
+stop the timer and record its ID before further action.
 
 ## Deadline Readiness
 
-FreezeOct19; deadlineOct20 17:00CDT / Oct21 03:30IST. Not submission-ready;19+/20
+FreezeOct19; deadlineOct20 17:00CDT / Oct21 03:30IST. Not submission-ready;
+YouTube upload/video URL and persistence of the custom entry answers remain
+outstanding. Contact-email use is owner-authorized. 19+/20
 target and human evidence remain unachieved. Continue autonomous improvements.

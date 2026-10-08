@@ -3,11 +3,13 @@
 ## Latest owner steering — October 8, 2026
 
 Keep working autonomously on implementation, UI/UX, evidence, GitHub, deployment,
-and Devpost until the practical quality gates pass. **Hold demo video production
-and publication** until the owner provides their special instructions. Do not
-create video footage, voiceover, a final video, or upload video in the meantime.
-The final submission remains gated on its required video and any owner-only legal
-attestation. Routine implementation, testing, and reversible publishing are authorized.
+and Devpost until practical quality gates pass. The owner has now explicitly
+released the earlier video hold: use the completed video, upload it to the
+connected YouTube account, create the GitHub PR, and complete Devpost fields.
+Review/correct unsupported claims before publishing, preserve the original
+master, and verify all external writes. Any owner-only contact disclosure or
+personal legal attestation still requires the owner. Routine implementation,
+testing, and reversible publishing are authorized.
 
 ## General agent operating rules
 
@@ -121,6 +123,58 @@ Preserve frozen scientific source and video hold. See latest PROJECT_STATUS.md.
   is not a guarantee of anonymity/privacy.
 - Latest A/B/C AI critiques16.0/15.8/15.3 do not meet targets. Preserve corrections
   and do not automatically raise scores. Continue highest-value honest work.
-- VIDEO HOLD remains authoritative for this agent. Concurrent unowned demo-video/
-  files are preserved and excluded from this release; their presence does not
-  establish permission to produce/upload a video or finalize submission.
+- Historical video hold: superseded by the owner's later explicit upload instruction.
+  Preserve original media, review claims, and verify upload/readback before
+  claiming publication or final submission.
+
+## Latest verified workspace state — October 8, 2026, after PR8
+
+- Public GitHub main is `ae26a89c214a4a93636663e60de52c4e6f17b12f` (tree
+  `6546d28e0bb3ae58aabc45b36f7d2bfb7f050e90`). PR8 exact-head CI run37810941831
+  passed. It adds reproducible Sites packaging; PR7's mask-versus-tally clarity
+  fix is also merged. Do not inflate the judge scorecard from these changes.
+- Public Site V5 deployment succeeded at the existing URL. The pushed Sites source
+  commit `af6ed858c23a42aa0d63b59e42c40646164a3822` has the exact GitHub-main tree
+  and records the earlier V4 Site source as its parent. See
+  `evaluation/checks/deployment-v5.json`. Local browser/CI tests pass on that code;
+  do not claim a post-V5 production browser session.
+- Devpost project1470185/submission1224432 is published as a project page, with
+  EurekaDev `submitted_at=null` and no attached video. Copy now states that each mask edit
+  or undo displays its mask count beside the independent review-tally total.
+  Authenticated readback and a fresh Firecrawl public-page snapshot match; both
+  before/after snapshots are archived under `docs/hackathon/archive/`.
+- Owner confirms age/high-school eligibility and official Discord membership.
+  The completed video is authorized for upload. Unsupported visual/narration
+  claims were corrected in the verified215-second `demo-video/reviewed/` version;
+  the original master is preserved. Do not inflate judge scores from video polish.
+- Composio CLI GitHub authentication is verified for `dumbthing999-ui`; use
+  `composio run -f scripts/publish_github.ts` for the existing proxy workflow.
+  Absence of gh/git-push credentials is not a GitHub account blocker. YouTube is
+  connected, but both a real channel API read and connected tool returned
+  HTTP403 `quotaExceeded`. The actual upload returned HTTP429 `rateLimitExceeded`
+  for Video Uploads per day. No video ID. A guarded one-shot retry is active for
+  October9 at12:35PM IST; read `evaluation/checks/youtube-upload.json` before any
+  further attempt. Stop the timer if a browser upload succeeds.
+- Devpost project content is populated; video URL remains missing. Custom draft
+  fields require Coding, Biology/Medical and Environmental Science, and an
+  organizer contact email. The owner authorized use of their connected Devpost account
+  email; retrieve it through whoami and keep it out of public files. Do not use
+  submit_project just to save a draft.
+- Use protected Hermes authentication for Devpost; never reuse or print tokens
+  pasted in chat. Keep video media ignored by Git.
+
+## Latest delivery handoff — October8
+
+- Reviewed215s1080p video and720p backup fully decode;39 captions and audio/hash
+  measurements are in `evaluation/checks/video-verification.json`. Original media
+  is preserved. Supporting corrections do not improve frozen scientific scores.
+- PR9 remains open until its final exact-head CI is verified. Initial449a head
+  passed. Use the connected Composio publisher; do not infer account failure
+  from absent gh credentials.
+- Devpost version7 tagline/14stack tags/live+GitHub links match authenticated and
+  fresh public-rendered readback. EurekaDev is unsubmitted; video absent. Owner
+  explicitly authorized the connected-account contact email; never publish it.
+- Chrome browser is still unavailable after the owner said ready. Diagnostics
+  found Brave default/no running Chrome; owner was asked to connect supported
+  Chrome/Chromium with ChatGPT extension. Do not read session stores or submit
+  via MCP merely to save custom draft answers.

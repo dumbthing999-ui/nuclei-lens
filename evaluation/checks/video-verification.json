@@ -1,0 +1,62 @@
+{
+  "verified_at": "2026-10-08T17:27:22.365782+00:00",
+  "video_path": "demo-video/reviewed/eurekadev-reviewed.mp4",
+  "sha256": "8f4a0c306d2e0027992954d7da28abda90026d2c78cbd859940890fc4ab69f85",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "215.000000",
+      "size": "60856253"
+    }
+  },
+  "full_decode": "passed",
+  "captions": {
+    "cue_count": 39,
+    "monotonic": true,
+    "last_cue_end_seconds": 212.58,
+    "burned_in": true,
+    "source_path": "demo-video/reviewed/captions.srt",
+    "repository_copy": "demo/captions.srt"
+  },
+  "audio_measurement": {
+    "integrated_lufs": -16.22,
+    "true_peak_dbtp": -1.45,
+    "loudness_range_lu": 7.7
+  },
+  "original_master_preserved": true,
+  "original_sha256": "cf07f35bd59174c7b7fae33fd057f55193576210a74e01d2ae43c9fdaff72d70",
+  "startup_trim_seconds": {
+    "scene_05": 7,
+    "scene_06": 8
+  },
+  "speed_changed": false,
+  "youtube_uploaded": false,
+  "scientific_source_unchanged": true,
+  "review_report": "docs/hackathon/video-review.md",
+  "backup": {
+    "path": "demo-video/reviewed/eurekadev-reviewed-720p.mp4",
+    "width": 1280,
+    "height": 720,
+    "duration_seconds": 215.0,
+    "bytes": 26718472,
+    "sha256": "4df0f643595c0633d3f0122d68d8c38991c020c37622388db7a28480cd102071",
+    "full_decode": "passed"
+  }
+}
