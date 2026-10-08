@@ -43,3 +43,18 @@ npm test --prefix frontend
 ```
 
 Only this project's own inputs and infrastructure were examined. No third-party security testing was performed.
+
+
+## Explicit mask replacement review — October8
+
+Lossless assets decode into exactly4bytes per image pixel for each declared run,
+with bounded compressed input and streamed expansion checks. Reported instance
+counts must match actual label sets. Component IDs must be unique, positive,
+integer and present in the source maps. Replacement rejects edited source geometry
+and retained-object overlap, assigns fresh IDs and checks the count delta.
+Undo history is bounded to20 entries and1,048,576 changed pixels. TIFF is a fixed
+single-channel uint32 encoding; independent GeoTIFF.js readback matches exact
+values, including high unsigned IDs. The browser smoke checks the TIFF's label
+hash against the audit and restores the exact baseline through undo. No upload,
+server persistence or arbitrary tool execution is added. This is software integrity
+validation, not proof of scientific correction or a formal parser security audit.

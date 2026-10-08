@@ -1,11 +1,11 @@
 # Test report
 
-Updated October8,2026. These observations concern the verified tally-review build; guided mask editing is a next improvement, not an implemented claim.
+Updated October8,2026. Explicit mask editing is locally verified; production deployment and remote CI for that new feature remain pending.
 
 | Check | Actual result | Evidence / scope |
 |---|---|---|
-| Python unit/integration suite |26 passed | `pytest`; core, graph, matching, decoding, bounded local API |
-| Frontend unit suite |4 passed | `npm test --prefix frontend`; count validation, audit semantics, compatible review preservation, real equal-total witness conditions |
+| Python unit/integration suite |27 passed | `pytest`; core, graph, matching, decoding, bounded local API |
+| Frontend unit suite |10 passed | `npm test --prefix frontend`; count validation, audit semantics, compatible review preservation, real equal-total witness conditions |
 | Ruff | Passed | `ruff check src tests scripts` |
 | TypeScript / Vite production build | Passed | `npm run build --prefix frontend` |
 | Pinned native dependency audit |Zero known findings | `pip-audit --strict --no-deps -r requirements.lock`; JSON in `evaluation/checks/python-audit.json` |
@@ -17,7 +17,7 @@ Updated October8,2026. These observations concern the verified tally-review buil
 
 ## Audit correction
 
-The release workflow now audits the complete pinned project dependency manifest with strict failure handling. It does not ask PyPI to identify the unpublished editable NucleiLens distribution. This retains all pinned transitive dependencies; no vulnerability is ignored or allowed. Rerun remote CI and record its actual status before tagging a release.
+The release workflow now audits the complete pinned project dependency manifest with strict failure handling. It does not ask PyPI to identify the unpublished editable NucleiLens distribution. This retains all pinned transitive dependencies; no vulnerability is ignored or allowed. Remote run37743698558 passed all checks on commit ea0d558; PR1 was merged into main. The new mask feature requires its own subsequent run.
 
 ## Performance and network limits
 
@@ -25,7 +25,7 @@ The latest production Chromium observation was22,712 ms cold browser analysis an
 
 ## Not yet verified
 
-Remote CI after the audit fix; physical mobile devices; Firefox/Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; guided mask correction; a separate backup production origin; authenticated Devpost draft/rendered submission; required video.
+Remote CI and deployed browser checks for the new mask feature; physical mobile devices; Firefox/Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; a separate backup production origin; rendered Devpost submission (authenticated draft readback passed); required video.
 
 ## Reproduce
 
@@ -41,4 +41,17 @@ NUCLEILENS_DEMO_URL=https://nuclei-lens.dumbthing999.chatgpt.site node frontend/
 
 ## Second CI run
 
-Run37741357081 passed the pinned dependency audit, Python/Ruff checks, npm audit/tests, shared engine sync, runtime preparation, and production build. Its development-server browser inference timed out. The local development path then passed with actual count74 (13,290ms cold;3,648ms warm). The next CI revision tests the production preview, records failure diagnostics, prevents reuse of stale checked-in pass artifacts, and makes a watchdog expiry visible as an error. CI remains failed until the next actual run proves otherwise.
+Run37741357081 passed the pinned dependency audit, Python/Ruff checks, npm audit/tests, shared engine sync, runtime preparation, and production build. Its development-server browser inference timed out. The local development path then passed with actual count74 (13,290ms cold;3,648ms warm). The next CI revision tests the production preview, records failure diagnostics, prevents reuse of stale checked-in pass artifacts, and makes a watchdog expiry visible as an error. Run37743698558 subsequently passed the production-preview workflow and was merged via PR1. The exact reason for the earlier Vite-development timeout was not isolated; local dev and production tests passed.
+
+
+## Real mask-edit workflow — local production build
+
+Bundled Playwright Chromium153 check passed: real training-field mask count
+74→75→74, exported TIFF contains changed pixels, independently decoded uint32
+labels match the audit SHA256, compatible cold/warm reruns preserve exact TIFF
+bytes, and two undos restore the exact baseline pixel stream. Unit tests reject
+retained-object conflicts, repeated/overlapping components, missing/invalid IDs,
+wrong dimensions and expansion/count mismatches. Native lossless serialization
+roundtrip is exact. Fixtures are software interaction evidence, not biological
+correction or reader-study results. Latest CI-mode evidence is written separately
+from checked-in public deployment evidence, preventing stale-pass reuse.

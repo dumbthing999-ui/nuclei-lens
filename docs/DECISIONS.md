@@ -45,3 +45,26 @@ Tune on official training/validation partitions only. Before a product build exp
 If the method gives no useful advantage on validation data by October 10, change the mechanism or pivot before building polish. The untouched official test split is reserved for the frozen comparison. Simulated oracle correction estimates are clearly labeled and do not establish real human review speed or outcomes.
 
 **Consequence:** Stop broad ideation and build the graph/evaluation vertical slice first. Keep judge scores unassigned until implementation and evidence exist. This selects the project direction; it does not approve a final submission or establish a 19+/20 score.
+
+
+## 2026-10-08 — Separate explanation, ordering, tally and mask decisions
+
+**Evidence:** Graph and NNLS ordering failed validation gates. Frozen50-field test
+confirmed object disagreement's stronger error concentration. Three AI judge
+critiques found tally-only editing limited practical value.
+
+**Decision:** Retain object disagreement as default; use graphs to expose opposing
+local hypotheses. Add explicit source-mask component replacement, strict overlap
+conflicts, undo and lossless TIFF/audit exports. Keep tally entries separate.
+No automatic correctness or reader-benefit claim. Inference and frozen scientific
+evaluation remain unchanged. Alternatives: tally-only (limited actionability),
+freehand editor (larger unvalidated scope), automatic correction (unsupported).
+
+**Consequences:** Actual real-field browser workflow74→75→74, pixel/hash readback,
+rerun preservation and exact undo pass locally. New feature needs remote CI and
+production readback before release. Human study/external dataset remain future
+evidence, not implied completed work.
+
+Devpost fresh credentials authenticated successfully; prior account listing showed
+no EurekaDev project. Fresh draft1470185/submission1224432 was created and read
+back; no final submission. The required video remains owner-held.

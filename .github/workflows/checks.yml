@@ -28,6 +28,7 @@ jobs:
       - run: npm test --prefix frontend
       - run: node scripts/sync_engine.mjs
       - run: node scripts/prepare_runtime.mjs
+      - run: python scripts/collect_notices.py
       - run: npm run build --prefix frontend
       - run: npx --prefix frontend playwright install --with-deps chromium
       - name: Real browser workflow and on-device inference

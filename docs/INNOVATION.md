@@ -16,7 +16,7 @@ Make the disagreement inspectable, including when aggregate counts agree. Use th
 
 Nine deterministic watershed sensitivity runs vary threshold, seed spacing, smoothing, and midtone intensity. For each alternative, a sparse bipartite overlap graph connects baseline and alternate instances with at least 45% coverage of the smaller object. Connected components with different cardinalities yield localized split, merge, lost, or additional-detection hypotheses. Count-neutral components are excluded from this explanation layer. Masks remain whole; a fixed 4×5 grid assigns review counts and errors by centroid.
 
-A worker runs the same numerical Python core in the browser. The reviewer can inspect actual competing outlines, highlight conflict bounds, choose a candidate count, confirm a human entry, undo it, and export an audit document. Manual counts never silently replace segmentation masks. Compatible reviews survive deterministic reruns.
+A worker runs the same numerical Python core in the browser. The reviewer can inspect actual competing outlines, highlight conflict bounds, choose a candidate count, confirm a human entry, undo it, and export an audit document. Manual tallies stay separate from mask geometry. Explicitly confirmed graph components can replace original mask instances, with overlap conflicts rejected, fresh label IDs, undo, lossless uint32 TIFF export and an audit hash. Compatible reviews and mask edits survive deterministic reruns. The real split/merge sequence changes74→75→74 while preserving its changed pixels; it demonstrates inspectable choices, not improved accuracy.
 
 ## Evidence
 
