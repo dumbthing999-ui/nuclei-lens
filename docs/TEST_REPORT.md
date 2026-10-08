@@ -1,22 +1,25 @@
 # Test report
 
-Updated October8,2026. Mask editing passed remote CI and actual public-production checks. Video/human-benefit evidence remain outstanding.
+Updated October8,2026. V5 deployment status succeeded; the exact source tree matches public GitHub main. Video/human-benefit evidence remain outstanding.
 
 ## October 8 UX clarification follow-up
 
-On the unmerged `fix/clarify-mask-tally-status` branch, accepted mask edits and
+PR7 `fix/clarify-mask-tally-status` is merged. Accepted mask edits and
 undo now announce both the resulting mask-instance count and the unchanged review
 tally total. Frontend unit tests passed (10/10), TypeScript/Vite production build
 passed, and the complete Chromium local-preview workflow passed split→merge,
 export/hash, rerun, exact undo, cancellation, and the independent-tally message.
 axe-core reported no violations in desktop, benchmark, additional-assessment, or
-mobile-layout states. This is local-preview evidence; production readback and
-remote CI are pending. Current screenshots and machine-readable run reports are
-under `artifacts/screenshots/` and `evaluation/checks/`.
+mobile-layout states. Exact-head CI passed, and the existing Site is now on V5.
+The local browser and CI ran the same source tree that was packaged for V5; Site
+deployment metadata reports success. No post-deploy browser session is claimed.
+Current screenshots and machine-readable run reports are under `artifacts/screenshots/`
+and `evaluation/checks/`.
 
-The Sites package helper also accepted the generated `dist/` archive, including
-the existing Site ID manifest and static entry point. This validates packaging
-format only; no new production deployment has occurred yet.
+The Sites packager accepted the generated `dist/` archive, including the existing
+Site ID manifest and static entry point. Version5's deployment and current public
+URL were read back from Sites; exact archive/source details are in
+`evaluation/checks/deployment-v5.json`.
 
 | Check | Actual result | Evidence / scope |
 |---|---|---|
@@ -26,7 +29,9 @@ format only; no new production deployment has occurred yet.
 | TypeScript / Vite production build | Passed | `npm run build --prefix frontend` |
 | Pinned native dependency audit |Zero known findings | `pip-audit --strict --no-deps -r requirements.lock`; JSON in `evaluation/checks/python-audit.json` |
 | npm dependency audit |Zero known findings in saved snapshot | `evaluation/checks/npm-audit.json` |
-| Public production browser path | Passed | `evaluation/checks/browser-smoke.json`; actual local count74, same-total inspection, confirm/undo/export, compatible reruns, no page exceptions |
+| Public V4 browser path | Passed before the V5 source update | `evaluation/checks/deployment-v4-browser.json`; production checks from the prior version |
+| V5 source browser path | Passed on local preview and in PR8 CI; no post-deploy browser session claimed | `evaluation/checks/browser-smoke.json`; local count74, split→merge mask edits, undo/export/hash, reruns, cancel, and no page exceptions |
+| V5 deployment | Sites API reports succeeded; current URL and saved version read back | `evaluation/checks/deployment-v5.json`; exact archive and source-tree match |
 | Mobile layout |No horizontal page overflow at390×844 | Chromium viewport emulation; not a physical-device test |
 | Frozen scientific assessment |50/50 officialtest fields | MAE5.12, meanF1 0.827, selected object-queue capture45.8% at4/20 tiles; all failures retained |
 | First remote CI | Failed at audit configuration | GitHub run37740678643: `--strict --skip-editable` rejects the editable local distribution. Scientific tests/Ruff passed; browser steps skipped. No vulnerability finding implied. |
@@ -37,7 +42,7 @@ The release workflow now audits the complete pinned project dependency manifest 
 
 ## Performance and network limits
 
-The latest production Chromium observation was22,712 ms cold browser analysis and3,473 ms warm on this machine. These are single-run wall-clock observations, not population percentiles. Native test-set median analysis was3,454.62 ms under the recorded environment. Hosting injected a Cloudflare challenge POST; application image processing stayed in the worker. No promise of anonymous web use or zero hosting requests is made.
+The prior V4 production Chromium observation was22,712 ms cold browser analysis and3,473 ms warm on this machine. The PR7 local-preview run recorded21,642 ms cold and5,901 ms warm. These are single-run wall-clock observations, not population percentiles. Native test-set median analysis was3,454.62 ms under the recorded environment. Hosting injected a Cloudflare challenge POST; application image processing stayed in the worker. No promise of anonymous web use or zero hosting requests is made.
 
 ## Not yet verified
 

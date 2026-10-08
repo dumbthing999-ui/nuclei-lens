@@ -18,7 +18,7 @@ Open a real bundled field or your own single-field image. NucleiLens runs nine d
 
 The signature example is real: two runs both count 74 nuclei, yet the graph contains a 1 → 2 split alternative and a 2 → 1 merge alternative. Click each explanation to inspect it. Neither alternative is automatically declared correct.
 
-A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
+A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. After each mask confirmation or undo, the interface reports the new mask-instance count beside the unchanged review-tally total. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
 
 ## How we built it
 

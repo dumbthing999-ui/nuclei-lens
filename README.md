@@ -26,6 +26,8 @@ Uploaded images are analyzed by Python in a dedicated browser worker; image byte
 stay on the device. Hosting and runtime-asset requests still occur, including a
 Cloudflare challenge observed in the tested deployment; this is not anonymous
 browsing or a privacy guarantee. There is no LLM, account, database, or paid inference service.
+Mask edits and manual tally entries remain independent; each accepted mask edit
+or undo reports the changed mask count beside the unchanged review-tally total.
 
 ## Why it is different
 
