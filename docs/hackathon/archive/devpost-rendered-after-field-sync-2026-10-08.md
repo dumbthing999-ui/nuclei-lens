@@ -1,3 +1,14 @@
+# Public Devpost rendered-page archive
+
+Source: https://devpost.com/software/nucleilens
+
+Retrieved October8,2026 through Firecrawl with cache disabled. This text export
+retains the rendered copy and public gallery links. One scraper image placeholder
+is replaced with an explicit omission note; the raw scrape remains in the ignored
+local research cache. This archive contains no organizer contact email.
+
+---
+
 - [![Devpost](https://assets.devpost.com/assets/reimagine2/devpost-logo-mobile-f3aff76bfc0b6ada9bb4ddd773bfc534769ed793f962612804a1e84c305a5f94.svg)![Devpost](https://assets.devpost.com/assets/reimagine2/devpost-logo-25d0005ec83e3b9ef6fce93235bb6d642d7c828f31758ebdb5b7ee87de7d45c3.svg)](https://devpost.com/)
 
   - [Log in](https://secure.devpost.com/users/login?ref=top-nav-login)
@@ -433,6 +444,6 @@ to join the conversation.
 - [Privacy policy](https://info.devpost.com/legal/privacy-policy)
 - [Terms of service](https://info.devpost.com/legal/terms-of-service)
 
-![](<Base64-Image-Removed>)
+[Inline image omitted by the scraper; no local image asset was returned.]
 
 [Previous image](https://devpost.com/software/nucleilens)[Next image](https://devpost.com/software/nucleilens)
