@@ -89,7 +89,7 @@ Primary matching is cardinality-first Hungarian assignment with IoU ≥ 0.5. All
 
 No project analysis server receives browser image bytes. Hosting still sees normal request metadata. Browser code bounds file/decoded sizes, validates dimensions before decoding, uses a worker, exposes cancellation, and terminates at 90 seconds. Scientific runtime assets are downloaded on first use; cold latency is material. There is no guarantee of regulatory compliance, zero browser vulnerabilities, or persistent offline availability.
 
-The optional native service restricts Host and analysis Origin, bounds input streams, and admits only two concurrent jobs. Its body-read deadline is five seconds. CPU work has no hard process timeout; public exposure is unsupported. No application secrets or model tools exist. See [security review](security-review.md).
+The optional native service restricts Host and analysis Origin, bounds input streams, and admits only two concurrent jobs. Its body-read deadline is five seconds. CPU work runs in a separate Python child with a90-second hard deadline. Timeout/cancellation kills and drains that child before capacity release; this is lifetime isolation, not an OS sandbox. Public exposure is unsupported. No application secrets or model tools exist. See [security review](security-review.md).
 
 ## Deployment, observability, and recovery
 

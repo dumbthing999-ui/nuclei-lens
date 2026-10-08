@@ -14,11 +14,11 @@ Assets: local image bytes, manual review records, availability of the user's bro
 | Browser decoding | TIFF metadata checked before raster allocation; PNG/JPEG header bounds before bitmap decode | `engine-worker.js`; actual TIFF browser/native parity check |
 | Browser compute | Dedicated worker; 90-second watchdog; cancellation terminates worker | `main.tsx`; browser workflow |
 | Native decoder | Pillow upgraded from vulnerable 12.2 to 12.3; browser runtime excludes Pillow | `pyproject.toml`, `prepare_runtime.mjs`, audit JSON |
-| Local API | Loopback-only documented; allowed Host; same-origin analysis; 2 slots acquired before body read; 5-second body timeout | `api.py`; tests for origin/host/body/type rejection |
+| Local API | Loopback-only documented; allowed Host; same-origin analysis; 2 slots acquired before body read; 5-second body timeout; killable90-second compute child | `api.py`; tests for origin/host/body/type rejection |
 | Injection / file paths | Raw bytes, no filename-derived file writes, URL fetch, HTML injection, shell/model actions, or database | Manual source review |
 | Review input | Bounded whole-number counts; notes truncated; React escapes text | `review.ts`, Vitest |
 | Secrets | Environment excluded from Git; no application API keys required | `.gitignore`, `.env.example`; pre-publication scan |
-| Network | Scientific assets downloaded; application image processing stays in worker | Production browser workflow; network observations are scoped to tested path |
+| Network | Scientific assets and hosting challenge requests occur; application image processing stays in worker. No anonymity guarantee | Production browser workflow; network observations are scoped to tested path |
 
 ## Dependency findings
 
@@ -26,7 +26,7 @@ Initial native audit found known Pillow 12.2 advisories. Upgrading to 12.3 and r
 
 ## Remaining limitations
 
-- Native CPU jobs execute in a thread pool without a killable subprocess deadline. Public exposure of the optional companion remains unsupported.
+- Native CPU jobs now execute in bounded child processes. Timeout and task cancellation kill/drain the child before slot release. A disconnected HTTP client may leave its task running until the deadline; disconnect is not guaranteed to cancel the ASGI task. This does not establish safety for public exposure, which remains unsupported.
 - Complex images can consume significant browser CPU/memory despite bounds. Cancelling terminates the worker; queued main-thread operations and library bugs remain possible.
 - The browser and native PNG decoder have different precision semantics. Exact parity is verified for the bundled 16-bit TIFF, not every supported file encoding.
 - No parser fuzzing, formal SAST security scan, independent penetration test, authentication audit, or regulatory compliance assessment has been performed.

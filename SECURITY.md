@@ -14,7 +14,7 @@ Inputs are bounded to 10 MB, a single frame, 1,048,576 pixels, and 2,048 pixels 
 
 ## Optional local companion
 
-Bind FastAPI only to `127.0.0.1`. Allowed hostnames and same-origin checks reduce browser-origin abuse; inputs and concurrent work are bounded. The companion has no authentication, TLS, process isolation, or hard CPU-job timeout. Do not expose it to a public network or reverse proxy. It is unnecessary for the hosted application.
+Bind FastAPI only to `127.0.0.1`. Allowed hostnames and same-origin checks reduce browser-origin abuse; inputs and concurrent work are bounded. Each admitted compute job runs in its own child process with a90-second deadline; task cancellation/timeout kills and drains the child before slot release. This is process lifetime control, not an OS sandbox. The companion has no authentication or TLS. Do not expose it to a public network or reverse proxy. It is unnecessary for the hosted application.
 
 ## Verification and limits
 

@@ -1,4 +1,4 @@
-# Additional image assessment — protocol frozen, results pending
+# Additional image assessment — completed under frozen protocol
 
 Source: official [BBBC038v1](https://bbbc.broadinstitute.org/BBBC038), CC0 labeled
 stage1 archive. Raw670 images were profiled without decoding reference masks or
@@ -37,5 +37,7 @@ locally computed and frozen, not a publisher-provided cryptographic signature.
 ```
 
 Per-field atomic checkpoints are ignored under `data/cache/BBBC038-assessment/`.
-Final complete records and summary will be saved under `evaluation/additional/`.
-Current status is **protocol only; no accuracy/capture result yet**.
+Final complete records, figures and summary are saved under `evaluation/additional/`.
+All496 selected images evaluated;0 structural failures. MAE6.54, meanF1.772;
+object-queue capture45.7%, graph39.3%, random20%. See the
+[complete report](../../evaluation/additional/README.md) for all records and scope.

@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://cellprofiler.org/published-pipelines",
+    "publisher": "CellProfiler",
+    "publication_date": null,
+    "exact_claim": "a saved pipeline includes all the modules and settings",
+    "citation_ready": "CellProfiler saved pipelines preserve the modules and settings for reproducibility.",
+    "reliability_notes": "Official product documentation; not a comparative performance experiment.",
+    "retrieved_at": "2026-10-08T08:38:39.309100+00:00"
+  },
+  {
+    "url": "https://imagej.net/imaging/particle-analysis",
+    "publisher": "ImageJ project",
+    "publication_date": null,
+    "exact_claim": "You can use the built-in Multi-point Tool to manually count particles.",
+    "citation_ready": "ImageJ documents manual multipoint counting and a threshold/background-correction/watershed nucleus-counting workflow.",
+    "reliability_notes": "Official project documentation; does not establish any feature absence in extensions.",
+    "retrieved_at": "2026-10-08T08:38:39.309109+00:00"
+  },
+  {
+    "url": "https://qupath.readthedocs.io/en/stable/docs/tutorials/multiplex_analysis.html",
+    "publisher": "QuPath documentation",
+    "publication_date": null,
+    "exact_claim": "The key requirement is that a single channel can be used to detect all nuclei.",
+    "citation_ready": "QuPath documents default cell detection for fluorescence and multiplexed images using a selected detection channel.",
+    "reliability_notes": "Official stable documentation rendered version0.7.0; not a head-to-head result.",
+    "retrieved_at": "2026-10-08T08:38:39.309111+00:00"
+  }
+]

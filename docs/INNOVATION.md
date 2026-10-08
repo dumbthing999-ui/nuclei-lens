@@ -22,13 +22,13 @@ A worker runs the same numerical Python core in the browser. The reviewer can in
 
 The first bundled **real** training field has 74 baseline nuclei and 74 nuclei in its lower-threshold alternative. Graph events include both a 1→2 split alternative and a 2→1 merge alternative. The interface links directly to these measured alternatives; neither is declared correct without human inspection.
 
-On 50 official validation fields, graph ranking captures 38.4% of FP+FN error mass at a 20% review budget, versus 44.0% for simple object disagreement and 20% expected random review. The graph underperforms the object comparator by 5.6 percentage points, paired bootstrap 95% interval −8.4 to −3.4. A five-parameter nonnegative ranker trained on all 100 training fields captured 43.56% on validation and failed its predefined adoption gate; it is excluded from the product. See `evaluation/ranker/validation.json`.
+On 50 official validation fields, graph ranking captures 38.4% of FP+FN error mass at a 20% review budget, versus 44.0% for simple object disagreement and 20% expected random review. The graph underperforms the object comparator by 5.6 percentage points, paired bootstrap 95% interval −8.4 to −3.4. A nonnegative ranker (four features plus one intercept; five fitted coefficients) trained on all 100 training fields captured 43.56% on validation and failed its predefined adoption gate; it is excluded from the product. See `evaluation/ranker/validation.json`.
 
 Therefore object disagreement is the default queue. Graph correspondence provides explanations and the same-total counterexample, not a performance-superiority claim. Frozen configuration and protocol are in `evaluation/frozen/`; the completed 50-image held-out test has MAE 5.12, mean F1 0.827, and 45.8% error capture for the preselected object queue versus 39.5% graph and 20% random. Four exactly counted test fields still contain 100 unmatched instances in total; these are IoU-matching errors, not biological diagnoses.
 
 ## Why it matters
 
-The workflow lets a biology student or researcher inspect the assumptions behind a count and record a decision without uploading the image to an analysis service. Actual human effort, user accuracy, generalization beyond this dataset, and downstream research benefit remain unmeasured.
+The workflow lets a biology student or researcher inspect the assumptions behind a count and record a decision without uploading the image to an analysis service. An unchanged-pipeline additional BBBC038 assessment covers496 preselected images: MAE6.54, meanF1.772, object-queue capture45.7%, graph39.3%, random20%; zero structural failures.43 potential same-size overlaps were removed before evaluation, but unknown source-group dependence and reference imperfections remain. See [complete scope/results](../evaluation/additional/README.md). Actual human effort, user accuracy, independent biological generalization and downstream research benefit remain unmeasured.
 
 ## Thirty-second explanation
 

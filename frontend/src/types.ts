@@ -20,3 +20,7 @@ export interface Sample { id:string;title:string;filename:string;note:string;ana
 export interface Correction { region_id:number;baseline_count:number;reviewed_count:number;note:string;at:string; }
 
 export interface Benchmark { split:string;n_images:number;count_mae:number;mean_f1:number;methods:Record<string,{capture_at_20_percent:number;capture_ci95:number[]}>; }
+export interface AdditionalAssessment {
+  n_images:number;selected_images:number;failed_images:number;count_mae:number;mean_f1:number;
+  methods:Record<string,{capture_at_20_percent:number;capture_ci95_image_resampling:number[]}>;
+}

@@ -1,4 +1,22 @@
-# Judge scorecard
+# Current judge scorecard — October8,2026
+
+Latest separate Gemini3.8 FlashHigh text-only simulations are A16.0, B15.8, C15.3.
+These are AI simulations with shared model/context, not official or independent
+human judges. See [raw scores and reviewed factual corrections](judges-current/REVIEW.md).
+All remain below the19+/20 internal aspiration. No score is automatically revised.
+
+| Criterion | A / B / C | Evidence | Weakness | Next improvement |
+|---|---:|---|---|---|
+| Innovation |4.0 /3.9 /3.8 | Real opposing-component explanation, auditable actual mask replacement, device-local numerical implementation | Established methods; comparative benefit over existing software unproven | Evidence-based product comparison; validate reviewer usefulness |
+| Impact |3.8 /3.8 /3.7 |50 official test+496 additional images;45.8%/45.7% error capture at20% budget | Proxy rather than observed human benefit; source independence unknown | Real consented reader evidence and independent source groups |
+| Technical Execution |4.6 /4.6 /4.3 | Frozen source, all records, real Chromium/Firefox masks/TIFF/hash, green prior CI | Cold initialization, narrow image scope, optionalAPI compute deadline finding | Child-process deadline implemented and being verified; new CI/deployment pending |
+| Presentation |3.6 /3.5 /3.5 | Same-total interactive example, actual data figures, clear honest documentation | Required video intentionally held; value over established tools needs clarity | Clarify intended niche; preserve owner video hold |
+
+These scores preceded the API child-process change. Reviewers misread network
+claims and ranker feature/coefficient counts; corrections are retained beside raw
+reports. Do not claim each criticism is valid or that fixing one earns a higher score.
+
+## Historical scores
 
 October8,2026. Separate AI judge simulations using Gemini3.8 FlashHigh; these are neither official judges nor statistically independent human assessments. No category has earned a5/5. The video is deliberately deferred by the owner.
 

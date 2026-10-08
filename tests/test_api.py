@@ -38,3 +38,17 @@ def test_cross_origin_and_rebinding_hosts_rejected():
 
 def test_oversized_upload_rejected():
     assert client.post("/api/analyze", content=b"x"*(10*1024*1024+1), headers={"Content-Type":"image/png"}).status_code == 413
+
+
+def test_compute_deadline_returns_gateway_timeout_and_releases_slot(monkeypatch):
+    import nuclei_lens.api as api
+
+    async def expired(payload):
+        raise TimeoutError
+
+    monkeypatch.setattr(api, 'run_local_analysis', expired)
+    # More requests than slots prove that the HTTP failure returns each slot.
+    for _ in range(3):
+        response = client.post('/api/analyze', content=b'bounded', headers={'Content-Type': 'image/png'})
+        assert response.status_code == 504
+        assert 'process was stopped' in response.json()['detail']
