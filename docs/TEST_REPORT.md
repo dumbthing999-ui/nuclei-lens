@@ -1,6 +1,11 @@
 # Test report
 
-Updated October8,2026. V5 deployment status succeeded; the exact source tree matches public GitHub main. Video/human-benefit evidence remain outstanding.
+Latest local QA:45native/22frontend tests pass; actual model outputs and QA
+workflow verified. The saved V5 package directory lacks generated runtime assets;
+metadata success/source-tree parity alone did not verify fresh live inference.
+The strengthened package validator and forthcoming V6 include full runtime hashes.
+Reviewed video is complete; upload/playback and human-benefit evidence remain
+outstanding. Historical V5 observations below retain their original scope.
 
 ## October 8 UX clarification follow-up
 
@@ -207,3 +212,7 @@ Four static-package fixture tests passed: complete inputs copy; missing loader,
 changed wheel and stale engine each reject before replacing the prior dist.
 These tiny fixtures test packaging only, not inference. The complete regenerated
 production package also passes real runtime/engine hash verification.
+
+Final visual follow-up: clip imported-mask overlays to the inspected component's
+bounded view rectangle, preventing neighboring pixels from rendering into SVG
+letterboxing. Browser QA verifies clip geometry alongside actual edits/hashes.

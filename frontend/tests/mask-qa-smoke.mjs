@@ -36,7 +36,10 @@ try{
  for(const index of [split,merge]){
   const row=page.locator('.external-proposals>div').nth(index),confirm=row.getByRole('button',{name:/^Confirm external/});
   if(!await confirm.isDisabled())throw Error('External confirmation enabled before inspecting.');
-  await row.getByRole('button',{name:'Inspect external component '+(index+1),exact:true}).click();await confirm.click();
+  await row.getByRole('button',{name:'Inspect external component '+(index+1),exact:true}).click();
+  const clip=await page.locator('.external-preview clipPath rect').evaluate(r=>['x','y','width','height'].map(a=>Number(r.getAttribute(a))));
+  if(clip.some(v=>!Number.isFinite(v))||clip[0]<0||clip[1]<0||clip[0]+clip[2]>sample.width||clip[1]+clip[3]>sample.height||!await page.locator('.external-preview g[clip-path]').count())throw Error('Focused mask comparison is not clipped to a bounded image region.');
+  await confirm.click();
   if(await page.locator('.error[role=alert]').count())throw Error(await page.locator('.error[role=alert]').textContent());
  }
  const reviewed=await jsonDownload('Export segmentation QA report');
@@ -74,6 +77,6 @@ try{
  if(errors.length||writes.length)throw Error('Unexpected browser errors or non-read requests.');
  await writeFile(path.join(root,'artifacts/qa-report-smoke.json'),JSON.stringify(reviewed,null,2)+'\n');
  await writeFile(path.join(root,'artifacts/qa-measurements-smoke.csv'),csv);
- await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes},null,2)+'\n');
+ await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,focused_overlay_clipped:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes},null,2)+'\n');
  console.log('PASS: external mask review, measurements, CSV/TIFF/report hash, undo, import guards, mobile.');
 }catch(e){await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'failed',error:String(e),page_errors:errors},null,2)+'\n');throw e;}finally{await browser.close();}

@@ -65,7 +65,7 @@ Inspect before confirming an external component. Existing conflict checks,
 fresh IDs and exact undo protect mask integrity. Pixel area, centroid, grid-edge
 perimeter and border measurements recalculate from the actual edited mask.
 Export the CSV, TIFF and QA JSON to trace same-count differences and source hashes.
-![Actual model comparison and measurement panel](artifacts/screenshots/model-qa.png)
+![Actual model comparison and measurement panel](artifacts/screenshots/model-comparison.png)
 
 See [QA semantics and bounds](docs/MASK_QA.md) and the
 [optional local model runner](docs/OPTIONAL_MODELS.md).

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T18:15:47.673Z",
+  "checked_at": "2026-10-08T18:28:32.698Z",
   "status": "passed",
   "target": "http://127.0.0.1:5174",
   "fixture": "Actual frozen sensitivity label map; not neural-model output",
@@ -16,6 +16,7 @@
     "foreground_difference_pixels": 3738
   },
   "inspect_before_confirm": true,
+  "focused_overlay_clipped": true,
   "opposing_edit_counts": [
     74,
     75,

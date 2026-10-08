@@ -1,4 +1,4 @@
-import {useMemo, useRef, useState, useEffect} from 'react';
+import {useMemo, useRef, useState, useEffect, useId} from 'react';
 import type {Analysis, GraphEvent} from './types';
 import {maskHash, maskOutline, type MaskPatch} from './masks';
 import {measureMask, measurementsCsv} from './measurements';
@@ -18,6 +18,7 @@ function download(text:string,name:string,type:string) {
 const hashBytes=async(bytes:ArrayBuffer)=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
 
 export function QualityReview({analysis,baseline,reviewed,patches,busy,onConfirm}:Props) {
+  const clipId=useId();
   const [imports,setImports]=useState<ImportedMask[]>([]),[selected,setSelected]=useState(0);
   const [loading,setLoading]=useState(false),[error,setError]=useState('');
   const [name,setName]=useState('');
@@ -116,9 +117,10 @@ export function QualityReview({analysis,baseline,reviewed,patches,busy,onConfirm
       {active&&<><p role="status">Original: {active.comparison.baseline_count} instances. Imported: {active.comparison.alternative_count}. {active.comparison.segmentation_equal_up_to_ids?'Exact segmentation match, allowing ID renumbering.':active.comparison.same_total?'Same total; different segmentation. Neither mask is verified truth.':'Different instance count and segmentation. Neither mask is verified truth.'}</p>
         <p>{active.comparison.events.length} differing correspondence components. Edges use intersection / smaller-object area ≥ 0.45. Boundary differences and missing overlaps also appear. Compared with the original baseline; previously edited or conflicting components are rejected. Components with more than 32 total IDs are inspect/export only; use an existing editor for those.</p>
         <div className="external-preview"><svg viewBox={`${previewBox[0]} ${previewBox[1]} ${previewBox[2]-previewBox[0]} ${previewBox[3]-previewBox[1]}`} role="img" aria-label="Current microscopy image with original baseline in mint and imported mask in purple. Correspondence is a hypothesis, not correctness.">
+          <defs><clipPath id={clipId}><rect x={previewBox[0]} y={previewBox[1]} width={previewBox[2]-previewBox[0]} height={previewBox[3]-previewBox[1]}/></clipPath></defs><g clipPath={`url(#${clipId})`}>
           <image href={`data:image/png;base64,${analysis.image_png}`} width={analysis.width} height={analysis.height}/>
           <image href={`data:image/png;base64,${analysis.outline_pngs[0]}`} width={analysis.width} height={analysis.height}/>
-          {importedOutline&&<image href={importedOutline} width={analysis.width} height={analysis.height}/>}</svg></div>
+          {importedOutline&&<image href={importedOutline} width={analysis.width} height={analysis.height}/>}</g></svg></div>
         <p>Mint: original baseline. Purple: imported mask. Inspect the image before confirming a component.</p>
         <div className="external-proposals" role="region" aria-label="External correspondence components" tabIndex={0}>{active.comparison.events.slice(page*30,page*30+30).map((event,offset)=>{const index=page*30+offset;const applied=patches.some(p=>p.source?.mask_sha256_uint32_le===active.source.mask_sha256_uint32_le&&JSON.stringify(p.event.baseline_ids)===JSON.stringify(event.baseline_ids)&&JSON.stringify(p.event.alternate_ids)===JSON.stringify(event.alternate_ids));return <div key={index}><span>Region {event.bbox[0]}, {event.bbox[1]}–{event.bbox[2]}, {event.bbox[3]}</span><button disabled={busy||loading} aria-pressed={focus===index} onClick={()=>setFocus(index)}>Inspect external component {index+1}</button><button disabled={busy||loading||focus!==index||applied||event.baseline_count+event.alternate_count>32} onClick={()=>onConfirm(event,active.mask,active.source)}>{event.baseline_count+event.alternate_count>32?'Large component: inspect/export only':applied?'Component applied':`Confirm external ${event.kind} · ${event.baseline_count} → ${event.alternate_count}`}</button></div>;})}</div>
         {active.comparison.events.length>30&&<div className="component-pages"><button disabled={page===0||busy||loading} onClick={()=>{setPage(page-1);setFocus(null);}}>Previous components</button><span>Page {page+1} of {Math.ceil(active.comparison.events.length/30)}</span><button disabled={(page+1)*30>=active.comparison.events.length||busy||loading} onClick={()=>{setPage(page+1);setFocus(null);}}>Next components</button></div>}

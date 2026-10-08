@@ -15,6 +15,7 @@ node scripts/sync_engine.mjs
 node scripts/prepare_runtime.mjs
 .venv/bin/python scripts/collect_notices.py
 npm run build --prefix frontend
+node scripts/copy_site_dist.mjs
 python3 -m http.server 8080 --bind 127.0.0.1 --directory frontend/dist
 ```
 
@@ -28,6 +29,9 @@ promise for a previously visited production page.
 
 The release operator retains an ignored static deployment archive under
 `artifacts/nuclei-lens-site.tar.gz`, with `.openai/hosting.json` and complete `dist/`.
+The package check requires loader/WASM/stdlib/lock files and verifies all runtime
+and wheel hashes plus exact built/source Python engine bytes. Generated runtime
+assets are ignored by Git; a successful Vite build alone is insufficient.
 Save its SHA256 after the successful build and push. It contains no account
 credentials. Extract into a new empty directory, then serve `dist/` as above.
 Keep the actual archive/source SHA in the deployment evidence.
@@ -53,5 +57,6 @@ are checked by `scripts/check_release.py`. Full held-out results stay in
 Unsaved human session state is memory-only. Export label TIFF and review JSON
 before refresh; do not describe missing/unexported sessions as recoverable.
 
-Video and final submission remain owner-held gates; deployments are not evidence
-of final Devpost submission.
+The owner authorized video publication. The reviewed upload is quota-rejected
+with a guarded reset retry; playback and final submission remain unverified.
+Deployments are not evidence of final Devpost submission.
