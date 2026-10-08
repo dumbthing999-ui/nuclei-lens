@@ -29,6 +29,33 @@
       "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg",
       "http_readback": 200,
       "content_type": "image/jpeg"
+    },
+    {
+      "file": "evaluation/additional/figures/review-comparison.png",
+      "sha256": "04edaa8097f8b8f2ac79b6b69d09ba31c0fe1b60c5728075bd9cd44ff35753ab",
+      "photo_id": 5535521,
+      "position": 4,
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/521/datas/gallery.jpg",
+      "http_readback": 200,
+      "content_type": "image/jpeg",
+      "dimensions": [
+        806,
+        309
+      ]
+    },
+    {
+      "file": "artifacts/screenshots/review-detail.png",
+      "sha256": "117cbf873faabac127d226f8b0e4f483d5f15b06f70973aa86f83d82954a809c",
+      "photo_id": 5535523,
+      "position": 5,
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/523/datas/gallery.jpg",
+      "http_readback": 200,
+      "content_type": "image/jpeg",
+      "dimensions": [
+        764,
+        573
+      ]
     }
-  ]
+  ],
+  "provenance_note": "SHA256 values identify actual uploaded source bytes; source paths may later contain newer QA captures. CDN derivatives are JPEG and have different hashes."
 }

@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "generated_at": "2026-10-08T08:25:14.888Z",
+  "generated_at": "2026-10-08T08:49:00.392Z",
   "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
   "engine": "Playwright Firefox",
   "version": "155.0",
@@ -14,7 +14,7 @@
   "live_native_count": 74,
   "edits_preserved_on_live_rerun": true,
   "undo": true,
-  "cold_browser_ms": 29360,
+  "cold_browser_ms": 69474,
   "narrow_viewport_overflow": false,
   "page_errors": [],
   "scope": "One real Firefox desktop engine and resized viewport. Not physical mobile, Safari, assistive technology or biological correction validation."

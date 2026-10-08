@@ -1,0 +1,8 @@
+{
+  "ci_url": "https://github.com/dumbthing999-ui/nuclei-lens/actions/runs/37751491341",
+  "ci_head": "6b756a9e00f0254883b9c07aefd46376f1d95e0d",
+  "conclusion": "success",
+  "pr": "https://github.com/dumbthing999-ui/nuclei-lens/pull/4",
+  "merged": true,
+  "main_commit": "e7c60ad8d921896b59ba8a26dcd0b6339b32ccbb"
+}

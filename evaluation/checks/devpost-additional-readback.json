@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-08T08:52:53.286142+00:00",
+  "project_id": 1470185,
+  "project_url": "https://devpost.com/software/nucleilens",
+  "state": "published",
+  "video_url": null,
+  "hackathon_submitted_at": {
+    "eurekadev": null
+  },
+  "additional_metrics_rendered": true,
+  "scope_limits_rendered": true,
+  "live_and_github_links_rendered": true,
+  "final_submit_called": false,
+  "five_gallery_images_rendered": true,
+  "photo_ids": [
+    5535306,
+    5535308,
+    5535310,
+    5535521,
+    5535523
+  ]
+}

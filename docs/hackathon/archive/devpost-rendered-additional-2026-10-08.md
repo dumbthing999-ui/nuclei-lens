@@ -1,8 +1,6 @@
-# NucleiLens
+# Verified public rendered project content
 
-**Tagline:** See beyond the count.
-
-Prepared for EurekaDev on October8,2026. The authorized update automatically published the project page; authenticated readback shows EurekaDev submitted_at=null and no video. The existing public rendered project was verified. Final competition submission remains pending. Initial and updated account states are archived under `archive/`. Video remains on hold.
+Retrieved2026-10-08 with max-age0; final event submission remains pending.
 
 ## Inspiration
 
@@ -10,7 +8,7 @@ Two nuclei merge into one. Somewhere else, one splits into two. The total is unc
 
 In our fixed assessment of 50 public microscopy fields, four fields had exactly correct total counts while retaining 100 unmatched instances under object-level evaluation. A plausible total can hide disagreement about which nuclei exist.
 
-We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. [1,2]
+We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. \[1,2\]
 
 ## What it does
 
@@ -51,7 +49,7 @@ reference/inference failures, count MAE 6.54, mean instance F1 0.772. The presel
 object queue captured 45.7% of annotated error mass at the same 20% tile budget,
 versus 39.3% graph and 20% expected random.37 fields had F1 below 0.5 and remain in
 the aggregates. A visually sparse original reference is documented, not repaired
-or excluded after scoring. [4]
+or excluded after scoring. \[4\]
 
 This property-filtered labeled training archive is not an independent biological
 group test. Other shared sources, mixed modalities and reference imperfections
@@ -77,7 +75,7 @@ workflows. NucleiLens focuses on a small inspectable job: show the opposing obje
 alternatives behind a plausible count, then record the reviewer's chosen label map
 without a project inference upload. It does not replace multichannel, stack or
 batch analysis. No head-to-head usability or accuracy advantage has been measured.
-The repository contains a sourced capability comparison. [5]
+The repository contains a sourced capability comparison. \[5\]
 
 ## What we learned
 
@@ -95,16 +93,17 @@ Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembl
 
 ## Links
 
-- Live application: https://nuclei-lens.dumbthing999.chatgpt.site
-- Public source: https://github.com/dumbthing999-ui/nuclei-lens
-- Complete test evidence: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test
+- Live application: [https://nuclei-lens.dumbthing999.chatgpt.site](https://nuclei-lens.dumbthing999.chatgpt.site/)
+- Public source: [https://github.com/dumbthing999-ui/nuclei-lens](https://github.com/dumbthing999-ui/nuclei-lens)
+- Complete test evidence: [https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test)
 
 ## Sources and scope
 
-1. Broad Bioimage Benchmark Collection, BBBC039: https://bbbc.broadinstitute.org/BBBC039 — public CC0 U2 OS fluorescence images, instance annotations, official partitions.
-2. Caicedo et al., Evaluation of Deep Learning Strategies for Nucleus Segmentation: https://doi.org/10.1002/cyto.a.23863 — dataset-associated analysis of instance segmentation and error modes.
+1. Broad Bioimage Benchmark Collection, BBBC039: [https://bbbc.broadinstitute.org/BBBC039](https://bbbc.broadinstitute.org/BBBC039) — public CC0 U2 OS fluorescence images, instance annotations, official partitions.
+2. Caicedo et al., Evaluation of Deep Learning Strategies for Nucleus Segmentation: [https://doi.org/10.1002/cyto.a.23863](https://doi.org/10.1002/cyto.a.23863) — dataset-associated analysis of instance segmentation and error modes.
 3. Our fixed protocol and measured outputs: repository `evaluation/frozen/` and `evaluation/test/`.
-4. BBBC038v1 official record: https://bbbc.broadinstitute.org/BBBC038 — CC0 original labeled stage1 archive; full additional protocol/records: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional.
-5. Established-tool comparison with primary documentation: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT_COMPARISON.md.
+4. BBBC038v1 official record: [https://bbbc.broadinstitute.org/BBBC038](https://bbbc.broadinstitute.org/BBBC038) — CC0 original labeled stage1 archive; full additional protocol/records: [https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional).
+5. Established-tool comparison with primary documentation: [https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT\_COMPARISON.md](https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT_COMPARISON.md).
 
 This is a research/education prototype, not a clinical diagnostic tool. AI assistance was used for development, research, review, and draft writing. Reported measurements come from reproducible program execution; human-reader benefits remain unmeasured.
+

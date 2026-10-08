@@ -1,0 +1,38 @@
+{
+  "deployment": {
+    "id": "appgdep_6ac7587eb5d48191b7a548f60165eac9",
+    "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+    "title": "NucleiLens",
+    "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_759c5f1db8708191b7a86d56a5225677",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac6abc53a548191a2a325fadeea9288",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-08T08:47:07.155079+00:00"
+  },
+  "version": {
+    "id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_759c5f1db8708191b7a86d56a5225677",
+    "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+    "version_number": 4,
+    "source": {
+      "commit_sha": "5fe9b8f0ad10feaa27c92875a52c01e9a4465018"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000c558820eb71d338fde19f7b4",
+      "content_hash": "sha256:d29060bb4f23e80cce9425c6931f9bedfe6e055b00ca164f97c21cf0b0d7b2e1",
+      "size_bytes": 45414400,
+      "file_count": 91
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "github_main": "e7c60ad8d921896b59ba8a26dcd0b6339b32ccbb",
+  "ci_head": "6b756a9e00f0254883b9c07aefd46376f1d95e0d",
+  "ci_run": 37751491341,
+  "verification": "See deployment-v4-browser.json for actual public browser checks, scopes and timings."
+}

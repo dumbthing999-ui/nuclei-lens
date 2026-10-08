@@ -16,6 +16,8 @@ verified; their bundled notices are preserved and separately extracted.
 
 BBBC039 images/annotations are CC0; citation and source:
 https://bbbc.broadinstitute.org/BBBC039.
+BBBC038 images/annotations used in additional-assessment figures are CC0:
+https://bbbc.broadinstitute.org/BBBC038.
 
 Regenerate after dependency changes with `python scripts/collect_notices.py`
 after preparing the pinned browser runtime.

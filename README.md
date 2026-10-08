@@ -190,6 +190,9 @@ that a configuration was actually frozen.
 npm test --prefix frontend
 npm run build --prefix frontend
 .venv/bin/pip-audit --strict --no-deps -r requirements.lock
+python3 -m venv .firecrawl/security-tools
+.firecrawl/security-tools/bin/pip install -r security-tools.lock
+.firecrawl/security-tools/bin/bandit -r src -f json -o evaluation/checks/bandit.json
 ```
 
 With the dev server running and Chromium installed:

@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-08T08:42:27.100127+00:00",
+  "python_tests": 33,
+  "frontend_tests": 10,
+  "ruff": "passed",
+  "typecheck_build": "passed",
+  "native_audit": "zero known findings",
+  "npm_audit": "zero known findings",
+  "additional_integrity": "passed;56,544 independent tie/cutoff calculations",
+  "local_production_browser": "passed with additional evidence assertion",
+  "automated_accessibility": "passed in four states",
+  "scope": "Checks actually run on this machine. No human study, Safari, physical mobile, formal compliance or final-submission claim."
+}
