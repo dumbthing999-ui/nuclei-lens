@@ -1,8 +1,41 @@
 # NucleiLens
 
-**Tagline:** See beyond the count.
+See beyond the count.
 
-Prepared for EurekaDev on October8,2026. The authorized update automatically published the project page; authenticated readback shows EurekaDev submitted_at=null and no video. Final submission and rendered verification remain pending. Initial and updated account states are archived under `archive/`. Video remains on hold.
+
+[Like](https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1470185&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fnucleilens)
+
+[Comment](https://devpost.com/software/nucleilens#updates)
+
+- #### [Story](https://devpost.com/software/nucleilens)
+
+- #### [Updates](https://devpost.com/software/nucleilens\#updates)
+
+
+[![NucleiLens – screenshot 3](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/original.png)
+_Frozen50-field assessment: actual equal-budget FP+FN error capture; not measured human time savings._
+
+[![NucleiLens – screenshot 1](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/original.png)
+_Actual interface and real BBBC039 training field. Reference results are labeled and can be rerun locally._
+
+[![NucleiLens – screenshot 2](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/original.png)
+_Automated workflow example: opposing split/merge mask choices preserve total74. Not a human-validated correction._
+
+[![NucleiLens – screenshot 3](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/original.png)
+_Frozen50-field assessment: actual equal-budget FP+FN error capture; not measured human time savings._
+
+[![NucleiLens – screenshot 1](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/original.png)
+_Actual interface and real BBBC039 training field. Reference results are labeled and can be rerun locally._
+
+[![NucleiLens – screenshot 2](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/original.png)
+_Automated workflow example: opposing split/merge mask choices preserve total74. Not a human-validated correction._
+
+[![NucleiLens – screenshot 3](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg)](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/original.png)
+_Frozen50-field assessment: actual equal-budget FP+FN error capture; not measured human time savings._
+
+- 1
+- 2
+- 3
 
 ## Inspiration
 
@@ -10,7 +43,7 @@ Two nuclei merge into one. Somewhere else, one splits into two. The total is unc
 
 In our fixed assessment of 50 public microscopy fields, four fields had exactly correct total counts while retaining 100 unmatched instances under object-level evaluation. A plausible total can hide disagreement about which nuclei exist.
 
-We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. [1,2]
+We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. \[1,2\]
 
 ## What it does
 
@@ -70,14 +103,34 @@ Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembl
 
 ## Links
 
-- Live application: https://nuclei-lens.dumbthing999.chatgpt.site
-- Public source: https://github.com/dumbthing999-ui/nuclei-lens
-- Complete test evidence: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test
+- Live application: [https://nuclei-lens.dumbthing999.chatgpt.site](https://nuclei-lens.dumbthing999.chatgpt.site/)
+- Public source: [https://github.com/dumbthing999-ui/nuclei-lens](https://github.com/dumbthing999-ui/nuclei-lens)
+- Complete test evidence: [https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test)
 
 ## Sources and scope
 
-1. Broad Bioimage Benchmark Collection, BBBC039: https://bbbc.broadinstitute.org/BBBC039 — public CC0 U2 OS fluorescence images, instance annotations, official partitions.
-2. Caicedo et al., Evaluation of Deep Learning Strategies for Nucleus Segmentation: https://doi.org/10.1002/cyto.a.23863 — dataset-associated analysis of instance segmentation and error modes.
+1. Broad Bioimage Benchmark Collection, BBBC039: [https://bbbc.broadinstitute.org/BBBC039](https://bbbc.broadinstitute.org/BBBC039) — public CC0 U2 OS fluorescence images, instance annotations, official partitions.
+2. Caicedo et al., Evaluation of Deep Learning Strategies for Nucleus Segmentation: [https://doi.org/10.1002/cyto.a.23863](https://doi.org/10.1002/cyto.a.23863) — dataset-associated analysis of instance segmentation and error modes.
 3. Our fixed protocol and measured outputs: repository `evaluation/frozen/` and `evaluation/test/`.
 
 This is a research/education prototype, not a clinical diagnostic tool. AI assistance was used for development, research, review, and draft writing. Reported measurements come from reproducible program execution; human-reader benefits remain unmeasured.
+
+## Built With
+
+- fastapi
+- geotiff.js
+- [numpy](https://devpost.com/software/built-with/numpy)
+- pyodide
+- [python](https://devpost.com/software/built-with/python)
+- [react](https://devpost.com/software/built-with/react)
+- scikit-image
+- [scipy](https://devpost.com/software/built-with/scipy)
+- [typescript](https://devpost.com/software/built-with/typescript)
+- vite
+- webassembly
+
+## Try it out
+
+- [nuclei-lens.dumbthing999.chatgpt.site](https://nuclei-lens.dumbthing999.chatgpt.site/ "https://nuclei-lens.dumbthing999.chatgpt.site")
+- [GitHub Repo](https://github.com/dumbthing999-ui/nuclei-lens "https://github.com/dumbthing999-ui/nuclei-lens")
+

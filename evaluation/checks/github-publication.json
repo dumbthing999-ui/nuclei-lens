@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T07:29:00.827Z",
+  "generated_at": "2026-10-08T07:48:37.514Z",
   "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
-  "branch": "fix/ci-dependency-audit",
-  "commit_sha": "ea0d558e0c308186fd5a097e3fdbc65366c454de",
-  "local_commit_sha": "19e5d3dfae7ff20409bd08bc0f24a87b8b7c49f8",
-  "tree_sha": "f45dd2dbd5d51109d68d23b58d36e82f303feb8a",
-  "files": 120,
+  "branch": "feature/confirmed-mask-review",
+  "commit_sha": "4fd1996d608b3038710b53e01fb9b52d40b6512a",
+  "local_commit_sha": "3650e6a48a1335259b3323bfac6b6af1326238ef",
+  "tree_sha": "dd4e08d9c2a5ce9673a2562dccd5e48cb0dd696b",
+  "files": 190,
   "readback_verified": true
 }

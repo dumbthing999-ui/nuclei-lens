@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "generated_at": "2026-10-08T07:41:39.516Z",
-  "target": "http://127.0.0.1:5174",
+  "generated_at": "2026-10-08T07:53:00.496Z",
+  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
   "review_update": true,
   "undo": true,
   "audit_export": true,
@@ -20,8 +20,13 @@
   "stale_sample_failure_ignored": true,
   "mobile_overflow": false,
   "live_analysis_count": 74,
-  "cold_browser_ms": 14626,
-  "warm_browser_ms": 4794,
-  "non_read_requests": [],
+  "cold_browser_ms": 21517,
+  "warm_browser_ms": 3645,
+  "non_read_requests": [
+    {
+      "method": "POST",
+      "url": "https://nuclei-lens.dumbthing999.chatgpt.site/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.05192608171581503:1791442847:FPvsV-5ItXIh3nFxQR_IlvYmHUwKLdSxMKMgAjX1-9w/a47390bb3e7ea731"
+    }
+  ],
   "page_errors": []
 }

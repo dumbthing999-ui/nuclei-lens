@@ -89,3 +89,14 @@ The functional NucleiLens browser implementation and all50 frozen test records e
 
 
 Explicit human-confirmed mask replacement, conflict rejection, undo and uint32 TIFF/SHA256 audit are implemented and locally checked. Tally entries remain separate. Native27/frontend10 tests pass. CI repair PR1 merged; mask feature CI found a missing Node type declaration, now pinned and checked with a clean npm install. Verify the next actual remote CI before merging/deploying the feature. Do not change frozen core/graph/evaluate hashes or tune on test results.
+
+
+## Latest verified release/account state — October8,2026
+
+PR2 merged; v0.1.0 prerelease points to c4a73d7b7f36d322ad04a41ab531106475c7a684,
+exact tree of green CI37745742321. PublicV3 mask workflow/automated accessibility
+pass. Devpost update_project auto-published project page; EurekaDev submitted_at
+remains null and video absent. Fresh public rendered copy/media/links verified.
+Required contact-email disclosure remains owner-only. BBBC038 raw-image profile
+has539 property candidates from670 fields; no annotations/inference/external result.
+Preserve frozen scientific source and video hold. See latest PROJECT_STATUS.md.

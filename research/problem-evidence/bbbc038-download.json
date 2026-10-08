@@ -1,0 +1,13 @@
+{
+  "url": "https://data.broadinstitute.org/bbbc/BBBC038/stage1_train.zip",
+  "publisher": "Broad Institute BBBC",
+  "license": "CC0 per official BBBC038v1 record",
+  "record_url": "https://bbbc.broadinstitute.org/BBBC038",
+  "retrieved_at": "2026-10-08T08:00:10.609687+00:00",
+  "bytes": 82923446,
+  "sha256_local": "dcb6edc2690f137406638b2309581a71522c4dff19157d118453b448dcddcb68",
+  "official_published_checksum": null,
+  "zip_entries": 32141,
+  "image_ids": 670,
+  "status": "Downloaded only. No inference, annotations evaluation or external performance claim yet."
+}

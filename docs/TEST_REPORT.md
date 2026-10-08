@@ -1,6 +1,6 @@
 # Test report
 
-Updated October8,2026. Explicit mask editing is locally verified; production deployment and remote CI for that new feature remain pending.
+Updated October8,2026. Mask editing passed remote CI and actual public-production checks. Video/human-benefit evidence remain outstanding.
 
 | Check | Actual result | Evidence / scope |
 |---|---|---|
@@ -25,7 +25,7 @@ The latest production Chromium observation was22,712 ms cold browser analysis an
 
 ## Not yet verified
 
-Remote CI and deployed browser checks for the new mask feature; physical mobile devices; Firefox/Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; a separate backup production origin; rendered Devpost submission (authenticated draft readback passed); required video.
+physical mobile devices; Firefox/Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; a separate backup production origin; final EurekaDev submission (project API/public rendered readbacks passed); required video.
 
 ## Reproduce
 
@@ -72,3 +72,17 @@ mobile viewport states. Incomplete checks are recorded for manual review; this i
 not full accessibility compliance. Source protocol, all bundled label maps, local
 Markdown links and tracked credential-pattern checks pass via
 `python scripts/check_release.py`.
+
+
+## Verified prototype release
+
+CI37745742321 passed all checks; PR2 merged and v0.1.0 prerelease/tag points to
+c4a73d7b7f36d322ad04a41ab531106475c7a684, with the exact verified CI tree.
+ProductionV3 actual mask workflow passed,21,517ms cold/3,645ms warm on this machine.
+Public automated axe checks passed desktop/benchmark/mobile.128 independent
+proposals across the three declared demo fields apply/undo exactly;6 retained-object
+conflicts are rejected. These are integrity results, not biological accuracy.
+
+Devpost project API, fresh public rendered description,3 image IDs/captions, thumbnail
+and both live/repository links are verified. update_project automatically published
+the project; EurekaDev submitted_at remains null and no video is attached.
