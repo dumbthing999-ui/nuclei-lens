@@ -1,17 +1,16 @@
-# Judge Scorecard
+# Judge scorecard
 
-**Status, 2026-10-08:** NucleiLens selected; implementation/evaluation pending. Scores are **N/A**, not self-awarded. Assign category scores only after inspecting a working project, measured evaluation, and presentation.
+October8,2026. Separate AI judge simulations using Gemini3.8 FlashHigh; these are neither official judges nor statistically independent human assessments. No category has earned a5/5. The video is deliberately deferred by the owner.
 
-| Criterion | Current score | Evidence | Weakness | Next improvement |
+| Criterion | Latest B / C score | Evidence | Weakness | Next improvement |
 |---|---:|---|---|---|
-| Innovation | N/A | Selected object-count disagreement graph and auditable review workflow; prior art acknowledged | Comparative advantage and originality of implementation unproven | Compare count-based ranking to pixel disagreement and simple baselines |
-| Impact | N/A | BBBC039 and Caicedo study document instance errors; defined biology research/education scope | No user study, adoption, or measured labor savings | Measure bounded error-capture improvement; validate intended workflow |
-| Technical Execution | N/A | Architecture and evaluation protocol specified; official 100/50/50 metadata inspected | No code, benchmark, or demo | Build and measure offline graph/evaluation slice |
-| Presentation | N/A | Signature demo designed: inspect a plausible count's merge/split ambiguity and review it | No working product, selected footage, or video | Use actual validation examples and disclose ground-truth reveal |
+| Innovation |4.2 /3.8 | Real same-total opposing-component witness; original numerical/browser workflow | Core numerical methods are prior art; graph ranking failed | Guided local component replacement with auditable corrected masks |
+| Impact |4.1 /3.7 |50-image held-out assessment;45.8% error capture at20% budget | No human study; single dataset; tally-only corrections | Close the mask-output workflow, prepare a reproducible reader-study protocol; keep benefits unclaimed |
+| Technical Execution |4.6 /4.6 | Device-local shared core, frozen protocol, all failures, bootstrap, actual public workflow | CI audit configuration failed; cold runtime latency | Fix and verify CI, validate mask edit invariants and export |
+| Presentation |3.8 /2.8 | Real interactive witness, measured results, clear README | Required video pending; feature value must be immediate | Preserve video hold; improve actual interactive demonstration |
 
-## Gate review
+B total16.7/20; C14.9/20. Historical A initial total13.2/20 is retained with factual correction notes. All three reports are available beside this file. These scores fail the internal target; do not submit or announce a winning-quality finish. Reviewer suggestions to lift the video hold are rejected because the owner has reserved that work.
 
-- The proposed microscopy uncertainty-review app is not approved in its generic form: published work already covers cell-count uncertainty and uncertainty-based flagging for human review.
-- The narrowed NucleiLens direction is selected for implementation; compare local count-changing disagreements to count-neutral boundary uncertainty. No scientific-first claim is authorized.
-- Heat/cooling allocation, water-leak localization, and evacuation simulation have substantial existing methods/tools and/or direct gallery overlap. Their initial weighted tournament scores are screening estimates and must be revised where new evidence changes them.
-- No project-level metric or judge score is claimed.
+## Evidence-driven decisions
+
+The initial graph ranking target failed. A bounded NNLS model also failed its adoption gate. Object disagreement was selected using validation, then achieved45.8% capture on the frozen test; graph39.5% and random20%. Graphs now explain local alternatives. The next substantive improvement is human-confirmed replacement of actual conflicting mask objects with provenance and undo, rather than an integer-only audit. This is a planned improvement until its implementation and tests exist.

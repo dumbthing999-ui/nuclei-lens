@@ -85,7 +85,7 @@ function App() {
   function selectRegion(id:number) {setSelected(id);setZoom(false);setRun(analysis?.regions.find(r=>r.id===id)?.events[0]?.run_id??0);}
   async function analyzeFile(payload:ArrayBuffer) {
     setBusy(true);setError('');setStatus(engineReady?'Comparing segmentations…':'Preparing the local engine. First run downloads scientific libraries.');
-    timer.current=setTimeout(()=>cancelAnalysis('Analysis exceeded 90 seconds. Try a smaller field or use the local Python companion.'),90000);
+    timer.current=setTimeout(()=>{const message='Analysis exceeded 90 seconds. Try a smaller field or use the local Python companion.';cancelAnalysis(message);setError(message);},90000);
     getWorker().postMessage({type:'analyze',buffer:payload.slice(0)});
   }
   async function upload(file:File) {

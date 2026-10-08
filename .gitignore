@@ -21,3 +21,6 @@ frontend/public/runtime/
 .sites-runtime/
 artifacts/*.tar.gz
 *.log
+
+artifacts/ci-screenshots/
+evaluation/checks/browser-smoke-ci.json

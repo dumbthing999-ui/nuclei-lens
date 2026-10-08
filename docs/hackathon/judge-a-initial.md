@@ -1,3 +1,7 @@
+> Review note: AI judge simulation, not official judging or a human user study. The primary metric is annotated error concentration under a fixed tile budget; oracle correction is a separate secondary simulation. Video is on hold by the owner; recommendations do not override that instruction.
+
+> Corrections to this historical review: centroid allocation does not crop masks; browser-local execution is not a regulatory guarantee; validation was already used for safeguards; proposed failure causes are hypotheses, not measured causes. The NNLS experiment was later rejected.
+
 # EurekaDev 2026 — Independent Judge Review (Judge A)
 
 **Judge Profile:** Independent Technical / Skeptical Judge  

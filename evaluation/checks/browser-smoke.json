@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-10-08T06:38:02.603Z",
+  "status": "passed",
+  "generated_at": "2026-10-08T07:20:05.754Z",
   "target": "http://127.0.0.1:5174",
   "review_update": true,
   "undo": true,
@@ -8,8 +9,8 @@
   "review_preserved_on_rerun": true,
   "mobile_overflow": false,
   "live_analysis_count": 74,
-  "cold_browser_ms": 28953,
-  "warm_browser_ms": 5798,
+  "cold_browser_ms": 14208,
+  "warm_browser_ms": 3760,
   "non_read_requests": [],
   "page_errors": []
 }

@@ -51,3 +51,9 @@ For a hypothetical entry, highest overlap risks are: flood risk/alerts (FloodSen
 ## Next competitive-intelligence action
 
 Before concept lock, inspect the remaining high-overlap entries and any newly submitted projects; verify demo/repository claims by actual readback where public and available; then update all 37 rows with track/category and explicit page-level evidence where accessible.
+
+## Full detail-page refresh — October8
+
+All37 visible project detail pages have now been retrieved and structured claims reviewed; see `crawl-manifest-2026-10-08.json` and the updated matrix. The former listing-only snapshot is archived separately. Rate limiting was respected by slowing retries. Extraction used Gemini3.8FlashMedium and was checked for source/title/number provenance.
+
+This extends page coverage, not verification of functionality: repositories, videos, and live workflows were not systematically executed. Claimed scores/test counts/benchmarks stay labeled page claims. Numerical official judging predictions remain N/A. NucleiLens remains differentiated in the visible field by nuclei-count cancellation inspection, device-local scientific execution, frozen object-level comparisons, and transparent negative results; no across-field performance superiority is established. More substantial mask correction and real human validation remain necessary to improve the project's own judging case.
