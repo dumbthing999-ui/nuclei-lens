@@ -1,0 +1,9 @@
+{
+  "threshold_factor": 0.85,
+  "min_distance": 7,
+  "smoothing": 1.0,
+  "min_area": 40,
+  "background_sigma": 24.0,
+  "threshold_cap": 0.8,
+  "minimum_signal_ratio": 6.0
+}

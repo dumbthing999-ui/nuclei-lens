@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-08T06:38:02.603Z",
+  "target": "http://127.0.0.1:5174",
+  "review_update": true,
+  "undo": true,
+  "audit_export": true,
+  "same_count_witness": true,
+  "review_preserved_on_rerun": true,
+  "mobile_overflow": false,
+  "live_analysis_count": 74,
+  "cold_browser_ms": 28953,
+  "warm_browser_ms": 5798,
+  "non_read_requests": [],
+  "page_errors": []
+}

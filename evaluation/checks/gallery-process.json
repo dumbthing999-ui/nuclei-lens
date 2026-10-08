@@ -1,0 +1,14 @@
+{
+  "pid": 20374,
+  "started_at": "2026-10-08T06:36:58.923979+00:00",
+  "command": [
+    "firecrawl",
+    "scrape",
+    "https://eurekadev.devpost.com/project-gallery?page=1",
+    "https://eurekadev.devpost.com/project-gallery?page=2",
+    "--format",
+    "markdown,links",
+    "--max-age",
+    "0"
+  ]
+}

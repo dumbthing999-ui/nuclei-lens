@@ -1,0 +1,38 @@
+{
+  "dataset": "BBBC039",
+  "license": "CC0",
+  "source": "https://bbbc.broadinstitute.org/BBBC039",
+  "mode": "Real precomputed reference runs; rerun locally in browser to verify.",
+  "samples": [
+    {
+      "id": "training-001",
+      "title": "First training field",
+      "filename": "IXMtest_A06_s6_w1B9577918-4973-4A87-BA73-A168AA755527.tif",
+      "note": "First image in the official training manifest.",
+      "analysis_url": "/samples/training-001.json",
+      "image_url": "/samples/training-001.tif",
+      "reference_count": 71,
+      "f1": 0.9241379310344827
+    },
+    {
+      "id": "training-002",
+      "title": "Dense field",
+      "filename": "IXMtest_A15_s5_w1825174D4-ED30-490C-9635-6196417D6C9D.tif",
+      "note": "Second training image; many adjacent nuclei.",
+      "analysis_url": "/samples/training-002.json",
+      "image_url": "/samples/training-002.tif",
+      "reference_count": 129,
+      "f1": 0.8871595330739299
+    },
+    {
+      "id": "training-007",
+      "title": "Harder field",
+      "filename": "IXMtest_A24_s9_w152CD6793-DA45-4975-869A-CBD49D645E37.tif",
+      "note": "Lowest baseline F1 among the first eight training images; included to expose a failure case.",
+      "analysis_url": "/samples/training-007.json",
+      "image_url": "/samples/training-007.tif",
+      "reference_count": 53,
+      "f1": 0.7787610619469026
+    }
+  ]
+}

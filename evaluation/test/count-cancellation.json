@@ -1,0 +1,35 @@
+{
+  "scope": "Descriptive analysis after frozen test; no algorithm changes",
+  "exact_count_fields": 4,
+  "instance_error_mass_in_exact_count_fields": 100,
+  "fields": [
+    {
+      "filename": "IXMtest_D10_s2_w1BB72A093-72AB-476C-9513-2FF43BFB2134.png",
+      "count": 141,
+      "fp": 20,
+      "fn": 20,
+      "f1": 0.8581560283687943
+    },
+    {
+      "filename": "IXMtest_F08_s7_w117D78658-1BA7-495D-9EAA-E4FA155861AC.png",
+      "count": 65,
+      "fp": 9,
+      "fn": 9,
+      "f1": 0.8615384615384616
+    },
+    {
+      "filename": "IXMtest_I23_s5_w1E3053D6B-8CEF-48E3-A6A5-2F0D7C1AA177.png",
+      "count": 36,
+      "fp": 4,
+      "fn": 4,
+      "f1": 0.8888888888888888
+    },
+    {
+      "filename": "IXMtest_J17_s1_w19E7BCD2F-6D7E-4B39-9154-F93E4D539183.png",
+      "count": 82,
+      "fp": 17,
+      "fn": 17,
+      "f1": 0.7926829268292683
+    }
+  ]
+}

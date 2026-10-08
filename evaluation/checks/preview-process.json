@@ -1,0 +1,14 @@
+{
+  "pid": 20375,
+  "started_at": "2026-10-08T06:36:58.928264+00:00",
+  "command": [
+    "npm",
+    "run",
+    "preview",
+    "--prefix",
+    "frontend",
+    "--",
+    "--port",
+    "5174"
+  ]
+}

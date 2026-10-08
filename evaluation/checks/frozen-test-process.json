@@ -1,0 +1,15 @@
+{
+  "pid": 20373,
+  "started_at": "2026-10-08T06:36:58.919579+00:00",
+  "command": [
+    ".venv/bin/nuclei-lens",
+    "benchmark",
+    "--split",
+    "test",
+    "--config",
+    "evaluation/frozen/config.json",
+    "--confirm-frozen-protocol",
+    "--out",
+    "evaluation/test"
+  ]
+}

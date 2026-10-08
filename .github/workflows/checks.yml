@@ -1,0 +1,44 @@
+name: Scientific core and browser checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: pip install -e '.[dev]' -c requirements.lock
+      - run: pytest
+      - run: ruff check src tests scripts
+      - run: pip-audit --strict --skip-editable
+      - run: npm ci --prefix frontend
+      - run: npm audit --prefix frontend --audit-level=moderate
+      - run: npm test --prefix frontend
+      - run: node scripts/sync_engine.mjs
+      - run: node scripts/prepare_runtime.mjs
+      - run: npm run build --prefix frontend
+      - run: npx --prefix frontend playwright install --with-deps chromium
+      - name: Real browser workflow and on-device inference
+        run: |
+          npm run dev --prefix frontend > /tmp/nucleilens-vite.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:5173 > /dev/null && break; sleep 1; done
+          node frontend/tests/browser-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-check-evidence
+          path: |
+            artifacts/screenshots/
+            evaluation/checks/browser-smoke.json

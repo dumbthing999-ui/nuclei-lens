@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "NucleiLens",
+  "software_version": "0.1.0",
+  "exported_at": "2026-10-08T06:37:25.988Z",
+  "filename": "IXMtest_A06_s6_w1B9577918-4973-4A87-BA73-A168AA755527.tif",
+  "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
+  "config": {
+    "threshold_factor": 0.85,
+    "min_distance": 7,
+    "smoothing": 1,
+    "min_area": 40,
+    "background_sigma": 24,
+    "threshold_cap": 0.8,
+    "minimum_signal_ratio": 6
+  },
+  "baseline_count": 74,
+  "reviewed_count": 75,
+  "sensitivity_range": [
+    71,
+    84
+  ],
+  "corrections": [
+    {
+      "region_id": 13,
+      "baseline_count": 5,
+      "reviewed_count": 6,
+      "note": "",
+      "at": "2026-10-08T06:37:25.906Z"
+    }
+  ],
+  "mask_modifications": false,
+  "limitations": [
+    "Sensitivity is not a calibrated confidence interval.",
+    "Stable-but-wrong segmentations can escape every probe.",
+    "Use nucleus-stained fluorescence images; other image types are outside the evaluated scope.",
+    "A review flag is an ambiguity, not proof of an error."
+  ],
+  "review_semantics": "Counts refer to baseline-object centroids within fixed tiles. Reviewed counts are human entries, not validated ground truth."
+}

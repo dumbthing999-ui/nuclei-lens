@@ -1,0 +1,36 @@
+{
+  "validation_images": 50,
+  "capture_at_20_percent": 0.4355658198614319,
+  "review_curve": [
+    0.0,
+    0.15011547344110854,
+    0.251270207852194,
+    0.35011547344110855,
+    0.4355658198614319,
+    0.505311778290993,
+    0.5736720554272517,
+    0.623094688221709,
+    0.6697459584295612,
+    0.7191685912240184,
+    0.7561200923787529,
+    0.7963972286374135,
+    0.824203233256351,
+    0.8547806004618937,
+    0.8798152424942263,
+    0.9062355658198614,
+    0.9303464203233257,
+    0.9503002309468822,
+    0.9730254041570439,
+    0.9888221709006929,
+    1.0
+  ],
+  "object_comparator_capture": 0.4401847575057737,
+  "paired_difference": -0.004618937644341801,
+  "paired_ci95": [
+    -0.02080209707085069,
+    0.011702915877462536
+  ],
+  "acceptance_rule": "At least 48% primary error capture at 20% review and positive paired 95% interval versus object disagreement",
+  "accepted": false,
+  "selection_data": "Validation was already used for segmentation safeguards; only test is held out"
+}

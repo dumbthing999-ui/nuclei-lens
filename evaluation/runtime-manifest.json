@@ -1,0 +1,41 @@
+{
+  "pyodide": "314.0.7",
+  "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/",
+  "packages": [
+    {
+      "name": "numpy",
+      "version": "2.4.6",
+      "file": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf",
+      "bytes": 2960568
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.0",
+      "file": "scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "17ee329a957863516d1bb6a6aaa0c60576fac027e9cd3d43de27f58b5b599b50",
+      "bytes": 14029750
+    },
+    {
+      "name": "scikit-image",
+      "version": "0.26.0",
+      "file": "scikit_image-0.26.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "80b1bd266de8576a46cd7d2ef5ab8fa426b23dfaab293e367e730cee0f8ac77b",
+      "bytes": 9518861
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.5",
+      "file": "lazy_loader-0.5-py3-none-any.whl",
+      "sha256": "b5cf892eda01b97a86fdc99e0a9b91507c5b276f8371e937dd4db63ce101f0df",
+      "bytes": 8044
+    },
+    {
+      "name": "packaging",
+      "version": "26.1",
+      "file": "packaging-26.1-py3-none-any.whl",
+      "sha256": "565acbbea54da30348b6d68b6a54373e6f777987db9f1db6966b4b3a5060d303",
+      "bytes": 95852
+    }
+  ]
+}

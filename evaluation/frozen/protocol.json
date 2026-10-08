@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-10-07T20:41:09.394963+00:00",
+  "primary_policy": "object_disagreement",
+  "explanation_policy": "count-changing object-overlap graph",
+  "config": {
+    "threshold_factor": 0.85,
+    "min_distance": 7,
+    "smoothing": 1.0,
+    "min_area": 40,
+    "background_sigma": 24.0,
+    "threshold_cap": 0.8,
+    "minimum_signal_ratio": 6.0
+  },
+  "selection_evidence": "50 validation fields: object disagreement captures 44.0% vs graph 38.4%. NNLS trained on 100 training fields captures 43.56% on validation and is rejected.",
+  "primary_loss": "FP + FN from cardinality-first instance IoU >= 0.5 matching",
+  "budget": "4 of 20 centroid-assigned tiles",
+  "tie_policy": "Expected uniform capture within ties",
+  "bootstrap": "2000 paired image-level resamples; seed 20261008",
+  "test_partition": "50 official test images, unopened at protocol freeze",
+  "limitations": [
+    "Validation guided safeguards and policy selection. Test is a one-time assessment, not a tuning set.",
+    "Not a human review study. No claim of time savings or new state-of-the-art segmentation."
+  ],
+  "source_sha256": {
+    "core.py": "1d1d9ad01334268c060a3d236c816c1b2ced3d2a742c75491f5efa7a8c64da08",
+    "graph.py": "40d92dd3ba3d5b2c45ca037f98e24b758bbd87ec4a64c90c5f3c22219078b08e",
+    "evaluate.py": "801d6447d019c4f339a0a825246b8964dee897605c80747ffbf9ff81050ae1fa"
+  }
+}

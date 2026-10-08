@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "algorithm": "nonnegative least squares",
+  "features": [
+    "graph",
+    "object_disagreement",
+    "count_variation",
+    "shape_flags"
+  ],
+  "intercept": 0.0,
+  "coefficients": [
+    0.0,
+    3.104966116129169,
+    0.11708483649867049,
+    0.3647565029488726
+  ],
+  "training_images": 100,
+  "training_tiles": 2000,
+  "training_residual_norm": 76.58909670706686,
+  "training_source_sha256": {
+    "core.py": "1d1d9ad01334268c060a3d236c816c1b2ced3d2a742c75491f5efa7a8c64da08",
+    "graph.py": "40d92dd3ba3d5b2c45ca037f98e24b758bbd87ec4a64c90c5f3c22219078b08e",
+    "evaluate.py": "801d6447d019c4f339a0a825246b8964dee897605c80747ffbf9ff81050ae1fa"
+  },
+  "config": {
+    "threshold_factor": 0.85,
+    "min_distance": 7,
+    "smoothing": 1.0,
+    "min_area": 40,
+    "background_sigma": 24.0,
+    "threshold_cap": 0.8,
+    "minimum_signal_ratio": 6.0
+  },
+  "target": "Expected tile FP+FN error mass, not probability, confidence, or human effort",
+  "accepted": false
+}

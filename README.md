@@ -89,9 +89,15 @@ Actual experiments are under [`evaluation/experiments`](evaluation/experiments).
 
 Graph minus object disagreement is −5.6 percentage points (paired bootstrap 95% interval −8.4 to −3.4). The graph hypothesis failed its superiority target. A nonnegative four-feature ranker trained on the official 100 training fields also failed its adoption gate (43.56% validation capture); it is retained as a rejected experiment, not shipped. Initial failures, including MAE 25.06 before safeguards, remain available.
 
-The primary metric uses cardinality-first matching at instance IoU ≥ 0.5. All policies review the same four of twenty nonoverlapping centroid-assigned tiles; ties use expected capture. Image-level bootstrap intervals and complete curves are saved. Annotations load **after** inference. The fixed test protocol and configuration were saved before test access in [`evaluation/frozen`](evaluation/frozen). The first test process was interrupted by an environment restart and rerun under the identical frozen protocol; no test-driven changes were made. Final results appear only after all 50 records have been saved.
+The primary metric uses cardinality-first matching at instance IoU ≥ 0.5. All policies review the same four of twenty nonoverlapping centroid-assigned tiles; ties use expected capture. Image-level bootstrap intervals and complete curves are saved. Annotations load **after** inference. The fixed test protocol and configuration were saved before test access in [`evaluation/frozen`](evaluation/frozen). The first test process was interrupted by an environment restart and rerun under the identical frozen protocol; no test-driven changes were made. All 50 records are now saved and the output source/configuration hashes match the frozen protocol.
 
 Secondary local-count errors and oracle correction curves are separate simulations. No human time savings, clinical benefit, or superior segmentation accuracy is claimed.
+
+### Frozen held-out assessment
+
+The complete 50-image official test set, evaluated with the saved configuration and source hashes, has count MAE **5.12** and mean instance F1 **0.827**. The preselected object-disagreement queue captures **45.8%** of FP+FN error mass at 20% review, versus **39.5%** graph, **39.0%** pixel disagreement, and **20.0%** expected random. This measures concentration of annotated errors, not automatic correction or human time savings.
+
+Four test fields have exactly correct total counts while retaining **100 unmatched instances in total** (50 false positives and 50 false negatives). Counts alone conceal those mismatches. They are IoU-matching errors, not 100 confirmed biological split/merge diagnoses. Full per-image results, failure cases, intervals, and source hashes: [`evaluation/test`](evaluation/test).
 
 ## Tech stack
 
