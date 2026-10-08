@@ -45,12 +45,12 @@ Do not automatically raise scores. Human evidence/generalization/video remain ga
 Reader protocol prepared; no participants recruited or benefits measured. External
 BBBC038 CC0 archive/metadata retrieved;670 raw images profiled without annotations
 or inference.539 match declared image-property scope, not verified modality or
-independence. Overlap screening and external protocol freeze required next.
+independence. Content screening found43 potential same-size overlaps, excluded before inference. External protocol now freezes496 images and unchanged scientific configuration/source. Additional adapter synthetic unit tests pass;30 native tests pass on the research branch. Assessment results pending.
 
 ## Next Highest-Leverage Action
 
-Screen BBBC038 for content overlap with BBBC039; freeze external manifest/method;
-evaluate unchanged core without tuning, retain every failure. Then fresh judge
+Publish the frozen496-image protocol, run/resume the unchanged-core assessment
+from atomic per-field checkpoints, retain every failure. Then fresh judge
 critique. Publish current release/evidence handoff docs. No fabricated human study.
 
 ## Current Risks

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T07:48:37.514Z",
+  "generated_at": "2026-10-08T08:08:08.954Z",
   "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
-  "branch": "feature/confirmed-mask-review",
-  "commit_sha": "4fd1996d608b3038710b53e01fb9b52d40b6512a",
-  "local_commit_sha": "3650e6a48a1335259b3323bfac6b6af1326238ef",
-  "tree_sha": "dd4e08d9c2a5ce9673a2562dccd5e48cb0dd696b",
-  "files": 190,
+  "branch": "docs/release-evidence",
+  "commit_sha": "4384e6b89e3b973d2df77d371a1e3a4ab450faad",
+  "local_commit_sha": "cc318b0fdd227a88d604fa077990c89c9b6c1397",
+  "tree_sha": "53f55fe6118dfe80fe616cda73230454a8e3675c",
+  "files": 208,
   "readback_verified": true
 }
