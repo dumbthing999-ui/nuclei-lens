@@ -140,3 +140,13 @@ Unit adapter mocks are labeled separately from the actual model run.
 PR9 is merged with both exact-head CI runs green. Browser-dependent Devpost custom
 fields were deferred by the owner; the actual YouTube upload remains quota-rejected
 with a single guarded next-reset retry. No final submission is claimed.
+
+## October8 — reject incomplete static inference packages
+
+Observed the saved V5 local build directory lacks `runtime/pyodide/`, although the
+worker imports it. Vite success alone cannot prove a fresh deployment can infer.
+Strengthen `copy_site_dist.mjs` to require runtime loader/WASM/stdlib/lock files,
+verify every pinned scientific wheel's bytes/SHA256, and match built Python engine
+files to source before replacing root dist. Include the verified generated runtime
+in the next Site package; preserve exact source/build provenance. This observation
+concerns saved packaging artifacts, not an invented production browser test.

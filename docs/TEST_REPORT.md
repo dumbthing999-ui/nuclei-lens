@@ -174,7 +174,7 @@ security patterns, parser fuzzing or independent penetration testing.
 
 ## October8 — external-mask QA and real neural integration
 
-- Native pytest:41passed (including8mock-adapter plumbing/validation/timeout tests).
+- Native pytest:45passed (including8mock-adapter plumbing/validation/timeout tests).
 - Frontend Vitest:19passed; TypeScript/Vite production build passed.
 - Existing real Chromium workflow passed; Firefox155 mask/TIFF/hash/rerun/undo
   workflow passed on local production preview. These are desktop engines and
@@ -198,3 +198,12 @@ The remediated optional environment also completed both actual models:68/68with
 pixel-identical outputs to the initial run. Added3bundled-loader guard tests
 bring the frontend total to22passed. Optional dependency audit now returns no
 known records; prior findings and CPU-version mapping limits are retained.
+
+Static-package regression check: packaging now requires complete runtime files,
+pinned scientific-wheel hashes/sizes and exact built/source Python engine bytes.
+An intentionally missing loader must be rejected before replacing existing dist.
+
+Four static-package fixture tests passed: complete inputs copy; missing loader,
+changed wheel and stale engine each reject before replacing the prior dist.
+These tiny fixtures test packaging only, not inference. The complete regenerated
+production package also passes real runtime/engine hash verification.

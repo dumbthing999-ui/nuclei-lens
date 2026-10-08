@@ -40,7 +40,11 @@ for(const name of packages) {
   manifest.push({name,version:item.version,file:item.file_name,sha256:item.sha256,bytes:data.length});
   console.log(`Verified ${name} ${item.version}`);
 }
-await writeFile(path.join(root,'evaluation/runtime-manifest.json'),JSON.stringify({pyodide:version,source:`https://cdn.jsdelivr.net/pyodide/v${version}/full/`,packages:manifest},null,2)+'\n');
+const runtimeFiles=[];
+for(const file of ['pyodide.js','pyodide.mjs','pyodide.asm.mjs','pyodide.asm.wasm','python_stdlib.zip','pyodide-lock.json']) {
+  const data=await readFile(path.join(target,file));runtimeFiles.push({file,bytes:data.length,sha256:hash(data)});
+}
+await writeFile(path.join(root,'evaluation/runtime-manifest.json'),JSON.stringify({pyodide:version,source:`https://cdn.jsdelivr.net/pyodide/v${version}/full/`,runtime_files:runtimeFiles,packages:manifest},null,2)+'\n');
 const allowed=new Set(['pyodide.js','pyodide.mjs','pyodide.asm.mjs','pyodide.asm.wasm','python_stdlib.zip','pyodide-lock.json',...manifest.map(p=>p.file)]);
 for(const filename of await readdir(target)) if(!allowed.has(filename)) await unlink(path.join(target,filename));
 console.log('Browser runtime prepared.');

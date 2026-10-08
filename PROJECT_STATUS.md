@@ -24,7 +24,7 @@ comparison with source hashes; explicit correspondence hypotheses; and auditable
 same-count reports. Actual local Cellpose3.1.1.2/StarDist0.9.2 CPU execution completed on training001:
 68instances each, different partitions,3,738foreground-assignment differences,
 69differing correspondence components (not verified errors). Real output TIFFs
-and model/weight/input/output provenance are bundled.41native/22frontend tests,
+and model/weight/input/output provenance are bundled.45native/22frontend tests,
 existing Chromium/Firefox, expanded QA/axe/mobile checks passed locally. Frozen
 inference/benchmark source remains unchanged. Optional neural audit initially
 found61advisory records across three packages; Torch/Pillow/setuptools upgraded,
@@ -190,3 +190,12 @@ FreezeOct19; deadlineOct20 17:00CDT / Oct21 03:30IST. Not submission-ready;
 YouTube upload/video URL and persistence of the custom entry answers remain
 outstanding. Contact-email use is owner-authorized. 19+/20
 target and human evidence remain unachieved. Continue autonomous improvements.
+
+## Static-package recovery checkpoint
+
+The saved V5 build directory omitted generated runtime assets. Added loader/WASM/
+stdlib/lock and scientific-wheel SHA/size checks plus exact built/source engine
+matching before packaging. Four deterministic rejection/copy tests pass; generated
+production dist now includes the complete verified runtime. New PR10 will include
+this fix before deployment. The secondary Gemini review timed out without findings;
+this is not an independent approval. Main scientific hashes remain frozen.

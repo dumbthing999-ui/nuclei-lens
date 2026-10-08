@@ -20,6 +20,29 @@ The signature example is real: two runs both count 74 nuclei, yet the graph cont
 
 A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. After each mask confirmation or undo, the interface reports the new mask-instance count beside the unchanged review-tally total. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
 
+## Model comparison and measurements
+
+On the first training field, load two actual pretrained Cellpose and StarDist
+predictions. Both count 68 instances, but their foreground assignments differ at
+3,738pixels and their partitions differ in 69 correspondence components. These
+components include boundary hypotheses; they are not 69 verified errors or a model
+accuracy comparison. View the actual source/model/weight/output hashes. These
+are precomputed CPU predictions; the browser does not run their networks.
+
+Import up to three aligned, uncompressed unsigned label TIFFs from a model or
+editor. Inspect an original/imported component before explicitly confirming it.
+Existing conflict checks, fresh IDs and exact undo protect mask integrity.
+Area, pixel-center centroid, exposed grid-edge perimeter and border measurements
+recalculate from the actual reviewed mask after edits and undo. Export the CSV,
+label TIFF and QA JSON linking original/reviewed/source hashes and pairwise
+comparisons. Geometry alone does not establish alignment or correctness.
+
+Cellpose, StarDist and napari already provide segmentation and editing, while
+CellSampler combines segmentation methods. Model aggregation and shape
+measurement are established prior art, not a scientific-first claim. Our addition
+makes these comparisons and audit semantics concrete in the same review workflow;
+measured reader benefit remains future work. [6]
+
 ## How we built it
 
 The shared Python core uses intensity normalization, background correction, Otsu thresholding, distance peaks, and marker-controlled watershed. Eight alternatives vary threshold, seed spacing, smoothing, and midtone intensity around the baseline.
@@ -91,7 +114,7 @@ A controlled reader study and source-group-controlled external validation. We wi
 
 ## Built with
 
-Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembly, GeoTIFF.js, FastAPI, pytest, Vitest, Playwright.
+Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembly, GeoTIFF.js, FastAPI, pytest, Vitest, Playwright. Optional local adapters: Cellpose, StarDist, PyTorch CPU and TensorFlow CPU.
 
 ## Links
 
@@ -106,5 +129,7 @@ Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembl
 3. Our fixed protocol and measured outputs: repository `evaluation/frozen/` and `evaluation/test/`.
 4. BBBC038v1 official record: https://bbbc.broadinstitute.org/BBBC038 — CC0 original labeled stage1 archive; full additional protocol/records: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional.
 5. Established-tool comparison with primary documentation: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT_COMPARISON.md.
+
+6. Robust consensus nuclear and cell segmentation, 2025: https://doi.org/10.3389/fgene.2025.1547788. Implementation/provenance and established-tool sources: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/MASK_QA.md and https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/OPTIONAL_MODELS.md.
 
 This is a research/education prototype, not a clinical diagnostic tool. AI assistance was used for development, research, review, and draft writing. Reported measurements come from reproducible program execution; human-reader benefits remain unmeasured.

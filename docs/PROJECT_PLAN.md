@@ -73,6 +73,6 @@ hypotheses → inspect/confirm → updated measurements/undo → hash-linked exp
 Both real training-field outputs and one-click precomputed examples are now
 implemented. No browser neural weights, automatic consensus, batch platform,
 new clinical claim or retuning of frozen assessment source is in scope.
-Release gate:22frontend/41native tests, existing Chromium/Firefox paths, expanded
+Release gate:22frontend/45native tests, existing Chromium/Firefox paths, expanded
 QA/browser/axe checks, frozen-source integrity, dependency audits and exact-head
 remote CI. The optional model environment requires its own audit/limitations.
