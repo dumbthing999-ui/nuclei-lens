@@ -29,9 +29,11 @@ await page.screenshot({path:path.join(root,shotDir,'desktop.png'),fullPage:true}
 await page.getByRole('button',{name:'Inspect split · 1 → 2'}).click();
 await page.getByRole('button',{name:'Confirm split alternative · 1 → 2'}).click();
 await page.waitForFunction(()=>document.querySelector('[data-testid=mask-count]')?.textContent?.startsWith('75 '));
+if(!(await page.locator('.mask-review [role=status]').textContent()).includes('Review tally total remains 74'))throw new Error('Split feedback did not explain the independent tally');
 await page.getByRole('button',{name:'Inspect merge · 2 → 1'}).click();
 await page.getByRole('button',{name:'Confirm merge alternative · 2 → 1'}).click();
 await page.waitForFunction(()=>document.querySelector('[data-testid=mask-count]')?.textContent?.startsWith('74 '));
+if(!(await page.locator('.mask-review [role=status]').textContent()).includes('Review tally total remains 74'))throw new Error('Merge feedback did not explain the independent tally');
 const labelDownload=page.waitForEvent('download');await page.getByRole('button',{name:'Export label TIFF'}).click();await(await labelDownload).saveAs(path.join(root,'artifacts/mask-edit-smoke.tif'));
 const exported=await readFile(path.join(root,'artifacts/mask-edit-smoke.tif'));const tiff=await fromArrayBuffer(exported.buffer.slice(exported.byteOffset,exported.byteOffset+exported.byteLength));const labelImage=await tiff.getImage();const labels=await labelImage.readRasters({interleave:true});
 if(!(labels instanceof Uint32Array)||new Set(Array.from(labels).filter(id=>id!==0)).size!==74)throw new Error('Exported mask is not a 74-instance uint32 label map');
@@ -77,6 +79,7 @@ const repeatedDownload=page.waitForEvent('download');await page.getByRole('butto
 if(!(await readFile(path.join(root,'artifacts/mask-rerun-smoke.tif'))).equals(exported))throw new Error('Compatible mask edits were lost on rerun');
 await page.getByRole('button',{name:'Undo mask edit'}).click();await page.getByRole('button',{name:'Undo mask edit'}).click();
 if(!await page.getByRole('button',{name:'Undo mask edit'}).isDisabled())throw new Error('Mask undo history did not clear');
+if(!(await page.locator('.mask-review [role=status]').textContent()).includes('Review tally total remains'))throw new Error('Undo feedback did not explain the independent tally');
 const restoredDownload=page.waitForEvent('download');await page.getByRole('button',{name:'Export label TIFF'}).click();await(await restoredDownload).saveAs(path.join(root,'artifacts/mask-restored-smoke.tif'));
 const restored=await readFile(path.join(root,'artifacts/mask-restored-smoke.tif'));const restoredImage=await(await fromArrayBuffer(restored.buffer.slice(restored.byteOffset,restored.byteOffset+restored.byteLength))).getImage();const restoredLabels=await restoredImage.readRasters({interleave:true});const restoredBytes=Buffer.alloc(restoredLabels.length*4);restoredLabels.forEach((id,i)=>restoredBytes.writeUInt32LE(id,i*4));if(!restoredBytes.equals(baselineBytes))throw new Error('Undo did not restore exact baseline pixels');
 await page.getByRole('button',{name:'Rerun on this device'}).click();await page.getByRole('button',{name:'Cancel',exact:true}).click();
