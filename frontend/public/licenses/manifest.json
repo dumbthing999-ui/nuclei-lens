@@ -1,0 +1,252 @@
+{
+  "npm_production_dependency_inventory": [
+    {
+      "name": "geotiff",
+      "version": "3.0.5",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geotiffjs/geotiff.js.git"
+      },
+      "notices": [
+        "geotiff-LICENSE"
+      ]
+    },
+    {
+      "name": "@petamoriken/float16",
+      "version": "3.9.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/petamoriken/float16.git"
+      },
+      "notices": [
+        "@petamoriken--float16-LICENSE"
+      ]
+    },
+    {
+      "name": "lerc",
+      "version": "3.0.0",
+      "license": "Apache-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Esri/lerc.git"
+      },
+      "notices": []
+    },
+    {
+      "name": "pako",
+      "version": "2.2.0",
+      "license": "(MIT AND Zlib)",
+      "repository": "nodeca/pako",
+      "notices": [
+        "pako-LICENSE"
+      ]
+    },
+    {
+      "name": "parse-headers",
+      "version": "2.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kesla/parse-headers.git"
+      },
+      "notices": [
+        "parse-headers-LICENCE"
+      ]
+    },
+    {
+      "name": "quick-lru",
+      "version": "6.1.2",
+      "license": "MIT",
+      "repository": "sindresorhus/quick-lru",
+      "notices": [
+        "quick-lru-license"
+      ]
+    },
+    {
+      "name": "web-worker",
+      "version": "1.5.0",
+      "license": "Apache-2.0",
+      "repository": "developit/web-worker",
+      "notices": [
+        "web-worker-LICENSE"
+      ]
+    },
+    {
+      "name": "xml-utils",
+      "version": "1.10.2",
+      "license": "CC0-1.0",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DanielJDufour/xml-utils.git"
+      },
+      "notices": [
+        "xml-utils-LICENSE"
+      ]
+    },
+    {
+      "name": "zstddec",
+      "version": "0.2.0",
+      "license": "MIT AND BSD-3-Clause",
+      "repository": "github:donmccurdy/zstddec",
+      "notices": [
+        "zstddec-LICENSE"
+      ]
+    },
+    {
+      "name": "pyodide",
+      "version": "314.0.7",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pyodide/pyodide.git"
+      },
+      "notices": []
+    },
+    {
+      "name": "@types/emscripten",
+      "version": "1.41.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/emscripten"
+      },
+      "notices": [
+        "@types--emscripten-LICENSE"
+      ]
+    },
+    {
+      "name": "ws",
+      "version": "8.22.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/websockets/ws.git"
+      },
+      "notices": [
+        "ws-LICENSE"
+      ]
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react"
+      },
+      "notices": [
+        "react-LICENSE"
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react-dom"
+      },
+      "notices": [
+        "react-dom-LICENSE"
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/scheduler"
+      },
+      "notices": [
+        "scheduler-LICENSE"
+      ]
+    }
+  ],
+  "upstream_notices": [
+    {
+      "file": "Pyodide-MPL-2.0.txt",
+      "source": "https://raw.githubusercontent.com/pyodide/pyodide/314.0.7/LICENSE",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "file": "CPython-3.14.2-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.14.2/LICENSE",
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+    },
+    {
+      "file": "Apache-2.0.txt",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "wheel_notices": [
+    {
+      "file": "lazy_loader-0.5-py3-none-any.whl",
+      "sha256": "b5cf892eda01b97a86fdc99e0a9b91507c5b276f8371e937dd4db63ce101f0df",
+      "notices": [
+        "wheels/lazy_loader-0.5-py3-none-any/lazy_loader-0.5.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "file": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf",
+      "notices": [
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy/_core/include/numpy/random/LICENSE.txt",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy/ma/LICENSE",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy/random/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/LICENSE.txt",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/ma/LICENSE",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "wheels/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32/numpy-2.4.6.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md"
+      ]
+    },
+    {
+      "file": "packaging-26.1-py3-none-any.whl",
+      "sha256": "565acbbea54da30348b6d68b6a54373e6f777987db9f1db6966b4b3a5060d303",
+      "notices": [
+        "wheels/packaging-26.1-py3-none-any/packaging-26.1.dist-info/licenses/LICENSE",
+        "wheels/packaging-26.1-py3-none-any/packaging-26.1.dist-info/licenses/LICENSE.APACHE",
+        "wheels/packaging-26.1-py3-none-any/packaging-26.1.dist-info/licenses/LICENSE.BSD"
+      ]
+    },
+    {
+      "file": "scikit_image-0.26.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "80b1bd266de8576a46cd7d2ef5ab8fa426b23dfaab293e367e730cee0f8ac77b",
+      "notices": [
+        "wheels/scikit_image-0.26.0-cp314-cp314-pyemscripten_2026_0_wasm32/scikit_image-0.26.0.dist-info/LICENSE.txt"
+      ]
+    },
+    {
+      "file": "scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "17ee329a957863516d1bb6a6aaa0c60576fac027e9cd3d43de27f58b5b599b50",
+      "notices": [
+        "wheels/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32/scipy/_lib/_uarray/LICENSE",
+        "wheels/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32/scipy/fft/_duccfft/LICENSE.md",
+        "wheels/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32/scipy/integrate/LICENSE_DOP",
+        "wheels/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32/scipy/spatial/qhull_src/COPYING_QHULL.txt",
+        "wheels/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32/scipy-1.18.0.dist-info/LICENSE.txt"
+      ]
+    }
+  ],
+  "pyodide_source": "https://github.com/pyodide/pyodide/tree/314.0.7",
+  "runtime_lock_change": "Only scikit-image dependency metadata was narrowed to numerical modules; original wheel contents are unmodified. See scripts/prepare_runtime.mjs for the reproducible modification."
+}

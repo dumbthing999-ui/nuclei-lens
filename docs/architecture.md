@@ -31,7 +31,7 @@ flowchart LR
 | `graph.py` | Sparse overlap pairs, union-find components, count-changing graph events, object disagreement | Explain local split/merge alternatives without dense pixel graphs |
 | `raster.py` | Native bounded decoding; output PNG encoder and serializable analysis | Consistent product output; pure numerical PNG encoder avoids a browser Pillow dependency |
 | `engine-worker.js` | Decode bounded local files, load pinned runtime, run Python outside UI thread | Device-local compute, native TIFF precision, cancellation boundary |
-| React surface | Compare masks, inspect events, choose counts, confirm/undo, export | Human decision support with actual analysis and explicit semantics |
+| React surface | Compare masks, explicitly confirm components/tallies, undo, export JSON/TIFF | Human decision support with actual analysis and explicit semantics |
 | `data.py` / `evaluate.py` | Verify public archives, official splits, downstream annotation matching, equal-budget comparisons | Reproducible evaluation isolated from inference |
 | `api.py` | Optional local CPU companion | Recovery path where browser memory/runtime is unsuitable; never deployed publicly |
 
@@ -50,7 +50,9 @@ flowchart TD
   E --> U[Actual outlines and localized graph explanations]
   R --> U
   U --> H[User confirms a regional count]
-  H --> X[Download JSON; original masks unchanged]
+  H --> P[Conflict-checked graph component replacement]
+  P --> T[Lossless label TIFF]
+  H --> X[JSON audit, label hash and separate tally]
 ```
 
 Each alternate is compared independently with the baseline. An edge needs intersection coverage of at least 45% of the smaller object. Count-neutral components contribute no graph event, while the object-disagreement comparator still measures mask instability. A field with equal total counts may contain opposing graph events; the signature example is computed from the bundled first training field. Such events are hypotheses, not ground-truth diagnoses.
@@ -62,7 +64,7 @@ Segmentation always runs on the complete field. The fixed 4×5 grid allocates co
 - Worker messages: `analyze` with copied ArrayBuffer; `status`, `ready`, `result`, or `error` responses. Results include input pixel hash, software/configuration, actual counts, per-run overlays, regions, event bounds, comparators, timing, and limitations.
 - Static `samples/manifest.json` links actual public TIFF fields and precomputed analyses. Reference annotations are displayed only as explicitly labeled benchmark metadata; inference does not receive them.
 - `GET /api/health` and raw-byte `POST /api/analyze` exist only in the optional local companion. No samples API, image URL ingestion, arbitrary configuration endpoint, account, or database exists.
-- Manual review state lives in client memory. Compatible same-input/configuration/baseline reviews survive reruns. Export records manual count deltas and declares that masks were not modified. Refreshing the page clears unsaved review state; export before leaving.
+- Manual review state lives in client memory. Compatible same-input/configuration/baseline reviews survive reruns. Export distinguishes manual count deltas from explicit mask patches, records actual instance counts and SHA256 of little-endian uint32 labels, and logs source graph IDs. Masks use bounded zlib/base64 lossless assets. Retained-nucleus overlaps and repeated component edits are rejected; undo restores exact pixels. History is capped at20 edits and1,048,576 changed-pixel entries. No reference annotations enter editing. Refreshing the page clears unsaved review state; export before leaving.
 
 ## Evaluation pipeline
 

@@ -2,13 +2,13 @@
 import {fromArrayBuffer} from 'geotiff';
 let pyodide;
 let busy = false;
-async function boot() {
+async function boot(requestId) {
   if (pyodide) return pyodide;
-  postMessage({type:'status', status:'Loading the local analysis engine…'});
+  postMessage({type:'status', request_id:requestId, status:'Loading the local analysis engine…'});
   const runtimeUrl='/runtime/pyodide/pyodide.mjs';
   const {loadPyodide}=await import(/* @vite-ignore */ runtimeUrl);
   pyodide = await loadPyodide({indexURL:'/runtime/pyodide/'});
-  postMessage({type:'status', status:'Loading microscopy libraries…'});
+  postMessage({type:'status', request_id:requestId, status:'Loading microscopy libraries…'});
   await pyodide.loadPackage(['numpy','scipy','scikit-image']);
   pyodide.FS.mkdirTree('/home/pyodide/nuclei_lens');
   for (const name of ['__init__.py','core.py','graph.py','raster.py']) {
@@ -17,27 +17,27 @@ async function boot() {
     pyodide.FS.writeFile('/home/pyodide/nuclei_lens/' + name, await response.text());
   }
   await pyodide.runPythonAsync('import json\nimport numpy as np\nfrom nuclei_lens.core import analyze\nfrom nuclei_lens.raster import serialize');
-  postMessage({type:'ready'});
+  postMessage({type:'ready',request_id:requestId});
   return pyodide;
 }
 onmessage = async ({data}) => {
   if (busy) return;
   busy = true;
   try {
-    await boot();
+    await boot(data.request_id);
     if (data.type === 'analyze') {
       const decoded=await decodeRaster(data.buffer);
-      postMessage({type:'status',status:'Comparing nine segmentations on your device…'});
+      postMessage({type:'status',request_id:data.request_id,status:'Comparing nine segmentations on your device…'});
       pyodide.globals.set('input_bytes',new Uint8Array(decoded.pixels.buffer,decoded.pixels.byteOffset,decoded.pixels.byteLength));
       pyodide.globals.set('input_dtype',decoded.dtype);
       pyodide.globals.set('input_width',decoded.width);
       pyodide.globals.set('input_height',decoded.height);
       const text = await pyodide.runPythonAsync('json.dumps(serialize(analyze(np.frombuffer(bytes(input_bytes.to_py()), dtype=input_dtype).reshape(input_height, input_width))))');
       for(const name of ['input_bytes','input_dtype','input_width','input_height']) pyodide.globals.delete(name);
-      postMessage({type:'result', result:JSON.parse(text)});
+      postMessage({type:'result',request_id:data.request_id, result:JSON.parse(text)});
     }
   } catch(error) {
-    postMessage({type:'error',error:error instanceof Error ? error.message : String(error)});
+    postMessage({type:'error',request_id:data.request_id,error:error instanceof Error ? error.message : String(error)});
   } finally { busy = false; }
 };
 

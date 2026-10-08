@@ -5,7 +5,7 @@ Updated: 2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 ## Current Release
 
 Functional NucleiLens prototype. Public source published; no submission tag.
-Current branch: `fix/ci-dependency-audit`. Remote CI repair in progress.
+CI repair is green and merged via PR1. Current branch: `feature/confirmed-mask-review`.
 
 ## Winning Thesis
 
@@ -32,8 +32,8 @@ Targets are not met. Actual mask correction and human-use evidence remain gaps.
   error capture45.8%, graph39.5%, random20%. All fields and negative results retained.
 - Browser-local analysis, real sample library, alternatives, manual tally, undo,
   compatible review reruns, JSON audit and responsive layout.
-- Native26 tests/frontend4 tests passed; scoped dependency audits report0 known
-  findings. Browser workflow passed locally and on deployed V2; remote CI pending.
+- Native27 tests/frontend10 tests passed; scoped dependency audits report0 known
+  findings. Browser workflow passed locally and on deployed V2; new mask-feature remote CI pending.
 - Fresh public GitHub source, live public deployment, architecture/security/research
   docs, three judge critiques,30-item red team.
 - Devpost authentication repaired using protected Hermes environment. Actual account
@@ -42,21 +42,23 @@ Targets are not met. Actual mask correction and human-use evidence remain gaps.
 
 ## In Progress
 
-Remote CI timeout diagnostics and production-build browser workflow. Live source
-parity/release packaging, branding/attribution and actual mask-edit workflow next.
+Explicit conflict-checked mask replacement, undo and uint32 TIFF/audit export are
+implemented and locally verified, including74→75→74 changed-pixel workflow, exact
+undo and rerun preservation. Original branding/preview and dependency notices
+are prepared. Remote CI and production readback for the new feature are next.
 
 ## Next Highest-Leverage Action
 
-Obtain green remote CI, then add explicit human-confirmed graph-component mask
-replacement, undo and lossless label TIFF export with strict overlap conflicts.
+Publish and obtain green remote CI for the mask feature, deploy its verified build,
+read back the real production workflow and synchronize the archived Devpost draft.
 Do not change the frozen scientific inference or tune against held-out test results.
 
 ## Current Risks
 
 One dataset, stable-but-wrong masks, unmeasured human effort, large first runtime
-download. Current edits change tallies only. Judge targets remain unmet. CI run1
+download. Tally edits and explicit mask replacement are separate. Judge targets remain unmet. CI run1
 failed audit scope (corrected); run2 timed out browser inference on Vite devserver;
-production-preview CI and diagnostic evidence are being checked. Contact-email
+production-preview run37743698558 passed and PR1 merged. New mask feature needs its own CI run. Contact-email
 disclosure, video and rendered Devpost verification remain final gates.
 
 ## Deployment

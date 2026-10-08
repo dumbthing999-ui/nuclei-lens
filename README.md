@@ -1,6 +1,6 @@
 # NucleiLens
 
-**See the mistakes behind the count.**
+**See beyond the count.**
 
 NucleiLens helps biology students and researchers inspect nuclei-count ambiguity
 by comparing local segmentation alternatives and recording human review decisions.
@@ -19,7 +19,9 @@ inspectable evaluation. See [Caicedo et al.](https://doi.org/10.1002/cyto.a.2386
 ## Solution
 
 Open a real sample or your own single-field image. Inspect baseline and alternative
-outlines, select a region, confirm or correct its count, and export the review record.
+outlines, inspect an opposing split/merge, explicitly confirm a mask alternative,
+and export a lossless label TIFF plus its audit record. Optional manual tallies
+remain separate from mask geometry.
 Uploaded images are analyzed by Python in a dedicated browser worker; image bytes
 stay on the device. There is no LLM, account, database, or paid inference service.
 
@@ -42,7 +44,7 @@ comparative scientific superiority is not established.
 [Open the live application](https://nuclei-lens.dumbthing999.chatgpt.site). No login is required.
 The public deployment passed real browser-local inference, review, undo, export, and mobile layout checks.
 Source: [dumbthing999-ui/nuclei-lens](https://github.com/dumbthing999-ui/nuclei-lens).
-The demo video is deferred pending the owner's instructions.
+Demo video pending.
 
 ## Architecture
 
@@ -54,8 +56,10 @@ flowchart LR
   S --> C[Pixel / object / count / shape comparators]
   G --> U[Image overlays and review queue]
   C --> U
-  U --> H[Human count decision]
-  H --> A[Downloadable JSON audit]
+  U --> H[Explicit human mask or tally decision]
+  H --> P[Conflict-checked component replacement]
+  P --> T[Lossless uint32 label TIFF]
+  H --> A[Downloadable JSON audit and mask hash]
   D[Public annotations: evaluation only] --> E[Equal-budget benchmark]
   W --> E
 ```
@@ -74,7 +78,21 @@ See [architecture](docs/architecture.md), [innovation](docs/INNOVATION.md), and
    unequal component cardinality yields local disagreement events.
 6. Rank 20 fixed tiles and show each alternative. A sensitivity range is **not**
    a calibrated confidence interval, and a flag is **not** proof of error.
-7. Store manual count differences in an exportable record; original masks remain unchanged.
+7. Confirm a whole graph-component alternative: replace only its original instances,
+   reject overlap with retained nuclei, and allocate fresh IDs. Undo restores exact pixels.
+8. Export the edited uint32 label TIFF and SHA256-linked audit. Optional tally entries
+   remain independent; neither workflow changes reference annotations.
+
+## Try the same-total example
+
+1. Click **Inspect split · 1 → 2** and compare the actual outlines.
+2. If you choose that alternative, click **Confirm split alternative**: mask74→75.
+3. Inspect and confirm the opposing merge: mask75→74, with different pixels.
+4. Export **label TIFF** and **review JSON**, then use **Undo mask edit**.
+
+The alternatives are real, but this sequence is a workflow demonstration, not a
+claim that both choices are biologically correct. Conflict checks reject edits
+that overlap retained instances. See [mask review semantics](docs/MASK_REVIEW.md).
 
 ## Results and evaluation
 
@@ -117,6 +135,7 @@ python3.14 -m venv .venv
 npm ci --prefix frontend
 node scripts/sync_engine.mjs
 node scripts/prepare_runtime.mjs
+.venv/bin/python scripts/collect_notices.py
 npm run dev --prefix frontend
 ```
 
@@ -155,7 +174,7 @@ that a configuration was actually frozen.
 .venv/bin/ruff check src tests scripts
 npm test --prefix frontend
 npm run build --prefix frontend
-.venv/bin/pip-audit
+.venv/bin/pip-audit --strict --no-deps -r requirements.lock
 ```
 
 With the dev server running and Chromium installed:
@@ -166,7 +185,8 @@ node tests/browser-smoke.mjs
 ```
 
 The browser check exercises actual on-device inference, review count changes,
-undo, JSON export, desktop/mobile layout, and page errors. See
+undo, JSON/TIFF export with independent readback, same-total pixel changes,
+rerun preservation, desktop/mobile layout, and page errors. See
 [`evaluation/checks/browser-smoke.json`](evaluation/checks/browser-smoke.json).
 
 ## Security and privacy
@@ -184,15 +204,17 @@ See [SECURITY.md](SECURITY.md) for boundaries and reporting.
 - The contrast and saturation safeguards are heuristics, not calibrated detectors.
 - Color inputs convert to grayscale; multiple channels/stacks are unsupported.
 - Review uses fixed tiles and centroid assignment; boundary objects need care.
-- Manual corrections alter reviewed counts, not masks or reference annotations.
+- Tally entries alter only the tally. Explicit mask edits replace actual alternative
+  components; they are human choices, not verified accuracy improvements.
+- Unsaved review state clears on reload. Export both TIFF and JSON before leaving.
 - Oracle simulations do not establish human accuracy, adoption, or time savings.
 - A large first-load browser runtime is a known deployment tradeoff.
 
 ## Future work
 
 Test transfer to a second dataset, measure real reviewer decisions with consent,
-evaluate stronger segmentation probes, and add explicit corrected-mask editing
-only after its correctness and audit semantics are verified.
+evaluate stronger segmentation probes, and assess whether guided mask correction
+improves real reviewer outcomes. No reader-study benefit is claimed.
 
 ## Sources
 
@@ -207,4 +229,4 @@ Vaibhav Mishra. Original EurekaDev 2026 implementation begun October 8, 2026.
 AI-assisted research, development, and review were used; claims and measurements
 remain subject to source checks and reproducible evaluation. No older project code
 was reused. Original code is MIT; public sample images are CC0; dependency licenses
-remain their respective licenses.
+remain their respective licenses. See [third-party notices](THIRD_PARTY_NOTICES.md).

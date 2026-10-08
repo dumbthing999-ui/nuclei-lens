@@ -85,6 +85,13 @@ def serialize(result: dict[str, Any], assets: bool = True) -> dict[str, Any]:
             encode(outline_png(mask, (115, 232, 207) if index == 0 else (255, 184, 103)))
             for index, mask in enumerate(result["masks"])
         ]
+        # Lossless instance IDs enable explicit local mask review. Inference and
+        # frozen evaluation are unchanged; no annotations enter these assets.
+        public["label_maps"] = {
+            "encoding": "zlib-base64-uint32-le",
+            "runs": [encode(zlib.compress(np.asarray(mask, dtype="<u4").tobytes(), 6))
+                     for mask in result["masks"]],
+        }
         uncertainty = result["boundary_uncertainty"]
         rgba = np.zeros((*uncertainty.shape, 4), dtype=np.uint8)
         rgba[..., :3] = (121, 156, 255)
