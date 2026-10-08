@@ -23,21 +23,26 @@ biological-group intervals. Human review and correction benefits remain unmeasur
 
 ## Reproduce
 
-Download the exact official archive identified in
-`research/problem-evidence/bbbc038-download.json` into `data/raw/`. Its checksum is
-locally computed and frozen, not a publisher-provided cryptographic signature.
+Use the committed frozen protocol and selection artifacts. Do not regenerate or
+replace their timestamped profiles while reproducing this assessment. Raw-image
+profiling and overlap scripts document the original pre-freeze selection process;
+rerunning them belongs in a separate scratch checkout with an explicit new protocol.
+The archive checksum is locally computed/frozen, not a publisher signature.
 
 ```bash
-.venv/bin/python scripts/inspect_external_images.py
-.venv/bin/python scripts/screen_external_overlap.py
-# Existing protocol is already frozen: never overwrite it.
+mkdir -p data/raw
+curl --fail --location --output data/raw/BBBC038-stage1_train.zip https://data.broadinstitute.org/bbbc/BBBC038/stage1_train.zip
 .venv/bin/python scripts/evaluate_external.py --run
 # If interrupted under the same exact source/protocol:
 .venv/bin/python scripts/evaluate_external.py --run --resume
+.venv/bin/python scripts/check_additional.py
+.venv/bin/python scripts/plot_additional.py
+.venv/bin/python scripts/inspect_additional_cases.py
 ```
 
-Per-field atomic checkpoints are ignored under `data/cache/BBBC038-assessment/`.
-Final complete records, figures and summary are saved under `evaluation/additional/`.
-All496 selected images evaluated;0 structural failures. MAE6.54, meanF1.772;
-object-queue capture45.7%, graph39.3%, random20%. See the
+The runner verifies the local archive checksum and frozen source hashes before
+inference, then reads the committed496-image manifest. Per-field atomic checkpoints
+are ignored under `data/cache/BBBC038-assessment/`. Full results are under
+`evaluation/additional/`: all496 selected images evaluated,0 structural failures;
+MAE6.54, meanF1.772; object capture45.7%, graph39.3%, random20%. See the
 [complete report](../../evaluation/additional/README.md) for all records and scope.

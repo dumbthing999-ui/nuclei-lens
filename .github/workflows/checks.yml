@@ -26,7 +26,13 @@ jobs:
         run: python scripts/check_additional.py
       - run: pytest
       - run: ruff check src tests scripts
+      - name: Python security AST checks in isolated tools environment
+        run: |
+          python -m venv /tmp/nucleilens-security-tools
+          /tmp/nucleilens-security-tools/bin/pip install -r security-tools.lock
+          /tmp/nucleilens-security-tools/bin/bandit -r src -f json -o evaluation/checks/bandit-ci.json
       - run: pip-audit --strict --no-deps -r requirements.lock
+      - run: pip-audit --strict --no-deps -r security-tools.lock
       - run: npm ci --prefix frontend
       - run: npm audit --prefix frontend --audit-level=moderate
       - run: npm test --prefix frontend
@@ -49,3 +55,4 @@ jobs:
             artifacts/ci-screenshots/
             evaluation/checks/browser-smoke-ci.json
             evaluation/checks/accessibility-ci.json
+            evaluation/checks/bandit-ci.json

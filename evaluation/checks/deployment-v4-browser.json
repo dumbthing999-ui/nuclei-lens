@@ -1,0 +1,372 @@
+{
+  "verified_at": "2026-10-08T08:50:58.629055+00:00",
+  "status": "passed",
+  "checks": {
+    "browser-smoke": {
+      "status": "passed",
+      "generated_at": "2026-10-08T08:49:20.533Z",
+      "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+      "review_update": true,
+      "undo": true,
+      "audit_export": true,
+      "same_count_witness": true,
+      "additional_evidence_rendered": true,
+      "review_preserved_on_rerun": true,
+      "mask_split_merge_counts": [
+        74,
+        75,
+        74
+      ],
+      "mask_tiff_roundtrip": true,
+      "mask_audit_hash_verified": true,
+      "mask_preserved_on_rerun": true,
+      "mask_undo_exact": true,
+      "cancel_preserves_reference": true,
+      "stale_sample_failure_ignored": true,
+      "mobile_overflow": false,
+      "live_analysis_count": 74,
+      "cold_browser_ms": 69700,
+      "warm_browser_ms": 12780,
+      "non_read_requests": [
+        {
+          "method": "POST",
+          "url": "https://nuclei-lens.dumbthing999.chatgpt.site/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.9804128863074913:1791446438:--aDdcHcB69xEoULEqqJGKTmG5lxXm3ghGslzWLZJnw/a473e19ddbbb0d97"
+        }
+      ],
+      "page_errors": []
+    },
+    "firefox-smoke": {
+      "status": "passed",
+      "generated_at": "2026-10-08T08:49:00.392Z",
+      "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+      "engine": "Playwright Firefox",
+      "version": "155.0",
+      "mask_counts": [
+        74,
+        75,
+        74
+      ],
+      "tiff_uint32_verified": true,
+      "audit_hash_verified": true,
+      "live_native_count": 74,
+      "edits_preserved_on_live_rerun": true,
+      "undo": true,
+      "cold_browser_ms": 69474,
+      "narrow_viewport_overflow": false,
+      "page_errors": [],
+      "scope": "One real Firefox desktop engine and resized viewport. Not physical mobile, Safari, assistive technology or biological correction validation."
+    },
+    "accessibility": {
+      "generated_at": "2026-10-08T08:47:51.761Z",
+      "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+      "tool": "axe-core",
+      "observations": [
+        {
+          "state": "desktop",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "targets": [
+                [
+                  "text[fill=\"#151b26\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+                ]
+              ]
+            }
+          ],
+          "passes": 29
+        },
+        {
+          "state": "benchmark",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "targets": [
+                [
+                  "text[fill=\"#151b26\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+                ]
+              ]
+            }
+          ],
+          "passes": 31
+        },
+        {
+          "state": "additional",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "targets": [
+                [
+                  "text[fill=\"#151b26\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+                ]
+              ]
+            }
+          ],
+          "passes": 31
+        },
+        {
+          "state": "mobile",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "targets": [
+                [
+                  "text[fill=\"#151b26\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+                ],
+                [
+                  "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+                ]
+              ]
+            }
+          ],
+          "passes": 31
+        }
+      ],
+      "scope": "Automated Chromium viewport checks; not full accessibility compliance or assistive-technology user testing."
+    },
+    "public-v4-build": {
+      "passed": true,
+      "verified_at": "2026-10-08T08:49:44.129Z",
+      "build_source": {
+        "github_repository": "https://github.com/dumbthing999-ui/nuclei-lens",
+        "source_commit": "e7c60ad8d921896b59ba8a26dcd0b6339b32ccbb",
+        "verified_ci_head": "6b756a9e00f0254883b9c07aefd46376f1d95e0d",
+        "ci_run": 37751491341,
+        "scope": "Static browser build; no local companion server is deployed. Source tree equals the verified CI tree."
+      },
+      "additional_summary_exact_match": true,
+      "selected_images": 496,
+      "direct_non_browser_http": "urllib request returned403; normal public browser fetch succeeded"
+    }
+  },
+  "timing_scope": "Browser checks ran concurrently on one machine. Cold/warm values are retained observations, not isolated performance benchmarks.",
+  "direct_http_probe": "A plain urllib GET returned403; normal public browser fetches verified exact build/summary JSON."
+}

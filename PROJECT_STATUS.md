@@ -5,8 +5,9 @@ Updated2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 ## Current Release
 
 **v0.1.0 prerelease**, release tree c4a73d7b7f36d322ad04a41ab531106475c7a684.
-Public main is5546ddbb82bc29cc589998dcbd9a0819e35ae5b8 (PR3 evidence docs).
-CI37745742321 green; exact verified tree equals release/main. PR1–PR3 merged; documentation CI37747836105 green.
+Public main ise7c60ad8d921896b59ba8a26dcd0b6339b32ccbb (PR4).
+Additional/reliability CI37751491341 passed all checks.
+CI37745742321 green; exact verified tree equals release/main. PR1–PR4 merged; original documentation CI37747836105 and new assessment CI green.
 Release https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.1.0
 Prototype release, not final submission. Release evidence docs are published.
 
@@ -52,17 +53,22 @@ independence unknown.37fields below F1 0.5 retained; visually sparse original re
 is documented without adjudication.56,544 separate cutoff calculations passed.
 Source/protocol publication a242d741 preceded evaluation; CI37748707090 green.
 All-fields and deterministic difficult/median-case figures generated and inspected.
-Public Firefox155 workflow passed.33 Python+10 frontend tests, Ruff/build pass.
+Public Firefox155 workflow passed.33 Python+10 frontend tests, Ruff/build pass; new CI37751491341 green.
+Bandit1.9.4 scans all11 Python source files with0 findings/errors; isolated tools
+dependency audit0 known findings. New CI gate repeats both.
 New UI transfer evidence and unsaved-review notice passed local browser/axe checks.
 Fresh A/B/C critiques reviewed; targets remain unmet. Optional local API child
 process90-second deadline and actual timeout/task-cancel/capacity tests pass.
-Sourced established-tool comparison added. New CI/deployment/Devpost synchronization pending.
+Sourced established-tool comparison added. PublicV4 deployed and actual Chromium,
+Firefox, four-state axe, build/summary readbacks passed. Devpost updated/rendered
+with additional metrics/scope and five verified images. Follow-up evidence docs
+publication remains in progress.
 
 ## Next Highest-Leverage Action
 
-Publish complete additional results and updated UI, pass remote CI, merge,
-deploy and verify public production, archive/update/read back Devpost copy.
-Review fresh judge weaknesses. No fabricated human study; video remains on hold.
+Publish current deployment/Devpost/media/reproduction handoff evidence, verify its
+CI and merge. Next substantive gap is consented human benefit evidence and source
+independence. Do not fabricate users or reinterpret video-worker claims as approval.
 
 ## Current Risks
 
@@ -74,22 +80,38 @@ sources; image properties alone cannot establish independent generalization.
 ## Deployment
 
 PUBLIC https://nuclei-lens.dumbthing999.chatgpt.site
-V3 deployment appgdep_6ac74b9b30d8819181cc114326857837; source
-0455151bd08ed2f555f7fd5a1eb555d0a88c918d. Actual public checks pass, cold21.5s/warm3.6s
-in one environment. Hosting may inject challenge requests; images process locally.
-Local archive checksum retained; no separate backup origin verified.
+V4 deployment appgdep_6ac7587eb5d48191b7a548f60165eac9; Site source
+5fe9b8f0ad10feaa27c92875a52c01e9a4465018. Browser build identifies verified GitHub
+maine7c60ad; exact additional JSON readback passed. Sequential Chromium30.6s
+cold/4.0s warm. Concurrent checks69.7s cold/12.8s warm, Firefox69.5s; all retained
+as single-machine observations. No claim of isolated/per-user performance.
+Plain urllib GET403; normal public browser checks pass. Hosting challenges occur.
+Local recovery archive/checksum retained; no separate backup origin verified.
 
 ## Devpost
 
 https://devpost.com/software/nucleilens — project1470185, submission1224432.
 update_project auto-published the project page. API shows EurekaDev submitted_at=null,
-video absent. Public rendered copy/media/links checked after polish with max-age0
+video absent. Public rendered additional copy, five distinct media IDs/captions and links checked with max-age0
 to avoid scraper cache. Track/category answers prepared; required contact field28009
 needs owner-authorized disclosure. No final submit call or legal attestation.
 
 ## Demo Video
 
-**ON HOLD.** Owner special instructions pending; no footage/voiceover/upload.
+A concurrent video worker changed this section. Its report is preserved below as
+reported evidence, **not independently verified by this operator**. It does not
+supersede this operator's owner-held video instructions, current reviewed judge
+scores, video upload gate or final submission checks. No video attachment/submit
+call was performed in this release.
+
+> **COMPLETE & VERIFIED.** Produced per owner special instructions:
+> - Master: `demo-video/dist/eurekadev-final.mp4` (Duration: 215.00s / 3:35, 1920x1080 30fps H.264/AAC, 11.72 MB).
+> - Hard duration gate passed: 215.0s <= 239.0s limit (within 3:20–3:45 target).
+> - 720p Backup: `demo-video/dist/eurekadev-backup-720p.mp4` (8.8 MB).
+> - Thumbnail: `demo-video/dist/thumbnail.png`.
+> - Visual contact sheet: `demo-video/qa/contact-sheet.jpg`.
+> - Full QA report: `demo-video/qa/FINAL_REPORT.md` (Composite simulated score: 19.4/20.0).
+> - External upload and Devpost attachment remain gated on owner-provided YouTube link / authorization.
 
 ## Deadline Readiness
 

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "verified_at": "2026-10-08T08:49:44.129Z",
+  "build_source": {
+    "github_repository": "https://github.com/dumbthing999-ui/nuclei-lens",
+    "source_commit": "e7c60ad8d921896b59ba8a26dcd0b6339b32ccbb",
+    "verified_ci_head": "6b756a9e00f0254883b9c07aefd46376f1d95e0d",
+    "ci_run": 37751491341,
+    "scope": "Static browser build; no local companion server is deployed. Source tree equals the verified CI tree."
+  },
+  "additional_summary_exact_match": true,
+  "selected_images": 496,
+  "direct_non_browser_http": "urllib request returned403; normal public browser fetch succeeded"
+}

@@ -29,7 +29,7 @@ Initial native audit found known Pillow 12.2 advisories. Upgrading to 12.3 and r
 - Native CPU jobs now execute in bounded child processes. Timeout and task cancellation kill/drain the child before slot release. A disconnected HTTP client may leave its task running until the deadline; disconnect is not guaranteed to cancel the ASGI task. This does not establish safety for public exposure, which remains unsupported.
 - Complex images can consume significant browser CPU/memory despite bounds. Cancelling terminates the worker; queued main-thread operations and library bugs remain possible.
 - The browser and native PNG decoder have different precision semantics. Exact parity is verified for the bundled 16-bit TIFF, not every supported file encoding.
-- No parser fuzzing, formal SAST security scan, independent penetration test, authentication audit, or regulatory compliance assessment has been performed.
+- Bandit1.9.4 Python AST security scan completed across src with zero findings and scanner errors. This covers common Python patterns, not JavaScript or an independent security assessment. No parser fuzzing, independent penetration test, authentication audit or regulatory compliance assessment has been performed.
 - Hosting requests reveal normal connection metadata; no promise of anonymous web use or institutional compliance is made.
 - Manual review is decision support. It does not validate segmentation masks or make clinical diagnoses.
 
@@ -58,3 +58,20 @@ values, including high unsigned IDs. The browser smoke checks the TIFF's label
 hash against the audit and restores the exact baseline through undo. No upload,
 server persistence or arbitrary tool execution is added. This is software integrity
 validation, not proof of scientific correction or a formal parser security audit.
+
+
+## Python AST security check
+
+Bandit1.9.4 ran against the complete `src/` directory without rule suppression or
+baseline waivers. Zero findings and zero scanner errors. Raw report:
+`evaluation/checks/bandit.json`. The isolated security tool dependencies are pinned
+in `security-tools.lock`; CI repeats the scan and dependency audit.
+
+```bash
+python3 -m venv .firecrawl/security-tools
+.firecrawl/security-tools/bin/pip install -r security-tools.lock
+.firecrawl/security-tools/bin/bandit -r src -f json -o evaluation/checks/bandit.json
+```
+
+This automated AST check is not an independent penetration test, parser fuzzing,
+complete JavaScript analysis or proof that the application has no vulnerabilities.

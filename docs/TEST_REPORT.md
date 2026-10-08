@@ -123,3 +123,30 @@ the hard compute deadline still bounds its lifetime. This is not an OS sandbox.
 The updated local production browser check passes the real mask path and rendered
 additional evidence. Automated axe checks cover desktop, original benchmark,
 expanded additional-assessment and mobile states; no formal compliance claim.
+
+
+## Public V4 release readback
+
+Exact CI37751491341 passed every step, including additional-record integrity,
+33 native/10 frontend tests, both audits, build and actual browser/axe workflow.
+PR4 merged into maine7c60ad. SiteV4 source5fe9b8f0ad10feaa27c92875a52c01e9a4465018
+deployed successfully; real public Chromium and Firefox mask/TIFF/hash/live/undo
+checks passed. Four-state axe passed; actual public JSON equals the complete local
+additional summary, and build-source identifies the verified GitHub tree.
+
+Concurrent browser observations: Chromium69,700ms cold/12,780ms warm; Firefox
+69,474ms cold. A subsequent sequential Chromium path passed at30,611ms cold/3,973ms
+warm. All observations are retained; no isolated or population performance claim.
+The plain urllib GET returned403; normal browser fetches pass. Health checks must
+distinguish hosting bot/challenge behavior from the actual browser workflow.
+
+Devpost authenticated readback and fresh rendered copy show additional results,
+scope limitations, live/repo links and five distinct gallery images; new CDN
+derivatives return200 and were inspected. EurekaDev submitted_at remains null,
+video absent. Concurrent video-worker reports are not validated by this release.
+
+
+Bandit1.9.4 Python security AST scan completed across all src files:0 findings,
+0 scanner errors, no suppressions. Isolated tool versions are pinned separately
+and its dependency audit is included in CI. This does not cover JS/TS static
+security patterns, parser fuzzing or independent penetration testing.

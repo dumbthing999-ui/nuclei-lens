@@ -86,6 +86,11 @@ Complete [summary](summary.json), [496 per-image records](per-image.json),
 ```
 
 The separate saved-record checker verifies complete coverage, frozen sources and
-selection-file hashes, count/FP/FN arithmetic, tile assignments, every primary
+selection-file hashes, count/FP/FN arithmetic, tile-loss arithmetic, every primary
 curve, and56,544 independent cutoff/tie calculations. It is a software/data
 integrity check, not an independent biological annotation study.
+
+Published per-image JSON is losslessly compacted to fit the publishing proxy
+payload limit; all496 parsed records are unchanged. Native reproduction writes
+pretty JSON with the same values. [Formatting checksums](record-format.json)
+record this packaging adjustment; it is not an evaluation change.
