@@ -1,5 +1,21 @@
 # EurekaDev 2026 Workspace Instructions
 
+## Verified delivery state — October9,2026
+
+PR10 is merged after both exact-head CI runs passed. Public SiteV6 now includes
+and verifies the full scientific runtime; actual public inference and model QA
+workflows pass.45native/22frontend tests pass. Real Cellpose/StarDist68/68outputs,
+measurements and source/weight/mask hashes are implemented; scientific novelty,
+accuracy superiority and reader benefit are not established. Frozen source and
+negative results remain intact. See `PROJECT_STATUS.md` and deployment-v6 proof.
+
+Devpost version9 clean narrative,18tags and sixth screenshot are verified. It is
+unsubmitted. Video hold is released; actual YouTube upload was quota-rejected,
+with one guarded reset retry October9,12:35PM IST. Read outcome before retrying;
+never repeat uncertain/successful uploads. Contact account email is privately
+authorized. The owner deferred browser-only draft saving; do not ask again or
+submit merely to save fields. No claim of perfection or19+/20 is justified.
+
 ## Latest owner steering — October 8, 2026
 
 Keep working autonomously on implementation, UI/UX, evidence, GitHub, deployment,
@@ -7,8 +23,9 @@ and Devpost until practical quality gates pass. The owner has now explicitly
 released the earlier video hold: use the completed video, upload it to the
 connected YouTube account, create the GitHub PR, and complete Devpost fields.
 Review/correct unsupported claims before publishing, preserve the original
-master, and verify all external writes. Any owner-only contact disclosure or
-personal legal attestation still requires the owner. Routine implementation,
+master, and verify all external writes. The owner authorized using the connected Devpost account email for organizer
+contact; keep it private. Other personal disclosures and legal attestations remain
+owner-only. Routine implementation,
 testing, and reversible publishing are authorized.
 
 ## General agent operating rules

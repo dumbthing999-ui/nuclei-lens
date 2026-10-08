@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-08T18:36:21.578Z",
+  "status": "failed",
+  "error": "Error: Unexpected browser errors or non-read requests.",
+  "page_errors": [],
+  "reporting_limitation": "Original failure report did not preserve request details. Separate public workflow observed a Cloudflare challenge POST. Updated QA records only same-origin challenge-prefix POSTs as hosting, fails other writes, and passed a fresh public rerun; the exact first-run request list is unknown."
+}

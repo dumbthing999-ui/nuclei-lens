@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.2.0 research prototype — 2026-10-09
+
+- Add actual local Cellpose/StarDist adapters, verified precomputed examples and
+  bounded external label-TIFF correspondence review. Each model returned 68
+  instances on the demonstration field; different masks do not establish accuracy.
+- Recalculate reviewed-mask pixel geometry after edits/undo; export CSV and QA
+  JSON with original/current/source hashes and external pairwise comparisons.
+- Preserve explicit inspection, conflict rejection, fresh IDs, exact undo and all
+  frozen scientific results. The frozen numerical engine remains version0.1.0.
+- Remediate optional neural dependencies and retain before/after audit records
+  plus pixel-identical real-model reruns; adapter mocks remain separate evidence.
+- Reject incomplete/stale runtime packages; publish full-runtime V6 and verify
+  actual public inference, mask/model QA, exports, accessibility and mobile layout.
+- Synchronize Devpost's narrative,18actual stack tags and sixth screenshot; update
+  cross-agent instructions and local recovery evidence. No final submission.
+- Required video is reviewed locally; YouTube rejected the upload at daily quota.
+  A guarded reset retry is scheduled. Human benefit and judge targets remain unmet.
+
+Older video-hold statements below describe earlier releases and are superseded
+by the owner's explicit completed-video publication request.
+
 ## Unreleased — additional assessment and reliability
 
 - Publish the496-field BBBC038 assessment under a previously published frozen

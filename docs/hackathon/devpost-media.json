@@ -55,6 +55,16 @@
         764,
         573
       ]
+    },
+    {
+      "file": "artifacts/screenshots/model-comparison.png",
+      "sha256": "1ad6b8a0dcd3fb0c4126c649cc1cc0ddac4c6580aed6ee0214600bb214dc97f1",
+      "photo_id": 5537600,
+      "position": 6,
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/537/600/datas/gallery.jpg",
+      "status": "Uploaded; fresh public-rendered photo/caption and HTTP200 image readback verified",
+      "http_readback": 200,
+      "content_type": "image/jpeg"
     }
   ],
   "provenance_note": "SHA256 values identify actual uploaded source bytes; source paths may later contain newer QA captures. CDN derivatives are JPEG and have different hashes."

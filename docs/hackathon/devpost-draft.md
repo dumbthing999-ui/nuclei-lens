@@ -1,12 +1,6 @@
-# NucleiLens
-
-**Tagline:** See beyond the count: inspect microscopy nuclei, compare split/merge alternatives, and export reviewed masks with an audit trail.
-
-Prepared for EurekaDev on October8,2026. The authorized update automatically published the project page; authenticated readback shows EurekaDev submitted_at=null and no video. The existing public rendered project was verified. Final competition submission remains pending. Initial and updated account states are archived under `archive/`. The owner authorized completed-video upload; the reviewed215s video is locally verified, but the actual YouTube upload was rejected by the daily video-upload quota. One guarded local retry is scheduled for October9 at12:35PM IST. The contact email is owner-authorized from the connected Devpost account and kept out of this public document.
-
 ## Inspiration
 
-Two nuclei merge into one. Somewhere else, one splits into two. The total is unchanged—but the measurement is different.
+A segmentation merges two nuclei. Elsewhere, it splits one nucleus into two masks. The total stays unchanged, while the objects differ.
 
 In our fixed assessment of 50 public microscopy fields, four fields had exactly correct total counts while retaining 100 unmatched instances under object-level evaluation. A plausible total can hide disagreement about which nuclei exist.
 

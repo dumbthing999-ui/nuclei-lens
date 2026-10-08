@@ -1,33 +1,40 @@
 {
   "status": "Project published automatically by update_project; EurekaDev association has submitted_at=null; final submission not performed",
   "title": "NucleiLens",
-  "tagline": "See beyond the count.",
+  "tagline": "See beyond the count: inspect microscopy nuclei, compare split/merge alternatives, and export reviewed masks with an audit trail.",
   "track": "Coding Track",
   "category": "Biology/Medical and Environmental Science",
   "description_file": "docs/hackathon/devpost-draft.md",
   "technologies": [
     "Python",
+    "TypeScript",
+    "React",
+    "Pyodide",
+    "WebAssembly",
     "NumPy",
     "SciPy",
     "scikit-image",
-    "React",
-    "TypeScript",
-    "Vite",
-    "Pyodide",
-    "WebAssembly",
     "GeoTIFF.js",
-    "FastAPI"
+    "Vite",
+    "FastAPI",
+    "pytest",
+    "Vitest",
+    "Playwright",
+    "Cellpose",
+    "StarDist",
+    "PyTorch",
+    "TensorFlow"
   ],
   "repo_url": "https://github.com/dumbthing999-ui/nuclei-lens",
   "live_url": "https://nuclei-lens.dumbthing999.chatgpt.site",
   "video_url": null,
-  "video_status": "Owner-requested hold",
+  "video_status": "Owner authorized publication. Reviewed215s video prepared; actual YouTube upload rejected by daily quota. Guarded retry scheduled2026-10-09T07:05:00Z; no video ID or verified playback.",
   "screenshots": [
     "artifacts/screenshots/desktop.png",
     "artifacts/screenshots/review-detail.png",
     "artifacts/screenshots/live-analysis.png"
   ],
-  "account_gate": "Auth, project write/readback, thumbnail and three gallery uploads verified. update_project automatically published the project page; it did not finalize the EurekaDev entry. No submit_project call, required video, contact-email disclosure or legal attestation performed.",
+  "account_gate": "Project version9 content,18actual stack tags,six gallery photos and fresh rendered/auth/image readbacks verified. Competition submitted_at remains null. Contact email authorized privately; custom draft answers/video remain unsaved.",
   "safety_gates": [
     "Archive existing account draft before any write",
     "Reconfirm official fields/category and owner-only legal declarations",
@@ -49,10 +56,14 @@
     }
   ],
   "owner_only_fields": [
-    "Required contact email field 28009: obtain owner authorization before disclosure",
-    "Optional Discord username field 28010: omit unless owner requests disclosure"
+    "Optional Discord username28010: omit unless owner authorizes disclosure.",
+    "Any legal/personal attestation required at final submission remains owner-only."
   ],
   "project_state": "published",
   "published_at": "2026-10-08T03:53:27.473-04:00",
-  "rendered_verification": "Verified public rendered page after copy polish on October8: name, tagline, three distinct photo IDs/captions, actual mask feature, metrics, BuiltWith and both TryItOut URLs. EurekaDev submitted_at remains null."
+  "rendered_verification": "Fresh public model-QA narrative/18tags/sixth image/live+repo links verified2026-10-09IST. Operator-only preface removed; exact plain-text content verified after known Markdown normalization.",
+  "custom_answers_status": "Track/category prepared. Owner deferred browser-dependent draft answer saving. Do not final-submit merely to save draft fields.",
+  "contact_email_authorized": true,
+  "contact_email_field_id": 28009,
+  "contact_email_storage": "Retrieve connected account email privately when saving; never include its value in public artifacts."
 }

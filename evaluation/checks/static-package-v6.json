@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-08T18:34:13.540020+00:00",
+  "archive_sha256": "715fead2b578f285f83ebcc68f5c4fe79677dd337c168009908e3f3c82307e78",
+  "bytes": 35838757,
+  "files": 99,
+  "runtime_files_verified": 11,
+  "actual_neural_masks_included": true,
+  "scientific_runtime_bytes": 40155402,
+  "local_uncompressed_tar": {
+    "bytes": 48691200,
+    "sha256": "ec48632fba6ec413d0f71698cce974e3ae317ff9d4f8284d8fe9e0f1ba0bb94d"
+  },
+  "server_archive_metadata": {
+    "format": "tar",
+    "bytes": 48629760,
+    "sha256": "aec0980b106d0bb364e300301829f2d47f42d104d77bdec1a7fb12ad131193ea",
+    "files": 99
+  },
+  "archive_hash_scope": "Local compressed/uncompressed archive hashes and server-stored archive hashes are distinct. File counts match; local runtime bytes/hashes were independently checked. Server normalization is not independently reconstructed."
+}
