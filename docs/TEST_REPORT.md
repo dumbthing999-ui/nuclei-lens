@@ -2,6 +2,18 @@
 
 Updated October8,2026. Mask editing passed remote CI and actual public-production checks. Video/human-benefit evidence remain outstanding.
 
+## October 8 UX clarification follow-up
+
+On the unmerged `fix/clarify-mask-tally-status` branch, accepted mask edits and
+undo now announce both the resulting mask-instance count and the unchanged review
+tally total. Frontend unit tests passed (10/10), TypeScript/Vite production build
+passed, and the complete Chromium local-preview workflow passed split→merge,
+export/hash, rerun, exact undo, cancellation, and the independent-tally message.
+axe-core reported no violations in desktop, benchmark, additional-assessment, or
+mobile-layout states. This is local-preview evidence; production readback and
+remote CI are pending. Current screenshots and machine-readable run reports are
+under `artifacts/screenshots/` and `evaluation/checks/`.
+
 | Check | Actual result | Evidence / scope |
 |---|---|---|
 | Python unit/integration suite |33 passed on additional-assessment/reliability branch; v0.1.0 build27 | `pytest`; core, graph, matching, decoding, bounded local API |

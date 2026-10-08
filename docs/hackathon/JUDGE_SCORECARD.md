@@ -9,12 +9,14 @@ All remain below the19+/20 internal aspiration. No score is automatically revise
 |---|---:|---|---|---|
 | Innovation |4.0 /3.9 /3.8 | Real opposing-component explanation, auditable actual mask replacement, device-local numerical implementation | Established methods; comparative benefit over existing software unproven | Evidence-based product comparison; validate reviewer usefulness |
 | Impact |3.8 /3.8 /3.7 |50 official test+496 additional images;45.8%/45.7% error capture at20% budget | Proxy rather than observed human benefit; source independence unknown | Real consented reader evidence and independent source groups |
-| Technical Execution |4.6 /4.6 /4.3 | Frozen source, all records, real Chromium/Firefox masks/TIFF/hash, green prior CI | Cold initialization, narrow image scope, optionalAPI compute deadline finding | Child-process deadline implemented and being verified; new CI/deployment pending |
-| Presentation |3.6 /3.5 /3.5 | Same-total interactive example, actual data figures, clear honest documentation | Required video intentionally held; value over established tools needs clarity | Clarify intended niche; preserve owner video hold |
+| Technical Execution |4.6 /4.6 /4.3 | Frozen source/all records, real Chromium/Firefox mask/TIFF/hash workflows, V4 readback, PR5 exact-head CI | Cold initialization, narrow browser/device coverage, image-domain scope; optional companion remains local-only | Broaden supported-environment evidence and evaluate cold-start options without weakening bounds |
+| Presentation |3.6 /3.5 /3.5 | Same-total interactive example, actual data figures, readable workflow and honest scope | Required video remains on owner hold; differentiator versus established tools needs an immediate explanation | Keep interactive journey clear; resume video work only after owner instructions |
 
-These scores preceded the API child-process change. Reviewers misread network
-claims and ranker feature/coefficient counts; corrections are retained beside raw
-reports. Do not claim each criticism is valid or that fixing one earns a higher score.
+These scores preceded the API child-process change and later PR5 CI verification.
+Scores are retained unchanged; evidence updates do not establish a judge-score gain.
+Reviewers misread network claims and ranker feature/coefficient counts; corrections
+are retained beside raw reports. Do not claim each criticism is valid or that
+fixing one earns a higher score.
 
 ## Historical scores
 

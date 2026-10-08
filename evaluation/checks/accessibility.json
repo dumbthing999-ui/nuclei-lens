@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T08:47:51.761Z",
-  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "generated_at": "2026-10-08T16:36:45.859Z",
+  "target": "http://127.0.0.1:5173",
   "tool": "axe-core",
   "observations": [
     {

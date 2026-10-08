@@ -49,12 +49,12 @@ function App() {
       const proposal=applyMaskProposal(editedMask,masks[0],masks[event.run_id],event);
       if(patches.length>=20||patches.reduce((n,p)=>n+p.indices.length,0)+proposal.patch.indices.length>1048576)throw new Error('Mask history limit reached. Export or undo before adding more edits.');
       setEditedMask(proposal.mask);setPatches(previous=>[...previous,proposal.patch]);setMode('edited');setError('');
-      setMaskStatus(`Confirmed ${event.kind}: ${proposal.patch.before_count} → ${proposal.patch.after_count} mask instances. Tally entries remain separate.`);
+      setMaskStatus(`Mask: ${proposal.patch.before_count} → ${proposal.patch.after_count} instances. Review tally total remains ${reviewedTotal(analysis,corrections)}; mask edits do not change tally entries.`);
     }catch(e){setError(e instanceof Error?e.message:'Mask replacement failed.');}
   }
   function undoMask() {
-    if(!editedMask||!patches.length)return;
-    const patch=patches[patches.length-1];setEditedMask(undoMaskPatch(editedMask,patch));setPatches(patches.slice(0,-1));setMaskStatus('Last mask edit undone. Tally entries remain separate.');setError('');
+    if(!analysis||!editedMask||!patches.length)return;
+    const patch=patches[patches.length-1];setEditedMask(undoMaskPatch(editedMask,patch));setPatches(patches.slice(0,-1));setMaskStatus(`Mask: ${patch.after_count} → ${patch.before_count} instances. Review tally total remains ${reviewedTotal(analysis,corrections)}; mask edits do not change tally entries.`);setError('');
   }
   function downloadMask() {
     if(!analysis||!editedMask)return;
@@ -188,7 +188,7 @@ function App() {
           {analysis&&<section className="mask-review" aria-label="Mask correction"><div className="mask-summary"><div><span className="eyebrow">REVIEWED MASK · SEPARATE FROM TALLY</span><strong data-testid="mask-count">{editedCount??'—'} <small>instances</small></strong></div><div><button disabled={!patches.length||busy} onClick={undoMask}>Undo mask edit</button><button disabled={!editedMask||busy} onClick={downloadMask}>Export label TIFF</button></div></div><p role="status">{maskStatus}</p><p>Confirm only what you verify in the image. Replaces the whole graph component with its real alternative; overlapping retained nuclei are rejected. No automatic correction.</p><div className="mask-proposals" role="group" aria-label="Mask alternatives">{region?.events.filter(event=>event.run_id===run).map((event,index)=><button key={index} disabled={!masks||busy} onClick={()=>confirmMask(event)}>Confirm {event.kind} · {event.baseline_count} → {event.alternate_count}</button>)}{run===0&&<span>Select an alternate run or Inspect split / merge above.</span>}</div></section>}
           {currentSample&&<p className="sample-provenance">{currentSample.note} <a href="https://bbbc.broadinstitute.org/BBBC039" target="_blank" rel="noreferrer">Public dataset · CC0</a>. {live?'Recomputed locally.':'Precomputed from the actual image; use Rerun to verify.'}</p>}
         </div>
-        <aside className="review-panel"><div className="count-strip"><div><span>BASELINE COUNT</span><strong>{analysis?.raw_count??'—'}</strong></div><div><span>TALLY TOTAL</span><strong>{analysis?reviewedTotal(analysis,corrections):'—'}</strong></div></div>
+        <aside className="review-panel"><div className="count-strip"><div><span>BASELINE COUNT</span><strong>{analysis?.raw_count??'—'}</strong></div><div><span>REVIEW TALLY TOTAL</span><strong>{analysis?reviewedTotal(analysis,corrections):'—'}</strong></div></div>
           <div className="sensitivity"><span>Nine-run sensitivity range</span><b>{analysis?analysis.sensitivity_range.join('–'):'—'}</b><p>A range of outcomes, not a confidence interval.</p></div>
           <div className="queue-header"><h2>Inspect the count</h2><span>{analysis?.flagged_regions??0} flags</span></div><p className="queue-explainer">Graph changes suggest ambiguity. A stable result can still be wrong.</p>
           <label className="policy-control" htmlFor="policy">Review ordering<select id="policy" value={policy} onChange={e=>setPolicy(e.target.value as 'graph'|'object_disagreement')}><option value="graph">Count-changing graph</option><option value="object_disagreement">Object disagreement · measured default</option></select></label>
