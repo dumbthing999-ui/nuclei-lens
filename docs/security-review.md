@@ -36,7 +36,7 @@ Initial native audit found known Pillow 12.2 advisories. Upgrading to 12.3 and r
 ## Reproduce
 
 ```bash
-.venv/bin/pip-audit --strict --skip-editable --format json
+.venv/bin/pip-audit --strict --no-deps -r requirements.lock --format json
 npm audit --prefix frontend --json
 .venv/bin/pytest
 npm test --prefix frontend

@@ -22,7 +22,7 @@ jobs:
       - run: pip install -e '.[dev]' -c requirements.lock
       - run: pytest
       - run: ruff check src tests scripts
-      - run: pip-audit --strict --skip-editable
+      - run: pip-audit --strict --no-deps -r requirements.lock
       - run: npm ci --prefix frontend
       - run: npm audit --prefix frontend --audit-level=moderate
       - run: npm test --prefix frontend
