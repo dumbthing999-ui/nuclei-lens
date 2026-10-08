@@ -33,3 +33,14 @@ The workflow lets a biology student or researcher inspect the assumptions behind
 ## Thirty-second explanation
 
 “Two microscopy runs can both count 74 nuclei and still disagree about which nuclei exist. NucleiLens shows the split and merge alternatives behind that agreement, runs the analysis on your device, and records your review decisions. We benchmarked every review queue, kept the stronger simple ordering, and show the cases where our graph did not win.”
+
+## Established consensus and editing tools — October8 refresh
+
+Cellpose, StarDist and napari already provide segmentation and/or mask editing;
+CellSampler's2025 paper combines multiple segmentation methods and exports object
+property catalogs. See sources41–44 in `research/SOURCES.md`. Multi-model support,
+manual correction and geometric measurements alone are not a novel algorithm.
+NucleiLens must be assessed on its inspectable local workflow, correspondence
+hypotheses, hash-linked exports and declared review-budget evidence. Practical
+advantage over these tools remains unmeasured. External label imports and new
+measurements do not change the frozen benchmark or establish accuracy gains.

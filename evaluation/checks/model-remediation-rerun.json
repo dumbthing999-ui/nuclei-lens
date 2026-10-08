@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-10-08T18:19:12.145617+00:00",
+  "purpose": "Actual one-field adapter rerun after isolated optional dependency remediation; not a held-out accuracy assessment",
+  "input_file_sha256": "f9a51ae558e53416980ca152c740ad9dced85eedbd105261841139aada16b77d",
+  "models": {
+    "cellpose_nuclei": {
+      "initial_count": 68,
+      "remediated_count": 68,
+      "pixel_identical": true,
+      "initial_provenance": {
+        "framework": "cellpose",
+        "framework_version": "3.1.1.2",
+        "torch_version": "2.6.0+cpu",
+        "weight_files": [
+          {
+            "file": "nucleitorch_0",
+            "sha256": "89ca45e4a45048d5010d29621466b1274b91b3dcb9714dce9f9e90a9a8671303",
+            "bytes": 26563614
+          },
+          {
+            "file": "size_nucleitorch_0.npy",
+            "sha256": "a79107c9f284b569dd65f3a7363014d613a3403241c062822f07b6f026b4d3ef",
+            "bytes": 3627
+          }
+        ],
+        "parameters": {
+          "gpu": false,
+          "model_type": "nuclei",
+          "diameter": null,
+          "channels": [
+            0,
+            0
+          ]
+        },
+        "model_type": "nuclei",
+        "diameter_estimated": 28.878571671769564,
+        "elapsed_seconds": 39.61984132099951,
+        "elapsed_scope": "Model setup, uncached weight download and prediction; framework import excluded.",
+        "device": "cpu"
+      },
+      "remediated_provenance": {
+        "framework": "cellpose",
+        "framework_version": "3.1.1.2",
+        "torch_version": "2.13.0+cpu",
+        "weight_files": [
+          {
+            "file": "nucleitorch_0",
+            "sha256": "89ca45e4a45048d5010d29621466b1274b91b3dcb9714dce9f9e90a9a8671303",
+            "bytes": 26563614
+          },
+          {
+            "file": "size_nucleitorch_0.npy",
+            "sha256": "a79107c9f284b569dd65f3a7363014d613a3403241c062822f07b6f026b4d3ef",
+            "bytes": 3627
+          }
+        ],
+        "parameters": {
+          "gpu": false,
+          "model_type": "nuclei",
+          "diameter": null,
+          "channels": [
+            0,
+            0
+          ]
+        },
+        "model_type": "nuclei",
+        "diameter_estimated": 28.878571671769564,
+        "elapsed_seconds": 34.234433550000176,
+        "elapsed_scope": "Model setup, uncached weight download and prediction; framework import excluded.",
+        "device": "cpu"
+      },
+      "remediated_mask_pixel_sha256": "5fe3c6abf04a14396272230148546eb1645734b2b09f5d7c9ea594a766756475"
+    },
+    "stardist_2d_fluo": {
+      "initial_count": 68,
+      "remediated_count": 68,
+      "pixel_identical": true,
+      "initial_provenance": {
+        "framework": "stardist",
+        "framework_version": "0.9.2",
+        "tensorflow_version": "2.18.0",
+        "weight_files": [
+          {
+            "file": "weights_best.h5",
+            "sha256": "42202bd269c8106782316f1a2c75afb3f5ffa65e525c2e155ee0ced3a95da349",
+            "bytes": 5771480
+          }
+        ],
+        "parameters": {
+          "normalization_percentiles": [
+            1,
+            99.8
+          ],
+          "pretrained_model": "2D_versatile_fluo"
+        },
+        "pretrained_model": "2D_versatile_fluo",
+        "elapsed_seconds": 4.556854173999454,
+        "elapsed_scope": "Model setup, uncached weight download and prediction; framework import excluded.",
+        "device": "cpu"
+      },
+      "remediated_provenance": {
+        "framework": "stardist",
+        "framework_version": "0.9.2",
+        "tensorflow_version": "2.18.0",
+        "weight_files": [
+          {
+            "file": "weights_best.h5",
+            "sha256": "42202bd269c8106782316f1a2c75afb3f5ffa65e525c2e155ee0ced3a95da349",
+            "bytes": 5771480
+          }
+        ],
+        "parameters": {
+          "normalization_percentiles": [
+            1,
+            99.8
+          ],
+          "pretrained_model": "2D_versatile_fluo"
+        },
+        "pretrained_model": "2D_versatile_fluo",
+        "elapsed_seconds": 3.49769222300165,
+        "elapsed_scope": "Model setup, uncached weight download and prediction; framework import excluded.",
+        "device": "cpu"
+      },
+      "remediated_mask_pixel_sha256": "658f8368565602cea32f8a6a2e976dfe6c3c69afc98475cb7f2ecf5ee35f393b"
+    }
+  }
+}

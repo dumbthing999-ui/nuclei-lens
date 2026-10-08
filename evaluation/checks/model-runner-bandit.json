@@ -1,0 +1,93 @@
+{
+  "errors": [],
+  "generated_at": "2026-10-08T18:19:00Z",
+  "metrics": {
+    "./scripts/run_model_masks.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 411,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 411,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "16 import signal\n17 import subprocess\n18 import sys\n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "./scripts/run_model_masks.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 17,
+      "line_range": [
+        17
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "277 \n278         proc = subprocess.Popen(\n279             cmd,\n280             stdout=subprocess.PIPE,\n281             stderr=subprocess.PIPE,\n282             text=True,\n283             start_new_session=True,\n284             env={**os.environ,\"CUDA_VISIBLE_DEVICES\":\"\",\"OMP_NUM_THREADS\":\"2\",\"TF_NUM_INTRAOP_THREADS\":\"2\",\"TF_NUM_INTEROP_THREADS\":\"2\"},\n285         )\n286 \n",
+      "col_offset": 15,
+      "end_col_offset": 9,
+      "filename": "./scripts/run_model_masks.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 278,
+      "line_range": [
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    }
+  ],
+  "nucleilens_review": {
+    "scope": "Optional local model runner, separately from CI src scan",
+    "findings": 2,
+    "severity": "LOW",
+    "assessment": "Expected trusted local subprocess boundary; no suppression or blanket zero-findings claim. Static findings retained.",
+    "mitigations": [
+      "Shell disabled; fixed adapter scripts and argument list.",
+      "Owner-selected trusted Python interpreter, not a remote request.",
+      "Canonical bounded image, process-group deadline, no arbitrary uploaded weights or user code."
+    ],
+    "remaining_limit": "Downloaded model packages/official weights are trusted local executable dependencies; not a sandbox."
+  }
+}

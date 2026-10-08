@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T16:36:45.859Z",
-  "target": "http://127.0.0.1:5173",
+  "generated_at": "2026-10-08T18:18:39.662Z",
+  "target": "http://127.0.0.1:5174",
   "tool": "axe-core",
   "observations": [
     {
@@ -73,7 +73,7 @@
           ]
         }
       ],
-      "passes": 29
+      "passes": 31
     },
     {
       "state": "benchmark",
@@ -145,7 +145,7 @@
           ]
         }
       ],
-      "passes": 31
+      "passes": 33
     },
     {
       "state": "additional",
@@ -217,7 +217,7 @@
           ]
         }
       ],
-      "passes": 31
+      "passes": 33
     },
     {
       "state": "mobile",
@@ -289,7 +289,7 @@
           ]
         }
       ],
-      "passes": 31
+      "passes": 33
     }
   ],
   "scope": "Automated Chromium viewport checks; not full accessibility compliance or assistive-technology user testing."

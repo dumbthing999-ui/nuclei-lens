@@ -113,3 +113,40 @@ The corrected215-second upload master and720p backup fully decode. Captions,
 audio measurements, exact hashes and review corrections are recorded separately
 from the original preserved owner video. Timers/metadata/media checks do not
 establish an upload, submission or higher judge score.
+
+## October8 — established-model QA, measured masks and equal-count evidence
+
+Decision: add an optional local CPU Cellpose3/StarDist runner, strict external
+TIFF comparison, explicit component confirmation and exact per-mask measurements.
+Keep the frozen classical inference/graph/evaluator unchanged. Alternatives were
+claiming consensus as novel, adding automatic correction, or integrating giant
+neural dependencies into the browser; each weakens honesty, reliability or size.
+
+Primary literature establishes consensus/model combination as prior art. The
+observed training001 run returned68instances from each model, with3,738foreground
+assignment differences and69differing correspondence components. This validates
+integration and an equal-count demonstration, not accuracy or69biological errors.
+The real output masks and provenance are bundled; weights remain outside Git.
+The complete observed optional environment is pinned separately. Main application
+and neural dependency audit results must remain separate.
+
+Measurement exports describe pixels and exposed grid edges; no physical size,
+intensity, clinical diagnosis or measured human benefit is inferred. External
+components exceeding32total IDs remain inspect/export only. Bounded pagination,
+strict uncompressed TIFF parsing and inspected-before-confirmed edits keep the
+workflow manageable. Existing mask conflict checks/undo remain authoritative.
+Unit adapter mocks are labeled separately from the actual model run.
+
+PR9 is merged with both exact-head CI runs green. Browser-dependent Devpost custom
+fields were deferred by the owner; the actual YouTube upload remains quota-rejected
+with a single guarded next-reset retry. No final submission is claimed.
+
+## October8 — reject incomplete static inference packages
+
+Observed the saved V5 local build directory lacks `runtime/pyodide/`, although the
+worker imports it. Vite success alone cannot prove a fresh deployment can infer.
+Strengthen `copy_site_dist.mjs` to require runtime loader/WASM/stdlib/lock files,
+verify every pinned scientific wheel's bytes/SHA256, and match built Python engine
+files to source before replacing root dist. Include the verified generated runtime
+in the next Site package; preserve exact source/build provenance. This observation
+concerns saved packaging artifacts, not an invented production browser test.

@@ -1,6 +1,11 @@
 # Test report
 
-Updated October8,2026. V5 deployment status succeeded; the exact source tree matches public GitHub main. Video/human-benefit evidence remain outstanding.
+Latest local QA:45native/22frontend tests pass; actual model outputs and QA
+workflow verified. The saved V5 package directory lacks generated runtime assets;
+metadata success/source-tree parity alone did not verify fresh live inference.
+The strengthened package validator and forthcoming V6 include full runtime hashes.
+Reviewed video is complete; upload/playback and human-benefit evidence remain
+outstanding. Historical V5 observations below retain their original scope.
 
 ## October 8 UX clarification follow-up
 
@@ -171,3 +176,43 @@ Bandit1.9.4 Python security AST scan completed across all src files:0 findings,
 0 scanner errors, no suppressions. Isolated tool versions are pinned separately
 and its dependency audit is included in CI. This does not cover JS/TS static
 security patterns, parser fuzzing or independent penetration testing.
+
+## October8 — external-mask QA and real neural integration
+
+- Native pytest:45passed (including8mock-adapter plumbing/validation/timeout tests).
+- Frontend Vitest:19passed; TypeScript/Vite production build passed.
+- Existing real Chromium workflow passed; Firefox155 mask/TIFF/hash/rerun/undo
+  workflow passed on local production preview. These are desktop engines and
+  resized layouts, not physical devices or assistive-technology certification.
+- New QA browser check passed on local preview: actual sensitivity TIFF import,
+  explicit inspection gate, opposing74→75→74edits, CSV/TIFF/report hash agreement,
+  exact measurement undo, invalid geometry rejection, image-switch cleanup,
+  desktop/mobile axe scans and no horizontal overflow.
+- The same browser check loaded actual Cellpose and StarDist predictions, checked
+  their file/label hashes, and verified68/68counts with differing segmentation,
+  69correspondence components and3,738foreground-assignment differences.
+- Actual optional CPU model execution completed on one CC0 training field;
+  provenance records package/weight/input/output hashes and parameters. This is
+  integration evidence, not held-out accuracy or observed user-benefit evidence.
+
+See `evaluation/checks/mask-qa-browser.json`, the original browser/Firefox reports
+and `frontend/public/model-examples/training-001/provenance.json`. New source is
+not released until its exact remote CI and deployment state are verified.
+
+The remediated optional environment also completed both actual models:68/68with
+pixel-identical outputs to the initial run. Added3bundled-loader guard tests
+bring the frontend total to22passed. Optional dependency audit now returns no
+known records; prior findings and CPU-version mapping limits are retained.
+
+Static-package regression check: packaging now requires complete runtime files,
+pinned scientific-wheel hashes/sizes and exact built/source Python engine bytes.
+An intentionally missing loader must be rejected before replacing existing dist.
+
+Four static-package fixture tests passed: complete inputs copy; missing loader,
+changed wheel and stale engine each reject before replacing the prior dist.
+These tiny fixtures test packaging only, not inference. The complete regenerated
+production package also passes real runtime/engine hash verification.
+
+Final visual follow-up: clip imported-mask overlays to the inspected component's
+bounded view rectangle, preventing neighboring pixels from rendering into SVG
+letterboxing. Browser QA verifies clip geometry alongside actual edits/hashes.

@@ -1,9 +1,11 @@
 import type {Analysis, GraphEvent} from './types';
+import type {ExternalMaskSource} from './maskComparison';
 
 export interface MaskPatch {
   indices:Uint32Array; before:Uint32Array;
   event:GraphEvent; created_ids:number[]; at:string;
   before_count:number; after_count:number;
+  source?:ExternalMaskSource;
 }
 export const countInstances=(mask:Uint32Array)=>new Set(mask.filter(id=>id!==0)).size;
 

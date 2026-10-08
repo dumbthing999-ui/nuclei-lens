@@ -64,3 +64,15 @@ The first implementation priority is the offline graph/evaluation slice. Use val
 ## Verified milestone update — October 8
 
 M0/M1/M2/M3/M4 have working artifacts: concept/architecture, real image analysis, browser review/undo/export, and complete frozen test. The validation ranking gate rejected graph superiority and NNLS; object disagreement is the selected default and graphs explain competing objects. M5/M6 continue with accessibility, production parity, remote CI, and recovery verification. The owner released the M8 video hold; the reviewed215-second video and720p backup fully decode. Actual YouTube upload was rejected by the daily upload quota; a single local retry is scheduled for October9 at12:35PM IST. Devpost project content is saved; custom draft answers need the browser connection. No milestone implies official acceptance or a19+/20 score.
+
+## October8 — owner-requested model QA scope
+
+Implement one bounded extension of the same workflow: actual local Cellpose and
+StarDist predictions → strict aligned label import → sparse correspondence
+hypotheses → inspect/confirm → updated measurements/undo → hash-linked exports.
+Both real training-field outputs and one-click precomputed examples are now
+implemented. No browser neural weights, automatic consensus, batch platform,
+new clinical claim or retuning of frozen assessment source is in scope.
+Release gate:22frontend/45native tests, existing Chromium/Firefox paths, expanded
+QA/browser/axe checks, frozen-source integrity, dependency audits and exact-head
+remote CI. The optional model environment requires its own audit/limitations.

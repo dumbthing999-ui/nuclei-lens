@@ -75,3 +75,44 @@ python3 -m venv .firecrawl/security-tools
 
 This automated AST check is not an independent penetration test, parser fuzzing,
 complete JavaScript analysis or proof that the application has no vulnerabilities.
+
+## External masks and optional local models — October8
+
+Label imports are restricted to10MB,1MP, one unsigned8/16/32-bit channel, oneIFD,
+top-left orientation and uncompressed bounded tiles/strips. No automatic resampling,
+remote input URL, user-supplied code or automatic correction is added. Processing
+stays in tab memory; exports are explicit downloads. Source strings render as
+React text and CSV rows contain numeric geometry and hexadecimal hashes.
+Correspondence is bounded at10,000objects per mask,200,000intersecting pairs,
+2,000differing components and three imported masks. Editing components with over
+32total IDs is disabled. Exceeding current-mask comparison bounds preserves
+measurements/hashes with an explicit unavailable-comparison statement.
+
+Bundled actual-model masks are checked against pinned file and decoded-label
+hashes and the source field's decoded input hash. Ordinary imports do not certify
+model identity, source alignment or correctness. Inspected alternatives still pass
+existing retained-object/overlapping-edit rejection, fresh-ID and undo checks.
+
+The optional local neural runner uses a separate Python3.12 environment, canonical
+validated input TIFFs, argument arrays and killable child process groups. A trusted
+model package/official weight download is executable local software, not a sandbox.
+No user-selected weights, public inference endpoint or credentials are accepted.
+Output directories are ignored to avoid accidentally publishing private fields.
+The full optional dependency audit is separate from main application audits; do
+not interpret a green application CI as clearance of neural dependencies.
+
+Optional-model audit remediation: the initial environment returned61advisory
+records across Torch/Pillow/setuptools, including duplicate IDs. Upgraded to
+Torch2.13.0+cpu/Pillow12.3.0/setuptools83.0.0; the separate pinned audit returns
+no known records. CPU Torch is mapped to upstream2.13.0 for advisory lookup; its
+binary artifact is not independently audited. Before/after reports are retained.
+
+A separate Bandit scan of `scripts/run_model_masks.py` reports two low-severity
+findings,B404/B603, for importing/using subprocess. They are retained without
+suppressions in `evaluation/checks/model-runner-bandit.json`: execution is the
+intentional trusted local interpreter/fixed-adapter boundary, uses argument arrays
+with no shell, canonical bounded input and process-group deadlines. This does not
+make arbitrary user-selected interpreters or downloaded code safe. CI's zero
+`src/` findings must not be described as zero findings across every script. CI
+also audits the separately pinned neural environment without installing models,
+with explicit upstream Torch CPU-version normalization.
