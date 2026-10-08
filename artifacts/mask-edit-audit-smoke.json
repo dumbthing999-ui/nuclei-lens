@@ -2,7 +2,7 @@
   "schema_version": 2,
   "product": "NucleiLens",
   "software_version": "0.1.0",
-  "exported_at": "2026-10-08T08:51:08.625Z",
+  "exported_at": "2026-10-08T16:35:52.156Z",
   "filename": "IXMtest_A06_s6_w1B9577918-4973-4A87-BA73-A168AA755527.tif",
   "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
   "config": {
@@ -62,7 +62,7 @@
           75,
           76
         ],
-        "at": "2026-10-08T08:51:08.306Z",
+        "at": "2026-10-08T16:35:51.678Z",
         "before_count": 74,
         "after_count": 75,
         "changed_pixels": 799
@@ -94,7 +94,7 @@
         "created_ids": [
           77
         ],
-        "at": "2026-10-08T08:51:08.465Z",
+        "at": "2026-10-08T16:35:51.867Z",
         "before_count": 75,
         "after_count": 74,
         "changed_pixels": 590

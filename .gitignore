@@ -19,6 +19,8 @@ frontend/public/runtime/
 *.egg-info/
 *.tsbuildinfo
 .sites-runtime/
+demo-video/
+artifacts/screenshots/failure.png
 artifacts/*.tar.gz
 *.log
 
