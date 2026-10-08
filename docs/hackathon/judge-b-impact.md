@@ -1,3 +1,5 @@
+> Reviewed factual corrections (October8): the primary equal-budget metric is error concentration, not an oracle correction experiment; oracle correction curves are a separate secondary simulation. Browser-local image processing reduces exposure but does not guarantee privacy against compromised clients, dependencies or hosting. This historical simulation predates the implemented mask-edit workflow and additional assessment; its scores are not silently revised.
+
 > Review note: AI judge simulation, not official judging or a human user study. The primary metric is annotated error concentration under a fixed tile budget; oracle correction is a separate secondary simulation. Video is on hold by the owner; recommendations do not override that instruction.
 
 # Independent Judge B Evaluation: Research & Impact

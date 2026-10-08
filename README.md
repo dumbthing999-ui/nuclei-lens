@@ -23,7 +23,9 @@ outlines, inspect an opposing split/merge, explicitly confirm a mask alternative
 and export a lossless label TIFF plus its audit record. Optional manual tallies
 remain separate from mask geometry.
 Uploaded images are analyzed by Python in a dedicated browser worker; image bytes
-stay on the device. There is no LLM, account, database, or paid inference service.
+stay on the device. Hosting and runtime-asset requests still occur, including a
+Cloudflare challenge observed in the tested deployment; this is not anonymous
+browsing or a privacy guarantee. There is no LLM, account, database, or paid inference service.
 
 ## Why it is different
 
@@ -37,7 +39,8 @@ We do **not** claim to invent watershed, graph correspondence, or uncertainty-gu
 review. Initial comparisons show simpler object-disagreement ranking can outperform
 the graph. Both orderings are available, and all recorded experiments remain visible.
 The contribution is an original, reproducible inspection workflow and implementation;
-comparative scientific superiority is not established.
+comparative scientific superiority is not established. See the sourced
+[comparison with established bioimage tools](docs/PRODUCT_COMPARISON.md).
 
 ## Demo
 
@@ -105,7 +108,7 @@ Actual experiments are under [`evaluation/experiments`](evaluation/experiments).
 | Pixel disagreement | 37.3% |
 | Random (expected) | 20.0% |
 
-Graph minus object disagreement is −5.6 percentage points (paired bootstrap 95% interval −8.4 to −3.4). The graph hypothesis failed its superiority target. A nonnegative four-feature ranker trained on the official 100 training fields also failed its adoption gate (43.56% validation capture); it is retained as a rejected experiment, not shipped. Initial failures, including MAE 25.06 before safeguards, remain available.
+Graph minus object disagreement is −5.6 percentage points (paired bootstrap 95% interval −8.4 to −3.4). The graph hypothesis failed its superiority target. A nonnegative ranker (four features plus one intercept; five fitted coefficients) trained on the official 100 training fields also failed its adoption gate (43.56% validation capture); it is retained as a rejected experiment, not shipped. Initial failures, including MAE 25.06 before safeguards, remain available.
 
 The primary metric uses cardinality-first matching at instance IoU ≥ 0.5. All policies review the same four of twenty nonoverlapping centroid-assigned tiles; ties use expected capture. Image-level bootstrap intervals and complete curves are saved. Annotations load **after** inference. The fixed test protocol and configuration were saved before test access in [`evaluation/frozen`](evaluation/frozen). The first test process was interrupted by an environment restart and rerun under the identical frozen protocol; no test-driven changes were made. All 50 records are now saved and the output source/configuration hashes match the frozen protocol.
 
@@ -116,6 +119,18 @@ Secondary local-count errors and oracle correction curves are separate simulatio
 The complete 50-image official test set, evaluated with the saved configuration and source hashes, has count MAE **5.12** and mean instance F1 **0.827**. The preselected object-disagreement queue captures **45.8%** of FP+FN error mass at 20% review, versus **39.5%** graph, **39.0%** pixel disagreement, and **20.0%** expected random. This measures concentration of annotated errors, not automatic correction or human time savings.
 
 Four test fields have exactly correct total counts while retaining **100 unmatched instances in total** (50 false positives and 50 false negatives). Counts alone conceal those mismatches. They are IoU-matching errors, not 100 confirmed biological split/merge diagnoses. Full per-image results, failure cases, intervals, and source hashes: [`evaluation/test`](evaluation/test).
+
+### Additional image assessment
+
+The unchanged pipeline was also assessed on **496 preselected BBBC038 images**:
+count MAE **6.54**, mean instance F1 **0.772**, object-queue capture **45.7%** at a
+20% tile budget, versus **39.3%** graph and **20.0%** expected random. All496 were
+retained, with zero structural reference/inference failures;37 have F1<0.5.
+Selection and source hashes were publicly frozen before inference.43 potential
+same-size content overlaps were excluded first; other shared biological sources
+may remain. This property-filtered labeled training archive is **not an independent
+biological-group test** or proof of human benefit. Original reference imperfections
+remain in scoring. [Complete protocol, every field and difficult cases](evaluation/additional/README.md).
 
 ## Tech stack
 
@@ -194,12 +209,15 @@ rerun preservation, desktop/mobile layout, and page errors. See
 No image upload or persistence in the browser workflow. Image decoding is capped
 at 10 MB, 1,048,576 pixels, and one frame. The worker is cancellable and has a
 90-second watchdog. Local analysis can consume substantial CPU/RAM.
-The optional API has two concurrent slots and no process-level job timeout.
+The optional API has two concurrent slots and a killable90-second child-process
+compute deadline; task cancellation kills its child. It remains loopback-only.
 See [SECURITY.md](SECURITY.md) for boundaries and reporting.
 
 ## Limitations
 
-- Evaluated on one U2OS fluorescence benchmark, not general microscopy or diagnosis.
+- Developed on one U2OS fluorescence benchmark; an additional property-filtered
+  image assessment does not establish independent biological generalization,
+  general microscopy validity or diagnosis.
 - Stable-but-wrong masks may evade every sensitivity probe.
 - The contrast and saturation safeguards are heuristics, not calibrated detectors.
 - Color inputs convert to grayscale; multiple channels/stacks are unsupported.
@@ -212,7 +230,7 @@ See [SECURITY.md](SECURITY.md) for boundaries and reporting.
 
 ## Future work
 
-Test transfer to a second dataset, measure real reviewer decisions with consent,
+Broaden source-group-controlled validation, measure real reviewer decisions with consent,
 evaluate stronger segmentation probes, and assess whether guided mask correction
 improves real reviewer outcomes. No reader-study benefit is claimed.
 

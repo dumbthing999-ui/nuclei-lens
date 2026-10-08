@@ -21,6 +21,9 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
       - run: pip install -e '.[dev]' -c requirements.lock
       - run: python scripts/check_release.py
+      - name: Verify complete additional-assessment records
+        if: ${{ hashFiles('evaluation/additional/summary.json') != '' }}
+        run: python scripts/check_additional.py
       - run: pytest
       - run: ruff check src tests scripts
       - run: pip-audit --strict --no-deps -r requirements.lock

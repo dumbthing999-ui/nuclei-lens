@@ -4,10 +4,11 @@ Updated2026-10-08. Workspace `/home/kali/Downloads/euradev`.
 
 ## Current Release
 
-**v0.1.0 prerelease**, public main c4a73d7b7f36d322ad04a41ab531106475c7a684.
-CI37745742321 green; exact verified tree equals release/main. PR1+PR2 merged.
+**v0.1.0 prerelease**, release tree c4a73d7b7f36d322ad04a41ab531106475c7a684.
+Public main is5546ddbb82bc29cc589998dcbd9a0819e35ae5b8 (PR3 evidence docs).
+CI37745742321 green; exact verified tree equals release/main. PR1–PR3 merged; documentation CI37747836105 green.
 Release https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.1.0
-Prototype release, not final submission. Latest evidence docs need publication.
+Prototype release, not final submission. Release evidence docs are published.
 
 ## Winning Thesis
 
@@ -19,8 +20,9 @@ No scientific-first, clinical or observed human-benefit claim.
 
 ## Latest Judge Scores
 
-Three AI simulations before mask release, not official judging: B16.7/20
-(4.2,4.1,4.6,3.8), C14.9/20(3.8,3.7,4.6,2.8), historical A13.2 with corrections.
+Latest separate text-only AI simulations, not official/human judging: A16.0/20,
+B15.8/20,C15.3/20. Shared model/context; factual corrections retained beside raw
+reports. These precede the API subprocess fix; no automatic score inflation.
 Do not automatically raise scores. Human evidence/generalization/video remain gaps.
 
 ## Completed
@@ -42,20 +44,29 @@ Do not automatically raise scores. Human evidence/generalization/video remain ga
 
 ## In Progress
 
-Reader protocol prepared; no participants recruited or benefits measured. External
-BBBC038 CC0 archive/metadata retrieved;670 raw images profiled without annotations
-or inference.539 match declared image-property scope, not verified modality or
-independence. Overlap screening and external protocol freeze required next.
+Reader protocol prepared; no participants recruited or benefits measured. Frozen
+additional BBBC038 assessment complete:496/496 selected fields,0 structural
+reference/inference failures, MAE6.54, meanF1.772, object capture45.7%, graph39.3%,
+random20%.43 potential overlaps excluded before inference; biological-source
+independence unknown.37fields below F1 0.5 retained; visually sparse original reference
+is documented without adjudication.56,544 separate cutoff calculations passed.
+Source/protocol publication a242d741 preceded evaluation; CI37748707090 green.
+All-fields and deterministic difficult/median-case figures generated and inspected.
+Public Firefox155 workflow passed.33 Python+10 frontend tests, Ruff/build pass.
+New UI transfer evidence and unsaved-review notice passed local browser/axe checks.
+Fresh A/B/C critiques reviewed; targets remain unmet. Optional local API child
+process90-second deadline and actual timeout/task-cancel/capacity tests pass.
+Sourced established-tool comparison added. New CI/deployment/Devpost synchronization pending.
 
 ## Next Highest-Leverage Action
 
-Screen BBBC038 for content overlap with BBBC039; freeze external manifest/method;
-evaluate unchanged core without tuning, retain every failure. Then fresh judge
-critique. Publish current release/evidence handoff docs. No fabricated human study.
+Publish complete additional results and updated UI, pass remote CI, merge,
+deploy and verify public production, archive/update/read back Devpost copy.
+Review fresh judge weaknesses. No fabricated human study; video remains on hold.
 
 ## Current Risks
 
-One evaluated dataset, stable-but-wrong masks, unknown human effort,~39MB runtime.
+Unknown biological-source independence, stable-but-wrong masks, unknown human effort,~39MB runtime.
 Mask alternatives are not automatically correct. Browser/device breadth limited.
 Video/contact/legal gates remain. BBBC038 mixes modalities and possible related
 sources; image properties alone cannot establish independent generalization.

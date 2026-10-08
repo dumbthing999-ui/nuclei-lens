@@ -100,3 +100,27 @@ remains null and video absent. Fresh public rendered copy/media/links verified.
 Required contact-email disclosure remains owner-only. BBBC038 raw-image profile
 has539 property candidates from670 fields; no annotations/inference/external result.
 Preserve frozen scientific source and video hold. See latest PROJECT_STATUS.md.
+
+
+## Latest implementation and evidence state — October8
+
+- Public source is https://github.com/dumbthing999-ui/nuclei-lens; v0.1.0 is a
+  verified prototype prerelease. Current additional-assessment branch contains
+  complete496-field BBBC038 results, not an independent biological-group test.
+- Original frozen core/graph/evaluator and the separately frozen additional
+  protocol must remain unchanged for these assessments.43 potential same-size
+  content overlaps were removed before inference; unknown source dependence and
+  annotation imperfections remain. All496 selected fields retained; no tuning.
+- Additional MAE6.54/F1.772, object capture45.7%, graph39.3%, random20%;37 low-F1
+  fields remain. A visual reference concern is documented, not silently repaired.
+- Real mask replacement/undo/TIFF/hash/rerun work passes Chromium and Firefox155;
+  user benefit remains unmeasured. Reader document is a protocol, not a study.
+- Optional local API compute runs in a killable90-second child; task cancellation
+  cleans it up. Client disconnect is not guaranteed to cancel ASGI tasks. Public
+  companion exposure unsupported. Hosting requests do occur; local image design
+  is not a guarantee of anonymity/privacy.
+- Latest A/B/C AI critiques16.0/15.8/15.3 do not meet targets. Preserve corrections
+  and do not automatically raise scores. Continue highest-value honest work.
+- VIDEO HOLD remains authoritative for this agent. Concurrent unowned demo-video/
+  files are preserved and excluded from this release; their presence does not
+  establish permission to produce/upload a video or finalize submission.

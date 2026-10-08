@@ -1,0 +1,39 @@
+{
+  "selection": "Post-hoc descriptive cases: minimum F1, maximum absolute count error, upper middle sorted F1; filename breaks ties. Cases may coincide.",
+  "cases": [
+    {
+      "selection_reason": "Lowest instance F1",
+      "filename": "7b38c9173ebe69b4c6ba7e703c0c27f39305d9b2910f46405993d2ea7a963b80",
+      "f1": 0.0,
+      "count_absolute_error": 80,
+      "prediction_reference_counts": [
+        81,
+        1
+      ],
+      "exact_metric_rerun_verified": true
+    },
+    {
+      "selection_reason": "Largest absolute count error",
+      "filename": "0ea221716cf13710214dcd331a61cea48308c3940df1d28cfc7fd817c83714e1",
+      "f1": 0.4337748344370861,
+      "count_absolute_error": 134,
+      "prediction_reference_counts": [
+        235,
+        369
+      ],
+      "exact_metric_rerun_verified": true
+    },
+    {
+      "selection_reason": "Middle field by instance F1",
+      "filename": "a1f50f101bc471e2d6967ebdb8ba81150588609e769f3b960f0801e4da5fdc6f",
+      "f1": 0.8,
+      "count_absolute_error": 1,
+      "prediction_reference_counts": [
+        8,
+        7
+      ],
+      "exact_metric_rerun_verified": true
+    }
+  ],
+  "scope": "Inspectability and deterministic reproducibility, not a corrected annotation, failure-cause diagnosis or human validation."
+}

@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08T08:28:42.698830+00:00",
+  "dataset": "BBBC038v1 additional assessment of the public labeled stage1 training archive; not its official competition test set",
+  "protocol_sha256": "1a995bdc47714f047d7eb434c6c2f5f8a275a2f78e82e32eb9a00b77f42f1dd9",
+  "selected_images": 496,
+  "n_images": 496,
+  "failed_images": 0,
+  "complete_selected_manifest": true,
+  "archive_sha256": {
+    "BBBC038-stage1_train.zip": "dcb6edc2690f137406638b2309581a71522c4dff19157d118453b448dcddcb68"
+  },
+  "config": {
+    "threshold_factor": 0.85,
+    "min_distance": 7,
+    "smoothing": 1.0,
+    "min_area": 40,
+    "background_sigma": 24.0,
+    "threshold_cap": 0.8,
+    "minimum_signal_ratio": 6.0
+  },
+  "source_sha256": {
+    "src/nuclei_lens/core.py": "1d1d9ad01334268c060a3d236c816c1b2ced3d2a742c75491f5efa7a8c64da08",
+    "src/nuclei_lens/graph.py": "40d92dd3ba3d5b2c45ca037f98e24b758bbd87ec4a64c90c5f3c22219078b08e",
+    "src/nuclei_lens/evaluate.py": "801d6447d019c4f339a0a825246b8964dee897605c80747ffbf9ff81050ae1fa",
+    "src/nuclei_lens/external.py": "4852bc7f6a8ab0e2839b351bd67b77ed6ca1b0bf09a1b1825ece83c6889c5923",
+    "scripts/evaluate_external.py": "13da96b2af435d8f3310164d0da5e423dc30299311f7665512f0aa54a2d7abb1",
+    "scripts/inspect_external_images.py": "b1a1ec95ad52dfbce8a409a6b99777428c8e78192547b127c6358573b7ab3c1c",
+    "scripts/screen_external_overlap.py": "2a9ca2044e37655a95ece1345617873b20c67e11123a84a0db0fa4b00a77adfa"
+  },
+  "count_mae": 6.542338709677419,
+  "mean_f1": 0.7718664301659098,
+  "micro_f1": 0.7151807228915663,
+  "total_error_mass": 10047.0,
+  "iou_threshold": 0.5,
+  "review_budget": "4 of20 fixed centroid tiles",
+  "methods": {
+    "graph": {
+      "capture_at_20_percent": 0.3934926001119227,
+      "capture_ci95_image_resampling": [
+        0.36987558613811305,
+        0.4202325529211716
+      ],
+      "review_curve": [
+        0.0,
+        0.1327195514415579,
+        0.23794752383097664,
+        0.324805170086558,
+        0.3934926001119224,
+        0.4608388337602593,
+        0.5137678284317868,
+        0.5595788490101244,
+        0.5995413320737545,
+        0.6395877855557838,
+        0.6818887941439653,
+        0.7203684772476393,
+        0.7586314013408841,
+        0.7916697144391371,
+        0.8236420850859617,
+        0.8550023327109878,
+        0.8849620201119242,
+        0.9150461227611933,
+        0.9440497480982735,
+        0.972721599439801,
+        1.0
+      ]
+    },
+    "pixel_disagreement": {
+      "capture_at_20_percent": 0.4450084602368866,
+      "capture_ci95_image_resampling": [
+        0.41726533431262897,
+        0.47692075936402467
+      ],
+      "review_curve": [
+        0.0,
+        0.14521747785408579,
+        0.257589330148303,
+        0.35886334229123124,
+        0.4450084602368866,
+        0.5192594804419229,
+        0.5887030954513786,
+        0.6483996644343016,
+        0.7001681109773076,
+        0.7439242155276791,
+        0.7859249340288459,
+        0.8216750304537704,
+        0.851453194958719,
+        0.8808207891441695,
+        0.9054392755646863,
+        0.9274699248198797,
+        0.9460766664409546,
+        0.9626927640887031,
+        0.9773513951626821,
+        0.9902682127600012,
+        1.0
+      ]
+    },
+    "object_disagreement": {
+      "capture_at_20_percent": 0.4573056685179245,
+      "capture_ci95_image_resampling": [
+        0.4282141860185971,
+        0.4895666201318285
+      ],
+      "review_curve": [
+        0.0,
+        0.15636508410470787,
+        0.27491317125300563,
+        0.37834895290380827,
+        0.4573056685179245,
+        0.5406604631606063,
+        0.6045268533044329,
+        0.6626345948111398,
+        0.7084462816210749,
+        0.7557260683613378,
+        0.7953056822775109,
+        0.8292119608697058,
+        0.8587609409869555,
+        0.8822508985103961,
+        0.9053142894681241,
+        0.9271667053420791,
+        0.9478446412717724,
+        0.9618539198908254,
+        0.9760290855076553,
+        0.9881140749524937,
+        1.0
+      ]
+    },
+    "count_variation": {
+      "capture_at_20_percent": 0.3901757183275071,
+      "capture_ci95_image_resampling": [
+        0.3647891365765894,
+        0.4194270358827252
+      ],
+      "review_curve": [
+        0.0,
+        0.13567068113201275,
+        0.23312274415510237,
+        0.31444672029764204,
+        0.39017571832750675,
+        0.45114373582302636,
+        0.5062808253466803,
+        0.5544430775580829,
+        0.5992880637767931,
+        0.6426350904055761,
+        0.6861320185578057,
+        0.7221275366705552,
+        0.7580706028944824,
+        0.7910119438936318,
+        0.8244649277902122,
+        0.8556066318449068,
+        0.8837938884691903,
+        0.9130013501298033,
+        0.9412134898037531,
+        0.9704076805045433,
+        1.0
+      ]
+    },
+    "shape_flags": {
+      "capture_at_20_percent": 0.4250662067162904,
+      "capture_ci95_image_resampling": [
+        0.39887961882160405,
+        0.4555576796182354
+      ],
+      "review_curve": [
+        0.0,
+        0.1477306658704091,
+        0.2597607036402592,
+        0.3489093948500528,
+        0.42506620671629025,
+        0.49187321267031486,
+        0.5507906330100607,
+        0.6082221798125736,
+        0.655623943518717,
+        0.6971367188037725,
+        0.7361973826489593,
+        0.7703909219793653,
+        0.8054028371654725,
+        0.8331862264234415,
+        0.86217822095093,
+        0.886973274434656,
+        0.9103748771370542,
+        0.9349957492731139,
+        0.9577255096345176,
+        0.9782157955259266,
+        1.0
+      ]
+    },
+    "random": {
+      "capture_at_20_percent": 0.2,
+      "capture_ci95_image_resampling": [
+        0.19999999999999998,
+        0.20000000000000004
+      ],
+      "review_curve": [
+        0.0,
+        0.05000000000000004,
+        0.10000000000000007,
+        0.1500000000000002,
+        0.20000000000000015,
+        0.25,
+        0.3000000000000004,
+        0.3499999999999998,
+        0.4000000000000003,
+        0.4499999999999994,
+        0.5,
+        0.5500000000000006,
+        0.6000000000000008,
+        0.6499999999999992,
+        0.6999999999999996,
+        0.75,
+        0.8000000000000006,
+        0.8500000000000013,
+        0.8999999999999988,
+        0.9500000000000007,
+        1.0
+      ]
+    }
+  },
+  "median_analysis_ms": 532.1700000000001,
+  "failures": [],
+  "limitations": [
+    "Selection is based on raw image properties, not independently verified fluorescence modality or per-image cell/source metadata.",
+    "Same-sized affine-intensity/flip overlap screening does not remove every crop/resample, shared experiment or related biological source.",
+    "BBBC038 contains mixed modalities and source groups; this assessment does not prove biological-group independence or universal generalization.",
+    "Original public annotations have documented imperfections. Reference integrity failures are retained, not manually adjudicated.",
+    "No additional images are used to tune inference. Original BBBC039 frozen test results/code remain unchanged.",
+    "Error concentration is not human review accuracy/time savings or automatic mask-correction benefit."
+  ],
+  "interval_scope": "Image-wise resampling conditional on this property-filtered set; not biological-group independence or population-generalization intervals."
+}

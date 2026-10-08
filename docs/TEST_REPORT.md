@@ -4,7 +4,7 @@ Updated October8,2026. Mask editing passed remote CI and actual public-productio
 
 | Check | Actual result | Evidence / scope |
 |---|---|---|
-| Python unit/integration suite |27 passed | `pytest`; core, graph, matching, decoding, bounded local API |
+| Python unit/integration suite |33 passed on additional-assessment/reliability branch; v0.1.0 build27 | `pytest`; core, graph, matching, decoding, bounded local API |
 | Frontend unit suite |10 passed | `npm test --prefix frontend`; count validation, audit semantics, compatible review preservation, real equal-total witness conditions |
 | Ruff | Passed | `ruff check src tests scripts` |
 | TypeScript / Vite production build | Passed | `npm run build --prefix frontend` |
@@ -25,7 +25,7 @@ The latest production Chromium observation was22,712 ms cold browser analysis an
 
 ## Not yet verified
 
-physical mobile devices; Firefox/Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; a separate backup production origin; final EurekaDev submission (project API/public rendered readbacks passed); required video.
+physical mobile devices; Safari; formal accessibility compliance; parser fuzzing; an independent security assessment; real reader-time/accuracy benefits; a separate backup production origin; final EurekaDev submission (project API/public rendered readbacks passed); required video.
 
 ## Reproduce
 
@@ -86,3 +86,40 @@ conflicts are rejected. These are integrity results, not biological accuracy.
 Devpost project API, fresh public rendered description,3 image IDs/captions, thumbnail
 and both live/repository links are verified. update_project automatically published
 the project; EurekaDev submitted_at remains null and no video is attached.
+
+
+## Firefox production check
+
+Playwright Firefox155.0 passed the actual publicV3 workflow on October8: baseline74,
+mask74→75→74, independently decoded uint32 TIFF, audit SHA256, real local
+inference/native-count parity, byte-identical edited TIFF after rerun, undo-history
+clearance, and no horizontal overflow at390×844. No page exceptions were observed.
+Evidence: `evaluation/checks/firefox-smoke.json`; reproduce with
+`npx playwright install firefox` in `frontend/`, then
+`NUCLEILENS_DEMO_URL=https://nuclei-lens.dumbthing999.chatgpt.site node frontend/tests/firefox-smoke.mjs`.
+Cold elapsed29,360ms is one observation during concurrent native assessment,
+not an isolated performance benchmark. This does not cover physical mobile or Safari.
+
+Additional-protocol CI37748707090 passed on public commit
+a242d74134919e408050444b1bf321c05c764069 before real BBBC038 evaluation.
+
+
+## Additional assessment and process lifetime checks
+
+All496 selected additional fields evaluated,0 structural reference/inference
+failures; MAE6.54/F1.772, object capture45.7%, graph39.3%, random20%.
+Source/selection hashes, complete manifest, count arithmetic and56,544 independent
+cutoff/tie capture calculations passed. All37 low-F1 fields remain. Reference
+imperfections and unknown biological-source independence are explicit limitations.
+
+The optional API now runs a child process per admitted job with90-second deadline.
+New tests start actual child processes, enforce a deadline and task cancellation,
+and verify non-running exit state. An HTTP test checks504 and repeated capacity
+release. Existing real API analysis and invalid-image422 tests pass. Full native
+suite33 passed; frontend10 passed; Ruff/build pass. One test-client dependency
+deprecation warning remains. Client disconnect alone need not cancel an ASGI task;
+the hard compute deadline still bounds its lifetime. This is not an OS sandbox.
+
+The updated local production browser check passes the real mask path and rendered
+additional evidence. Automated axe checks cover desktop, original benchmark,
+expanded additional-assessment and mobile states; no formal compliance claim.

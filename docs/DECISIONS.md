@@ -68,3 +68,17 @@ evidence, not implied completed work.
 Devpost fresh credentials authenticated successfully; prior account listing showed
 no EurekaDev project. Fresh draft1470185/submission1224432 was created and read
 back; no final submission. The required video remains owner-held.
+
+
+## October8 — freeze and retain complete additional assessment
+
+Decision: keep the original configuration and object-disagreement default after
+all496 preselected BBBC038 fields were evaluated. No post-result exclusions or
+retuning. Evidence: MAE6.54/F1.772; object capture45.7%, graph39.3%, random20%.
+Alternative: promote a new comparator, repair visually sparse reference masks, or
+exclude hard fields. Rejected because it would contaminate the assessment and
+misrepresent scope.43 potential same-size overlaps were excluded before evaluation;
+related source groups may remain. Retain37 fields below F1 0.5 and original labels.
+Consequence: present bounded additional-image evidence, not universal validity or
+human benefit. Add actual public Firefox verification and an explicit unsaved-review
+notice; neither changes inference. Required video remains owner-held.

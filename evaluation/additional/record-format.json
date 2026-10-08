@@ -1,0 +1,8 @@
+{
+  "encoding": "UTF-8 JSON, losslessly compact formatting",
+  "records": 496,
+  "parsed_values_preserved": true,
+  "original_pretty_sha256": "55fdbd380a89e18a80ca6587ea5e761b8c3501256a7684e799ccebdf48b07b72",
+  "published_compact_sha256": "bb2a28f97f1993e47b5cc93582ffd22c8f2f0f43d7a775320924dee861d56228",
+  "reason": "The publishing proxy rejected the4.71MB pretty JSON request with413. Whitespace was removed without changing any parsed record or metric."
+}

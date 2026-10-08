@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-08T08:36:36.754184+00:00",
+  "passed": true,
+  "protocol_sha256": "1a995bdc47714f047d7eb434c6c2f5f8a275a2f78e82e32eb9a00b77f42f1dd9",
+  "selected_fields": 496,
+  "evaluated_fields": 496,
+  "retained_failures": 0,
+  "independent_cutoff_capture_checks": 56544,
+  "scope": "Saved-record arithmetic, complete manifest and unchanged source hashes; not an independent annotation, biological accuracy or human benefit study."
+}

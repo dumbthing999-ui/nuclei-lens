@@ -19,6 +19,9 @@ try {
 await page.goto(target);
 await page.getByRole('button',{name:'Rerun on this device'}).waitFor();
 await page.waitForFunction(()=>document.querySelector('.count-strip strong')?.textContent!=='—');
+const additionalSection=page.getByRole('region',{name:'Additional assessment'});
+await additionalSection.waitFor();
+if(!(await additionalSection.textContent()).includes('496 evaluated, 0 failures')||!(await additionalSection.textContent()).includes('45.7%'))throw new Error('Additional evidence did not render the frozen results');
 await page.getByRole('button',{name:/Inspect split/}).click();
 await page.waitForFunction(()=>document.querySelector('#alternative')?.value==='1');
 await page.getByRole('button',{name:'Full field'}).click();
@@ -86,7 +89,7 @@ if(await page.locator('[role=alert]').count())throw new Error('Stale sample fail
 await page.unroute('**/samples/training-002.json');
 await page.screenshot({path:path.join(root,shotDir,'live-analysis.png'),fullPage:true});
 await mkdir(path.join(root,'evaluation/checks'),{recursive:true});
-await writeFile(reportPath,JSON.stringify({status:'passed',generated_at:new Date().toISOString(),target,review_update:true,undo:true,audit_export:true,same_count_witness:true,review_preserved_on_rerun:true,mask_split_merge_counts:[74,75,74],mask_tiff_roundtrip:true,mask_audit_hash_verified:true,mask_preserved_on_rerun:true,mask_undo_exact:true,cancel_preserves_reference:true,stale_sample_failure_ignored:true,mobile_overflow:false,live_analysis_count:Number(result),cold_browser_ms:Math.round(coldMs),warm_browser_ms:Math.round(warmMs),non_read_requests:nonReadRequests,page_errors:errors},null,2));
+await writeFile(reportPath,JSON.stringify({status:'passed',generated_at:new Date().toISOString(),target,review_update:true,undo:true,audit_export:true,same_count_witness:true,additional_evidence_rendered:true,review_preserved_on_rerun:true,mask_split_merge_counts:[74,75,74],mask_tiff_roundtrip:true,mask_audit_hash_verified:true,mask_preserved_on_rerun:true,mask_undo_exact:true,cancel_preserves_reference:true,stale_sample_failure_ignored:true,mobile_overflow:false,live_analysis_count:Number(result),cold_browser_ms:Math.round(coldMs),warm_browser_ms:Math.round(warmMs),non_read_requests:nonReadRequests,page_errors:errors},null,2));
 if(errors.length)throw new Error(errors.join('\n'));
 console.log('PASS: review, undo, audit, mobile, actual browser-local analysis. Count '+result);
 

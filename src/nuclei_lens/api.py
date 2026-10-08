@@ -6,14 +6,13 @@ import asyncio
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from . import __version__
-from .core import analyze
-from .raster import MAX_FILE_BYTES, decode_image, serialize
+from .local_jobs import run_local_analysis
+from .raster import MAX_FILE_BYTES
 
 app = FastAPI(title="NucleiLens local companion", version=__version__, docs_url="/api/docs")
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost"])
@@ -61,9 +60,12 @@ async def analyze_upload(request: Request):
         except TimeoutError as exc:
             raise HTTPException(408, "Image transfer exceeded the local upload time limit.") from exc
 
-        def compute():
-            return serialize(analyze(decode_image(bytes(payload))))
-        return await run_in_threadpool(compute)
+        try:
+            return await run_local_analysis(bytes(payload))
+        except TimeoutError as exc:
+            raise HTTPException(504, "Local analysis exceeded 90 seconds; the process was stopped.") from exc
+        except RuntimeError as exc:
+            raise HTTPException(500, "Local analysis process failed. Try a smaller field.") from exc
     except ValueError as exc:
         raise HTTPException(422, str(exc)) from exc
     finally:

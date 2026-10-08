@@ -1,0 +1,38 @@
+{
+  "role": "Research/impact judge: real problem significance, actual vs simulated benefit, annotation/protocol scope, generalization.",
+  "scores": {
+    "innovation": 3.9,
+    "impact": 3.8,
+    "execution": 4.6,
+    "presentation": 3.5
+  },
+  "total": 15.8,
+  "reaches19": false,
+  "evidence_scope": "Evaluation based strictly on supplied repository documentation, technical architecture, and execution logs: README.md, docs/INNOVATION.md, docs/MASK_REVIEW.md, docs/security-review.md, evaluation/additional/README.md, browser-smoke.json, firefox-smoke.json, src/nuclei_lens/core.py, and frontend/src/masks.ts. All test passes, benchmark metrics, and smoke results are treated as developer-supplied records rather than independently audited facts.",
+  "strongest_evidence": [
+    "Empirical proof of aggregate count masking: On the frozen 50-field BBBC039 held-out test set, 4 fields have exactly correct field-level totals while concealing 100 unmatched instances (50 FP, 50 FN), corroborating the core research problem.",
+    "Rigorous benchmark governance and negative result reporting: The correspondence graph underperformed simple object-disagreement ranking (-5.6 percentage points error capture on validation) and a trained ML ranker failed adoption gates; both negative results were preserved, and the preselected object-disagreement queue was maintained through frozen held-out testing (45.8% error capture at 20% budget vs 20.0% random).",
+    "Deterministic mask integrity and audit implementation: frontend/src/masks.ts and test reports verify that human-confirmed mask edits strictly reject overlaps with retained instances, enforce exact cardinality deltas, preserve lossless single-channel uint32 TIFF formats, and validate against SHA-256 pixel hashes with reversible undo."
+  ],
+  "concrete_weaknesses": [
+    "Absence of human reader validation: Practical impact is claimed for biological researchers, but benefits are measured entirely via simulated tile error concentration (FP+FN capture) and automated interaction fixtures rather than measured human time savings, fatigue reduction, or verified biological decision accuracy.",
+    "Unverified biological generalization: Validation rests primarily on one U2OS cell benchmark (BBBC039). The supplemental 496-image BBBC038 run is an uncurated, property-filtered training archive with possible source/crop dependencies, non-independent cell lines, and noisy reference masks, leaving multi-modality performance unproven.",
+    "Incomplete submission deliverable: The hackathon-mandated demo video is missing from the submission package, directly compromising the presentation score despite high-quality written documentation."
+  ],
+  "conflicting_supplied_claims": [
+    "Ranker specification discrepancy: README.md defines the rejected machine-learned model as a 'nonnegative four-feature ranker', whereas docs/INNOVATION.md describes it as a 'five-parameter nonnegative ranker'.",
+    "Network isolation vs recorded traffic: README.md states that 'image bytes stay on the device' with no external service calls, but evaluation/checks/browser-smoke.json records an active outbound POST request to Cloudflare challenge infrastructure ('cdn-cgi/challenge-platform/...').",
+    "Mask correction versus workflow demonstration: The solution claims to help researchers resolve ambiguity, but docs/MASK_REVIEW.md clarifies that executing sequential split/merge edits (74->75->74 instances) is purely a software interaction fixture demonstrating label mechanics, not proof of biological accuracy or valid scientific correction."
+  ],
+  "highest_value_allowed_next_actions": [
+    "Design and preregister an empirical reader study protocol to measure review time, error resolution rates, and user fatigue when human biologists use the object-disagreement queue versus unguided manual counting.",
+    "Evaluate segmentation sensitivity and queue ranking on biologically independent, multi-laboratory datasets with distinct stainings and microscopy modalities to benchmark cross-domain robustness.",
+    "Reconcile internal documentation contradictions regarding the ranker parameterization and explicitly document the Cloudflare security challenge endpoint in the network security model."
+  ],
+  "review_metadata": {
+    "date": "2026-10-08",
+    "model": "gemini-3.8-flash-high",
+    "kind": "separate AI simulation; not official or human judging",
+    "scope": "provided text only; before local API subprocess deadline implementation"
+  }
+}
