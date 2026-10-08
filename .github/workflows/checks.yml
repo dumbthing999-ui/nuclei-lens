@@ -20,6 +20,7 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - run: pip install -e '.[dev]' -c requirements.lock
+      - run: python scripts/check_release.py
       - run: pytest
       - run: ruff check src tests scripts
       - run: pip-audit --strict --no-deps -r requirements.lock
@@ -36,6 +37,7 @@ jobs:
           npm run preview --prefix frontend -- --port 5173 > /tmp/nucleilens-vite.log 2>&1 &
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:5173 > /dev/null && break; sleep 1; done
           node frontend/tests/browser-smoke.mjs
+          node frontend/tests/accessibility.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -43,3 +45,4 @@ jobs:
           path: |
             artifacts/ci-screenshots/
             evaluation/checks/browser-smoke-ci.json
+            evaluation/checks/accessibility-ci.json

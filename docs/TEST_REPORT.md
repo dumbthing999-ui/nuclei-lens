@@ -55,3 +55,20 @@ wrong dimensions and expansion/count mismatches. Native lossless serialization
 roundtrip is exact. Fixtures are software interaction evidence, not biological
 correction or reader-study results. Latest CI-mode evidence is written separately
 from checked-in public deployment evidence, preventing stale-pass reuse.
+
+
+## Mask-feature clean-install CI repair
+
+Run37745238514 passed scientific/frontend tests, both audits, runtime preparation
+and notice collection, then TypeScript failed because the new test imports
+`node:zlib`/`Buffer` and the package manifest lacked `@types/node`. Explicitly pin
+that development dependency; verify with fresh `npm ci`, tests and build. This is
+a dependency-declaration defect, not a segmentation or scientific-result change.
+The feature is not released until its next actual remote run passes.
+
+
+Automated axe-core4.14 WCAG A/AA checks passed in desktop, expanded-benchmark and
+mobile viewport states. Incomplete checks are recorded for manual review; this is
+not full accessibility compliance. Source protocol, all bundled label maps, local
+Markdown links and tracked credential-pattern checks pass via
+`python scripts/check_release.py`.

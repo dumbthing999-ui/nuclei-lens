@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-10-08T07:47:09.770Z",
+  "target": "http://127.0.0.1:5174",
+  "tool": "axe-core",
+  "observations": [
+    {
+      "state": "desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "text[fill=\"#151b26\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+            ]
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "state": "benchmark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "text[fill=\"#151b26\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+            ]
+          ]
+        }
+      ],
+      "passes": 31
+    },
+    {
+      "state": "mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "text[fill=\"#151b26\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+            ]
+          ]
+        }
+      ],
+      "passes": 31
+    }
+  ],
+  "scope": "Automated Chromium viewport checks; not full accessibility compliance or assistive-technology user testing."
+}

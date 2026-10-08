@@ -27,3 +27,5 @@ evaluation/checks/browser-smoke-ci.json
 
 artifacts/mask-rerun-smoke.tif
 artifacts/mask-restored-smoke.tif
+
+evaluation/checks/accessibility-ci.json
