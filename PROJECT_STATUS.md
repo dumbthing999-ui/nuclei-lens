@@ -12,9 +12,24 @@ is connected. Channel reads returned HTTP403 `quotaExceeded`; the actual upload
 returned HTTP429 `rateLimitExceeded` for Video Uploads per day. A single guarded
 retry is scheduled for October9 at12:35PM IST. No video ID or public playback yet.
 
-PR9 is open: https://github.com/dumbthing999-ui/nuclei-lens/pull/9. Initial
-head449a076767433c500287e7b39c4b1b05722a6947 passed CI37814446018; final
-reviewed-media/docs changes require their own exact-head CI before merge.
+PR9 merged after both exact-head CI runs passed: https://github.com/dumbthing999-ui/nuclei-lens/pull/9
+Main964ae92f80a219baa62745e2d6378465611361cc has the exact reviewed PR tree.
+Merge/readback evidence: `evaluation/checks/pr9-merge.json`.
+
+The owner requested comparison with Cellpose/StarDist/napari and the2025
+CellSampler consensus paper, plus multi-model QA and measurement/report workflows.
+A new `feature/mask-qa-measurements` branch begins from merged main. Implement
+per-label measurements recomputed after edit/undo; strict external label-TIFF
+comparison with source hashes; explicit correspondence hypotheses; and auditable
+same-count reports. Actual local Cellpose3.1.1.2/StarDist0.9.2 CPU execution completed on training001:
+68instances each, different partitions,3,738foreground-assignment differences,
+69differing correspondence components (not verified errors). Real output TIFFs
+and model/weight/input/output provenance are bundled.41native/22frontend tests,
+existing Chromium/Firefox, expanded QA/axe/mobile checks passed locally. Frozen
+inference/benchmark source remains unchanged. Optional neural audit initially
+found61advisory records across three packages; Torch/Pillow/setuptools upgraded,
+separate audit now returns no known records. Both actual models completed again
+with pixel-identical outputs. New exact-head CI/deployment remain release gates.
 
 PR8 merged: https://github.com/dumbthing999-ui/nuclei-lens/pull/8
 Public main `ae26a89c214a4a93636663e60de52c4e6f17b12f`, tree

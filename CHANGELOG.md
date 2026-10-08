@@ -38,3 +38,17 @@ v0.1.0 is a verified prototype prerelease, not the final competition release. Vi
 - Restore Devpost authentication, create/read back fresh EurekaDev draft, and merge
   verified production-preview CI repair via PR1. Video remains on hold.
 - Preserve original dependency license notices with source/version provenance.
+
+## Unreleased — model QA and measurements (October8)
+
+- Strict external unsigned label-TIFF import and bounded sparse correspondence
+  review, including boundary/loss/addition/complex hypotheses.
+- Explicit inspect/confirm workflow with existing conflict rejection, fresh IDs
+  and exact undo; no automatic consensus or correctness inference.
+- Recomputed per-instance pixel geometry; CSV and segmentation-QA JSON link actual
+  original/reviewed label hashes, edit sources and pairwise external comparisons.
+- Optional isolated CPU Cellpose3/StarDist runner with timeout/partial-failure
+  provenance. One real training-field run and its68/68different masks are bundled.
+- Recognize CellSampler consensus and established segmentation/editor prior art.
+- Owner released the historical video hold. Reviewed3:35video is prepared; actual
+  YouTube upload was quota-rejected and a guarded reset retry is scheduled.

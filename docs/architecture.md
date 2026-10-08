@@ -94,3 +94,38 @@ The optional native service restricts Host and analysis Origin, bounds input str
 ## Deployment, observability, and recovery
 
 Production: https://nuclei-lens.dumbthing999.chatgpt.site. The Site has public access and a saved source/archive provenance. Vite builds in `frontend/dist`; `scripts/copy_site_dist.mjs` stages the exact static `dist/` package consumed by Sites, and CI verifies its entry point. Local Vite preview serves the same production build for staging checks. CI builds from pinned dependencies and runs scientific and real browser checks. Application states surface worker failures without collecting private images. Audit JSON, complete evaluation records, checked source, and local setup provide a recovery path; a separate backup production origin is not yet verified. See the release/deployment records for actual versions and checks.
+
+## Optional model QA and measurement path — October8
+
+```mermaid
+flowchart LR
+  I[Local bounded image] --> C[Trusted local model subprocesses]
+  C --> CP[Cellpose nuclei CPU]
+  C --> SD[StarDist fluorescence CPU]
+  CP --> L[Unsigned instance TIFFs + provenance]
+  SD --> L
+  L --> V[Strict browser TIFF import]
+  V --> G[Sparse external correspondence hypotheses]
+  G --> H[Inspect + explicit confirmation]
+  H --> M[Conflict-checked replacement + undo]
+  M --> R[Recomputed per-instance pixel measurements]
+  R --> E[CSV / QA JSON / TIFF + SHA256]
+```
+
+The optional Python3.12 neural environment is separate from the frozen scientific
+core and browser runtime. Per-model process groups have a bounded deadline;
+workers use trusted official downloaded weights, not arbitrary user model files.
+This is a local CLI, not a sandbox or public API. One observed real training-field
+run and complete provenance are bundled for instant comparison. Browser neural
+inference is not provided. Original50/496-field evaluations do not evaluate
+these neural outputs and remain unchanged.
+
+`measurements.ts` computes exact per-ID pixel geometry; `maskComparison.ts`
+compares external partitions, including count-neutral boundary components.
+`labelImport.ts` rejects compressed/multipage/noninteger/misaligned-size inputs.
+`QualityReview.tsx` recomputes after edits/undo and exports source hashes,
+original/current geometry, hypotheses and pairwise external comparisons.
+The bundled example loader checks both file and decoded-label hashes and gates
+by the original decoded input hash; arbitrary imports remain user-described.
+TIFF geometry equality does not independently establish alignment or correctness.
+No ground-truth annotations enter either model or the review path.

@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-08T18:15:47.673Z",
+  "status": "passed",
+  "target": "http://127.0.0.1:5174",
+  "fixture": "Actual frozen sensitivity label map; not neural-model output",
+  "source_run": 1,
+  "measurements_recalculated": true,
+  "external_import": true,
+  "real_model_pair": {
+    "counts": [
+      68,
+      68
+    ],
+    "same_total_different_segmentation": true,
+    "components": 69,
+    "foreground_difference_pixels": 3738
+  },
+  "inspect_before_confirm": true,
+  "opposing_edit_counts": [
+    74,
+    75,
+    74
+  ],
+  "same_total_different_partition": true,
+  "csv_tiff_hash_match": true,
+  "undo_measurements_exact": true,
+  "invalid_geometry_rejected": true,
+  "image_switch_clears_imports": true,
+  "mobile_overflow": false,
+  "automated_accessibility": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "violations": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": []
+    }
+  ],
+  "page_errors": [],
+  "non_read_requests": []
+}

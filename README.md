@@ -49,7 +49,31 @@ comparative scientific superiority is not established. See the sourced
 [Open the live application](https://nuclei-lens.dumbthing999.chatgpt.site). No login is required.
 The public deployment passed real browser-local inference, review, undo, export, and mobile layout checks.
 Source: [dumbthing999-ui/nuclei-lens](https://github.com/dumbthing999-ui/nuclei-lens).
-Demo video pending.
+Reviewed3:35video is complete locally. YouTube rejected the actual upload at its
+daily video-upload quota; a guarded retry is scheduled. Public playback remains pending.
+
+## Segmentation QA and model comparisons
+
+Open **Compare masks from another model or editor**, then **Load real Cellpose +
+StarDist examples** on the first training field. Both actual pretrained models
+returned68instances, with different partitions. View the source/version/weight
+hashes and compare the outlines. These are precomputed CPU predictions, not
+browser neural inference, ground truth or a comparative accuracy benchmark.
+You can also import up to three aligned, uncompressed unsigned label TIFFs.
+
+Inspect before confirming an external component. Existing conflict checks,
+fresh IDs and exact undo protect mask integrity. Pixel area, centroid, grid-edge
+perimeter and border measurements recalculate from the actual edited mask.
+Export the CSV, TIFF and QA JSON to trace same-count differences and source hashes.
+![Actual model comparison and measurement panel](artifacts/screenshots/model-qa.png)
+
+See [QA semantics and bounds](docs/MASK_QA.md) and the
+[optional local model runner](docs/OPTIONAL_MODELS.md).
+
+Cellpose, StarDist, napari and [CellSampler](https://doi.org/10.3389/fgene.2025.1547788)
+already establish segmentation, correction and model combination. These additions
+make the review workflow concrete; they do not establish scientific novelty or
+measured human benefit. The frozen evaluation results remain unchanged.
 
 ## Architecture
 

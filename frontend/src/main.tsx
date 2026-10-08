@@ -3,6 +3,9 @@ import {createRoot} from 'react-dom/client';
 import type {Analysis, Benchmark, Correction, Sample, GraphEvent, AdditionalAssessment} from './types';
 import {auditDocument, reviewedTotal, validateCount, compatibleReview, cancellationWitness} from './review';
 import {decodeLabelMaps, applyMaskProposal, undoMaskPatch, labelTiff, maskOutline, maskHash, countInstances, type MaskPatch} from './masks';
+import {QualityReview} from './QualityReview';
+import type {ExternalMaskSource} from './maskComparison';
+import {measureMask} from './measurements';
 import './style.css';
 
 const png = (data:string) => `data:image/png;base64,${data}`;
@@ -43,10 +46,14 @@ function App() {
     decodeLabelMaps(analysis).then(decoded=>{if(active){setMasks(decoded);setEditedMask(decoded[0].slice());maskFingerprint.current=fingerprint;setMaskStatus('No mask edits. Inspect an alternative before confirming it.');}}).catch(e=>{if(active)setMaskStatus(String(e.message));});
     return ()=>{active=false;};
   },[analysis]);
-  function confirmMask(event:GraphEvent) {
+  function confirmMask(event:GraphEvent,alternate?:Uint32Array,source?:ExternalMaskSource) {
     if(!analysis||!masks||!editedMask)return;
     try {
-      const proposal=applyMaskProposal(editedMask,masks[0],masks[event.run_id],event);
+      if(source&&event.baseline_count+event.alternate_count>32)throw new Error('Large external component: inspect/export and review in an existing editor.');
+      const chosen=alternate??masks[event.run_id];
+      if(!chosen)throw new Error('Alternative mask is unavailable.');
+      const proposal=applyMaskProposal(editedMask,masks[0],chosen,event);
+      if(source)proposal.patch.source=source;
       if(patches.length>=20||patches.reduce((n,p)=>n+p.indices.length,0)+proposal.patch.indices.length>1048576)throw new Error('Mask history limit reached. Export or undo before adding more edits.');
       setEditedMask(proposal.mask);setPatches(previous=>[...previous,proposal.patch]);setMode('edited');setError('');
       setMaskStatus(`Mask: ${proposal.patch.before_count} → ${proposal.patch.after_count} instances. Review tally total remains ${reviewedTotal(analysis,corrections)}; mask edits do not change tally entries.`);
@@ -152,8 +159,9 @@ function App() {
     if(!analysis) return;
     const audit={...auditDocument(analysis,corrections,filename),schema_version:2,mask_modifications:patches.length>0,
       mask_review:editedMask?{count:editedCount,sha256_uint32_le:await maskHash(editedMask),export_format:'unsigned 32-bit label TIFF; zero=background',
-        changes:patches.map(p=>({event:p.event,created_ids:p.created_ids,at:p.at,before_count:p.before_count,after_count:p.after_count,changed_pixels:p.indices.length})),
-        semantics:'Human-confirmed replacements from actual sensitivity masks. No correctness or annotation claim. Tally corrections refer to the original baseline and do not modify this mask.'}:null};
+        measurements:editedMask&&editedCount!==null&&editedCount<=10000?measureMask(editedMask,analysis.width,analysis.height):null,
+        changes:patches.map(p=>({event:p.event,source:p.source??{kind:'sensitivity-run',run_id:p.event.run_id},created_ids:p.created_ids,at:p.at,before_count:p.before_count,after_count:p.after_count,changed_pixels:p.indices.length})),
+        semantics:'Human-confirmed replacements from sensitivity masks or explicitly imported label TIFFs. No correctness or annotation claim. Tally corrections refer to the original baseline and do not modify this mask.'}:null};
     const url=URL.createObjectURL(new Blob([JSON.stringify(audit,null,2)],{type:'application/json'}));
     const a=document.createElement('a');a.href=url;a.download='nucleilens-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
@@ -198,6 +206,7 @@ function App() {
           <div className="audit-footer"><span>{progress}/20 regions reviewed</span><button disabled={!analysis} onClick={()=>void downloadAudit()}>Export review JSON</button></div>
         </aside>
       </section>
+{analysis&&masks&&editedMask&&(analysis.raw_count<=10000&&(editedCount??0)<=10000?<QualityReview key={analysis.input_hash+JSON.stringify(analysis.config)} analysis={analysis} baseline={masks[0]} reviewed={editedMask} patches={patches} busy={busy} onConfirm={confirmMask}/>:<p>Measurement review supports up to10,000 instances. Use a smaller field.</p>)}
       <section className="method" id="method"><div className="section-heading"><div><div className="eyebrow">THE COUNT IS ONLY THE BEGINNING</div><h2>One count. Different explanations.</h2></div><p>Our graph follows nuclei across segmentation variations. A one-to-many match suggests a split; a many-to-one match suggests a merge. Local disagreements remain visible even when their totals cancel.</p></div><div className="method-steps"><article><span>01</span><h3>Segment the field</h3><p>Background correction, thresholding, distance peaks, and watershed produce an inspectable classical baseline.</p></article><article><span>02</span><h3>Perturb the assumptions</h3><p>Nine deterministic runs change threshold, seed spacing, smoothing, and midtone intensity.</p></article><article><span>03</span><h3>Inspect the alternatives</h3><p>Object-overlap graphs reveal count-changing regions. You make the review decision and keep an audit trail.</p></article></div></section>
       <section className="evidence"><div><div className="eyebrow">MEASURED, NOT ASSUMED</div><h2>Does the review queue find actual errors?</h2><p>We compare equal review budgets on the official BBBC039 splits. The benchmark includes random review, pixel and object disagreement, local count variation, and shape flags.</p><button className="text-link" onClick={()=>setShowEvidence(!showEvidence)} aria-expanded={showEvidence}>{showEvidence?'Hide benchmark detail':'Inspect benchmark detail'}</button></div><div className="evidence-summary">{benchmark?<><span>FROZEN TEST · {benchmark.n_images} REAL FIELDS</span><strong>{Math.round(benchmark.methods.object_disagreement.capture_at_20_percent*100)}% <small>error capture</small></strong><p>Object-disagreement queue, reviewing 4 of 20 regions. Random captures 20%. The default queue was selected on validation, before test access. Graph ordering is available for comparison. This is simulated error capture, not measured human time saved.</p></>:<><span>COMPARATIVE EVALUATION</span><h3>Results are being measured.</h3><p>Initial training results do not establish graph superiority. Full validation remains the decision gate.</p></>}</div>
         {showEvidence&&<div className="benchmark-detail">{benchmark?<table><caption>Actual held-out test results · FP + FN at object IoU ≥ 0.5</caption><thead><tr><th>Review policy</th><th>Errors captured at 20% budget</th><th>Bootstrap 95% interval</th></tr></thead><tbody>{Object.entries(benchmark.methods).map(([name,value])=>{const v=value as {capture_at_20_percent:number;capture_ci95:number[]};return <tr key={name}><td>{name.replaceAll('_',' ')}</td><td>{(v.capture_at_20_percent*100).toFixed(1)}%</td><td>{v.capture_ci95.map(n=>(n*100).toFixed(1)+'%').join('–')}</td></tr>;})}</tbody></table>:<p>Benchmark files will appear when the full validation run finishes.</p>}<p>False positives and missed reference nuclei are assigned to fixed image tiles by centroid. Ties are averaged, not reordered to favor a method. Annotations are loaded after inference. Configuration and source hashes were frozen before the 50-image test run; all failures are retained. Validation guided development.</p>{currentSample&&<p>Current reference sample: annotated count {currentSample.reference_count}; baseline instance F1 {currentSample.f1.toFixed(3)}. Annotation count is a benchmark reference, not a model output.</p>}</div>}

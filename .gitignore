@@ -32,3 +32,6 @@ artifacts/mask-restored-smoke.tif
 
 evaluation/checks/accessibility-ci.json
 evaluation/checks/bandit-ci.json
+
+.venv-models/
+model_output/

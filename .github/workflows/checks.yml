@@ -33,6 +33,16 @@ jobs:
           /tmp/nucleilens-security-tools/bin/bandit -r src -f json -o evaluation/checks/bandit-ci.json
       - run: pip-audit --strict --no-deps -r requirements.lock
       - run: pip-audit --strict --no-deps -r security-tools.lock
+      - name: Audit optional neural pins without installing neural frameworks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          # Advisory databases identify upstream Torch, not its CPU wheel suffix.
+          lines = Path('requirements.models.lock').read_text().splitlines()
+          normalized = [line.split('+', 1)[0] if line.startswith('torch==') else line for line in lines]
+          Path('/tmp/nucleilens-model-audit.txt').write_text('\n'.join(normalized) + '\n')
+          PY
+          pip-audit --disable-pip --strict --no-deps -r /tmp/nucleilens-model-audit.txt
       - run: npm ci --prefix frontend
       - run: npm audit --prefix frontend --audit-level=moderate
       - run: npm test --prefix frontend
@@ -49,6 +59,7 @@ jobs:
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:5173 > /dev/null && break; sleep 1; done
           node frontend/tests/browser-smoke.mjs
           node frontend/tests/accessibility.mjs
+          node frontend/tests/mask-qa-smoke.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -58,3 +69,4 @@ jobs:
             evaluation/checks/browser-smoke-ci.json
             evaluation/checks/accessibility-ci.json
             evaluation/checks/bandit-ci.json
+            evaluation/checks/mask-qa-browser.json

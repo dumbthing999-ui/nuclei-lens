@@ -1,0 +1,12 @@
+{
+  "title": "Robust consensus nuclear and cell segmentation",
+  "publisher": "Frontiers in Genetics",
+  "published_at": "2025-07-15",
+  "retrieved_at": "2026-10-08T17:51:12.718193+00:00",
+  "url": "https://doi.org/10.3389/fgene.2025.1547788",
+  "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12303819/",
+  "license": "CC BY (as stated by the article)",
+  "claim_paraphrase": "CellSampler runs established segmentation methods and combines masks using local consensus; its outputs include individual-cell property catalogs. Comparing and combining multiple masks is established prior art.",
+  "reliability_notes": "Primary peer-reviewed methods paper. Reported task/datasets and scores are not a direct NucleiLens comparison. No performance superiority is inferred.",
+  "product_consequence": "Do not position multi-model aggregation, split/merge analysis, mask editing, or cell measurements as scientific firsts. Assess concrete workflow usefulness and reproducibility."
+}

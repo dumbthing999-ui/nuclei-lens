@@ -178,3 +178,20 @@ Preserve frozen scientific source and video hold. See latest PROJECT_STATUS.md.
   found Brave default/no running Chrome; owner was asked to connect supported
   Chrome/Chromium with ChatGPT extension. Do not read session stores or submit
   via MCP merely to save custom draft answers.
+
+## Latest model-QA handoff — October8
+
+PR9 is merged with two green exact-head CI runs; see pr9-merge.json. The owner
+deferred browser-dependent Devpost custom fields. Historical video holds above
+are superseded by their explicit upload request; the guarded YouTube reset retry
+remains pending, with no video ID or verified public playback.
+
+`feature/mask-qa-measurements` adds actual per-ID measurements, strict external
+label-TIFF import, pairwise comparisons and inspect/confirm/recalculate/export.
+The optional local Cellpose3.1.1.2 and StarDist0.9.2 CPU runner actually completed
+on BBBC039training001:68instances each, different partitions. Actual masks and
+input/model/weight/output provenance are bundled, without neural weights. Unit
+adapter mocks are not model evidence. No ground truth entered those runs.
+CellSampler/Cellpose/StarDist/napari are prior art; no consensus-first, accuracy,
+clinical or measured human-benefit claim. Frozen scientific hashes/results stay
+unchanged. Record exact-head CI/deployment before describing this addition as live.
