@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-10-08T07:51:40.411Z",
+  "scope": "Three declared training demo fields, selected as first, second and lowest-F1 among first eight. Independent proposals against the original baseline; not sequential editing coverage, biological correctness or human benefit.",
+  "source_sha256": "9b02d16a95fc19277c17af100c49da6bd2ca60f0f93dbfd7ea66bdab2209abd3",
+  "fields": [
+    {
+      "sample": "training-001",
+      "selection_note": "First image in the official training manifest.",
+      "analysis_sha256": "567fdedf103d3b35c4d6da7c20cf9bab7c6ce5628aec7713ed25240a0d845770",
+      "accepted_independent_proposals": 31,
+      "rejected_conflicting_proposals": 0,
+      "rejections": []
+    },
+    {
+      "sample": "training-002",
+      "selection_note": "Second training image; many adjacent nuclei.",
+      "analysis_sha256": "53a3acda20c40237031e6a2d7add7dcf83fd470b3706e984e14447684de0d8c0",
+      "accepted_independent_proposals": 61,
+      "rejected_conflicting_proposals": 1,
+      "rejections": [
+        {
+          "region_id": 15,
+          "run_id": 8,
+          "kind": "split alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        }
+      ]
+    },
+    {
+      "sample": "training-007",
+      "selection_note": "Lowest baseline F1 among the first eight training images; included to expose a failure case.",
+      "analysis_sha256": "e1721a2a1ebc2208a8249097d4ed9193c54c3702abe43471c8659627c248de13",
+      "accepted_independent_proposals": 36,
+      "rejected_conflicting_proposals": 5,
+      "rejections": [
+        {
+          "region_id": 4,
+          "run_id": 3,
+          "kind": "split alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        },
+        {
+          "region_id": 4,
+          "run_id": 1,
+          "kind": "split alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        },
+        {
+          "region_id": 4,
+          "run_id": 3,
+          "kind": "split alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        },
+        {
+          "region_id": 4,
+          "run_id": 6,
+          "kind": "merge alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        },
+        {
+          "region_id": 4,
+          "run_id": 8,
+          "kind": "merge alternative",
+          "reason": "Alternative overlaps a retained nucleus. No pixels were changed."
+        }
+      ]
+    }
+  ]
+}

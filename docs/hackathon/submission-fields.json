@@ -1,5 +1,5 @@
 {
-  "status": "Saved Devpost draft; authenticated API readback verified; rendered page verification pending",
+  "status": "Project published automatically by update_project; EurekaDev association has submitted_at=null; final submission not performed",
   "title": "NucleiLens",
   "tagline": "See beyond the count.",
   "track": "Coding Track",
@@ -27,7 +27,7 @@
     "artifacts/screenshots/review-detail.png",
     "artifacts/screenshots/live-analysis.png"
   ],
-  "account_gate": "Authenticated whoami, project listing, create and get_project succeeded on October 8. No previous EurekaDev project was listed. Final submission remains pending.",
+  "account_gate": "Auth, project write/readback, thumbnail and three gallery uploads verified. update_project automatically published the project page; it did not finalize the EurekaDev entry. No submit_project call, required video, contact-email disclosure or legal attestation performed.",
   "safety_gates": [
     "Archive existing account draft before any write",
     "Reconfirm official fields/category and owner-only legal declarations",
@@ -51,5 +51,8 @@
   "owner_only_fields": [
     "Required contact email field 28009: obtain owner authorization before disclosure",
     "Optional Discord username field 28010: omit unless owner requests disclosure"
-  ]
+  ],
+  "project_state": "published",
+  "published_at": "2026-10-08T03:53:27.473-04:00",
+  "rendered_verification": "Verified public rendered page after copy polish on October8: name, tagline, three distinct photo IDs/captions, actual mask feature, metrics, BuiltWith and both TryItOut URLs. EurekaDev submitted_at remains null."
 }

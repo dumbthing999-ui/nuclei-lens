@@ -8,21 +8,27 @@
       "sha256": "99c8b66befd92e3350304ec1d47d808862b25fce8ef864bfd19610824d912f94",
       "photo_id": 5535306,
       "position": 1,
-      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/gallery.jpg"
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/306/datas/gallery.jpg",
+      "http_readback": 200,
+      "content_type": "image/jpeg"
     },
     {
       "file": "artifacts/screenshots/mask-edits.png",
       "sha256": "e98b408bb9e630c0bc8b67ebc6f1fc8c57ca171dc3014058790909265f1ad2c5",
       "photo_id": 5535308,
       "position": 2,
-      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/gallery.jpg"
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/308/datas/gallery.jpg",
+      "http_readback": 200,
+      "content_type": "image/jpeg"
     },
     {
       "file": "evaluation/figures/test-budget-comparison.png",
       "sha256": "76c6b7489bbc75d94e669d2793c369db46a6270532728839267494598a48d37f",
       "photo_id": 5535310,
       "position": 3,
-      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg"
+      "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/535/310/datas/gallery.jpg",
+      "http_readback": 200,
+      "content_type": "image/jpeg"
     }
   ]
 }

@@ -1,0 +1,265 @@
+{
+  "site": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+  "source_commit": "0455151bd08ed2f555f7fd5a1eb555d0a88c918d",
+  "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_3a74fe0d1d248191a05c161890ee40bc",
+  "deployment_id": "appgdep_6ac74b9b30d8819181cc114326857837",
+  "deployment_status": "succeeded",
+  "archive_sha256": "7fb828cb39fe218ac39a3366403be4ac110c70ca3625861fd5f40722982f1ae6",
+  "browser_smoke": {
+    "status": "passed",
+    "generated_at": "2026-10-08T07:53:00.496Z",
+    "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "review_update": true,
+    "undo": true,
+    "audit_export": true,
+    "same_count_witness": true,
+    "review_preserved_on_rerun": true,
+    "mask_split_merge_counts": [
+      74,
+      75,
+      74
+    ],
+    "mask_tiff_roundtrip": true,
+    "mask_audit_hash_verified": true,
+    "mask_preserved_on_rerun": true,
+    "mask_undo_exact": true,
+    "cancel_preserves_reference": true,
+    "stale_sample_failure_ignored": true,
+    "mobile_overflow": false,
+    "live_analysis_count": 74,
+    "cold_browser_ms": 21517,
+    "warm_browser_ms": 3645,
+    "non_read_requests": [
+      {
+        "method": "POST",
+        "url": "https://nuclei-lens.dumbthing999.chatgpt.site/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.05192608171581503:1791442847:FPvsV-5ItXIh3nFxQR_IlvYmHUwKLdSxMKMgAjX1-9w/a47390bb3e7ea731"
+      }
+    ],
+    "page_errors": []
+  },
+  "automated_accessibility": {
+    "generated_at": "2026-10-08T07:52:30.652Z",
+    "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "tool": "axe-core",
+    "observations": [
+      {
+        "state": "desktop",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "text[fill=\"#151b26\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+              ]
+            ]
+          }
+        ],
+        "passes": 29
+      },
+      {
+        "state": "benchmark",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "text[fill=\"#151b26\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+              ]
+            ]
+          }
+        ],
+        "passes": 31
+      },
+      {
+        "state": "mobile",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "text[fill=\"#151b26\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"20\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"434\"][y=\"150\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"156\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"573\"][y=\"280\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"17\"][y=\"410\"][fill=\"#fff\"]"
+              ],
+              [
+                "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+              ]
+            ]
+          }
+        ],
+        "passes": 31
+      }
+    ],
+    "scope": "Automated Chromium viewport checks; not full accessibility compliance or assistive-technology user testing."
+  }
+}

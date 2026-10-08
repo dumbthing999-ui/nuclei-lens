@@ -61,3 +61,9 @@ Official rules/overview/resources/updates/discussions and both gallery pages wer
 - No numerical impact claim for a proposed project is accepted solely because a source identifies the problem; project-level effect needs its own measured evaluation.
 - IMD dashboards and advisories are changing operational data, not necessarily an openly downloadable, stable dataset. Data access, terms, and historical coverage must be proven before selecting an IMD-dependent concept.
 - The 2019 IMD report is historic evidence and should not establish current national deployment counts.
+
+
+## External assessment screening — retrieved October8,2026
+
+38. Broad Bioimage Benchmark Collection, BBBC038v1, https://bbbc.broadinstitute.org/BBBC038 — primary record documents individually annotated nucleus masks, mixed fluorescent/histology images and varied conditions, CC0, public stage1 training archive82.9MB and20KB metadata workbook. Source download URLs: https://data.broadinstitute.org/bbbc/BBBC038/stage1_train.zip ; https://data.broadinstitute.org/bbbc/BBBC038/metadata.xlsx. Workbook was retrieved; SHA2563ebf48d0b562a8044854d64b3675cf35d49b6e9e84f34346184236130ac40be9 is a locally computed checksum, not an official publisher-provided signature. Group metadata does not by itself prove an individual image's modality or independence from BBBC039. No external accuracy result exists yet.
+39. Broad Bioimage Benchmark Collection, BBBC020v1, https://bbbc.broadinstitute.org/BBBC020 — primary record warns that nucleus outlines are incomplete and excluded ambiguous/border objects. License is CC BY-NC-SA3.0, not CC0. Rejected for this immediate external-assessment path because of missing reference coverage and different size/annotation constraints. No data redistributed or performance claimed.
