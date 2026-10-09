@@ -38,7 +38,7 @@ The workflow lets a biology student or researcher inspect the assumptions behind
 
 Cellpose, StarDist and napari already provide segmentation and/or mask editing;
 CellSampler's2025 paper combines multiple segmentation methods and exports object
-property catalogs. See sources41–44 in `research/SOURCES.md`. Multi-model support,
+property catalogs. See sources43–46 in `research/SOURCES.md`. Multi-model support,
 manual correction and geometric measurements alone are not a novel algorithm.
 NucleiLens must be assessed on its inspectable local workflow, correspondence
 hypotheses, hash-linked exports and declared review-budget evidence. Practical

@@ -7,9 +7,11 @@ Updated October 9,2026 (IST). Workspace `/home/kali/Downloads/euradev`.
 Public Site **V6** is deployed. PR10 merged after both exact-head CI runs passed.
 GitHub merge23d592638ff1d20f483aa9753ab447d335e5efda and Site source
 6e71ddad6978a9e0ae026984e85d888266bad3cf share exact tree
-8931837b5b8053c925065c83601c0d4d14eac3a4. Existing v0.1.0 is a historical
-prototype prerelease, not final submission. Follow-up evidence/agent instructions
-are being published separately; no application code change is implied by those docs.
+8931837b5b8053c925065c83601c0d4d14eac3a4. PR11 merged after both final-head CI runs passed (37870835919 and 37826956935).
+Public main and the verified v0.2.0 research prerelease point to
+9cecb9366a00f466d367fbe635a3b25616deb148. The release tag, repository visibility,
+homepage and topics were read back. V6 application source remains unchanged;
+the frozen numerical engine still reports 0.1.0. This is not final submission.
 
 ## Winning Thesis
 
@@ -64,16 +66,19 @@ it is not an independent approval. Preserve reviewed factual corrections.
 
 ## In Progress
 
-Publishing final deployment/Devpost evidence and agent handoff corrections.
-YouTube actual upload was rejected at the daily video-upload quota. One guarded
-retry is active for October 9,12:35 PM IST/07:05UTC, provided machine/session stays
-running. No video ID/public playback/Devpost video URL yet. See retry outcome
-before any attempt; never repeat uncertain/successful uploads automatically.
+PR11 and v0.2.0 are published and verified. Local post-release proofs and the
+October 9 gallery refresh await the next documentation synchronization. Both
+gallery pages expose 38 projects; LedgerLens is newly visible and its public
+description is assessed in the matrix. No fresh competitor demo execution or
+placement prediction is claimed. Organizer updates still show no public posts.
+The guarded reset upload succeeded at07:05UTC. YouTube nik8WtPUrUc is processed,
+unlisted, embeddable and HD. Anonymous1080p/audio opening-sample decode and
+authenticated/public-rendered Devpost video-link readbacks pass. Full browser
+playback/all-region coverage is not claimed. Never re-upload this successful video.
 
 ## Next Highest-Leverage Action
 
-Verify next scheduled YouTube outcome, playback and captions; attach the real
-URL to Devpost only after verification. Seek feasible consented reader evidence
+Complete the requirement audit and synchronize delivery proofs. Seek feasible consented reader evidence
 and independent-source validation without tuning frozen results. Recheck gallery/
 organizer changes periodically. Targets are aspirations, not awarded scores.
 
@@ -93,7 +98,8 @@ V6 deployment appgdep_6ac7e252fc808191b9344d5bc7272c63 succeeded. Version
 appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_4128aa17fecc8191b14f021e5972d1d5.
 See deployment-v6.json/static-package-v6.json. Local compressed archive and server
 canonical archive hashes have different scopes; do not conflate them. Recovery
-archive/checksum retained; no separate backup production origin verified.
+archive/checksum retained. Fresh extraction/core browser/model QA restore drill
+passes; no separate backup production origin verified. See recovery-v6-drill.json.
 
 ## Devpost
 
@@ -109,12 +115,15 @@ owner-only; do not fabricate optional Discord username.
 Reviewed demo-video/reviewed/eurekadev-reviewed.mp4:215s/1080p30,H264/AAC,
 SHA2568f4a0c306d2e0027992954d7da28abda90026d2c78cbd859940890fc4ab69f85.
 Audio-16.22 LUFS/-1.45 dBTP/LRA7.7 LU. Metadata/captions in demo/. Actual YouTube
-upload returned429rateLimitExceeded, Video Uploads per day; not an auth failure.
-The one-shot retry refuses uncertain/successful outcomes and validates media hash.
+first upload returned429rateLimitExceeded. The guarded retry succeeded, preserving
+video ID nik8WtPUrUc. Processing/HD metadata and anonymous opening sample pass;
+39captions are burned in. The API rounds duration to216s; public metadata215s.
+Devpost now renders the video. Do not upload again.
 
 ## Deadline Readiness
 
-Not submission-ready: video playback/custom answers/final quality gates remain.
+Not submission-ready: custom answers/final quality gates remain. Opening video
+media access is verified; complete browser-player viewing remains unverified.
 Feature freeze October 19; official deadline October 20,5 PM CDT (October 21,3:30 AM
 IST). Do not claim19+/20, human validation or final submission. Preserve truthful
 limitations and final legal/video gates. Ordinary reversible work stays authorized.

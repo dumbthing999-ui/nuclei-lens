@@ -1,5 +1,13 @@
 # Current judge scorecard — October8,2026
 
+October 9 delivery note: PR10/PR11 are merged, public V6 inference/model QA pass,
+and v0.2.0 is a verified research prerelease. Devpost version9 has the current
+copy and six gallery images. These observations do not rescore the earlier AI
+critiques below. Historical video holds in this file are superseded: the owner
+authorized upload; the guarded retry succeeded and Devpost now renders the video.
+Anonymous opening-sample decode is verified; full player viewing and reader benefit
+remain unverified. Scores remain unchanged.
+
 Latest separate Gemini3.8 FlashHigh text-only simulations are A16.0, B15.8, C15.3.
 These are AI simulations with shared model/context, not official or independent
 human judges. See [raw scores and reviewed factual corrections](judges-current/REVIEW.md).

@@ -99,3 +99,13 @@ returned judgingOct27–Nov5,2027 and winnersNov6,2027.
 Sources: official https://eurekadev.devpost.com/rules and authenticated
 `get_hackathon_rules`, `get_submission_requirements`, `get_key_dates`,
 `get_announcements` for `eurekadev`. Private raw API responses are excluded from Git.
+
+## Authenticated refresh — October 9, 17:30 UTC
+
+Requirements, dates and announcements were read again. Required video, written
+description and public Coding source/README remain unchanged. Custom fields
+28007–28010 retain the same labels/options/required flags. The deadline remains
+October20,2026,22:00UTC. The2027 judging/winner-date inconsistency persists.
+No organizer announcements were returned. Contact email is owner-authorized
+privately; the browser-only draft-field save remains deferred by the owner.
+YouTube/Devpost video delivery is now verified with the scopes in the video proofs.

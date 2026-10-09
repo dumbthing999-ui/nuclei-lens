@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-09T17:37:42.260Z",
+  "status": "passed",
+  "target": "http://127.0.0.1:5178",
+  "fixture": "Actual frozen sensitivity label map; not neural-model output",
+  "source_run": 1,
+  "measurements_recalculated": true,
+  "external_import": true,
+  "real_model_pair": {
+    "counts": [
+      68,
+      68
+    ],
+    "same_total_different_segmentation": true,
+    "components": 69,
+    "foreground_difference_pixels": 3738
+  },
+  "inspect_before_confirm": true,
+  "focused_overlay_clipped": true,
+  "opposing_edit_counts": [
+    74,
+    75,
+    74
+  ],
+  "same_total_different_partition": true,
+  "csv_tiff_hash_match": true,
+  "undo_measurements_exact": true,
+  "invalid_geometry_rejected": true,
+  "image_switch_clears_imports": true,
+  "mobile_overflow": false,
+  "automated_accessibility": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "violations": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": []
+    }
+  ],
+  "page_errors": [],
+  "non_read_requests": [],
+  "hosting_challenge_requests": [],
+  "network_scope": "Only same-origin POSTs under the known Cloudflare challenge-platform prefix are classified as hosting. Other writes fail. Route classification does not inspect encrypted challenge payloads or establish anonymity."
+}

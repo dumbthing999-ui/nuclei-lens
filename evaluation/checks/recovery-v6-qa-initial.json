@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-09T17:37:00.199Z",
+  "status": "failed",
+  "target": "http://127.0.0.1:5173",
+  "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5173/\nCall log:\n  - navigating to \"http://127.0.0.1:5173/\", waiting until \"networkidle\"\n",
+  "page_errors": [],
+  "non_read_requests": [],
+  "hosting_challenge_requests": []
+}

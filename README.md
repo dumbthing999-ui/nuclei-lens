@@ -46,11 +46,14 @@ comparative scientific superiority is not established. See the sourced
 
 ## Demo
 
+[Watch the 3:35 demo](https://www.youtube.com/watch?v=nik8WtPUrUc).
+
 [Open the live application](https://nuclei-lens.dumbthing999.chatgpt.site). No login is required.
 The public deployment passed real browser-local inference, review, undo, export, and mobile layout checks.
 Source: [dumbthing999-ui/nuclei-lens](https://github.com/dumbthing999-ui/nuclei-lens).
-Reviewed3:35video is complete locally. YouTube rejected the actual upload at its
-daily video-upload quota; a guarded retry is scheduled. Public playback remains pending.
+The unlisted video is processed in HD and attached to Devpost. Anonymous 1080p
+opening-sample playback with audio is verified; full browser-player viewing and
+all-region availability are not claimed. See [delivery evidence](demo/README.md).
 
 ## Segmentation QA and model comparisons
 

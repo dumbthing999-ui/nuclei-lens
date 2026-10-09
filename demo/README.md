@@ -10,24 +10,28 @@ owner master remains unchanged. Exact media hashes and audio measurements are
 in `evaluation/checks/video-verification.json`; `captions.srt` is the matching
 caption sidecar. `youtube-metadata.json` contains accurate unlisted-video metadata.
 
-An actual Composio upload was rejected with HTTP 429 `rateLimitExceeded` for
-**Video Uploads per day**. Earlier channel reads separately returned HTTP 403
-`quotaExceeded`. Neither response establishes a successful upload. YouTube's
-[current quota documentation](https://developers.google.com/youtube/v3/determine_quota_cost)
-places video uploads in a separate daily bucket and resets quotas at midnight
-Pacific time.
+## Verified delivery — October 9
 
-A single local timer is verified active for October 9, 2026, **12:35 PM IST**
-(07:05 UTC). It runs the guarded retry below. The computer and user session must
-remain running; this transient timer is not a guaranteed scheduler across reboot.
-It does not automatically attach a video to Devpost. Check its actual result in
-`evaluation/checks/youtube-upload.json` before doing anything else.
+[YouTube demo](https://www.youtube.com/watch?v=nik8WtPUrUc), unlisted and embeddable.
+The guarded reset retry succeeded at 07:05 UTC after the first quota rejection.
+YouTube API readback reports processed/HD and succeeded processing. Public metadata
+reports 215 seconds; the API rounds this to 216 seconds, both below four minutes.
+An anonymous 1080p/audio opening sample (10.033 seconds) was retrieved and decoded.
+This is scoped media-access evidence, not full browser viewing or all-region proof.
+Captions are burned into the picture; no separate YouTube caption track exists.
+Devpost authenticated and fresh public-rendered readbacks show the same video URL.
+The competition entry remains unsubmitted. Do not upload another copy.
 
-After the recorded reset time, the same guarded retry can be run manually:
+Evidence: `evaluation/checks/youtube-api-readback.json`, `youtube-playback.json`,
+and `youtube-upload.json`. The one-shot timer has fired; preserve the recorded ID.
+
+The guarded upload script remains available for recovery diagnostics:
 
 ```bash
 python scripts/retry_youtube_upload.py
 ```
+
+It refuses to repeat this successful upload.
 
 The script checks the reviewed hash and unlisted visibility, holds a process
 lock, and retries only a confirmed quota rejection after its recorded reset.
