@@ -5,7 +5,7 @@
 Cellpose and StarDist already segment instances, napari already supports label
 editing and measurements, and CellSampler combines existing model outputs.
 These capabilities are prior art, not a scientific-first claim for NucleiLens.
-Sources41–44 in `research/SOURCES.md` document that boundary. The purpose of this
+Sources43–46 in `research/SOURCES.md` document that boundary. The purpose of this
 addition is a concrete inspect/confirm/recalculate/export workflow with explicit
 provenance. Comparative user benefit remains unmeasured.
 

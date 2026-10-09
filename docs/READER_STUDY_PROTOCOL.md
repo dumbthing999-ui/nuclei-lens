@@ -67,4 +67,5 @@ non-identifying aggregates. Do not fabricate sessions, simulate people, or subst
 algorithmic oracle correction for observed human behavior.
 
 No recruitment, consent, study-mode implementation or human result is implied by
-this document. Video remains on owner hold.
+this document. The owner released the video hold; delivery is documented in `demo/README.md`.
+This changes no reader-study status or benefit claim.
