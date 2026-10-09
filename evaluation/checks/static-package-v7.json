@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-09T18:00:22.675065+00:00",
+  "archive_path": ".firecrawl/nucleilens-site-v7.tar.gz",
+  "local_compressed_sha256": "0b6842e26eaeee5abc567c30cb1f5f6d6e38fbc378d9ad6af0dee3d0e7467544",
+  "local_compressed_bytes": 35838182,
+  "regular_files": 99,
+  "runtime_files_verified": 11,
+  "runtime_bytes": 40155402,
+  "checks": [
+    {
+      "file": "pyodide.js",
+      "bytes": 18912,
+      "sha256": "3141b814715a72e59b51b1b18b9ceae5bf19f7c852417e431bb0a34feadf825c"
+    },
+    {
+      "file": "pyodide.mjs",
+      "bytes": 17931,
+      "sha256": "6f1d60f7bf529beb300f0f47983c921d3982363640ba20af0e38efdddbc66109"
+    },
+    {
+      "file": "pyodide.asm.mjs",
+      "bytes": 1250344,
+      "sha256": "f7cdc8ece80678ceb712f8e65ebe6d3a83203a180c399865f49612a051693635"
+    },
+    {
+      "file": "pyodide.asm.wasm",
+      "bytes": 9598218,
+      "sha256": "cc36e3cab04fdfc9a63ff13eb52eae2b911bf46c025cc7b281f394bd3de1d5e6"
+    },
+    {
+      "file": "python_stdlib.zip",
+      "bytes": 2545637,
+      "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a"
+    },
+    {
+      "file": "pyodide-lock.json",
+      "bytes": 111285,
+      "sha256": "654369ec509358a8d47474732a56b21e6dfff6d84e4440e5fc5bc2c02b196c86"
+    },
+    {
+      "file": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "bytes": 2960568,
+      "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf"
+    },
+    {
+      "file": "scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "bytes": 14029750,
+      "sha256": "17ee329a957863516d1bb6a6aaa0c60576fac027e9cd3d43de27f58b5b599b50"
+    },
+    {
+      "file": "scikit_image-0.26.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "bytes": 9518861,
+      "sha256": "80b1bd266de8576a46cd7d2ef5ab8fa426b23dfaab293e367e730cee0f8ac77b"
+    },
+    {
+      "file": "lazy_loader-0.5-py3-none-any.whl",
+      "bytes": 8044,
+      "sha256": "b5cf892eda01b97a86fdc99e0a9b91507c5b276f8371e937dd4db63ce101f0df"
+    },
+    {
+      "file": "packaging-26.1-py3-none-any.whl",
+      "bytes": 95852,
+      "sha256": "565acbbea54da30348b6d68b6a54373e6f777987db9f1db6966b4b3a5060d303"
+    }
+  ],
+  "source_tree": "df81e82a894b6d2cf71f51162ae160bde5e4f090",
+  "scope": "Actual local compressed archive contents; server canonical tar hash is a different scope and is not asserted equal."
+}

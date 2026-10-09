@@ -18,8 +18,10 @@ flowchart LR
   G --> O[Actual overlays and count-changing hypotheses]
   Q --> O
   O --> UI
-  UI --> H[Human-confirmed regional count]
-  H --> A[Explicit JSON audit download]
+  UI --> H[Human-confirmed regional tally]
+  H --> A[JSON tally audit]
+  UI --> M[Explicit component replacement]
+  M --> L[Reviewed label TIFF and mask audit]
   C[Local CLI / optional loopback API] --> P
 ```
 
@@ -49,10 +51,11 @@ flowchart TD
   P --> R[Object disagreement: default review order]
   E --> U[Actual outlines and localized graph explanations]
   R --> U
-  U --> H[User confirms a regional count]
-  H --> P[Conflict-checked graph component replacement]
-  P --> T[Lossless label TIFF]
-  H --> X[JSON audit, label hash and separate tally]
+  U --> H[User confirms independent regional tally]
+  H --> X[JSON tally audit]
+  U --> C[Explicit component confirmation]
+  C --> M[Conflict-checked mask replacement]
+  M --> L[Lossless label TIFF and mask audit]
 ```
 
 Each alternate is compared independently with the baseline. An edge needs intersection coverage of at least 45% of the smaller object. Count-neutral components contribute no graph event, while the object-disagreement comparator still measures mask instability. A field with equal total counts may contain opposing graph events; the signature example is computed from the bundled first training field. Such events are hypotheses, not ground-truth diagnoses.

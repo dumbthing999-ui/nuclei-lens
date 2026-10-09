@@ -26,6 +26,18 @@ try{
  const baseline=await jsonDownload('Export segmentation QA report');
  if(baseline.baseline.measurements.object_count!==74||!baseline.original_vs_reviewed.segmentation_equal_up_to_ids)throw Error('Initial QA geometry is wrong.');
  await page.getByText('Compare masks from another model or editor',{exact:true}).click();
+ // Deliberately misaligned same-size fixture: reverse the real source pixels.
+ // This tests the gate; it does not prove that a person detects misalignment.
+ const misaligned=labelTiff(sourceMask.slice().reverse(),sample.width,sample.height);
+ await page.locator('.external-mask-review input[type=file]').setInputFiles({name:'misaligned-same-size.tif',mimeType:'image/tiff',buffer:Buffer.from(misaligned)});
+ await page.waitForSelector('#external-mask-select');
+ await page.getByRole('button',{name:'Inspect external component 1',exact:true}).click();
+ const alignment=page.getByRole('checkbox',{name:/I inspected this mask/});
+ if(!await page.locator('.external-proposals button').filter({hasText:/^Confirm external/}).first().isDisabled())throw Error('Misaligned import replacement enabled without alignment judgment.');
+ await alignment.check();await alignment.uncheck();
+ const cancelled=await jsonDownload('Export segmentation QA report');
+ if(cancelled.reviewed.sha256_uint32_le!==baseline.reviewed.sha256_uint32_le||cancelled.changes.length||cancelled.external_masks[0].source.user_alignment_confirmation)throw Error('Cancelling alignment changed pixels/history or retained acknowledgment.');
+ await page.getByRole('button',{name:'Remove selected mask',exact:true}).click();
  await page.locator('#external-mask-name').fill('Existing sensitivity run — validation fixture, not a neural model');
  await page.locator('.external-mask-review input[type=file]').setInputFiles({name:'real-sensitivity-labels.tif',mimeType:'image/tiff',buffer:Buffer.from(fixture)});
  await page.waitForSelector('#external-mask-select');
@@ -42,6 +54,10 @@ try{
   const row=page.locator('.external-proposals>div').nth(index),confirm=row.getByRole('button',{name:/^Confirm external/});
   if(!await confirm.isDisabled())throw Error('External confirmation enabled before inspecting.');
   await row.getByRole('button',{name:'Inspect external component '+(index+1),exact:true}).click();
+  if(index===split){
+   if(!await confirm.isDisabled())throw Error('Matching import bypassed alignment judgment.');
+   await alignment.check();
+  }
   const clip=await page.locator('.external-preview clipPath rect').evaluate(r=>['x','y','width','height'].map(a=>Number(r.getAttribute(a))));
   if(clip.some(v=>!Number.isFinite(v))||clip[0]<0||clip[1]<0||clip[0]+clip[2]>sample.width||clip[1]+clip[3]>sample.height||!await page.locator('.external-preview g[clip-path]').count())throw Error('Focused mask comparison is not clipped to a bounded image region.');
   await confirm.click();
@@ -50,6 +66,7 @@ try{
  const reviewed=await jsonDownload('Export segmentation QA report');
  if(reviewed.reviewed.measurements.object_count!==74||reviewed.original_vs_reviewed.segmentation_equal_up_to_ids||!reviewed.original_vs_reviewed.same_total||reviewed.changes.length!==2)throw Error('Same-total edited QA report inconsistent.');
  if(!reviewed.changes.every(p=>p.source.kind==='external-label-tiff'))throw Error('External edit provenance missing.');
+ if(!reviewed.changes.every(p=>p.source.user_alignment_confirmation?.input_hash===sample.input_hash&&p.source.user_alignment_confirmation.kind==='visual-user-judgment'))throw Error('Alignment judgment missing from edit audit.');
  let event=page.waitForEvent('download');await page.getByRole('button',{name:'Export label TIFF',exact:true}).click();let downloaded=await event;const tiffBytes=await readFile(await downloaded.path());
  const image=await(await fromArrayBuffer(tiffBytes.buffer.slice(tiffBytes.byteOffset,tiffBytes.byteOffset+tiffBytes.byteLength))).getImage();const labels=await image.readRasters({interleave:true});
  const bytes=Buffer.alloc(labels.length*4);labels.forEach((id,i)=>bytes.writeUInt32LE(id,i*4));const hash=createHash('sha256').update(bytes).digest('hex');
@@ -82,6 +99,6 @@ try{
  if(errors.length||writes.length)throw Error('Unexpected browser errors or non-read requests.');
  await writeFile(path.join(root,'artifacts/qa-report-smoke.json'),JSON.stringify(reviewed,null,2)+'\n');
  await writeFile(path.join(root,'artifacts/qa-measurements-smoke.csv'),csv);
- await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,focused_overlay_clipped:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes,hosting_challenge_requests:hostingChallenges,network_scope:'Only same-origin POSTs under the known Cloudflare challenge-platform prefix are classified as hosting. Other writes fail. Route classification does not inspect encrypted challenge payloads or establish anonymity.'},null,2)+'\n');
+ await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,alignment_gate_matching_and_misaligned:true,alignment_cancel_preserves_pixels_and_history:true,alignment_judgment_audited:true,focused_overlay_clipped:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes,hosting_challenge_requests:hostingChallenges,network_scope:'Only same-origin POSTs under the known Cloudflare challenge-platform prefix are classified as hosting. Other writes fail. Route classification does not inspect encrypted challenge payloads or establish anonymity.'},null,2)+'\n');
  console.log('PASS: external mask review, measurements, CSV/TIFF/report hash, undo, import guards, mobile.');
 }catch(e){await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'failed',target,error:String(e),page_errors:errors,non_read_requests:writes,hosting_challenge_requests:hostingChallenges},null,2)+'\n');throw e;}finally{await browser.close();}

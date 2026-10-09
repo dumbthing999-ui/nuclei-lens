@@ -1,0 +1,46 @@
+{
+  "role": "Technical",
+  "scores": {
+    "innovation": 3.6,
+    "impact": 3.3,
+    "execution": 4.6,
+    "presentation": 4.3
+  },
+  "total": 15.8,
+  "evidence_scope": {
+    "method": "Read-only inspection of the eight authorized files. No tests executed, accounts browsed, credentials inspected, or previous judge reports consulted.",
+    "innovation": "Sparse overlap correspondence, count-neutral partition comparison, explicit correction and traceable exports form a coherent implementation. Cellpose, StarDist, napari and CellSampler constrain novelty; graph ranking underperforms the simpler object-disagreement default.",
+    "impact": "README reports held-out error capture of 45.8% at a 20% tile budget versus 20% expected random, supporting error concentration. Actual reviewer accuracy, time savings, adoption and independent biological generalization remain unestablished.",
+    "execution": "Inspected comparison code implements bounded sparse intersections, union-find grouping, label-renumbering equivalence and deterministic event ordering. TIFF import checks dimensions, unsigned types, orientation, compression and allocation bounds. Keyboard script checks real exported pixels, audit hashes and exact undo. Supplied V7 records report matching source trees, successful CI and public workflows; these were not checks performed in this simulation.",
+    "presentation": "README explains the same-count counterexample, distinguishes precomputed neural predictions from browser inference, and preserves negative results. Supplied evidence establishes the attached 215-second video and verified opening sample, not full player viewing. V7 accessibility and runtime integrity are accepted as verified supplied evidence.",
+    "limits": "Core segmentation, replacement implementation, measurements and referenced raw reports were outside the authorized reading scope. This is a same-model-family simulation, not an independent human judgment."
+  },
+  "evidence_files": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/security-review.md",
+    "frontend/src/maskComparison.ts",
+    "frontend/src/labelImport.ts",
+    "frontend/tests/keyboard-smoke.mjs",
+    "evaluation/checks/deployment-v7.json",
+    "evaluation/checks/keyboard-merge.json"
+  ],
+  "weaknesses": [
+    "External TIFFs can match dimensions and orientation while belonging to another field or spatial alignment. Ordinary imports do not establish input identity; hashes establish integrity rather than biological suitability.",
+    "Bounded decoding and correspondence reduce resource risk, but the supplied security review explicitly excludes parser fuzzing. The inspected keyboard script covers a reference workflow rather than adversarial imports or worst-case comparison latency.",
+    "Engineering reliability substantially exceeds demonstrated impact. Frozen benchmark results do not evaluate the added neural correction workflow, and unsaved review state disappears on reload."
+  ],
+  "highest_leverage_fix": {
+    "action": "Add a mandatory external-mask alignment confirmation before enabling any imported-component replacement, showing the imported outline over the current image and clearly identifying provenance as unverified.",
+    "measurable_gate": "For both matching-field and same-size wrong-field fixtures, replacement remains disabled until explicit confirmation; cancelling leaves mask bytes and audit history unchanged. Document that confirmation records a user judgment and does not certify alignment."
+  },
+  "must_fix_before_submission": [
+    "Close the external-import alignment gate described above, or disable imported-component replacement pending that safeguard.",
+    "Correct architecture diagram nodes describing regional-count confirmation so they consistently distinguish independent tally changes from actual component replacement.",
+    "Make the reload-loss limitation prominent beside review/export controls, directing users to download both TIFF and audit JSON before leaving."
+  ],
+  "confidence": {
+    "level": "moderate",
+    "reason": "Direct source inspection supports the engineering assessment; deployment and evaluation findings rely on supplied evidence. No live interaction, full video viewing, or human-benefit evaluation occurred."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-09T18:00:57.779Z",
+  "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+  "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_39a1975bf7448191bcb9f90beaf6190e",
+  "version_number": 7,
+  "source_commit": "8bcb4c726e6cf7c519778639753601c5305e1732",
+  "source_tree": "df81e82a894b6d2cf71f51162ae160bde5e4f090",
+  "source_parent": "6e71ddad6978a9e0ae026984e85d888266bad3cf",
+  "github_main_commit_at_deployment": "22b3b15bc5d7681c97b6d847c9ec1a5154baadf3",
+  "exact_source_tree_matches": true,
+  "archive_verification": "evaluation/checks/static-package-v7.json",
+  "server_canonical_archive": {
+    "sha256": "sha256:d4ee8ec0e738412737f9acfa9f040040be3fc69f496c9ad75b618cbf9c32cf83",
+    "bytes": 48629760,
+    "files": 99
+  },
+  "deployment": {
+    "id": "appgdep_6ac92b59cb5c81918862c800dacdf309",
+    "status": "succeeded",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "audience": "public"
+  },
+  "saved_version_readback": true,
+  "site_readback": {
+    "status": "active",
+    "latest_version_number": 7
+  },
+  "public_checks": {
+    "focus_motion": "passed",
+    "core_workflow": "passed",
+    "model_qa": "passed"
+  },
+  "full_keyboard_workflow_scope": "Local and exact-head CI source checks; public focus/skip/disclosure/motion verified separately. No physical-device or assistive-technology user study.",
+  "frozen_scientific_source_changed": false,
+  "public_check_reports": [
+    "evaluation/checks/deployment-v7-focus-motion.json",
+    "evaluation/checks/deployment-v7-browser.json",
+    "evaluation/checks/deployment-v7-mask-qa.json"
+  ]
+}

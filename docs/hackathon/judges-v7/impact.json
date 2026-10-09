@@ -1,0 +1,43 @@
+{
+  "role": "Research/Impact",
+  "scores": {
+    "innovation": 3.7,
+    "impact": 3.2,
+    "execution": 4.5,
+    "presentation": 4.3
+  },
+  "total": 15.7,
+  "evidence_scope": {
+    "basis": "Read only the eight requested files. No edits, tests, browsing, account access, credential inspection or previous judge reports. Scores are equally weighted, each out of 5.",
+    "innovation": "A concrete same-total ambiguity workflow combines localized alternatives, explicit component replacement and hash-linked exports. Cellpose, StarDist, napari and CellSampler establish substantial prior art. Graph ranking loses to simpler object disagreement; originality is in the implementation and explanation workflow, with comparative practical advantage unmeasured.",
+    "impact": "The practical problem is credible: correct aggregate counts can conceal instance mismatches. The frozen test reports 45.8% annotated-error capture at a 20% tile budget versus 20% expected random. This supports prioritization potential, but no observed reviewer accuracy, time savings, demand or downstream benefit.",
+    "execution": "The 50-field assessment reports MAE 5.12 and mean F1 0.827; summary source hashes match the supplied frozen protocol. Preselection, explicit matching rules and retained negative findings strengthen validity. The additional 496 fields retain failures and annotation concerns. V7 keyboard, source and runtime integrity are accepted as supplied verified evidence; I did not execute checks.",
+    "presentation": "The same-total example communicates the problem clearly, and documentation distinguishes benchmark proxies, human choices and biological correctness. Extensive detail can obscure the practical benefit hypothesis. The uploaded, attached 215-second video and verified opening sample are accepted as supplied evidence; full player viewing was not performed and later access was sign-in challenged.",
+    "limits": "Referenced papers, per-image records, screenshots and live interfaces were not independently inspected. Three simulations use separate contexts within the same model family; they are not independent human judges."
+  },
+  "evidence_files": [
+    "README.md",
+    "docs/INNOVATION.md",
+    "docs/PRODUCT_COMPARISON.md",
+    "docs/READER_STUDY_PROTOCOL.md",
+    "evaluation/test/summary.json",
+    "evaluation/additional/README.md",
+    "evaluation/frozen/protocol.json",
+    "research/problem-evidence/consensus-prior-art.json"
+  ],
+  "weaknesses": [
+    "The central benefit remains a proxy: four selected tiles need not require equal human effort, error concentration does not establish successful correction, and the reader exercise exists only as a protocol.",
+    "Scientific scope is narrow. Additional-image source dependence is unresolved, reference imperfections remain, and 37 additional fields have F1 below 0.5. Stable wrong masks can escape sensitivity probes.",
+    "Differentiation from established editing and consensus tools lacks observed user advantage. The graph loses by 6.32 percentage points to object disagreement on the frozen test, and the proposed reader comparison cannot isolate explanation effects from ranking."
+  ],
+  "highest_leverage_fix": {
+    "action": "Implement the protocol's missing blinded condition presentation, then conduct its counterbalanced six-adult exploratory pilot with consent and any required review, preserving every task and measuring annotation-relative local count error and completion time.",
+    "measurable_gate": "Before sessions, freeze assignments and analysis. Require six complete paired participant summaries with uncertainty and failures disclosed. Permit only a pilot-scoped benefit statement if at least four participants improve local count MAE and median paired MAE decreases without increased median completion time; otherwise report no demonstrated benefit."
+  },
+  "must_fix_before_submission": [
+    "Make the headline result explicitly 'annotated FP+FN concentration at a fixed tile budget'; keep it separate from corrected-mask accuracy and human effort.",
+    "Keep the additional assessment labeled property-filtered and potentially source-dependent wherever its results appear; do not present 496 fields as independent biological validation.",
+    "Keep same-total alternatives and equal-count model examples labeled disagreement demonstrations with unverified biological correctness; retain the explicit protocol-only reader-study status unless real consented observations exist."
+  ],
+  "confidence": "Moderate overall; high for conclusions about supplied benchmark values and documented limitations, moderate for implementation assessment, and low for realized user impact. Submission items are claim-presentation gates, not newly verified defects."
+}

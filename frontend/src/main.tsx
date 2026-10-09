@@ -49,6 +49,7 @@ function App() {
   function confirmMask(event:GraphEvent,alternate?:Uint32Array,source?:ExternalMaskSource) {
     if(!analysis||!masks||!editedMask)return;
     try {
+      if(source&&source.user_alignment_confirmation?.input_hash!==analysis.input_hash)throw new Error('External mask alignment must be explicitly reviewed for this image before replacement.');
       if(source&&event.baseline_count+event.alternate_count>32)throw new Error('Large external component: inspect/export and review in an existing editor.');
       const chosen=alternate??masks[event.run_id];
       if(!chosen)throw new Error('Alternative mask is unavailable.');

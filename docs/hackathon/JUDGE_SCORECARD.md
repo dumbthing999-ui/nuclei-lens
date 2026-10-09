@@ -1,3 +1,24 @@
+# Current judge scorecard — October 9, 2026
+
+Fresh V7 reviews use three separate contexts of the same model family, not
+independent human judges. Reading scopes, raw judgments and reviewed findings are
+in [judges-v7/REVIEW.md](judges-v7/REVIEW.md). No reviewer watched the complete
+video or ran live tests. Do not award score increases for subsequent fixes.
+
+| Criterion | Technical / Impact / Skeptical | Evidence | Weakness | Next improvement |
+|---|---:|---|---|---|
+| Innovation | 3.6 / 3.7 / 3.7 | Actual same-count alternative review and hash-linked mask decisions | Established prior art; user advantage unmeasured | Demonstrate practical advantage with real consented observations |
+| Impact | 3.3 / 3.2 / 3.3 | Frozen 50-field annotated-error concentration; all failures retained | Fixed tile budget is not human effort; source dependence | Predeclared reader comparison, no invented participants |
+| Technical Execution | 4.6 / 4.5 / 4.5 | V7 runtime, real model masks, CI/browser/keyboard/export integrity | Imported alignment requires human judgment; browser scope | Gate external replacement and audit the judgment |
+| Presentation | 4.3 / 4.3 / 4.0 | Attached 215s video, opening sample, real 74→75→74 demo | Full viewing unverified; broad narration phrases | Clear walkthrough and timestamped qualifications |
+
+Totals: **15.8 / 15.7 / 15.5 out of 20**. Internal gates are not met. Reader benefit,
+scientific novelty and biological accuracy superiority remain unestablished.
+The historical assessments below are preserved unchanged with their original dates;
+old video holds and quota failures are superseded by the verified later upload.
+
+## Archived earlier scorecard
+
 # Current judge scorecard — October8,2026
 
 October 9 delivery note: PR10/PR11 are merged, public V6 inference/model QA pass,

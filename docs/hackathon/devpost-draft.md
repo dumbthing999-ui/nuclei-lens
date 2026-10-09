@@ -2,6 +2,8 @@
 
 A segmentation merges two nuclei. Elsewhere, it splits one nucleus into two masks. The total stays unchanged, while the objects differ.
 
+Try the public demo: **inspect** the opposing split and merge outlines, explicitly **confirm** alternatives to see the mask count change **74 → 75 → 74**, **undo** both edits, then **export** the label TIFF and audit JSON. Each alternative is a hypothesis, not verified truth. Cellpose, StarDist, napari and CellSampler already provide segmentation, editing or consensus methods; we make no scientific-first claim. The graph explains alternatives; a separately measured object-disagreement queue sets review order. Neither the alternatives nor queue capture establishes human benefit.
+
 In our fixed assessment of 50 public microscopy fields, four fields had exactly correct total counts while retaining 100 unmatched instances under object-level evaluation. A plausible total can hide disagreement about which nuclei exist.
 
 We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. [1,2]
@@ -24,7 +26,7 @@ accuracy comparison. View the actual source/model/weight/output hashes. These
 are precomputed CPU predictions; the browser does not run their networks.
 
 Import up to three aligned, uncompressed unsigned label TIFFs from a model or
-editor. Inspect an original/imported component before explicitly confirming it.
+editor. Inspect the imported overlay, explicitly acknowledge its image alignment, then inspect a component before confirming replacement. Alignment acknowledgment records a user judgment, not independent verification.
 Existing conflict checks, fresh IDs and exact undo protect mask integrity.
 Area, pixel-center centroid, exposed grid-edge perimeter and border measurements
 recalculate from the actual reviewed mask after edits and undo. Export the CSV,
@@ -127,3 +129,7 @@ Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembl
 6. Robust consensus nuclear and cell segmentation, 2025: https://doi.org/10.3389/fgene.2025.1547788. Implementation/provenance and established-tool sources: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/MASK_QA.md and https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/OPTIONAL_MODELS.md.
 
 This is a research/education prototype, not a clinical diagnostic tool. AI assistance was used for development, research, review, and draft writing. Reported measurements come from reproducible program execution; human-reader benefits remain unmeasured.
+
+## Video wording qualifications
+
+The attached 3:35 video uses a schematic opening. At 0:06, “biological measurement is broken” refers to a possible object-level segmentation mismatch, not a demonstrated downstream biological outcome. At 0:32, “every automated count” describes the motivation; this tool supports bounded single-field images, and stable wrong masks can escape sensitivity probes. At 0:52, “simple boundary noise” means count-neutral correspondence differences; those boundaries may matter biologically. Any statement about where attention is “needed most” refers only to annotated FP+FN concentration at a fixed tile-review budget, not measured human effort, correction accuracy or benefit.
