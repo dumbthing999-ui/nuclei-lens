@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-08T18:44:04.142Z",
+  "checked_at": "2026-10-08T18:37:40.812Z",
   "status": "passed",
-  "target": "http://127.0.0.1:5174",
+  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
   "fixture": "Actual frozen sensitivity label map; not neural-model output",
   "source_run": 1,
   "measurements_recalculated": true,
@@ -46,6 +46,11 @@
   ],
   "page_errors": [],
   "non_read_requests": [],
-  "hosting_challenge_requests": [],
+  "hosting_challenge_requests": [
+    {
+      "method": "POST",
+      "path_prefix": "/cdn-cgi/challenge-platform/"
+    }
+  ],
   "network_scope": "Only same-origin POSTs under the known Cloudflare challenge-platform prefix are classified as hosting. Other writes fail. Route classification does not inspect encrypted challenge payloads or establish anonymity."
 }

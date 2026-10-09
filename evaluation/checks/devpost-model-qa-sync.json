@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-08T18:42:47.776675+00:00",
+  "project_id": 1470185,
+  "project_url": "https://devpost.com/software/nucleilens",
+  "version": 9,
+  "checks": {
+    "new_copy": true,
+    "photo": true,
+    "tags": true,
+    "live_link": true,
+    "repo_link": true,
+    "operator_preface_absent": true
+  },
+  "built_with_count": 18,
+  "new_gallery_photo": {
+    "id": 5537600,
+    "position": 6,
+    "http_status": 200,
+    "content_type": "image/jpeg"
+  },
+  "description_readback": "Exact content matches after stripping Markdown heading/list/emphasis/code markers and normalizing whitespace. Public rendered headings/narrative and absence of operator-only preface also verified.",
+  "video_url": null,
+  "competition_submitted_at": null,
+  "private_contact_email_included_in_public_artifacts": false,
+  "custom_answers_status": "Owner deferred browser-dependent draft save. No submit_project call.",
+  "plaintext_content_match_after_known_markdown_normalization": true
+}

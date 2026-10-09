@@ -3,7 +3,8 @@
 Latest local QA:45native/22frontend tests pass; actual model outputs and QA
 workflow verified. The saved V5 package directory lacks generated runtime assets;
 metadata success/source-tree parity alone did not verify fresh live inference.
-The strengthened package validator and forthcoming V6 include full runtime hashes.
+V6 now includes the full runtime and passed actual public browser inference/QA.
+See `evaluation/checks/deployment-v6-browser.json` and `deployment-v6-mask-qa.json`.
 Reviewed video is complete; upload/playback and human-benefit evidence remain
 outstanding. Historical V5 observations below retain their original scope.
 
@@ -216,3 +217,20 @@ production package also passes real runtime/engine hash verification.
 Final visual follow-up: clip imported-mask overlays to the inspected component's
 bounded view rectangle, preventing neighboring pixels from rendering into SVG
 letterboxing. Browser QA verifies clip geometry alongside actual edits/hashes.
+
+## October9 — verified V6 delivery
+
+PR10 merged after exact-head CI37824736213/37824726626 succeeded. Site V6 source
+and GitHub release tree match; full runtime/model assets verified in the local
+archive. Server canonical archive metadata has a distinct hash/size scope. Public
+Chromium workflow passes actual count74inference, edits/undo/hash/rerun/cancel.
+Public QA passes actual neural68/68comparison, measurements/CSV/TIFF/report,
+import validation, field cleanup and desktop/mobile axe. Known same-origin
+Cloudflare challenge POSTs are recorded separately; other writes fail QA. Route
+classification does not inspect encrypted payloads or establish anonymity.
+
+The first public QA run failed its final local-only no-write assumption after
+all workflow actions, with no page errors; its report omitted request details.
+That failed observation is retained. The revised check's public rerun passed,
+with hosting traffic explicit. Devpost version9 copy/18tags/sixth photo and fresh
+rendered/authenticated/image readbacks pass. Video remains quota-blocked.

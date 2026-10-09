@@ -13,7 +13,7 @@ await mkdir(path.join(root,shotDir),{recursive:true});
 const executable=process.env.NUCLEILENS_CHROMIUM_BIN||(!process.env.CI&&existsSync('/usr/bin/chromium')?'/usr/bin/chromium':undefined);
 const browser=await chromium.launch({executablePath:executable,headless:true,args:['--no-sandbox']});
 const page=await browser.newPage({viewport:{width:1440,height:1080}});
-const errors=[];const failedRequests=[];const consoleErrors=[];const nonReadRequests=[];page.on('requestfailed',r=>failedRequests.push({path:new URL(r.url()).pathname,error:r.failure()?.errorText}));page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text().slice(0,500));});page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD','OPTIONS'].includes(r.method()))nonReadRequests.push({method:r.method(),url:r.url()});});
+const errors=[];const failedRequests=[];const consoleErrors=[];const nonReadRequests=[];page.on('requestfailed',r=>failedRequests.push({path:new URL(r.url()).pathname,error:r.failure()?.errorText}));page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text().slice(0,500));});page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD','OPTIONS'].includes(r.method())){const url=new URL(r.url());nonReadRequests.push({method:r.method(),origin:url.origin,path:url.pathname.startsWith('/cdn-cgi/challenge-platform/')?'/cdn-cgi/challenge-platform/':url.pathname});}});
 const target=process.env.NUCLEILENS_DEMO_URL||'http://127.0.0.1:5173';
 try {
 await page.goto(target);

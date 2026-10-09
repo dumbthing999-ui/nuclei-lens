@@ -13,7 +13,12 @@ const sourceBytes=inflateSync(Buffer.from(sample.label_maps.runs[witnessRun],'ba
 const sourceMask=Uint32Array.from({length:sample.width*sample.height},(_,i)=>sourceBytes.readUInt32LE(i*4));
 const fixture=labelTiff(sourceMask,sample.width,sample.height);
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1440,height:1100},acceptDownloads:true});
-const errors=[],writes=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD','OPTIONS'].includes(r.method()))writes.push({method:r.method(),url:r.url()});});
+const errors=[],writes=[],hostingChallenges=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{
+ if(['GET','HEAD','OPTIONS'].includes(r.method()))return;
+ const url=new URL(r.url());
+ if(r.method()==='POST'&&url.origin===new URL(target).origin&&url.pathname.startsWith('/cdn-cgi/challenge-platform/'))hostingChallenges.push({method:'POST',path_prefix:'/cdn-cgi/challenge-platform/'});
+ else writes.push({method:r.method(),origin:url.origin,path:url.pathname});
+});
 const reportPath=path.join(root,'evaluation/checks/mask-qa-browser.json');
 async function jsonDownload(name){const event=page.waitForEvent('download');await page.getByRole('button',{name,exact:true}).click();const d=await event;const temp=await d.path();return JSON.parse(await readFile(temp,'utf8'));}
 try{
@@ -77,6 +82,6 @@ try{
  if(errors.length||writes.length)throw Error('Unexpected browser errors or non-read requests.');
  await writeFile(path.join(root,'artifacts/qa-report-smoke.json'),JSON.stringify(reviewed,null,2)+'\n');
  await writeFile(path.join(root,'artifacts/qa-measurements-smoke.csv'),csv);
- await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,focused_overlay_clipped:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes},null,2)+'\n');
+ await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'passed',target,fixture:'Actual frozen sensitivity label map; not neural-model output',source_run:witnessRun,measurements_recalculated:true,external_import:true,real_model_pair:{counts:[68,68],same_total_different_segmentation:true,components:actual.comparison.events.length,foreground_difference_pixels:actual.comparison.foreground_difference_pixels},inspect_before_confirm:true,focused_overlay_clipped:true,opposing_edit_counts:[74,75,74],same_total_different_partition:true,csv_tiff_hash_match:true,undo_measurements_exact:true,invalid_geometry_rejected:true,image_switch_clears_imports:true,mobile_overflow:false,automated_accessibility:accessibility,page_errors:errors,non_read_requests:writes,hosting_challenge_requests:hostingChallenges,network_scope:'Only same-origin POSTs under the known Cloudflare challenge-platform prefix are classified as hosting. Other writes fail. Route classification does not inspect encrypted challenge payloads or establish anonymity.'},null,2)+'\n');
  console.log('PASS: external mask review, measurements, CSV/TIFF/report hash, undo, import guards, mobile.');
-}catch(e){await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'failed',error:String(e),page_errors:errors},null,2)+'\n');throw e;}finally{await browser.close();}
+}catch(e){await writeFile(reportPath,JSON.stringify({checked_at:new Date().toISOString(),status:'failed',target,error:String(e),page_errors:errors,non_read_requests:writes,hosting_challenge_requests:hostingChallenges},null,2)+'\n');throw e;}finally{await browser.close();}

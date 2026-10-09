@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-10-08T18:36:01.496421+00:00",
+  "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+  "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_4128aa17fecc8191b14f021e5972d1d5",
+  "version_number": 6,
+  "source_commit": "6e71ddad6978a9e0ae026984e85d888266bad3cf",
+  "source_tree": "8931837b5b8053c925065c83601c0d4d14eac3a4",
+  "source_parent": "af6ed858c23a42aa0d63b59e42c40646164a3822",
+  "github_main_commit_at_deployment": "23d592638ff1d20f483aa9753ab447d335e5efda",
+  "github_main_tree_at_deployment": "8931837b5b8053c925065c83601c0d4d14eac3a4",
+  "exact_source_tree_matches": true,
+  "archive_verification": "evaluation/checks/static-package-v6.json",
+  "deployment": {
+    "id": "appgdep_6ac7e252fc808191b9344d5bc7272c63",
+    "status": "succeeded",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "audience": "public"
+  },
+  "saved_version_readback": true,
+  "site_readback": {
+    "status": "active",
+    "latest_version_number": 6
+  },
+  "public_browser_checks": {
+    "core_workflow": "passed",
+    "segmentation_qa": "passed",
+    "evidence": [
+      "evaluation/checks/deployment-v6-browser.json",
+      "evaluation/checks/deployment-v6-mask-qa.json"
+    ],
+    "scope": "Actual public Chromium inference/count74, split/merge/undo/TIFF/hash/rerun/cancel, real-model68/68comparison, recalculated CSV/QA, invalid import, field switch and axe/mobile layout. Physical devices/Safari and human benefit unverified."
+  },
+  "frozen_scientific_source_changed": false
+}
