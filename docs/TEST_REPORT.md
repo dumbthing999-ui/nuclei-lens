@@ -235,3 +235,29 @@ all workflow actions, with no page errors; its report omitted request details.
 That failed observation is retained. The revised check's public rerun passed,
 with hosting traffic explicit. Devpost version9 copy/18tags/sixth photo and fresh
 rendered/authenticated/image readbacks pass. Video remains quota-blocked.
+
+## October 9 — Keyboard navigation and motion evidence
+
+The keyboard-only Chromium local-preview check passed sample selection, native
+select navigation, split/merge inspection, real74→75→74 mask edits, exact undo
+and JSON/uint32 TIFF downloads with pixel/hash checks. All interactions in this
+script use Tab/Shift+Tab/Enter/Space/arrow keys; DOM reads observe focus and values.
+Sixteen focused targets were reached with visible computed3px outlines and no
+page/console/request errors. It uses actual public sample masks, not biological
+reference annotations or fake results. It does not trigger model inference.
+
+A separate check passed the first-focus skip link into the workspace, keyboard
+disclosure expansion/focus, and the actual busy spinner with reduced motion
+requested. Automated axe checks still pass desktop/benchmark/additional/mobile
+states.22frontend tests and the TypeScript/Vite build pass. CI runs these new
+checks before release; production publication/readback is required separately.
+
+```bash
+NUCLEILENS_DEMO_URL=http://127.0.0.1:5174 node frontend/tests/keyboard-smoke.mjs
+NUCLEILENS_DEMO_URL=http://127.0.0.1:5174 node frontend/tests/focus-motion.mjs
+```
+
+Reports: `evaluation/checks/keyboard-smoke.json`, `focus-motion.json`. Downloads
+are regenerated locally and uploaded as CI artifacts. This does not establish
+assistive-technology compatibility, physical mobile behavior, full accessibility
+compliance, biological accuracy or measured human benefit.

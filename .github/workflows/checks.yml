@@ -60,13 +60,18 @@ jobs:
           node frontend/tests/browser-smoke.mjs
           node frontend/tests/accessibility.mjs
           node frontend/tests/mask-qa-smoke.mjs
+          node frontend/tests/focus-motion.mjs
+          node frontend/tests/keyboard-smoke.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: browser-check-evidence
           path: |
             artifacts/ci-screenshots/
+            artifacts/keyboard-smoke-ci/
             evaluation/checks/browser-smoke-ci.json
             evaluation/checks/accessibility-ci.json
             evaluation/checks/bandit-ci.json
             evaluation/checks/mask-qa-browser.json
+            evaluation/checks/focus-motion-ci.json
+            evaluation/checks/keyboard-smoke-ci.json

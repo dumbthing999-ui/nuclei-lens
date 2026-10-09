@@ -109,3 +109,13 @@ October20,2026,22:00UTC. The2027 judging/winner-date inconsistency persists.
 No organizer announcements were returned. Contact email is owner-authorized
 privately; the browser-only draft-field save remains deferred by the owner.
 YouTube/Devpost video delivery is now verified with the scopes in the video proofs.
+
+## Project-related mailbox review — October 9
+
+The connected Composio Gmail account returned three matching EurekaDev messages,
+with no further page. Two relevant Devpost messages confirm joining the event,
+starting the NucleiLens draft (not final submission), the existing October20,5PMCDT
+deadline and Discord membership for prize eligibility. No rule change was observed.
+Sender domains were observed, not independently DKIM-verified; official public/MCP
+rules corroborate these details. Personal greetings, recipients and private links
+are excluded from public proof. See `evaluation/checks/organizer-email-review.json`.

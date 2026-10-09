@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T17:46:23.166667+00:00",
+  "connector": "Composio Gmail",
+  "query": "\"EurekaDev\" after:2026/09/26 -in:spam -in:trash",
+  "result_count": 3,
+  "pagination_complete": true,
+  "relevant_messages": [
+    {
+      "subject": "Submission to EurekaDev 2026 started",
+      "received_at": "2026-10-08T08:26:28Z",
+      "sender_domain": "devpost.com",
+      "message_sha256": "b9ec82d46c292cf7dfe431b42a6ac9928b41eb72e81d674a6604402aad6e98d6",
+      "relevant_observation": "NucleiLens draft started; not finished. DeadlineOct20,2026,5PMCDT."
+    },
+    {
+      "subject": "EurekaDev 2026: Welcome to EurekaDev!",
+      "received_at": "2026-10-07T16:21:48Z",
+      "sender_domain": "devpost.com",
+      "message_sha256": "92f8ea5ae1776a2af773414189797b4a7da11f89fcd16f98007a9586d4f4b579",
+      "relevant_observation": "Account joined; Discord membership is required for prizes; solo projects welcome."
+    }
+  ],
+  "rule_change_observed": false,
+  "limits": "Sender domain observed, not independent DKIM authentication. No recipient, personal greeting, private URLs or full mail body published. Public/MCP rules corroborate deadline and Discord. One unrelated historical GitHub CI notification excluded; latest PR12 exact-head CI is separately verified."
+}

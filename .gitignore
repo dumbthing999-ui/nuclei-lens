@@ -35,3 +35,6 @@ evaluation/checks/bandit-ci.json
 
 .venv-models/
 model_output/
+
+# Regenerated keyboard download fixtures are retained as CI artifacts, not source.
+/artifacts/keyboard-smoke*/
