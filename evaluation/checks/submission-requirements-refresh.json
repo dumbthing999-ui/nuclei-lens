@@ -1,0 +1,110 @@
+{
+  "get_submission_requirements": {
+    "hackathon": {
+      "id": 30588,
+      "slug": "eurekadev",
+      "title": "EurekaDev 2026"
+    },
+    "data": {
+      "description_html": "<h4>What to Build</h4>\n<p>You must create a project in <span>one of two tracks </span>and in one of the<span> subject categories</span>:</p>\n<ul>\n<li>\n<p><span>Coding Track:</span> Build a functional prototype, app, website, simulation, or other coded solution. Citations and evidence in your project description is a bonus!</p>\n</li>\n<li>\n<p><span>Research Track:</span> Conduct background research and create a literature review, theoretical framework, or experimental design around your chosen problem. A prototype is a bonus!</p>\n</li>\n</ul>\n<h4>What to Submit</h4>\n<p><span>Project Video (Required) (Paste link in </span><span>Video demo link field)</span></p>\n<ul>\n<li>Maximum 4 minutes in length.</li>\n<li>Must explain the problem, your solution, and how it works.</li>\n<li>Can include demo footage, slides, or other visuals.</li>\n</ul>\n<p><span>Written Project Description (Required) </span><span>(About the project</span><span> field)</span></p>\n<ul>\n<li>Provide a detailed description of your idea/solution, including what makes it innovative.</li>\n<li>Coding Track \u2192 include description of technologies used.</li>\n<li>Research Track \u2192 include background research and references (if applicable).</li>\n</ul>\n<p><span>Code or Research Documentation (Required)</span></p>\n<ul>\n<li>Coding Track (Try it out links):\n<ul>\n<li>PUBLIC GitHub or other repo link (Required) with source code, with a README explaining setup/use.</li>\n<li>Live Demo (testable link) - recommended but not required</li>\n</ul>\n</li>\n<li>Research Track (File upload):\n<ul>\n<li>Participants will submit a <span>PDF </span><span>containing the following sections: <a href=\"https://docs.google.com/document/d/1Y7UJF9GO88y6imqEjcE2kyPyv6QwieMmWFFdpY8GVAM/edit?usp=sharing\" target=\"_blank\" rel=\"noopener\">https://docs.google.com/document/d/1Y7UJF9GO88y6imqEjcE2kyPyv6QwieMmWFFdpY8GVAM/edit?usp=sharing</a></span></li>\n</ul>\n</li>\n</ul>\n<p><span>NOTES:</span></p>\n<ul>\n<li><span>Projects created before the hackathon timeframe are permitted, however they will receive a harsh point deducton.</span></li>\n<li><span>AI use for writing code/research document is discouraged, but allowed. AI use for ideation and support is encouraged. Just know that quality is a judging criteria!</span></li>\n</ul>",
+      "description_text": "What to Build\nYou must create a project in one of two tracks and in one of the subject categories:\n\n\nCoding Track: Build a functional prototype, app, website, simulation, or other coded solution. Citations and evidence in your project description is a bonus!\n\n\nResearch Track: Conduct background research and create a literature review, theoretical framework, or experimental design around your chosen problem. A prototype is a bonus!\n\n\nWhat to Submit\nProject Video (Required) (Paste link in Video demo link field)\n\nMaximum 4 minutes in length.\nMust explain the problem, your solution, and how it works.\nCan include demo footage, slides, or other visuals.\n\nWritten Project Description (Required) (About the project field)\n\nProvide a detailed description of your idea/solution, including what makes it innovative.\nCoding Track \u2192 include description of technologies used.\nResearch Track \u2192 include background research and references (if applicable).\n\nCode or Research Documentation (Required)\n\nCoding Track (Try it out links):\n\nPUBLIC GitHub or other repo link (Required) with source code, with a README explaining setup/use.\nLive Demo (testable link) - recommended but not required\n\n\nResearch Track (File upload):\n\nParticipants will submit a PDF containing the following sections: https://docs.google.com/document/d/1Y7UJF9GO88y6imqEjcE2kyPyv6QwieMmWFFdpY8GVAM/edit?usp=sharing\n\n\n\nNOTES:\n\nProjects created before the hackathon timeframe are permitted, however they will receive a harsh point deducton.\nAI use for writing code/research document is discouraged, but allowed. AI use for ideation and support is encouraged. Just know that quality is a judging criteria!",
+      "fields": [
+        {
+          "id": 28007,
+          "label": "Track",
+          "type": "dropdown",
+          "type_raw": "SubmissionFieldAdvancedDropdown",
+          "required": true,
+          "description": "What is the track you want to be judged in?",
+          "position": 0,
+          "options": [
+            "Coding",
+            "Research"
+          ],
+          "multiple": false
+        },
+        {
+          "id": 28008,
+          "label": "Category",
+          "type": "dropdown",
+          "type_raw": "SubmissionFieldAdvancedDropdown",
+          "required": true,
+          "description": "What is the category you want to be judged in? (within your track)",
+          "position": 1,
+          "options": [
+            "Computer Science + AI (Technology)",
+            "Biology/Medical and Environmental Science",
+            "Math & Physics",
+            "Economics",
+            "Problem in the Community",
+            "Open category (other)"
+          ],
+          "multiple": false
+        },
+        {
+          "id": 28009,
+          "label": "Email",
+          "type": "text",
+          "type_raw": "SubmissionFieldEmail",
+          "required": true,
+          "description": "What is your email for contact if you win?",
+          "position": 2
+        },
+        {
+          "id": 28010,
+          "label": "Discord Username",
+          "type": "text",
+          "type_raw": "SubmissionFieldText",
+          "required": false,
+          "description": "If you would like to be notified on discord, what is your USERNAME (NOT DISPLAY NAME)? (MAKE SURE YOU HAVE JOINED THE SERVER)",
+          "position": 3
+        }
+      ],
+      "deliverables": {
+        "submission_object": "submission",
+        "video_required": true,
+        "website_required": false,
+        "zip_file_required": false
+      }
+    },
+    "data_completeness": "complete",
+    "fetched_at": "2026-10-09T17:30:10Z"
+  },
+  "get_key_dates": {
+    "hackathon": {
+      "id": 30588,
+      "slug": "eurekadev",
+      "title": "EurekaDev 2026"
+    },
+    "data": {
+      "time_zone": "Central Time (US & Canada)",
+      "dates": {
+        "submissions_start_at": "2026-09-27T11:15:00Z",
+        "submissions_end_at": "2026-10-20T22:00:00Z",
+        "judging_starts_at": "2027-10-27T14:00:00Z",
+        "judging_ends_at": "2027-11-05T22:00:00Z",
+        "public_voting_starts_at": null,
+        "public_voting_ends_at": null,
+        "winners_announced_at": "2027-11-06T14:00:00Z",
+        "published_at": "2026-07-17T03:14:35Z"
+      },
+      "current_phase": "submissions_open"
+    },
+    "data_completeness": "complete",
+    "fetched_at": "2026-10-09T17:30:10Z"
+  },
+  "get_announcements": {
+    "hackathon": {
+      "id": 30588,
+      "slug": "eurekadev",
+      "title": "EurekaDev 2026"
+    },
+    "data": {
+      "announcements": [],
+      "total_available": 0,
+      "limit_applied": 10
+    },
+    "data_completeness": "complete",
+    "fetched_at": "2026-10-09T17:30:10Z"
+  }
+}

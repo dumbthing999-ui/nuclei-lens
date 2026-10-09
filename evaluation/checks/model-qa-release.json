@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T01:42:18.467Z",
+  "release_url": "https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.2.0",
+  "tag": "v0.2.0",
+  "target_commit": "9cecb9366a00f466d367fbe635a3b25616deb148",
+  "prerelease": true,
+  "draft": false,
+  "public_repository": true,
+  "homepage": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "topics": [
+    "bioimage-analysis",
+    "human-in-the-loop",
+    "microscopy",
+    "eurekadev-2026",
+    "cellpose",
+    "python",
+    "segmentation",
+    "stardist",
+    "typescript",
+    "webassembly"
+  ],
+  "readback_verified": true,
+  "scientific_engine_version": "0.1.0",
+  "final_submission": false
+}

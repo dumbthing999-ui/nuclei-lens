@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-09T17:28:00.949Z",
+  "id": "nik8WtPUrUc",
+  "title": "NucleiLens — See Beyond the Count | EurekaDev 2026 Demo",
+  "duration": "PT3M36S",
+  "definition": "hd",
+  "caption": "false",
+  "status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "unlisted",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "madeForKids": false
+  },
+  "processing": {
+    "processingStatus": "succeeded",
+    "fileDetailsAvailability": "available",
+    "processingIssuesAvailability": "available",
+    "tagSuggestionsAvailability": "inProgress",
+    "editorSuggestionsAvailability": "inProgress",
+    "thumbnailsAvailability": "available"
+  }
+}

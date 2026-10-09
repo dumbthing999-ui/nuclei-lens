@@ -5,8 +5,9 @@ workflow verified. The saved V5 package directory lacks generated runtime assets
 metadata success/source-tree parity alone did not verify fresh live inference.
 V6 now includes the full runtime and passed actual public browser inference/QA.
 See `evaluation/checks/deployment-v6-browser.json` and `deployment-v6-mask-qa.json`.
-Reviewed video is complete; upload/playback and human-benefit evidence remain
-outstanding. Historical V5 observations below retain their original scope.
+Reviewed video is uploaded and attached to Devpost. HD processing and anonymous
+opening-sample audio/video decode pass. Full player viewing and human-benefit
+evidence remain outstanding. Historical V5 observations below retain their original scope.
 
 ## October 8 UX clarification follow-up
 

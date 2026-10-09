@@ -27,14 +27,14 @@
   ],
   "repo_url": "https://github.com/dumbthing999-ui/nuclei-lens",
   "live_url": "https://nuclei-lens.dumbthing999.chatgpt.site",
-  "video_url": null,
-  "video_status": "Owner authorized publication. Reviewed215s video prepared; actual YouTube upload rejected by daily quota. Guarded retry scheduled2026-10-09T07:05:00Z; no video ID or verified playback.",
+  "video_url": "https://www.youtube.com/watch?v=nik8WtPUrUc",
+  "video_status": "Uploaded; HD processing succeeded. Anonymous 1080p/audio opening sample fetched and decoded; Devpost authenticated and public-rendered video URL verified. Full browser playback/all regions not verified.",
   "screenshots": [
     "artifacts/screenshots/desktop.png",
     "artifacts/screenshots/review-detail.png",
     "artifacts/screenshots/live-analysis.png"
   ],
-  "account_gate": "Project version9 content,18actual stack tags,six gallery photos and fresh rendered/auth/image readbacks verified. Competition submitted_at remains null. Contact email authorized privately; custom draft answers/video remain unsaved.",
+  "account_gate": "Video attached and verified. Track/category/contact draft answers remain owner-deferred browser-only fields; competition is unsubmitted.",
   "safety_gates": [
     "Archive existing account draft before any write",
     "Reconfirm official fields/category and owner-only legal declarations",

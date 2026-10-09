@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T18:29:50.490Z",
+  "generated_at": "2026-10-08T18:47:09.039Z",
   "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
-  "branch": "feature/mask-qa-measurements",
-  "commit_sha": "af5e8bbe92828c9ae7bcb7980404cd59c47878ba",
-  "local_commit_sha": "dee6706e69332eab8a91b7e768b867f3cc0f155b",
-  "tree_sha": "8931837b5b8053c925065c83601c0d4d14eac3a4",
-  "files": 304,
+  "branch": "docs/model-qa-release",
+  "commit_sha": "4d9423448ba810e64ef2dd576252dd47c8f8b0cd",
+  "local_commit_sha": "a239ababe903ed710deed34bdfef48c968856fda",
+  "tree_sha": "06d9a6e733889e8d39854b76d68aa1bd46599d86",
+  "files": 316,
   "readback_verified": true
 }

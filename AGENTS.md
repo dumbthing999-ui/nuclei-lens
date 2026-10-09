@@ -10,9 +10,9 @@ accuracy superiority and reader benefit are not established. Frozen source and
 negative results remain intact. See `PROJECT_STATUS.md` and deployment-v6 proof.
 
 Devpost version9 clean narrative,18tags and sixth screenshot are verified. It is
-unsubmitted. Video hold is released; actual YouTube upload was quota-rejected,
-with one guarded reset retry October9,12:35PM IST. Read outcome before retrying;
-never repeat uncertain/successful uploads. Contact account email is privately
+unsubmitted. The guarded upload succeeded: YouTube nik8WtPUrUc is processed/HD;
+anonymous 1080p/audio opening sample decoded and Devpost video URL readbacks pass.
+Do not repeat this successful upload. PR11 is merged and v0.2.0 verified. Contact account email is privately
 authorized. The owner deferred browser-only draft saving; do not ask again or
 submit merely to save fields. No claim of perfection or19+/20 is justified.
 

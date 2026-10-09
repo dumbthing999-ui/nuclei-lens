@@ -1,0 +1,20 @@
+{
+  "retrieved_at": "2026-10-09T01:41:31.756737+00:00",
+  "gallery_pages": [
+    "https://eurekadev.devpost.com/project-gallery?page=1",
+    "https://eurekadev.devpost.com/project-gallery?page=2"
+  ],
+  "visible_projects": 38,
+  "added_since_previous": [
+    "https://devpost.com/software/ledgerlens-gomu96"
+  ],
+  "missing_since_previous": [],
+  "updates_url": "https://eurekadev.devpost.com/updates",
+  "updates_observation": "Stay tuned placeholder; no organizer posts visible.",
+  "snapshot_sha256": {
+    "gallery-refresh-2026-10-09-p1.md": "658b7e7f04a8ba1c2306c6941b04f7ef01f7d4f0de6f696ac158b7679473a948",
+    "gallery-refresh-2026-10-09-p2.md": "c02d31c2d4cdbea3e2856abe7bb10732b12dddb080bd69747dfccf6f8ba74134",
+    "updates-2026-10-09.md": "e52474e69645c774a86370aad0d4e471a22c25e2f4ff40bb76ad633b2c54f2b9"
+  },
+  "limits": "Public listing refresh; only new detail page reviewed; no fresh execution of competitor demos or repositories."
+}

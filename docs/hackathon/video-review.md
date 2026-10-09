@@ -45,24 +45,22 @@ measurement of browser latency. Captions are available as `demo/captions.srt`.
 
 ## Delivery state
 
-GitHub publishing works through the existing Composio account. The YouTube account
-is also connected. Both channel read paths returned HTTP403 `quotaExceeded`;
-the actual upload subsequently returned HTTP429 `rateLimitExceeded` for
-**Video Uploads per day**. This is a verified rejection, with no video ID.
-A single guarded local retry is scheduled for October9 at12:35PM IST. It depends
-on the running computer/user session and available connector quota. No upload or
-public playback can be claimed. Visibility is unlisted; metadata is in
-`demo/youtube-metadata.json`, and actual state in `evaluation/checks/youtube-upload.json`.
+GitHub PR11 is merged and the v0.2.0 research prerelease is verified. The first
+YouTube upload was quota-rejected; the guarded retry succeeded at07:05UTC on
+October9. Preserve video ID `nik8WtPUrUc`; never upload another copy. API readback
+reports processed/HD/unlisted/embeddable, with succeeded processing. Anonymous
+metadata shows215s and1080p formats; the API rounds duration to216s. Both satisfy
+the four-minute maximum. An anonymous10.033-second opening sample was retrieved
+and decoded with1080p video and audio. Complete browser-player viewing and
+all-region availability remain unverified. Captions are burned in, with no separate
+YouTube caption track. See `evaluation/checks/youtube-playback.json`.
 
-The owner authorized use of the connected Devpost account email for organizer
-contact. Its value stays out of the public repository. The video URL remains
-missing; custom entry answers are prepared. Track is Coding; category is Biology/Medical and
-Environmental Science. The available MCP exposes custom entry answers through
-final submit, not a separate draft-answer save. Do not invoke final submit just
-to populate draft fields. The owner said the browser was ready, but supported
-discovery still returned no browser; diagnostics found no running Chrome session.
-The owner has been asked to connect Chrome/Chromium with the ChatGPT extension.
-No legal agreement or private contact disclosure has been invented.
+Devpost authenticated and fresh public-rendered readbacks show the video URL.
+The competition entry is unsubmitted. The connected-account contact email is
+owner-authorized privately; its value stays out of public files. Custom answers
+remain owner-deferred browser-only draft fields. Do not submit merely to save them,
+or repeat browser-connection requests that the owner has deferred. Any legal
+attestation remains owner-only.
 
 Technical media inspection can prove container properties, complete decoding,
 caption timing bounds, and selected rendered frames. It does not establish a

@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-09T17:29:12.155840+00:00",
+  "video_url": "https://www.youtube.com/watch?v=nik8WtPUrUc",
+  "unauthenticated_metadata": {
+    "id": "nik8WtPUrUc",
+    "title": "NucleiLens \u2014 See Beyond the Count | EurekaDev 2026 Demo",
+    "duration": 215,
+    "availability": "unlisted",
+    "playable_in_embed": true,
+    "age_limit": 0
+  },
+  "max_available_height": 1080,
+  "sample": {
+    "path": ".firecrawl/youtube-playback-sample.mp4",
+    "sha256": "80bb77c1c0a1089547733fc658528e2d86006007fb4edff62e0a97141ff95a46",
+    "requested_range_seconds": [
+      0,
+      10
+    ],
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "aac",
+          "sample_rate": "44100"
+        }
+      ],
+      "format": {
+        "duration": "10.033333"
+      }
+    },
+    "full_sample_decode_passed": true
+  },
+  "scope": "Anonymous public media retrieval and decoding of the opening sample, not complete browser-player viewing or all-region availability. API duration rounds to216 seconds; metadata duration215. Both below240. Captions burned in; no separate YouTube caption track."
+}
