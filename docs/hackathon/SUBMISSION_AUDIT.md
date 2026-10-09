@@ -18,10 +18,10 @@ perfection or a simulated score. File presence alone does not verify quality.
 | Security/privacy | Dependency audits, package guards, bounded inputs and retained runner findings | Snapshot advisories only; trusted dependencies; hosting challenge payload not inspected |
 | Public GitHub and setup | Public repository/readback,README setup/tests, v0.2.0 prerelease | Prerelease, not final submission tag |
 | Deployment/source provenance | `deployment-v6.json`, complete runtime manifest and public browser proofs | Live app unchanged sinceV6; no independent backup origin verified |
-| Recovery | `docs/RECOVERY.md`, archive/checksum | Local backup path exists; separate-origin recovery drill not verified |
+| Recovery | `docs/RECOVERY.md`, archive/checksum | Fresh V6 archive restore passes actual inference/model QA; separate backup origin not verified |
 | Branding/screenshots | Actual UI/figure assets, six Devpost gallery photos | No new human presentation assessment |
 | Video duration/processing |215s local master; API216s rounding; processed/HD/unlisted/embeddable | Both below240s; processing verified |
-| Video audio/captions/access | Local full decode/audio measurements;39 burned captions; anonymous1080p/audio opening sample decode | Full browser-player viewing and all-region coverage not verified; no separate caption track |
+| Video audio/captions/access | Local full decode/audio measurements;39 burned captions; anonymous1080p/audio opening sample decode | Full browser-player viewing and all-region coverage not verified; later full-media request sign-in challenged; no separate caption track |
 | Devpost copy/links/media/video | Authenticated + fresh public-rendered video URL; current clean story and tags | Entry association remains unsubmitted |
 | Track/category/contact | PreparedCoding/Biology answers; owner authorized private account email | Draft answer saving remains browser-only and owner-deferred; do not expose email |
 | Legal declarations | No attestation fabricated | Any required personal/legal declaration remains owner-only |

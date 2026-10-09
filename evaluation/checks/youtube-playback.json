@@ -37,5 +37,15 @@
     },
     "full_sample_decode_passed": true
   },
-  "scope": "Anonymous public media retrieval and decoding of the opening sample, not complete browser-player viewing or all-region availability. API duration rounds to216 seconds; metadata duration215. Both below240. Captions burned in; no separate YouTube caption track."
+  "scope": "Anonymous public media retrieval and decoding of the opening sample, not complete browser-player viewing or all-region availability. API duration rounds to216 seconds; metadata duration215. Both below240. Captions burned in; no separate YouTube caption track.",
+  "full_media_attempt": {
+    "checked_at": "2026-10-09T17:36:18.248457+00:00",
+    "outcome": "blocked_by_youtube_sign_in_challenge",
+    "action": "Stopped; did not use session cookies or bypass authentication.",
+    "scope": "Earlier anonymous metadata and opening-sample decode succeeded; later full-media request was challenged. No guarantee of repeated anonymous access."
+  },
+  "browser_connection": {
+    "available": false,
+    "observed_browser_list": []
+  }
 }

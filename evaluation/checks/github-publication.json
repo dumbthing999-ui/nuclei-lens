@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T18:47:09.039Z",
+  "generated_at": "2026-10-09T17:34:10.447Z",
   "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
-  "branch": "docs/model-qa-release",
-  "commit_sha": "4d9423448ba810e64ef2dd576252dd47c8f8b0cd",
-  "local_commit_sha": "a239ababe903ed710deed34bdfef48c968856fda",
-  "tree_sha": "06d9a6e733889e8d39854b76d68aa1bd46599d86",
-  "files": 316,
+  "branch": "docs/delivery-handoff",
+  "commit_sha": "bd898b431fbc74a890de21ef3053a4ef4a227d91",
+  "local_commit_sha": "d410299a76b0eb78a730a6f50ec335a97e11a878",
+  "tree_sha": "49b7c2e173b9fca565f120621e71205d055cfa9c",
+  "files": 330,
   "readback_verified": true
 }

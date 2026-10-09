@@ -98,7 +98,8 @@ V6 deployment appgdep_6ac7e252fc808191b9344d5bc7272c63 succeeded. Version
 appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_4128aa17fecc8191b14f021e5972d1d5.
 See deployment-v6.json/static-package-v6.json. Local compressed archive and server
 canonical archive hashes have different scopes; do not conflate them. Recovery
-archive/checksum retained; no separate backup production origin verified.
+archive/checksum retained. Fresh extraction/core browser/model QA restore drill
+passes; no separate backup production origin verified. See recovery-v6-drill.json.
 
 ## Devpost
 

@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-09T17:38:10.179122+00:00",
+  "archive_path": "artifacts/nucleilens-site-v6.tar.gz",
+  "archive_sha256": "715fead2b578f285f83ebcc68f5c4fe79677dd337c168009908e3f3c82307e78",
+  "checksum_verified": true,
+  "fresh_extraction": true,
+  "served_url": "http://127.0.0.1:5178",
+  "core_browser_report": "evaluation/checks/recovery-v6-browser.json",
+  "model_qa_report": "evaluation/checks/recovery-v6-model-qa.json",
+  "core_and_model_qa_passed": true,
+  "initial_qa_invocation": "Wrong environment variable selected default5173 and connection was refused. Retained initial failure; rerun with NUCLEILENS_TEST_URL5178 passed. No application change.",
+  "scope": "Restored archive on local Linux browser; actual inference, edit/undo/hash and model QA. Does not establish offline-cache behavior, physical device compatibility or a separate public backup origin."
+}
