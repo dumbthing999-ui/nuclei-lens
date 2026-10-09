@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T17:44:16.973258+00:00",
+  "gmail_native": {
+    "read_only_query": "EurekaDev after2026/09/26",
+    "status": "USER_NOT_LOGGED_IN",
+    "no_email_contents_retrieved": true
+  },
+  "browser": {
+    "status": "No browser is available",
+    "read_only_discovery": []
+  },
+  "remaining_gates": "Owner-deferred browser-only draft answers; any actual personal/legal attestation. No claim of official Discord/email announcement review.",
+  "bounded_gemini_review": {
+    "model": "gemini-3.8-flash-medium",
+    "timeout_seconds": 60,
+    "status": "timeout",
+    "no_findings_or_approval_returned": true
+  },
+  "gmail_composio": {
+    "status": "read_success",
+    "matching_messages": 3,
+    "relevant_messages": 2,
+    "mail_review_complete_for_query": true
+  }
+}

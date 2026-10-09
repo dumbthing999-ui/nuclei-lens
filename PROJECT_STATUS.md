@@ -66,11 +66,23 @@ it is not an independent approval. Preserve reviewed factual corrections.
 
 ## In Progress
 
-PR11 and v0.2.0 are published and verified. Local post-release proofs and the
-October 9 gallery refresh await the next documentation synchronization. Both
+Keyboard-navigation follow-up: skip link and explicit disclosure/scroll-region
+focus rings implemented. Keyboard-only actual edit/undo/hash/export and focused
+reduced-motion tests pass locally; automated axe/mobile checks and22frontend tests
+pass. Remote CI, source parity and V7 public deployment must verify before these
+changes are called live. Frozen scientific source remains unchanged.
+
+PR12 is merged after exact-head CI37967916707/37967910125 passed. Public main
+229b1d585ab06780b94d1ff91480e8abd7bb0a37 includes the delivery audit, recovery
+drill, video/Devpost proofs, reviewed assets and unique prior-art citations.
+v0.2.0 remains the verified earlier research prerelease; V6 app source is unchanged. Both
 gallery pages expose 38 projects; LedgerLens is newly visible and its public
 description is assessed in the matrix. No fresh competitor demo execution or
 placement prediction is claimed. Organizer updates still show no public posts.
+Connected Composio Gmail review found two relevant Devpost messages confirming
+joining, starting the draft, deadline and Discord requirement; no rule change.
+Native Gmail connector is not logged in; its alternative worked. Bounded Gemini
+document review timed out without findings/approval.
 The guarded reset upload succeeded at07:05UTC. YouTube nik8WtPUrUc is processed,
 unlisted, embeddable and HD. Anonymous1080p/audio opening-sample decode and
 authenticated/public-rendered Devpost video-link readbacks pass. Full browser
@@ -78,7 +90,7 @@ playback/all-region coverage is not claimed. Never re-upload this successful vid
 
 ## Next Highest-Leverage Action
 
-Complete the requirement audit and synchronize delivery proofs. Seek feasible consented reader evidence
+The incomplete requirement audit is in docs/hackathon/SUBMISSION_AUDIT.md. Seek feasible consented reader evidence
 and independent-source validation without tuning frozen results. Recheck gallery/
 organizer changes periodically. Targets are aspirations, not awarded scores.
 

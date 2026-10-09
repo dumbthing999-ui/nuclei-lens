@@ -150,3 +150,13 @@ verify every pinned scientific wheel's bytes/SHA256, and match built Python engi
 files to source before replacing root dist. Include the verified generated runtime
 in the next Site package; preserve exact source/build provenance. This observation
 concerns saved packaging artifacts, not an invented production browser test.
+
+## October 9 — Keyboard review and navigation evidence
+
+Decision: add a keyboard-only skip link into the review workspace and explicit
+focus rings for disclosure summaries and scrollable QA regions. Keep the existing
+reduced-motion spinner behavior. Alternatives: rely on browser default outlines
+and mouse/axe-only tests; neither directly demonstrates keyboard usability.
+Add bounded real Tab/Enter/Space navigation and export/edit/undo checks. These
+are browser interaction evidence, not assistive-technology or researcher-benefit
+validation. All frozen inference/evaluation source remains unchanged.
