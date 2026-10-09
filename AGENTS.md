@@ -221,3 +221,16 @@ adapter mocks are not model evidence. No ground truth entered those runs.
 CellSampler/Cellpose/StarDist/napari are prior art; no consensus-first, accuracy,
 clinical or measured human-benefit claim. Frozen scientific hashes/results stay
 unchanged. Record exact-head CI/deployment before describing this addition as live.
+
+## Latest verified delivery — October 9, after PR14
+
+PR14 merged; final-head CI37971886672/37971812034success. PublicV8 source
+b807bf236132a29b6fc82690e07c4628ac245748 matches application-main01347145811dd7aa4e4e8b71ea1fdca6534c7b0d
+at tree3a2a5663bb9b82109114e6e21e2a823cd662e343. Complete runtime/archive and
+actual public core/model QA/alignment/focus/motion checks pass. External replacement
+requires per-source visual alignment judgment, audited with input hash/time; no
+objective alignment or accuracy claim. Devpost walkthrough and video qualifications
+match authenticated/fresh public readback. submitted_at remains null. Fresh scoped
+same-family AI critiques15.8/15.7/15.5are below target, not independent human judges;
+no automatic rescore. Do not re-upload video, fabricate reader observations, retune
+frozen science or repeat owner-deferred browser requests.
