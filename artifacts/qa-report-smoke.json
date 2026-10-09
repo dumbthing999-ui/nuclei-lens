@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "kind": "nucleilens-segmentation-qa",
-  "created_at": "2026-10-08T18:43:47.707Z",
+  "created_at": "2026-10-09T18:12:51.488Z",
   "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
   "width": 696,
   "height": 520,
@@ -2168,7 +2168,12 @@
         "kind": "external-label-tiff",
         "name": "Existing sensitivity run — validation fixture, not a neural model",
         "file_sha256": "58b72d5f98ecbf60e037ae44167fda6eafb5a7e790fbffdd645a3f582e88c7aa",
-        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1"
+        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1",
+        "user_alignment_confirmation": {
+          "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
+          "confirmed_at": "2026-10-09T18:12:50.670Z",
+          "kind": "visual-user-judgment"
+        }
       },
       "comparison_to_original_baseline": {
         "baseline_count": 74,
@@ -3580,13 +3585,18 @@
         "kind": "external-label-tiff",
         "name": "Existing sensitivity run — validation fixture, not a neural model",
         "file_sha256": "58b72d5f98ecbf60e037ae44167fda6eafb5a7e790fbffdd645a3f582e88c7aa",
-        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1"
+        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1",
+        "user_alignment_confirmation": {
+          "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
+          "confirmed_at": "2026-10-09T18:12:50.670Z",
+          "kind": "visual-user-judgment"
+        }
       },
       "created_ids": [
         75,
         76
       ],
-      "at": "2026-10-08T18:43:46.832Z",
+      "at": "2026-10-09T18:12:50.876Z",
       "before_count": 74,
       "after_count": 75,
       "changed_label_pixels": 799
@@ -3616,12 +3626,17 @@
         "kind": "external-label-tiff",
         "name": "Existing sensitivity run — validation fixture, not a neural model",
         "file_sha256": "58b72d5f98ecbf60e037ae44167fda6eafb5a7e790fbffdd645a3f582e88c7aa",
-        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1"
+        "mask_sha256_uint32_le": "c257fcbe49fc3e24782ca876a0de3b3349b76813c0f8306f4f29a7f3fcd6a0c1",
+        "user_alignment_confirmation": {
+          "input_hash": "cf5b84a8d7158291c1f448bf16ec4add17aa88772c54066ceda4651deb7561f8",
+          "confirmed_at": "2026-10-09T18:12:50.670Z",
+          "kind": "visual-user-judgment"
+        }
       },
       "created_ids": [
         77
       ],
-      "at": "2026-10-08T18:43:47.391Z",
+      "at": "2026-10-09T18:12:51.283Z",
       "before_count": 75,
       "after_count": 74,
       "changed_label_pixels": 590

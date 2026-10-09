@@ -160,3 +160,14 @@ and mouse/axe-only tests; neither directly demonstrates keyboard usability.
 Add bounded real Tab/Enter/Space navigation and export/edit/undo checks. These
 are browser interaction evidence, not assistive-technology or researcher-benefit
 validation. All frozen inference/evaluation source remains unchanged.
+
+## 2026-10-09 — Require external-mask alignment acknowledgment
+
+Fresh scoped V7 technical critique identified same-size wrong-image risk despite
+strict TIFF parsing and component inspection. Require a separate per-source visual
+judgment bound to the current image before replacement, and audit it. Alternatives:
+automated registration (unvalidated scope), dimensions-only (insufficient identity),
+disabling all external replacement (loses useful inspectable work). Checks verify
+matching/misaligned gate, cancellation without changes and audited replacement.
+No mask correctness, human benefit or automatic score increase follows. Frozen
+scientific inference and evaluations remain unchanged.

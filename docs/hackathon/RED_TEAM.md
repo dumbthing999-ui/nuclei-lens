@@ -36,3 +36,11 @@ October 8, 2026. Evidence concerns actual files and saved runs; accepted limitat
 | 30 | Presentation and impact are being self-awarded. | Separate AI judge roles with shared model/context, honest unchanged scores, no fake users/benefits. Reviewed video uploaded; processing/HD and anonymous opening-sample decode verified. | Quality gates remain open |
 
 Every remaining limitation must stay visible in public copy. The graph contribution does not establish scientific superiority. Real reader-time/accuracy studies, independent-source generalization, physical-device/assistive-technology coverage and full browser-player viewing remain unfinished. Native process limits and real Chromium/Firefox workflows are implemented; these do not remove their documented limits.
+
+## Fresh V7 critique follow-up — October 9
+
+Same-size external masks can belong to another field. Separate visual alignment
+acknowledgment now gates replacement, with full-field overlay access and audit
+provenance; objective alignment is still unverified. Fresh reports and reviewed
+factual corrections are in [judges-v7/REVIEW.md](judges-v7/REVIEW.md). Human effort
+and benefit remain unmeasured; new safeguards do not raise the recorded scores.

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-09T17:40:15.349Z",
+  "generated_at": "2026-10-09T17:53:43.787Z",
   "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
-  "branch": "docs/delivery-handoff",
-  "commit_sha": "f6c554991219b1231f066b3658581ad86b51c208",
-  "local_commit_sha": "27a77f4e4d034701aadda664f3d7677876dbb6b9",
-  "tree_sha": "6237fa991375cae2a7a61111bcc349c1215aa01a",
-  "files": 334,
+  "branch": "test/keyboard-review",
+  "commit_sha": "042f8c7fa6b5acb6bc478c8e1ba372e80698489d",
+  "local_commit_sha": "7cf0be07f27c6ef449225bb8b122e45fb7e95ea9",
+  "tree_sha": "df81e82a894b6d2cf71f51162ae160bde5e4f090",
+  "files": 341,
   "readback_verified": true
 }

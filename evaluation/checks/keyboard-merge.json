@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T17:57:12.589Z",
+  "pr": "https://github.com/dumbthing999-ui/nuclei-lens/pull/13",
+  "merged": true,
+  "head_sha": "042f8c7fa6b5acb6bc478c8e1ba372e80698489d",
+  "main_sha": "22b3b15bc5d7681c97b6d847c9ec1a5154baadf3",
+  "tree_sha": "df81e82a894b6d2cf71f51162ae160bde5e4f090",
+  "ci_runs": [
+    {
+      "id": 37969591623,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/dumbthing999-ui/nuclei-lens/actions/runs/37969591623"
+    },
+    {
+      "id": 37969476854,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/dumbthing999-ui/nuclei-lens/actions/runs/37969476854"
+    }
+  ],
+  "application_source_changed": true,
+  "frozen_scientific_source_changed": false,
+  "competition_submitted": false
+}

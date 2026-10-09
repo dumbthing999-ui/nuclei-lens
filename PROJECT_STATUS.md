@@ -4,14 +4,13 @@ Updated October 9,2026 (IST). Workspace `/home/kali/Downloads/euradev`.
 
 ## Current Release
 
-Public Site **V6** is deployed. PR10 merged after both exact-head CI runs passed.
-GitHub merge23d592638ff1d20f483aa9753ab447d335e5efda and Site source
-6e71ddad6978a9e0ae026984e85d888266bad3cf share exact tree
-8931837b5b8053c925065c83601c0d4d14eac3a4. PR11 merged after both final-head CI runs passed (37870835919 and 37826956935).
-Public main and the verified v0.2.0 research prerelease point to
-9cecb9366a00f466d367fbe635a3b25616deb148. The release tag, repository visibility,
-homepage and topics were read back. V6 application source remains unchanged;
-the frozen numerical engine still reports 0.1.0. This is not final submission.
+Public Site **V7** is deployed and actual public inference/model QA/focus/motion
+checks pass. PR13 merged after exact-head CI37969591623/37969476854 passed.
+GitHub main22b3b15bc5d7681c97b6d847c9ec1a5154baadf3 and Site source
+8bcb4c726e6cf7c519778639753601c5305e1732 share exact tree
+df81e82a894b6d2cf71f51162ae160bde5e4f090. V7 includes all11 scientific runtime
+assets with independently checked archive hashes. v0.2.0 remains the earlier
+verified research prerelease; no final submission or new scientific score.
 
 ## Winning Thesis
 
@@ -23,10 +22,10 @@ scientific-superiority or measured reader-benefit claim.
 
 ## Latest Judge Scores
 
-Separate text-only AI role critiques: A16.0/20, B15.8/20, C15.3/20. Shared model/
-context, not independent human judges. Scores remain below target and are unchanged
-by polish, models, video or publication. Current Gemini release review timed out;
-it is not an independent approval. Preserve reviewed factual corrections.
+Fresh V7 same-model-family AI simulations: Technical15.8/20, Research/Impact15.7,
+Skeptical15.5. Separate contexts, not human judges; scoped read-only evidence and
+no full-video viewing. Raw reports and reviewed findings in judges-v7. Internal
+quality targets remain unmet. Alignment safety/copy fixes do not rescore them.
 
 ## Completed
 
@@ -66,11 +65,11 @@ it is not an independent approval. Preserve reviewed factual corrections.
 
 ## In Progress
 
-Keyboard-navigation follow-up: skip link and explicit disclosure/scroll-region
-focus rings implemented. Keyboard-only actual edit/undo/hash/export and focused
-reduced-motion tests pass locally; automated axe/mobile checks and22frontend tests
-pass. Remote CI, source parity and V7 public deployment must verify before these
-changes are called live. Frozen scientific source remains unchanged.
+Keyboard-navigation follow-up is live: skip link, disclosure/scroll-region focus
+rings, actual keyboard-only edit/undo/hash/export in local and exact-head CI,
+and public skip/disclosure/reduced-motion checks pass. These are scoped browser
+observations, not assistive-technology or human-benefit evidence. Local post-V7
+merge/deployment reports await the next documentation synchronization.
 
 PR12 is merged after exact-head CI37967916707/37967910125 passed. Public main
 229b1d585ab06780b94d1ff91480e8abd7bb0a37 includes the delivery audit, recovery
@@ -106,9 +105,9 @@ trusted executable dependencies, not a sandbox or supported public service.
 ## Deployment
 
 PUBLIC https://nuclei-lens.dumbthing999.chatgpt.site
-V6 deployment appgdep_6ac7e252fc808191b9344d5bc7272c63 succeeded. Version
-appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_4128aa17fecc8191b14f021e5972d1d5.
-See deployment-v6.json/static-package-v6.json. Local compressed archive and server
+V7 deployment appgdep_6ac92b59cb5c81918862c800dacdf309 succeeded. Version
+appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_39a1975bf7448191bcb9f90beaf6190e.
+See deployment-v7.json/static-package-v7.json. Local compressed archive and server
 canonical archive hashes have different scopes; do not conflate them. Recovery
 archive/checksum retained. Fresh extraction/core browser/model QA restore drill
 passes; no separate backup production origin verified. See recovery-v6-drill.json.
@@ -139,3 +138,11 @@ media access is verified; complete browser-player viewing remains unverified.
 Feature freeze October 19; official deadline October 20,5 PM CDT (October 21,3:30 AM
 IST). Do not claim19+/20, human validation or final submission. Preserve truthful
 limitations and final legal/video gates. Ordinary reversible work stays authorized.
+
+## Current candidate
+
+feature/import-alignment carries V7 delivery proofs and fresh scoped AI critiques.
+Adds per-source visual alignment acknowledgment before external replacements,
+with current-image hash/time in exported provenance. Local QA/build22tests pass;
+CI, merge and new deployment are pending. Devpost walkthrough and timestamped
+video qualifications are prepared locally; public sync pending. No re-upload.

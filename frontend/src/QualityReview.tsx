@@ -29,6 +29,18 @@ export function QualityReview({analysis,baseline,reviewed,patches,busy,onConfirm
   const current=useMemo(()=>measureMask(reviewed,analysis.width,analysis.height),[reviewed,analysis.width,analysis.height]);
   const currentDifference=useMemo(()=>{try{return compareMasks(baseline,reviewed,analysis.width,analysis.height);}catch{return null;}},[baseline,reviewed,analysis.width,analysis.height]);
   const active=imports[selected];
+  const alignmentConfirmed=active?.source.user_alignment_confirmation?.input_hash===analysis.input_hash;
+  function confirmAlignment(confirmed:boolean) {
+    setImports(previous=>previous.map((value,index)=>{
+      if(index!==selected)return value;
+      const {user_alignment_confirmation:discarded,...source}=value.source;
+      return {...value,source:confirmed?{...source,user_alignment_confirmation:{input_hash:analysis.input_hash,confirmed_at:new Date().toISOString(),kind:'visual-user-judgment'}}:source};
+    }));
+  }
+  function confirmExternal(event:GraphEvent) {
+    if(!active||!alignmentConfirmed){setError('Inspect the image alignment and confirm it before replacing a component.');return;}
+    onConfirm(event,active.mask,active.source);
+  }
   const pairwise=useMemo(()=>imports.flatMap((a,i)=>imports.slice(i+1).map(b=>{
     try{return {first:a.source.name,second:b.source.name,comparison:compareMasks(a.mask,b.mask,analysis.width,analysis.height)};}
     catch{return {first:a.source.name,second:b.source.name,comparison:null};}
@@ -97,6 +109,7 @@ export function QualityReview({analysis,baseline,reviewed,patches,busy,onConfirm
       <button disabled={busy||loading} onClick={()=>void exportReport()}>Export segmentation QA report</button>
     </div></div>
     <p>Measurements recalculate after every mask edit and undo. Review-tally entries do not change geometry. Areas use pixels; no physical calibration or intensity measurement is inferred.</p>
+    <p className="review-storage-notice">This tab does not save review state after reload or a field change. Download the label TIFF, review JSON and segmentation QA report before leaving.</p>
     <dl className="measurement-summary" data-testid="measurement-summary"><div><dt>Instances · original → reviewed</dt><dd>{before.object_count} → {current.object_count}</dd></div>
       <div><dt>Foreground area · px²</dt><dd>{before.foreground_pixels} → {current.foreground_pixels}</dd></div>
       <div><dt>Mean instance area · px²</dt><dd>{before.mean_area_px?.toFixed(1)??'—'} → {current.mean_area_px?.toFixed(1)??'—'}</dd></div></dl>
@@ -122,7 +135,11 @@ export function QualityReview({analysis,baseline,reviewed,patches,busy,onConfirm
           <image href={`data:image/png;base64,${analysis.outline_pngs[0]}`} width={analysis.width} height={analysis.height}/>
           {importedOutline&&<image href={importedOutline} width={analysis.width} height={analysis.height}/>}</g></svg></div>
         <p>Mint: original baseline. Purple: imported mask. Inspect the image before confirming a component.</p>
-        <div className="external-proposals" role="region" aria-label="External correspondence components" tabIndex={0}>{active.comparison.events.slice(page*30,page*30+30).map((event,offset)=>{const index=page*30+offset;const applied=patches.some(p=>p.source?.mask_sha256_uint32_le===active.source.mask_sha256_uint32_le&&JSON.stringify(p.event.baseline_ids)===JSON.stringify(event.baseline_ids)&&JSON.stringify(p.event.alternate_ids)===JSON.stringify(event.alternate_ids));return <div key={index}><span>Region {event.bbox[0]}, {event.bbox[1]}–{event.bbox[2]}, {event.bbox[3]}</span><button disabled={busy||loading} aria-pressed={focus===index} onClick={()=>setFocus(index)}>Inspect external component {index+1}</button><button disabled={busy||loading||focus!==index||applied||event.baseline_count+event.alternate_count>32} onClick={()=>onConfirm(event,active.mask,active.source)}>{event.baseline_count+event.alternate_count>32?'Large component: inspect/export only':applied?'Component applied':`Confirm external ${event.kind} · ${event.baseline_count} → ${event.alternate_count}`}</button></div>;})}</div>
+        <div className="alignment-review"><button disabled={busy||loading} onClick={()=>setFocus(null)}>View full field for alignment</button>
+          <p>Image alignment is unverified. Check field identity, orientation and matching structures in the overlay. This confirmation records your visual judgment; it does not certify alignment or biological correctness.</p>
+          <label><input type="checkbox" checked={Boolean(alignmentConfirmed)} disabled={busy||loading} onChange={e=>confirmAlignment(e.target.checked)}/> I inspected this mask over the current image and judge its alignment suitable for review.</label>
+        </div>
+        <div className="external-proposals" role="region" aria-label="External correspondence components" tabIndex={0}>{active.comparison.events.slice(page*30,page*30+30).map((event,offset)=>{const index=page*30+offset;const applied=patches.some(p=>p.source?.mask_sha256_uint32_le===active.source.mask_sha256_uint32_le&&JSON.stringify(p.event.baseline_ids)===JSON.stringify(event.baseline_ids)&&JSON.stringify(p.event.alternate_ids)===JSON.stringify(event.alternate_ids));return <div key={index}><span>Region {event.bbox[0]}, {event.bbox[1]}–{event.bbox[2]}, {event.bbox[3]}</span><button disabled={busy||loading} aria-pressed={focus===index} onClick={()=>setFocus(index)}>Inspect external component {index+1}</button><button disabled={busy||loading||!alignmentConfirmed||focus!==index||applied||event.baseline_count+event.alternate_count>32} onClick={()=>confirmExternal(event)}>{event.baseline_count+event.alternate_count>32?'Large component: inspect/export only':applied?'Component applied':`Confirm external ${event.kind} · ${event.baseline_count} → ${event.alternate_count}`}</button></div>;})}</div>
         {active.comparison.events.length>30&&<div className="component-pages"><button disabled={page===0||busy||loading} onClick={()=>{setPage(page-1);setFocus(null);}}>Previous components</button><span>Page {page+1} of {Math.ceil(active.comparison.events.length/30)}</span><button disabled={(page+1)*30>=active.comparison.events.length||busy||loading} onClick={()=>{setPage(page+1);setFocus(null);}}>Next components</button></div>}
         <p>Imported masks are cleared when opening another field. Export the QA report before leaving this field.</p></>}
     </details>

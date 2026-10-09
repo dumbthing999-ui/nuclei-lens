@@ -261,3 +261,23 @@ Reports: `evaluation/checks/keyboard-smoke.json`, `focus-motion.json`. Downloads
 are regenerated locally and uploaded as CI artifacts. This does not establish
 assistive-technology compatibility, physical mobile behavior, full accessibility
 compliance, biological accuracy or measured human benefit.
+
+### Keyboard release/public verification
+
+PR13 final-head CI37969591623 and37969476854 both passed, including new keyboard
+and motion checks. PublicV7 source/tree exactly matches GitHub-main22b3b15.
+Actual public core workflow, model QA and skip/disclosure/reduced-motion checks
+pass; all11 archive loader/wheel hashes were independently verified. Reports are
+`deployment-v7-browser.json`, `deployment-v7-mask-qa.json`, `deployment-v7-focus-motion.json`
+and `static-package-v7.json`. Full keyboard edit/undo/export ran locally and in CI;
+only the focus/navigation/motion subset is independently checked on production.
+
+## Alignment safeguard — local checked candidate
+
+TypeScript/Vite build and22frontend tests passed. Updated actual Chromium QA
+workflow passes matching-field and deliberately misaligned same-size gate checks,
+checkbox cancellation with unchanged reviewed pixels/history, audited input-bound
+judgment, opposing74→75→74edits, exact undo, CSV/TIFF/hash/QA and axe/mobile.
+The reversed-pixel fixture is a test construction, not biological reference data.
+See mask-qa-browser.json for the local target; V7 public results are separately
+preserved. This candidate is not live until CI/merge/deployment readback pass.

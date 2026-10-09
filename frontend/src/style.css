@@ -24,3 +24,7 @@
 
 .skip-link{position:fixed;top:8px;left:8px;z-index:100;background:#fff;color:var(--blue);border:1px solid var(--line);border-radius:6px;padding:10px 14px;transform:translateY(-150%)}
 .skip-link:focus{transform:none}
+
+.alignment-review { margin: 1rem 0; padding: 1rem; border: 1px solid var(--border, #c8d1dc); border-radius: 8px; }
+.alignment-review label { display: flex; align-items: flex-start; gap: .6rem; }
+.alignment-review input[type="checkbox"] { width: 1.1rem; height: 1.1rem; flex-shrink: 0; margin-top: .2rem; }

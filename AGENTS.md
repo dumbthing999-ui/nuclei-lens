@@ -2,6 +2,15 @@
 
 ## Verified delivery state — October9,2026
 
+PR13 is merged after both final-head CI runs passed. Public SiteV7 includes the
+keyboard skip link and explicit disclosure/scroll-region focus rings. Local/CI
+keyboard-only real edit/undo/hash exports and public focus/reduced-motion, core
+inference and model QA pass. All11 runtime archive hashes/source-tree parity are
+verified. Frozen scientific source/scores remain unchanged. Preserve completed
+YouTube upload; latest V7 deployment/merge proofs are local pending docs sync.
+
+Historical verified V6 observations below retain their original scope.
+
 PR10 is merged after both exact-head CI runs passed. Public SiteV6 now includes
 and verifies the full scientific runtime; actual public inference and model QA
 workflows pass.45native/22frontend tests pass. Real Cellpose/StarDist68/68outputs,

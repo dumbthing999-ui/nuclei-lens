@@ -4,6 +4,7 @@ import {measureMask} from './measurements';
 export interface ExternalMaskSource {
   kind: 'external-label-tiff'; name: string; file_sha256: string; mask_sha256_uint32_le: string;
   bundled_example?: {model:string;version:string;provenance_url:string;input_file_sha256:string};
+  user_alignment_confirmation?: {input_hash:string;confirmed_at:string;kind:'visual-user-judgment'};
 }
 export interface MaskComparison {
   baseline_count: number; alternative_count: number; same_total: boolean;

@@ -116,3 +116,16 @@ make arbitrary user-selected interpreters or downloaded code safe. CI's zero
 `src/` findings must not be described as zero findings across every script. CI
 also audits the separately pinned neural environment without installing models,
 with explicit upstream Torch CPU-version normalization.
+
+## External-mask alignment judgment — October 9
+
+Dimensions and file/pixel hashes do not establish field identity or alignment.
+Each loaded source now requires an explicit visual alignment acknowledgment before
+component replacement, including bundled model examples. The overlay can return
+to the full field. Acknowledgment records the current input hash, timestamp and
+visual-user-judgment kind in exports and applied patches. Clearing the checkbox
+blocks further replacements; it does not undo earlier confirmed edits. Removal or
+field change clears the loaded acknowledgment. This is a user safeguard, not an
+automated registration test or certification of correctness. A deliberately
+misaligned reversed-pixel fixture tests blocking and cancellation; no person’s
+ability to detect misalignment is measured. Parser fuzzing remains unperformed.
