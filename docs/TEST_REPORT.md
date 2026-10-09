@@ -281,3 +281,15 @@ judgment, opposing74→75→74edits, exact undo, CSV/TIFF/hash/QA and axe/mobile
 The reversed-pixel fixture is a test construction, not biological reference data.
 See mask-qa-browser.json for the local target; V7 public results are separately
 preserved. This candidate is not live until CI/merge/deployment readback pass.
+
+## V8 production verification
+
+Both PR14 final-head remote CI37971886672/37971812034passed. Public source/tree
+and saved-version/archive readbacks agree at deployment. All11scientific runtime
+files in the actual archive pass length/hash checks. Actual public Chromium
+inference/count74, edits/undo/TIFF/hash/rerun/cancel/mobile, external/model QA
+including matching/misaligned acknowledgment/cancellation/audit, measurements/CSV,
+axe/mobile, skip/disclosurefocus/reducedmotion pass. Full keyboard-only edit/export
+remains local+CI evidence. No assistive-tech/physical-device/full-video-player or
+human-benefit validation. See deployment-v8*.json; subsequent docs do not change
+the deployed application source.

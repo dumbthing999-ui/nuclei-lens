@@ -4,13 +4,15 @@ Updated October 9,2026 (IST). Workspace `/home/kali/Downloads/euradev`.
 
 ## Current Release
 
-Public Site **V7** is deployed and actual public inference/model QA/focus/motion
-checks pass. PR13 merged after exact-head CI37969591623/37969476854 passed.
-GitHub main22b3b15bc5d7681c97b6d847c9ec1a5154baadf3 and Site source
-8bcb4c726e6cf7c519778639753601c5305e1732 share exact tree
-df81e82a894b6d2cf71f51162ae160bde5e4f090. V7 includes all11 scientific runtime
-assets with independently checked archive hashes. v0.2.0 remains the earlier
-verified research prerelease; no final submission or new scientific score.
+Public Site **V8** is deployed; actual public inference, model QA/alignment gate,
+and focus/reduced-motion checks pass. PR14 merged after final-head CI
+37971886672/37971812034 succeeded. GitHub application commit
+01347145811dd7aa4e4e8b71ea1fdca6534c7b0d and Site source
+b807bf236132a29b6fc82690e07c4628ac245748 share tree
+3a2a5663bb9b82109114e6e21e2a823cd662e343 at deployment. Subsequent docs-only
+commits do not imply whole-tree parity with the deployed source. All11 runtime
+archive hashes pass. v0.2.0 remains the earlier research prerelease; no new
+scientific evaluation score or final submission.
 
 ## Winning Thesis
 
@@ -139,10 +141,14 @@ Feature freeze October 19; official deadline October 20,5 PM CDT (October 21,3:3
 IST). Do not claim19+/20, human validation or final submission. Preserve truthful
 limitations and final legal/video gates. Ordinary reversible work stays authorized.
 
-## Current candidate
+## Latest delivery follow-up
 
-feature/import-alignment carries V7 delivery proofs and fresh scoped AI critiques.
-Adds per-source visual alignment acknowledgment before external replacements,
-with current-image hash/time in exported provenance. Local QA/build22tests pass;
-CI, merge and new deployment are pending. Devpost walkthrough and timestamped
-video qualifications are prepared locally; public sync pending. No re-upload.
+PR14 alignment safeguard is live and checked, including deliberately misaligned
+same-size fixture blocking, cancellation without changes, and input-bound judgment
+in actual edited-mask exports. It does not independently establish alignment.
+Devpost concise walkthrough and timestamped video qualifications match authenticated
+and fresh public readback. Video preserved; submitted_at remains null. V8 evidence
+and public-field-only archives await this docs synchronization. Raw fresh judge
+scores remain unchanged by these fixes. Highest-value next evidence task is a
+blinded reader exercise interface; real consented participants and observations
+remain absent. Do not create fake study records or contact participants.

@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-09T18:16:08.482505+00:00",
+  "archive_sha256": "425c33b848120d242bd6e9faf8a023174307655e51b92144cabf115e1932f04c",
+  "bytes": 35838330,
+  "files": 99,
+  "runtime_files_verified": 11,
+  "actual_neural_masks_included": true,
+  "scientific_runtime_bytes": 40155402
+}

@@ -68,3 +68,12 @@ runtime claims retain the narrower evidence scopes above.
 - `demo/shot-list.md`
 - `demo/video-assets/reviewed-contact-sheet.jpg`
 - `docs/RECOVERY.md`
+
+## V8 follow-up
+
+PR14 and both final-head CI runs passed; publicV8 inference/model QA/alignment/
+focus/motion checks pass. Devpost revised text/qualifications and unchanged video
+match authenticated and fresh rendered readback. submitted_at=null. Custom answers
+and complete player viewing remain unverified; no fabricated human benefit or
+final19+/20 score. Source parity is recorded at deployment, not inferred after
+subsequent documentation commits.

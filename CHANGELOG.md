@@ -1,5 +1,19 @@
 # Changelog
 
+## Delivery updates after v0.2.0 — 2026-10-09
+
+- Publish complete-runtime V7 with keyboard-only edit/undo/export CI checks, skip
+  link/focus rings and reduced-motion evidence.
+- Publish V8 after PR14: input-bound visual alignment acknowledgment before every
+  external-mask replacement, audited provenance and clear reload-loss warning.
+  Actual matching/misaligned/cancellation/public QA checks pass; no automatic
+  alignment or biological correctness guarantee.
+- Successful reviewed-video upload is preserved; Devpost attached URL and updated
+  walkthrough/timestamped qualifications match fresh readbacks. Never re-upload.
+- Fresh scoped AI simulations15.8/15.7/15.5retain unmet targets and unmeasured
+  human benefit. Frozen scientific source and negative results remain unchanged.
+
+
 ## v0.2.0 research prototype — 2026-10-09
 
 - Add actual local Cellpose/StarDist adapters, verified precomputed examples and

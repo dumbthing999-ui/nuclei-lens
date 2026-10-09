@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-09T18:19:39.677250+00:00",
+  "project_slug": "nucleilens",
+  "description_normalized_exact_match": true,
+  "normalization": "Devpost removes Markdown heading/list/bold/code markers; whitespace collapsed.",
+  "video_url": "https://www.youtube.com/watch?v=nik8WtPUrUc",
+  "fresh_public_render_checks": {
+    "Try the public demo": true,
+    "Video wording qualifications": true,
+    "records a user judgment": true,
+    "fixed tile-review budget": true,
+    "nik8WtPUrUc": true
+  },
+  "public_render_sha256": "290963fea63f8b7a9d92f835967bb81c689b8154560d2224d294f2f000315eb0",
+  "private_fields_archived": false,
+  "custom_answers_saved": false,
+  "competition_submitted": false,
+  "check_correction": "Initial rendered-string check incorrectly expected visual judgment; actual prepared and rendered copy correctly says user judgment.",
+  "submitted_at": null,
+  "submission_state_verified": true
+}

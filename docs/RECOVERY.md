@@ -91,3 +91,14 @@ NUCLEILENS_TEST_URL=http://127.0.0.1:5178 node frontend/tests/mask-qa-smoke.mjs
 Evidence is in `evaluation/checks/recovery-v6-drill.json` and its two browser
 reports. This is a local restore drill, not verification of a separate public
 backup origin or an offline service worker.
+
+## V8 retained build
+
+The current ignored backup is artifacts/nucleilens-site-v8.tar.gz; its adjacent
+.sha256 records compressed hash425c33b848120d242bd6e9faf8a023174307655e51b92144cabf115e1932f04c.
+The archive contains99regular files and all11runtime assets (40,155,402bytes),
+verified against evaluation/runtime-manifest.json. The server canonical tar has
+a distinct hash/size; do not compare it as if it were the local compressed file.
+V6 restore-drill evidence above remains V6-specific. Use the same extraction
+commands with v8 filenames in a fresh empty directory; no separate V8 restore
+drill or backup public origin is implied by preservation/hash checks.

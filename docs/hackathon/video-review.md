@@ -66,3 +66,12 @@ Technical media inspection can prove container properties, complete decoding,
 caption timing bounds, and selected rendered frames. It does not establish a
 human reader study, impact validation, accessibility for every viewer, or a
 winning judge score.
+
+## Timestamped wording qualifications
+
+Devpost now qualifies the published phrases at0:06(object-level mismatch, not
+proved biological consequence),0:32(bounded support, stable mistakes can escape),
+0:52(count-neutral boundary differences can matter), and attention-priority claims
+at2:45–3:01(fixed tile-budget annotated FP+FN concentration, not human effort or
+benefit). Authenticated and fresh public rendering pass. The uploaded master is
+preserved unchanged; this does not establish complete audiovisual player viewing.

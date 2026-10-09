@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-09T18:18:32.134Z",
+  "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+  "version": 8,
+  "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_feb3160b33d88191b569a1b85f762f54",
+  "source_commit": "b807bf236132a29b6fc82690e07c4628ac245748",
+  "source_tree": "3a2a5663bb9b82109114e6e21e2a823cd662e343",
+  "github_main_at_deployment": "01347145811dd7aa4e4e8b71ea1fdca6534c7b0d",
+  "github_main_tree_at_deployment": "3a2a5663bb9b82109114e6e21e2a823cd662e343",
+  "source_tree_matches_github": true,
+  "deployment": {
+    "id": "appgdep_6ac92fa455e48191a888bfc02d7412fa",
+    "project_id": "appgprj_6ac6abc53a548191a2a325fadeea9288",
+    "title": "NucleiLens",
+    "version_id": "appgprj_6ac6abc53a548191a2a325fadeea9288~appgver_feb3160b33d88191b569a1b85f762f54",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac6abc53a548191a2a325fadeea9288",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-09T18:17:25.528004+00:00"
+  },
+  "server_archive": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_000000007f9881fa9756c001b2ac1f4b",
+    "content_hash": "sha256:0508f7cf5e1d4794df4722f88b7b3d680159494014a7d5a8f09067f3cc6efb53",
+    "size_bytes": 48629760,
+    "file_count": 99
+  },
+  "public_readback": {
+    "version": 8,
+    "access_mode": "public",
+    "url": "https://nuclei-lens.dumbthing999.chatgpt.site",
+    "source": {
+      "commit_sha": "b807bf236132a29b6fc82690e07c4628ac245748"
+    }
+  },
+  "runtime_package_proof": "evaluation/checks/static-package-v8.json",
+  "public_checks": [
+    "evaluation/checks/deployment-v8-browser.json",
+    "evaluation/checks/deployment-v8-mask-qa.json",
+    "evaluation/checks/deployment-v8-focus-motion.json"
+  ],
+  "scientific_source_changed": false
+}
