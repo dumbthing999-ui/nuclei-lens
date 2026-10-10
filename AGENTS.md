@@ -21,6 +21,18 @@ promotion succeeded. Saved draft/removal proof are in promotion/ and evaluation/
 
 Historical verified delivery observations below retain their original scope.
 
+## Current package audit — October10,2026
+
+Public V9 and PR16/17 are verified. Current status is consolidated in
+PROJECT_STATUS.md; prior chronological notes are archived. Fresh gallery41 and
+official/private-notice checks are scoped, not a complete Discord review. All25
+concepts have a separately dated retrospective19-factor potential scorecard;
+NucleiLens ranks ninth, which is not an outcome, quality-score update or pivot
+proof. Fresh V9 local restore passes; full anonymous YouTube viewing remains
+unverified after a metadata mismatch. Reddit removed the single authorized post;
+do not repost. Original video, frozen scientific source and negative results
+remain intact. No human reader observations or final competition submission.
+
 ## Verified delivery state — October9,2026
 
 PR13 is merged after both final-head CI runs passed. Public SiteV7 includes the

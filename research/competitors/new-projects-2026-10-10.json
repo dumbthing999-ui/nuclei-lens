@@ -1,0 +1,204 @@
+[
+  {
+    "project_name": "Aegis",
+    "track": "UNKNOWN",
+    "category": "UNKNOWN",
+    "one_line_pitch": "Authors describe satellite-operator negotiation over collision-avoidance maneuvers.",
+    "underlying_problem": "Authors cite fuel costs and confidentiality barriers to coordination.",
+    "target_user": "Satellite operators, according to the page.",
+    "technologies": "Page lists TypeScript/Node.js, React/Three.js, SGP4 and Google Cloud services.",
+    "ai_usage": "Authors describe Gemini arbitration agents and an AI audit process.",
+    "technical_novelty": "Claimed integration of operator negotiation and enclave arbitration; originality unestablished.",
+    "apparent_technical_depth": "Detailed distributed architecture narrative; implementation uninspected.",
+    "live_demo_quality": "Not executed; availability and functionality unverified",
+    "ux_quality": "Not interactively assessed",
+    "evidence_research_quality": "Safety, confidentiality, adoption and fuel savings unverified in this review.",
+    "presentation_quality": "Workflow, architecture table and screenshot captions visible; video unassessed.",
+    "strengths": "Thematic: concrete coordination problem and explicit data boundaries.",
+    "weaknesses": "Safety guarantees and production readiness remain author claims.",
+    "differentiation_opportunity": "NucleiLens can emphasize bounded human review and correction artifacts; Aegis describes autonomous orbital negotiation.",
+    "likely_official_judging_scores": "Not assessed from page claims alone",
+    "threat_level": "MEDIUM (thematic only)",
+    "review_scope": "Public Devpost description and link extraction only; no demos, videos, repositories or accounts inspected",
+    "source_url": "https://devpost.com/software/aegis-e25ki9",
+    "retrieval_date": "2026-10-10",
+    "threat_rationale": "Technical ambition and coordination overlap competition themes; different domain and users. No performance or judging prediction.",
+    "snapshot_path": ".firecrawl/new-2026-10-10-aegis.md",
+    "scrape_id": "01a1251b-9d3d-7476-b0bb-bcdb6a28d399",
+    "evidence_snippets": [
+      "Direct Peer-to-Peer AI Decision Session"
+    ],
+    "observed_public_description": [
+      "Project description, architectural narrative, screenshot captions and outbound links are visible.",
+      "EurekaDev appears in public submission history; private submission state was not read."
+    ],
+    "unverified_claims": [
+      "Impartial AI arbitration.",
+      "Enclave deployment and telemetry confidentiality.",
+      "Safe collision avoidance and operational savings."
+    ],
+    "public_code_urls": [
+      "https://github.com/x0u8/aegis-main"
+    ],
+    "public_demo_urls": [
+      "https://aegis.glixar.com/"
+    ],
+    "other_public_artifact_urls": [
+      "https://www.npmjs.com/package/aegis-sovereign-cli"
+    ],
+    "author_named_service_urls": [
+      "https://aegis-sentinel-1086776249115.us-central1.run.app"
+    ],
+    "public_video_urls": [
+      "https://www.youtube.com/watch?v=DSnEZqwVKok"
+    ],
+    "judging_scores": "Not assessed from page claims alone",
+    "attribution": "Functionality and impact are author claims; thematic assessments are analyst interpretations.",
+    "track_category_basis": "UNKNOWN means no explicit designation in extracted text; domain is not category evidence.",
+    "retrieval_method": {
+      "tool": "Firecrawl CLI 1.24.3",
+      "max_age_ms": 0,
+      "format": "markdown",
+      "only_main_content": false,
+      "redact_pii": true
+    },
+    "extraction_limitations": "Markdown may omit embeds; automatic PII redaction may redact technology tags. URL presence does not establish availability.",
+    "snapshot_sha256": "f81f4c0a803be0a3be915c9e1f692300fc2dd2f275c70aa5f14fb6d4b00333da",
+    "retrieved_at_utc": "2026-10-10T09:18:52.951111+00:00",
+    "timestamp_basis": "Local snapshot write completion, not publisher or server time",
+    "quoted_evidence_word_count": 5
+  },
+  {
+    "project_name": "MediCheck AI – Smart Medicine & $ Medical records Verifier",
+    "track": "UNKNOWN",
+    "category": "UNKNOWN",
+    "one_line_pitch": "Authors describe medical-document explanations, personalized medication-risk checks and spoken output.",
+    "underlying_problem": "Authors cite difficult reports, prescriptions and medication risks.",
+    "target_user": "People interpreting personal medical documents, according to the page.",
+    "technologies": "Page lists HTML/CSS/JavaScript, OCR, OpenRouter/DeepSeek R1, Web Speech API and PythonAnywhere.",
+    "ai_usage": "Authors describe OCR followed by AI explanations and profile-based medication checks.",
+    "technical_novelty": "Claimed integration of personal context, document analysis and voice; originality unestablished.",
+    "apparent_technical_depth": "Pipeline and technology list visible; safety logic uninspected.",
+    "live_demo_quality": "Not executed; availability and functionality unverified",
+    "ux_quality": "Not interactively assessed",
+    "evidence_research_quality": "Clinical validation, OCR accuracy and user outcomes unverified in this review.",
+    "presentation_quality": "Workflow, screenshot gallery and professional-care disclaimer visible; video unassessed.",
+    "strengths": "Thematic: accessible explanations and personal-context framing.",
+    "weaknesses": "Medication safety remains unverified; several features are future work.",
+    "differentiation_opportunity": "NucleiLens focuses on microscopy correction audits; MediCheck targets personal medical-document interpretation.",
+    "likely_official_judging_scores": "Not assessed from page claims alone",
+    "threat_level": "MEDIUM (thematic only)",
+    "review_scope": "Public Devpost description and link extraction only; no demos, videos, repositories or accounts inspected",
+    "source_url": "https://devpost.com/software/medicheck-ai-smart-medicine-prescription-safety-system-6p0omf",
+    "retrieval_date": "2026-10-10",
+    "threat_rationale": "Health relevance and an understandable workflow overlap impact themes; different task. Category placement and comparative quality unknown.",
+    "snapshot_path": ".firecrawl/new-2026-10-10-medicheck.md",
+    "scrape_id": "01a1251b-9d52-74cd-86db-3c87dcb01809",
+    "evidence_snippets": [
+      "Personal Medicine Safety"
+    ],
+    "observed_public_description": [
+      "Description, seven screenshot captions, technology list, disclaimer and outbound links visible.",
+      "Document storage, reminders and advanced verification listed as future work.",
+      "EurekaDev appears in public submission history; private competition state unknown."
+    ],
+    "unverified_claims": [
+      "Reliable OCR and document explanations.",
+      "Safe personalized medication assessment.",
+      "Clinical reliability and measured benefit."
+    ],
+    "public_code_urls": [],
+    "public_demo_urls": [
+      "https://medicheck-aii.ai.studio/"
+    ],
+    "other_public_artifact_urls": [
+      "https://drive.google.com/file/d/1lLUJgjxvrFIhnabDE_pLMBl_abRjxSau/view?usp=drivesdk"
+    ],
+    "author_named_service_urls": [],
+    "public_video_urls": [
+      "https://www.youtube.com/watch?v=8mKDvTB3XqI"
+    ],
+    "code_link_note": "No identifiable repository URL in extracted page. The Drive file was not opened; its purpose and contents remain unknown.",
+    "judging_scores": "Not assessed from page claims alone",
+    "attribution": "Functionality and impact are author claims; thematic assessments are analyst interpretations.",
+    "track_category_basis": "UNKNOWN means no explicit designation in extracted text; domain is not category evidence.",
+    "retrieval_method": {
+      "tool": "Firecrawl CLI 1.24.3",
+      "max_age_ms": 0,
+      "format": "markdown",
+      "only_main_content": false,
+      "redact_pii": true
+    },
+    "extraction_limitations": "Markdown may omit embeds; automatic PII redaction may redact technology tags. URL presence does not establish availability.",
+    "snapshot_sha256": "dec2a8af5331c8f2f38ad584c5e567cce1b3a76b3337a61ffb92a3353e15320e",
+    "retrieved_at_utc": "2026-10-10T09:18:52.117091+00:00",
+    "timestamp_basis": "Local snapshot write completion, not publisher or server time",
+    "quoted_evidence_word_count": 3
+  },
+  {
+    "project_name": "MuseumEcho — the audio guide that knows your museum",
+    "track": "Coding Track",
+    "category": "UNKNOWN",
+    "one_line_pitch": "Authors describe spoken museum-guide answers with citations and refusals for uncovered questions.",
+    "underlying_problem": "Authors cite static signage and chatbot fabrication at small museums.",
+    "target_user": "Small museums and visitors, according to the page.",
+    "technologies": "Page lists Python/FastAPI, scikit-learn TF-IDF, edge-tts and an OpenAI-compatible model endpoint.",
+    "ai_usage": "Authors describe retrieval-scoped answers, optional reranking and cached speech.",
+    "technical_novelty": "Claimed integration of retrieval, citations, refusals and speech; originality unestablished.",
+    "apparent_technical_depth": "Concrete retrieval and caching narrative; implementation uninspected.",
+    "live_demo_quality": "Not executed; availability and functionality unverified",
+    "ux_quality": "Not interactively assessed",
+    "evidence_research_quality": "Fictional demonstration data disclosed; grounding, accessibility and visitor benefit unverified.",
+    "presentation_quality": "Problem, mechanism and roadmap sections visible; video and UI unassessed.",
+    "strengths": "Thematic: source control, refusal behavior and accessibility framing.",
+    "weaknesses": "Grounding guarantees remain unverified; offline mode is future work.",
+    "differentiation_opportunity": "NucleiLens can emphasize editable visual evidence and correction provenance; MuseumEcho describes cited document retrieval.",
+    "likely_official_judging_scores": "Not assessed from page claims alone",
+    "threat_level": "MEDIUM (thematic only)",
+    "review_scope": "Public Devpost description and link extraction only; no demos, videos, repositories or accounts inspected",
+    "source_url": "https://devpost.com/software/museumecho-the-audio-guide-that-knows-your-museum",
+    "retrieval_date": "2026-10-10",
+    "threat_rationale": "Traceability and accessible interaction overlap communication themes; different users and task. No comparative quality inference.",
+    "snapshot_path": ".firecrawl/new-2026-10-10-museumecho.md",
+    "scrape_id": "01a1251b-d3b9-76ab-be79-6133896298ea",
+    "evidence_snippets": [
+      "Technologies used (Coding Track)",
+      "mandatory citations + explicit"
+    ],
+    "observed_public_description": [
+      "Description explicitly names Coding Track and fictional museum demonstration data.",
+      "Repository link and EurekaDev submission-history entry visible; private competition state unknown."
+    ],
+    "unverified_claims": [
+      "Reliable citations and refusals.",
+      "Effective low-vision and low-literacy access.",
+      "Cost savings and visitor learning impact."
+    ],
+    "public_code_urls": [
+      "https://github.com/maebahesioru/museumecho"
+    ],
+    "public_demo_urls": [],
+    "other_public_artifact_urls": [],
+    "author_named_service_urls": [],
+    "public_video_urls": [
+      "https://www.youtube.com/watch?v=yI58A9jmUo8"
+    ],
+    "video_link_provenance": "URL observed in initial max-age 0 main-content scrape 01a1251b-4681-729c-8b3d-e15e558657c7; final full-page extraction retains only the YouTube label. Video not opened.",
+    "demo_link_note": "No separate hosted interactive demo URL observed in either extraction.",
+    "judging_scores": "Not assessed from page claims alone",
+    "attribution": "Functionality and impact are author claims; thematic assessments are analyst interpretations.",
+    "track_category_basis": "UNKNOWN means no explicit designation in extracted text; domain is not category evidence.",
+    "retrieval_method": {
+      "tool": "Firecrawl CLI 1.24.3",
+      "max_age_ms": 0,
+      "format": "markdown",
+      "only_main_content": false,
+      "redact_pii": true
+    },
+    "extraction_limitations": "Markdown may omit embeds; automatic PII redaction may redact technology tags. URL presence does not establish availability.",
+    "snapshot_sha256": "bee448e32acebb97dc8bf631cde823b3460c28532f7eefbb6abad9d1fb3ff8bc",
+    "retrieved_at_utc": "2026-10-10T09:19:06.663417+00:00",
+    "timestamp_basis": "Local snapshot write completion, not publisher or server time",
+    "quoted_evidence_word_count": 8
+  }
+]

@@ -61,3 +61,26 @@ This extends page coverage, not verification of functionality: repositories, vid
 ## October 9 public refresh
 
 Both gallery pages now expose 38 project URLs: the previous 37 remain and [LedgerLens](https://devpost.com/software/ledgerlens-gomu96) is new. Its public description was reviewed and the matrix updated; its demo, tests and video were not independently executed. It targets retail accounts, with low thematic overlap with NucleiLens. No placement prediction follows. The organizer updates page still displays its announcement placeholder. See `gallery-refresh-2026-10-09.json` for retrieval time, source URLs and snapshot hashes.
+
+## October10 gallery refresh
+
+41 visible projects now have matrix rows, up from38. The new pages are
+[Aegis](https://devpost.com/software/aegis-e25ki9),
+[MediCheck](https://devpost.com/software/medicheck-ai-smart-medicine-prescription-safety-system-6p0omf),
+and [MuseumEcho](https://devpost.com/software/museumecho-the-audio-guide-that-knows-your-museum).
+Page claims, links and snapshot hashes are retained in new-projects-2026-10-10.json.
+No new demo, video, repository or safety/performance claim was executed or verified.
+
+Aegis describes orbital negotiation, confidential arbitration and a distributed
+service architecture. MediCheck describes medical-document/medication explanations.
+MuseumEcho describes cited spoken museum-guide responses and refusals, with a
+fictional demonstration guide. These add technically ambitious coordination and
+more health/grounded-guide pitches; they do not establish comparative quality.
+Track is explicit only for MuseumEcho; categories remain unknown on these pages.
+
+NucleiLens should emphasize its actual inspect/confirm/undo/export workflow,
+local numerical execution and reproducible limited results. It should not claim
+stronger impact, originality or placement because other pages lack verification.
+Human review advantage remains its unresolved differentiator. Earlier listing
+counts/review dates above retain their historical scope. Matrix threat levels
+are thematic assessments, not probabilities of placing or inferred official scores.

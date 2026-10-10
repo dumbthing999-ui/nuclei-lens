@@ -1,0 +1,66 @@
+{
+  "hackathon": {
+    "id": 30588,
+    "slug": "eurekadev",
+    "title": "EurekaDev 2026"
+  },
+  "data": {
+    "fields": [
+      {
+        "id": 28007,
+        "label": "Track",
+        "type": "dropdown",
+        "type_raw": "SubmissionFieldAdvancedDropdown",
+        "required": true,
+        "position": 0,
+        "options": [
+          "Coding",
+          "Research"
+        ],
+        "multiple": false
+      },
+      {
+        "id": 28008,
+        "label": "Category",
+        "type": "dropdown",
+        "type_raw": "SubmissionFieldAdvancedDropdown",
+        "required": true,
+        "position": 1,
+        "options": [
+          "Computer Science + AI (Technology)",
+          "Biology/Medical and Environmental Science",
+          "Math & Physics",
+          "Economics",
+          "Problem in the Community",
+          "Open category (other)"
+        ],
+        "multiple": false
+      },
+      {
+        "id": 28009,
+        "label": "Email",
+        "type": "text",
+        "type_raw": "SubmissionFieldEmail",
+        "required": true,
+        "position": 2
+      },
+      {
+        "id": 28010,
+        "label": "Discord Username",
+        "type": "text",
+        "type_raw": "SubmissionFieldText",
+        "required": false,
+        "position": 3
+      }
+    ],
+    "deliverables": {
+      "submission_object": "submission",
+      "video_required": true,
+      "website_required": false,
+      "zip_file_required": false
+    }
+  },
+  "data_completeness": "complete",
+  "fetched_at": "2026-10-10T09:20:30Z",
+  "archive_scope": "Functional field/deliverable contract only; full descriptive wording remains in ignored protected source response."
+}

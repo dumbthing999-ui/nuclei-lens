@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-10-10T10:13:27.173890+00:00",
+  "native_connector": "USER_NOT_LOGGED_IN",
+  "alternate_connector": "Composio Gmail",
+  "profile_read_verified": true,
+  "search_query": "(EurekaDev OR \"Eureka Dev\") after:2026/09/01",
+  "matching_messages": 3,
+  "devpost_notices_reviewed": 2,
+  "hydration_successful": true,
+  "findings": [
+    "Draft started but explicitly incomplete; finalize before2026-10-20,17:00CDT.",
+    "Official Discord membership required for prizes; solo projects allowed."
+  ],
+  "new_rule_change_in_reviewed_notices": false,
+  "scope": "Bounded query and two notices, not complete mailbox/Discord coverage. Other match was a historical, since-remediated CI failure. No message IDs, bodies, owner email, private URLs or credentials included."
+}

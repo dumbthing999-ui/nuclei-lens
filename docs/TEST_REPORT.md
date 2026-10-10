@@ -312,3 +312,11 @@ Public V9 browser/core and model QA pass; four-state axe observations have zero
 violations and focus/reduced-motion checks pass. The full keyboard-edit script refuses
 public origins; local and CI evidence do not become a public keyboard-edit assertion.
 See evaluation/checks/deployment-v9*.json and reader-merge.json.
+
+## Fresh V9 archive restoration
+
+Real core/model-QA/keyboard/focus workflows pass after checked extraction into a
+new directory served by Python stdlib. No application Python installation or
+external inference API is required to serve this archive. Existing browser test
+harness dependencies were used; this is not an independent machine/device study.
+No new scientific, human-benefit or judge-score claim follows from the drill.

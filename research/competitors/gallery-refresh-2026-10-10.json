@@ -1,0 +1,34 @@
+{
+  "retrieved_at": "2026-10-10T09:25:27.567438+00:00",
+  "gallery_pages": [
+    "https://eurekadev.devpost.com/project-gallery?page=1",
+    "https://eurekadev.devpost.com/project-gallery?page=2"
+  ],
+  "visible_projects": 41,
+  "added_since_previous": [
+    "https://devpost.com/software/aegis-e25ki9",
+    "https://devpost.com/software/medicheck-ai-smart-medicine-prescription-safety-system-6p0omf",
+    "https://devpost.com/software/museumecho-the-audio-guide-that-knows-your-museum"
+  ],
+  "missing_since_previous": [],
+  "pagination_observed": [
+    1,
+    2
+  ],
+  "matrix_rows": 41,
+  "new_detail_review": "Three fresh descriptions/link lists reviewed and source/hash checked; no execution of demos/videos/repositories.",
+  "snapshot_sha256": {
+    "overview-2026-10-10.md": "43ebabba7c7c5fac2d8141366af1fe54f62850983bfdfc9eef1de2459ff1e8bb",
+    "rules-2026-10-10.md": "ef8d4879d13b2c4b2847572fde1a07b4aeae15afdd7b7c8c0ee1ee6c787b8e24",
+    "resources-2026-10-10.md": "87e41a7e7a811118a0b1112c82f6911ce9d358496218c9e93d3a94310669fd7a",
+    "updates-2026-10-10.md": "618e4907bbe78392288819b556cee661126176118fc0d48a7d398fc93117419f",
+    "forum-topics-2026-10-10.md": "603a3b59e6c1485fd187dafde4f629b0b6926a5666aeff62d62faad4233f73a8",
+    "gallery-2026-10-10-p1.md": "602c9ded6e196cf2aedb72a22bc1e81d5802dd2b6bd8994dae761a07144ffbb5",
+    "gallery-2026-10-10-p2.md": "86430858bd4e967fd8a14103fbeaeb0cf08794b100d9a2b945c995024e2a3ba2"
+  },
+  "discussions_url": "https://eurekadev.devpost.com/forum_topics",
+  "discussions_observation": "No topics displayed on official linked route; guessed /discussions returns404 and was not evidence of an empty forum.",
+  "updates_observation": "Placeholder, no public organizer posts; authenticated announcements list also empty.",
+  "gmail_read": "Native connector USER_NOT_LOGGED_IN. Alternate Composio account/profile read succeeded; focused EurekaDev query since2026-09-01 returned3 messages. Two Devpost notices privately reviewed; confirm deadline, Discord/solo eligibility and incomplete draft, with no additional rule change. Not a complete mailbox/Discord review.",
+  "discord_read": "Unavailable, owner membership confirmation only"
+}

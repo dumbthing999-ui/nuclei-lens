@@ -1,0 +1,575 @@
+{
+  "audited_at": "2026-10-10T10:13:50.138941+00:00",
+  "base_main": "2f39f2669b8dde9bcf358fb223dae58796e274c8",
+  "scope": "User operating guide sections0-56 and named durable artifacts; source existence never substitutes for full completion.",
+  "goal_complete": false,
+  "artifact_inventory": [
+    {
+      "path": "docs/hackathon/rules-snapshot.md",
+      "bytes": 10723,
+      "sha256": "de00a78553b6875c6cf2b1551baf7dca1e0a0f04e71ccde1250f3cfeb80809a9",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/hackathon/JUDGE_SCORECARD.md",
+      "bytes": 6825,
+      "sha256": "da05e9acd313a87d45650d7ab6dc8f777b4b5a7f36759f722fd182d97a5e7b05",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/hackathon/RED_TEAM.md",
+      "bytes": 5907,
+      "sha256": "4512a786b9651a781cb5db999cce21438ad44925217476cf085ee4dd17c968a6",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "research/competitors/competitor-matrix.csv",
+      "bytes": 66127,
+      "sha256": "420d652fdd8afe847e537b63636cecf6a0f76be8363efd2652de89e3bc70e989",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "research/competitors/competitive-landscape.md",
+      "bytes": 10200,
+      "sha256": "5ccb52192811353a22b3ada42834aee3b965e58947861ebc8115ab7d9e39aff0",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "research/idea-selection-report.md",
+      "bytes": 19514,
+      "sha256": "d21a0140319ef7ebb806e1b0ff80277eeae1dc87095460bcc8e81797eca0d0d1",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "research/SOURCES.md",
+      "bytes": 18896,
+      "sha256": "7ebe7211bbe0286c024744efa1100e2fa684927ceea8c2668e510e9f85c39136",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/PROJECT_PLAN.md",
+      "bytes": 6448,
+      "sha256": "f0f5f30395bb727bd982ced9489faed5e705686bf9e7fa726e4ab28a215b6d38",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 9970,
+      "sha256": "a02c1a557e71616f52e125ecd45444fab150cc9662cb5403f9d63704f51d77fc",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/INNOVATION.md",
+      "bytes": 5332,
+      "sha256": "f67dcba0632df0848ea9fc145c8998b7e24eafaa1e327cd62c8467108bd6ed38",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/security-review.md",
+      "bytes": 9279,
+      "sha256": "9e5906896f72644fb55d0af66730670e9360b247ccf243d5c5de538986c5edcc",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "bytes": 20726,
+      "sha256": "f1cb48d0e0f5c79b3017c9cfa17f600c22dbeddc12bf4ccf5eb3429476095cda",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/hackathon/category-selection.md",
+      "bytes": 1055,
+      "sha256": "b98eb3fd07a013fba0bea02d74706d7015fe81722f3c72ce0387b893da4e2274",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 13628,
+      "sha256": "584756ae62ae91081be1fca2ca87331980253443bcf901de90032f57412f9101",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "bytes": 6935,
+      "sha256": "fe38ac7a2b1c31a1a499e3125c28aff9fc309d87321d743f3ee7b1e3635ba07f",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "README.md",
+      "bytes": 15631,
+      "sha256": "76dad39eb5fd76031b7ffce707d44420c0bed683bef390047f472f439ad8045c",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "6c4f5c5867d322941507e6f4751c3b19a170f4ea7d623ff7d1f571adaae1ddf5",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 2153,
+      "sha256": "cd4c9d4e26185eefd1c61df7ff5252fdabb3c14a58b2ce49150de3a9de3e1f36",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 985,
+      "sha256": "5a70b9448bb9f0d5abb565c596a31b53a6b52db08ff6887720b46b723cd86b32",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 6272,
+      "sha256": "3bcaef31667bfca2bb946657d72a5b655d303d1a888882b3d0c566718c805c94",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": ".env.example",
+      "bytes": 110,
+      "sha256": "50d5934a0b8610999273881f2b796190ccb2b093a607dd2f08bea17f0cd8fdd0",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 4495,
+      "sha256": "b7dce830f35767ef7dc6c07909273d4c0c1ceae82c88a429d20202abf79d9291",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "demo/video-script.md",
+      "bytes": 4236,
+      "sha256": "e3f056b898d77df5bfe2dba5535dce689415b54d18ae81a99cb14debd9636ea9",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "demo/storyboard.md",
+      "bytes": 1116,
+      "sha256": "5858a3e77da9212ad848825b2633de8f67aeea7b01a53b3ef04ba16b81b0f370",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "demo/shot-list.md",
+      "bytes": 1016,
+      "sha256": "976c838b786d9efdc23ec07816cd2aca3c97aafe6ff1eef5b8f3c0ef0af6ff35",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "demo/video-assets/reviewed-contact-sheet.jpg",
+      "bytes": 260959,
+      "sha256": "d06d5afbd0c73ac4af97caa6795d40b32bab3c88eee731fc42f9a0c739dfec3f",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    },
+    {
+      "path": "docs/RECOVERY.md",
+      "bytes": 6394,
+      "sha256": "05b877adf2f3e856097bc06d52b8edc9b7d0bf49bccfce9d17621604628deef5",
+      "evidence_scope": "Content existence/integrity, not completion of the claims inside."
+    }
+  ],
+  "idea_rows_verified": 25,
+  "red_team_rows_verified": 30,
+  "original_test_records_verified": 50,
+  "additional_records_verified": 496,
+  "requirements": [
+    {
+      "section": 0,
+      "requirement": "Competition baseline",
+      "state": "Scoped verified",
+      "finding": "Official UTC deadline and October19 internal freeze retained. Judging metadata still shows2027.",
+      "evidence": "docs/hackathon/archive/get_key_dates-2026-10-10.json"
+    },
+    {
+      "section": 1,
+      "requirement": "Rules and accounts",
+      "state": "Partial",
+      "finding": "Public+authenticated rules/requirements/news current. Private Discord unavailable; owner membership confirmed. Native Gmail fails; alternate Composio read reviewed two Devpost notices, not all mailbox/Discord news.",
+      "evidence": "docs/hackathon/rules-snapshot.md"
+    },
+    {
+      "section": 2,
+      "requirement": "Judge scorecard",
+      "state": "Open quality gate",
+      "finding": "Three role/context reviews below target; no automatic rescore from delivery fixes.",
+      "evidence": "docs/hackathon/JUDGE_SCORECARD.md"
+    },
+    {
+      "section": 3,
+      "requirement": "19+/20 thresholds",
+      "state": "Not achieved",
+      "finding": "Latest15.8/15.7/15.5 shared-family AI totals do not meet declared internal gates.",
+      "evidence": "docs/hackathon/judges-v7/REVIEW.md"
+    },
+    {
+      "section": 4,
+      "requirement": "Non-generic technical core",
+      "state": "Scoped verified",
+      "finding": "Actual deterministic numerical probes, sparse object graphs, atomic mask changes and hash-linked exports. No LLM inference product. Scientific-first novelty unproven.",
+      "evidence": "docs/INNOVATION.md"
+    },
+    {
+      "section": 5,
+      "requirement": "Live competitor intelligence",
+      "state": "Scoped verified",
+      "finding": "41 listing rows, three new page/link/source reviews; no inferred competitor execution, scores or placement.",
+      "evidence": "research/competitors/gallery-refresh-2026-10-10.json"
+    },
+    {
+      "section": 6,
+      "requirement": "Problem discovery/provenance",
+      "state": "Scoped verified",
+      "finding": "Numbered primary-source evidence and real benchmark problem; no fabricated interviews or human-benefit claims.",
+      "evidence": "research/SOURCES.md"
+    },
+    {
+      "section": 7,
+      "requirement": "25-idea tournament",
+      "state": "Partial history",
+      "finding": "25 original rows and top-five review exist. Original eight combined dimensions differ from requested19. Explicit retrospective19-factor extension covers25concepts/50finalist answers, subjective/not backdated.",
+      "evidence": "research/idea-selection-report.md"
+    },
+    {
+      "section": 8,
+      "requirement": "A-H concept gates",
+      "state": "Partial",
+      "finding": "Working/measurable/ethical demo evidence; new scientific/practical advantage remains unproven. Do not promote these into quality-score proof.",
+      "evidence": "docs/DECISIONS.md"
+    },
+    {
+      "section": 9,
+      "requirement": "Track/category",
+      "state": "Prepared, unsaved form",
+      "finding": "Coding/Biology fit rationale exists. Custom answers not saved via a draft-specific connector; owner deferred browser saving.",
+      "evidence": "docs/hackathon/category-selection.md"
+    },
+    {
+      "section": 10,
+      "requirement": "Fresh repository/package",
+      "state": "Scoped verified",
+      "finding": "Original repository during competition, application/tests/docs/security/config/CI; sources and third-party notices scoped.",
+      "evidence": "README.md"
+    },
+    {
+      "section": 11,
+      "requirement": "M0-M10 project plan",
+      "state": "Partial",
+      "finding": "Implementation/evaluation/reliability milestones have evidence; M7/M9/M10 and internal quality gates remain.",
+      "evidence": "docs/PROJECT_PLAN.md"
+    },
+    {
+      "section": 12,
+      "requirement": "Version/history management",
+      "state": "Scoped verified / final open",
+      "finding": "Meaningful branches/commits/PRs and actualv0.1/v0.2 prereleases. No backdated history; finalv1.0.0 tag withheld until actual submission.",
+      "evidence": "CHANGELOG.md"
+    },
+    {
+      "section": 13,
+      "requirement": "Architecture/diagrams",
+      "state": "Scoped verified",
+      "finding": "System/data/evaluation Mermaid diagrams and API/storage/inference/trust/fallback/deployment descriptions.",
+      "evidence": "docs/architecture.md"
+    },
+    {
+      "section": 14,
+      "requirement": "Engineering quality",
+      "state": "Scoped verified",
+      "finding": "Typed UI/validated bounded inputs, real loading/errors/undo, pinned configuration and deterministic checks. Not universal reliability.",
+      "evidence": "evaluation/checks/deployment-v9-browser.json"
+    },
+    {
+      "section": 15,
+      "requirement": "Data/scientific validation",
+      "state": "Scoped verified, limited",
+      "finding": "50 original test+496 additional records; baselines/negative results/hashes retained. Independent biological grouping and reader outcomes unproven.",
+      "evidence": "evaluation/test/summary.json"
+    },
+    {
+      "section": 16,
+      "requirement": "Explain innovation",
+      "state": "Scoped verified, advantage open",
+      "finding": "Mechanism/prior art/negative ranking evidence and30second explanation exist; does not establish scientific-first or human advantage.",
+      "evidence": "docs/INNOVATION.md"
+    },
+    {
+      "section": 17,
+      "requirement": "Security",
+      "state": "Scoped verified",
+      "finding": "Own-project threat/audit/input/action bounds and CI dependency/static checks. Snapshot/no-vulnerability-freedom guarantee.",
+      "evidence": "docs/security-review.md"
+    },
+    {
+      "section": 18,
+      "requirement": "Privacy/responsibility",
+      "state": "Scoped verified",
+      "finding": "Public CC0 demos, browser processing, no clinical authority and hosting/optional-companion caveats.",
+      "evidence": "SECURITY.md"
+    },
+    {
+      "section": 19,
+      "requirement": "Testing/report",
+      "state": "Scoped verified",
+      "finding": "Native68/frontend22 plus actual browser/CI/public flows and documented environment gaps.",
+      "evidence": "docs/TEST_REPORT.md"
+    },
+    {
+      "section": 20,
+      "requirement": "Demo reliability",
+      "state": "Scoped verified",
+      "finding": "No-login real examples, cancel/rerun, public core/model QA; complete archive restores without an inference API.",
+      "evidence": "evaluation/checks/v9-restore.json"
+    },
+    {
+      "section": 21,
+      "requirement": "UI/UX",
+      "state": "Scoped verified",
+      "finding": "Immediate real demo and method/evidence/limitations/source sections; mobile footer regression repaired.",
+      "evidence": "evaluation/checks/deployment-v9-accessibility.json"
+    },
+    {
+      "section": 22,
+      "requirement": "Branding",
+      "state": "Scoped verified",
+      "finding": "Original consistent SVG/logo/favicon/social/thumbnail assets and actual screenshots; not human recall evidence.",
+      "evidence": "assets/"
+    },
+    {
+      "section": 23,
+      "requirement": "Public research tools",
+      "state": "Scoped verified",
+      "finding": "Source URLs/dates/hashes retained; authenticated/private access boundaries respected.",
+      "evidence": "research/competitors/new-projects-2026-10-10.json"
+    },
+    {
+      "section": 24,
+      "requirement": "Connected accounts",
+      "state": "Partial",
+      "finding": "GitHub/Devpost/YouTube/Reddit have real read/write proofs; custom form limitation and private news coverage remain scoped.",
+      "evidence": "evaluation/checks/devpost-video-links.json"
+    },
+    {
+      "section": 25,
+      "requirement": "Tool/skill autonomy",
+      "state": "Scoped verified",
+      "finding": "Existing protected authentication, narrow delegated review and pinned release tools; no secret/global-provider changes or fabricated model use.",
+      "evidence": "AGENTS.md"
+    },
+    {
+      "section": 26,
+      "requirement": "Judge README",
+      "state": "Scoped verified / human clarity open",
+      "finding": "Problem/solution/prior art/demo/architecture/results/setup/tests/privacy/limits/sources/team copy present; no independent readability study.",
+      "evidence": "README.md"
+    },
+    {
+      "section": 27,
+      "requirement": "Devpost copy",
+      "state": "Scoped verified / final form open",
+      "finding": "Public description/sources/accurate tags/screenshots/video/links verified, custom answers and final association incomplete.",
+      "evidence": "docs/hackathon/devpost-draft.md"
+    },
+    {
+      "section": 28,
+      "requirement": "Screenshots",
+      "state": "Scoped verified",
+      "finding": "Six actual Devpost images and updated production screenshots. No fake numbers or secrets.",
+      "evidence": "artifacts/screenshots/"
+    },
+    {
+      "section": 29,
+      "requirement": "Video narrative",
+      "state": "Scoped verified locally",
+      "finding": "Script/storyboard/shot-list and reviewed215second real-product media. Owner creation hold superseded by explicit upload instruction.",
+      "evidence": "demo/video-script.md"
+    },
+    {
+      "section": 30,
+      "requirement": "Video quality/playback",
+      "state": "Partial",
+      "finding": "Local full decode/audio/39caption checks and anonymous browser opening pass. Full public probe ended on unexpected metadata after38s; full viewing unverified.",
+      "evidence": "evaluation/checks/youtube-full-playback-2026-10-10.json"
+    },
+    {
+      "section": 31,
+      "requirement": "Pitch award strategy",
+      "state": "Prepared, outcome open",
+      "finding": "Actual74\u219275\u219274 signature demonstration exists. No human recall, pitch award or5/5 evidence.",
+      "evidence": "demo/storyboard.md"
+    },
+    {
+      "section": 32,
+      "requirement": "Promotion",
+      "state": "Platform removed",
+      "finding": "One authorized simple-word Reddit post accepted then removed; no repost, vote request, spam or public-success claim.",
+      "evidence": "evaluation/checks/reddit-publication.json"
+    },
+    {
+      "section": 33,
+      "requirement": "Citation traceability",
+      "state": "Scoped verified",
+      "finding": "Numbered sources, exact benchmark scopes and archived source/weight/mask/protocol hashes. No fabricated citation/user/result.",
+      "evidence": "research/SOURCES.md"
+    },
+    {
+      "section": 34,
+      "requirement": "Performance",
+      "state": "Scoped measured",
+      "finding": "Recorded cold/warm runtime and bundle/latency facts; no universal hardware claim.",
+      "evidence": "evaluation/checks/browser-smoke.json"
+    },
+    {
+      "section": 35,
+      "requirement": "Accessibility",
+      "state": "Scoped verified, broader open",
+      "finding": "Automated axe/mobile, focus/reduced-motion and real local/CI keyboard editing; physical/Safari/assistive-tech users untested.",
+      "evidence": "evaluation/checks/deployment-v9-focus-motion.json"
+    },
+    {
+      "section": 36,
+      "requirement": "Deployment/recovery",
+      "state": "Scoped verified",
+      "finding": "Stable V9, CI/local previews, source/archive/runtime parity and fresh restore. No second public origin.",
+      "evidence": "evaluation/checks/deployment-v9.json"
+    },
+    {
+      "section": 37,
+      "requirement": "Observability",
+      "state": "Scoped implementation",
+      "finding": "Bounded user-visible service/worker errors, CLI/CI reports; no unnecessary user tracking. Does not guarantee continuous global availability.",
+      "evidence": "docs/architecture.md"
+    },
+    {
+      "section": 38,
+      "requirement": "Failure audit",
+      "state": "Scoped mitigations",
+      "finding": "Timeout/cancel/corrupt assets/import/rerun/mobile/align/backup cases checked; retained limits remain.",
+      "evidence": "docs/hackathon/RED_TEAM.md"
+    },
+    {
+      "section": 39,
+      "requirement": "Judge journey",
+      "state": "Scoped automation, humans open",
+      "finding": "Actual landing/sample/witness/edit/undo/export/code/video link checks; no independent human5-10minute journey study.",
+      "evidence": "evaluation/checks/deployment-v9-browser.json"
+    },
+    {
+      "section": 40,
+      "requirement": "Thirty-criticism red team",
+      "state": "Scoped verified",
+      "finding": "30 concrete rows and mitigations/limitations; repeated source/CI findings retained.",
+      "evidence": "docs/hackathon/RED_TEAM.md"
+    },
+    {
+      "section": 41,
+      "requirement": "Feature discipline",
+      "state": "Scoped decision",
+      "finding": "Single review workflow, no chatbot/accounts/batch/admin bloat. Reader exercise is separate offline research tooling.",
+      "evidence": "docs/PROJECT_PLAN.md"
+    },
+    {
+      "section": 42,
+      "requirement": "Observe-orient-act loop",
+      "state": "Ongoing",
+      "finding": "Current rule/gallery refresh, failed-run repairs, actual verification and current consolidated state.",
+      "evidence": "PROJECT_STATUS.md"
+    },
+    {
+      "section": 43,
+      "requirement": "Priority order",
+      "state": "Applied, impact unresolved",
+      "finding": "Broken footer/CI fixed; now practical benefit and quality gates remain rather than decorative feature work.",
+      "evidence": "PROJECT_STATUS.md"
+    },
+    {
+      "section": 44,
+      "requirement": "Work log",
+      "state": "Scoped verified",
+      "finding": "Current status consolidated; historical diary archived to avoid obsolete active state.",
+      "evidence": "PROJECT_STATUS.md"
+    },
+    {
+      "section": 45,
+      "requirement": "Decision log",
+      "state": "Scoped verified",
+      "finding": "Major source/graph/ranker/release/security decisions documented with actual dates and negative outcomes.",
+      "evidence": "docs/DECISIONS.md"
+    },
+    {
+      "section": 46,
+      "requirement": "Release QA",
+      "state": "Scoped verified",
+      "finding": "Both PR16/17 exact-head CI passed; native/frontend/build/audit/browser pipelines. No release from failed heads.",
+      "evidence": "evaluation/checks/v9-delivery-merge.json"
+    },
+    {
+      "section": 47,
+      "requirement": "Final submission audit",
+      "state": "Not achieved",
+      "finding": "Software/package evidence strong, but quality/form/public-full-video/final-submission requirements not all proven.",
+      "evidence": "docs/hackathon/SUBMISSION_AUDIT.md"
+    },
+    {
+      "section": 48,
+      "requirement": "Devpost finalization",
+      "state": "Not achieved",
+      "finding": "Project publication and attached video are not competition submission. No draft-only custom-field tool; submitted_atnull.",
+      "evidence": "evaluation/checks/devpost-final-touch-state.json"
+    },
+    {
+      "section": 49,
+      "requirement": "Post-submission final tag/archive",
+      "state": "Not applicable yet",
+      "finding": "No actual final submission; no manufactured confirmation/finalv1tag or visibility claim.",
+      "evidence": "PROJECT_STATUS.md"
+    },
+    {
+      "section": 50,
+      "requirement": "Integrity prohibitions",
+      "state": "Scoped review",
+      "finding": "No fake users/studies/history/scores, no cloning contestants or engagement manipulation; staged source scans/hashes preserve this boundary.",
+      "evidence": "docs/hackathon/RED_TEAM.md"
+    },
+    {
+      "section": 51,
+      "requirement": "AI verification/disclosure",
+      "state": "Scoped verified",
+      "finding": "AI assistance disclosed; output checks and factual reviewer corrections retained. Same-family AI critics are not human judges.",
+      "evidence": "docs/hackathon/judges-v7/REVIEW.md"
+    },
+    {
+      "section": 52,
+      "requirement": "All winning-standard yes answers",
+      "state": "Not achieved",
+      "finding": "Human advantage, scientific originality, comparative placement and quality-score gates cannot be honestly answeredyes.",
+      "evidence": "docs/hackathon/JUDGE_SCORECARD.md"
+    },
+    {
+      "section": 53,
+      "requirement": "First-execution sequence",
+      "state": "Partial historical proof",
+      "finding": "Initial research/selection/code/delivery history retained; do not backfill missing historical coverage as earlier execution.",
+      "evidence": "research/idea-selection-report.md"
+    },
+    {
+      "section": 54,
+      "requirement": "Autonomous ordinary decisions",
+      "state": "Applied",
+      "finding": "Routine build/refactor/deploy/publish/QA performed under owner authorization; personal/legal owner-only gates preserved.",
+      "evidence": "AGENTS.md"
+    },
+    {
+      "section": 55,
+      "requirement": "Independent judgment",
+      "state": "Applied, outcome not guaranteed",
+      "finding": "Failed graph/ranker gates, modest scores, data limits and Reddit removal reported rather than inflated.",
+      "evidence": "docs/INNOVATION.md"
+    },
+    {
+      "section": 56,
+      "requirement": "Complete competition package",
+      "state": "Not achieved",
+      "finding": "Implementation/live/source/video/recovery artifacts exist with scoped checks; real quality evidence/custom answers/final confirmation remain.",
+      "evidence": "PROJECT_STATUS.md"
+    }
+  ]
+}

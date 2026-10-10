@@ -73,6 +73,17 @@ hypotheses → inspect/confirm → updated measurements/undo → hash-linked exp
 Both real training-field outputs and one-click precomputed examples are now
 implemented. No browser neural weights, automatic consensus, batch platform,
 new clinical claim or retuning of frozen assessment source is in scope.
-Release gate:22frontend/45native tests, existing Chromium/Firefox paths, expanded
+Current release gate:22frontend/68native tests, existing Chromium/Firefox paths, expanded
 QA/browser/axe checks, frozen-source integrity, dependency audits and exact-head
 remote CI. The optional model environment requires its own audit/limitations.
+
+## October10 current milestone state
+
+M0–M6 have scoped implementation/evaluation/UX/reliability evidence, including the
+fresh V9 restore drill. Graph/NNLS superiority failed; switching the queue to the
+validation-selected object comparator did not establish human benefit. M8 has
+verified local media and processed attached YouTube, with only opening-sample
+anonymous playback evidence. M9 is not passed: same-family role simulations
+are below target and form/final video-viewing gates remain. M7/feature freeze and
+M10/final submission are future gates. Read PROJECT_STATUS.md for current state;
+earlier milestone observations above are historical, not active timers or holds.
