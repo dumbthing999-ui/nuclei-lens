@@ -66,16 +66,18 @@ Use existing Playwright dependencies, without global installs:
 NUCLEILENS_READER_URL=http://127.0.0.1:5181 node reader-exercise/tests-reader-browser.mjs
 ```
 
-The test resolves local Playwright or reuses `/home/kali/Downloads/euradev/frontend`
-dependencies without changing them. Set `NUCLEILENS_READER_DEPS_PACKAGE` to another
+The test resolves Playwright from this repository’s `frontend/package.json`
+without changing dependencies. Set `NUCLEILENS_READER_DEPS_PACKAGE` to another
 existing frontend `package.json` if needed. Tests refuse non-loopback URLs and add
 `?test=1` themselves. They read actual
 generated assets, inspect real image/alternative layers, exercise all four task
 outcomes and partial export/withdrawal, assert the contract and timing bounds, test
 synthetic visibility-event handling (not physical tab-background behavior), keyboard reachability, mobile layout and loading/hash errors.
 Fault tests alter responses in browser memory only; generated files stay untouched.
-Tests keep downloaded synthetic JSON in memory and print only a software-check
-summary; no raw records are saved or published. Run only against the owned
+Tests keep downloaded synthetic JSON in memory by default and print a software-check
+summary. For browser-to-scorer integration, explicitly set
+`NUCLEILENS_READER_SYNTHETIC_EXPORT` to a new file under `/tmp/`; it stays labeled
+synthetic and must never be committed or presented as human observations. Run only against the owned
 generated local bundle.
 
 The first headless visibility check failed: freezing the browser lifecycle did

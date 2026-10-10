@@ -168,3 +168,8 @@ tests are flagged and refused by default scoring. PR15 docs proof merged: a33a93
 - README shortcut links and app footer video/Devpost links prepared; app changes remain pending PR/CI/deployment.
 - Offline reader bundle uses development fields, separate served/private roots and six planned allocations. No actual participants or benefit results. Native reader tests23 pass; repeated22-file bundles are byte identical. Synthetic browser export passes explicit synthetic scoring and is rejected by default; raw synthetic export stays outside Git.
 - r/SideProject post1x2abm6 was accepted, then readback reports removed_by_category=reddit. Saved draft/proof; do not repost or describe promotion as publicly visible.
+
+PR16 initial CI failed because reader fixtures used a machine-specific dataset path.
+Repaired configurable/default repository path; CI now downloads hash-pinned official archives
+and checks actual local reader browser export/scoring. Local23reader tests pass.
+The candidate remains pending final-head CI/merge and footer deployment.

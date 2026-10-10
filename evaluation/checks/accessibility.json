@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T18:18:39.662Z",
-  "target": "http://127.0.0.1:5174",
+  "generated_at": "2026-10-10T08:52:11.054Z",
+  "target": "http://127.0.0.1:5182",
   "tool": "axe-core",
   "observations": [
     {
@@ -285,6 +285,9 @@
             ],
             [
               "text[x=\"295\"][y=\"410\"][fill=\"#fff\"]"
+            ],
+            [
+              "a[href$=\"test.json\"]"
             ]
           ]
         }
