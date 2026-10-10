@@ -7,6 +7,8 @@ by comparing local segmentation alternatives and recording human review decision
 
 [Live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [3:35 video](https://youtu.be/nik8WtPUrUc) · [Devpost](https://devpost.com/software/nucleilens)
 
+[Video download backup]( https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4) — the same 3:35 demo at 720p (26.7 MB).
+
 ![Actual NucleiLens microscopy review interface](artifacts/screenshots/desktop.png)
 
 ## Problem

@@ -1,5 +1,13 @@
 # Changelog
 
+## Video backup and submission copy — October10,2026
+
+- Preserve existing YouTube upload and add a verified public720p video download.
+- Verify complete anonymous file/size/hash and215second video/audio decode.
+- Synchronize Devpost version13 narrative/links and one-field evidence with public
+  readback. Keep competition association unsubmitted and private fields deferred.
+- Record final-head PR19 CI/merge and current native114/frontend22 evidence.
+
 ## Existing-mask diagnostic — October10,2026
 
 - Add a bounded, hash-verified, reproducible annotation check of all three existing

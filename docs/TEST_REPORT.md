@@ -1,9 +1,16 @@
 # Test report
 
-October10 existing-mask diagnostic candidate: full native114passed (one
-Starlette/httpx TestClient deprecation), Ruff/release guards pass. New46synthetic
-checks are plumbing evidence; actual one-field repeat and inspected chart are
-in `evaluation/checks/annotation-case-local.json`. Candidate CI remains pending.
+October10 existing-mask diagnostic: PR19 merged after final-head CI38045732748/
+38045730514 passed. Full native114 and frontend22 checks, actual one-field replay/
+byte comparison, audits/build and critical browser workflows pass. Local native
+run had one Starlette/httpx TestClient deprecation warning. New46 synthetic checks
+are plumbing evidence; actual one-field results remain descriptively scoped.
+
+The reviewed 720p backup is now a public GitHub prerelease asset. A complete
+anonymous download matches all26,718,472 bytes and SHA256; the downloaded video/
+audio fully decode at1280×720,215seconds. This verifies the fallback file, not
+all-region or complete YouTube-player availability. See
+`evaluation/checks/github-video-backup.json`.
 
 Current release evidence: native68/frontend22 tests passed at PR16/17 final heads.
 Public V9 verifies browser-local numerical inference, component editing/undo/hash

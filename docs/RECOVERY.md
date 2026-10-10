@@ -122,3 +122,12 @@ edit/undo/hash and focus/reduced-motion passed on that restored bundle too.
 Evidence: evaluation/checks/v9-restore*.json. The test harness reused installed
 Playwright/Chromium; this does not prove a new OS/hardware or backup public origin.
 This supersedes the earlier V6-only restoration scope for the V9 archive.
+
+## Reviewed demo-video fallback
+
+The same3:35reviewed video has a [720p download backup](https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4) on the original public GitHub prerelease. Size26.7MB; full anonymous download,
+SHA256 and complete video/audio decode pass. The tag/source snapshot is preserved;
+this asset is a video backup, not a new tagged code release. Public YouTube opening
+playback passes, but full-player verification remains unproven. Do not retry the
+successful upload or bypass platform access controls. See
+`evaluation/checks/github-video-backup.json`.
