@@ -163,6 +163,15 @@ may remain. This property-filtered labeled training archive is **not an independ
 biological-group test** or proof of human benefit. Original reference imperfections
 remain in scoring. [Complete protocol, every field and difficult cases](evaluation/additional/README.md).
 
+### Existing model-mask diagnostic
+
+On the first bundled training field, all three existing masks have absolute count
+error3. IoU≥0.5 matching gives11 unmatched instances for the classical mask and3
+each for Cellpose/StarDist. The neural masks have the same count68 andF10.978,
+yet differ at3,738foreground pixels; this does not establish an error in either.
+This is one previously visible development field, not a general model ranking.
+[Reproduce the complete case and chart](evaluation/model-case/README.md).
+
 ## Tech stack
 
 - Python, NumPy, SciPy, scikit-image: inspectable numerical segmentation and graph analysis.

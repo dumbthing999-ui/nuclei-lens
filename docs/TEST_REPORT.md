@@ -1,5 +1,10 @@
 # Test report
 
+October10 existing-mask diagnostic candidate: full native114passed (one
+Starlette/httpx TestClient deprecation), Ruff/release guards pass. New46synthetic
+checks are plumbing evidence; actual one-field repeat and inspected chart are
+in `evaluation/checks/annotation-case-local.json`. Candidate CI remains pending.
+
 Current release evidence: native68/frontend22 tests passed at PR16/17 final heads.
 Public V9 verifies browser-local numerical inference, component editing/undo/hash
 exports, actual model QA/alignment, mobile bounds, four-state axe and focus/motion.

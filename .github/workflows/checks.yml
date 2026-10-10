@@ -27,6 +27,10 @@ jobs:
       - name: Download hash-pinned BBBC039 reader fixtures
         run: python scripts/download_data.py
       - run: pytest
+      - name: Reproduce existing-mask annotation diagnostic
+        run: |
+          python scripts/annotated_model_case.py --output /tmp/nucleilens-annotation-case.json
+          cmp evaluation/model-case/result.json /tmp/nucleilens-annotation-case.json
       - run: ruff check src tests scripts
       - name: Python security AST checks in isolated tools environment
         run: |

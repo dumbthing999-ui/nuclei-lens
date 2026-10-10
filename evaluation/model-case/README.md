@@ -13,7 +13,50 @@ this workflow only scores existing predictions after verifying them. The existin
 hypotheses are diagnostics, not verified biological mistakes. Keep every method
 and any failure; do not tune or select by the outcome.
 
-No outcome is recorded yet. Run the diagnostic only after the reproducible script
-is reviewed and checked. Model weights and parameters remain the previously
-recorded ones; training overlap and reference imperfection are unresolved.
-No human-reader benefit, scientific-first or general superiority claim follows.
+## Actual result
+
+The annotation decoder yields71 instances. Matching uses one-to-one instance
+IoU≥0.5, with cardinality before summed overlap. All three masks have count MAE3
+on this one field; their unmatched-instance totals differ.
+
+| Existing mask | Count | Signed count error | TP | FP | FN | FP+FN | F1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Classical baseline |74|+3|67|7|4|11|0.924|
+| Cellpose3 nuclei |68|−3|68|0|3|3|0.978|
+| StarDist2D versatile fluo |68|−3|68|0|3|3|0.978|
+
+![Three masks share count error3 but differ in annotation matching; Cellpose and StarDist both have68objects,3unmatched annotations andF10.978.](figures/annotation-agreement.png)
+
+Cellpose and StarDist have identical count and aggregate matching metrics here,
+yet foreground differs at3,738pixels and their partitions are not equivalent
+under one-to-one ID relabeling. This does **not** show either model is less accurate
+on this field: boundary differences can preserve all eligible IoU matches.
+The classical baseline has five0.1IoU split hypotheses; these thresholded overlaps
+are not five confirmed biological errors. Neither graph differences nor exact
+count agreement establishes correctness. Reference quality remains a limitation.
+
+[Complete deterministic result](result.json) retains every method, source/image/
+annotation/mask hash, recorded model/weight provenance, versions and limitations.
+No prediction, weight, configuration or frozen50/496 result was changed. This
+measurement adds no human-reader benefit, scientific-first or general superiority
+claim. The original model-run provenance uses the initial environment; the
+separately documented remediated rerun produced identical pixels.
+
+## Reproduce
+
+Use the ordinary project environment; no neural frameworks, weights or new model
+inference are needed. Download and verify the official archives if not present:
+
+```bash
+.venv/bin/python scripts/download_data.py
+.venv/bin/python scripts/annotated_model_case.py --output /tmp/nucleilens-annotation-case.json
+cmp evaluation/model-case/result.json /tmp/nucleilens-annotation-case.json
+.venv/bin/python scripts/plot_annotated_model_case.py --output-directory /tmp/nucleilens-case-figures
+```
+
+The result is byte-repeatable in the checked pinned environment. Differing prior
+output is rejected. Figure byte equality was checked on this machine, not promised
+across operating systems/renderers. Synthetic tests cover hash/geometry/threshold/
+label-ID/annotation-ordering/overwrite guards; they are not model or human evidence.
+CI repeats the real case from hash-pinned official archives and compares the JSON.
+
