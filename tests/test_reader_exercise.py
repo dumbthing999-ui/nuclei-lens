@@ -2,6 +2,7 @@
 
 import copy
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -12,7 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from prepare_reader_exercise import prepare, write_json  # noqa: E402
 from score_reader_exercise import score  # noqa: E402
 
-DATA = Path("/home/kali/Downloads/euradev/data/raw/BBBC039")
+DATA = Path(os.environ.get("NUCLEILENS_READER_DATASET", str(ROOT / "data/raw/BBBC039")))
 
 
 @pytest.fixture(scope="module")

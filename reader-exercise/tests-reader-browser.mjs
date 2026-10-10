@@ -11,7 +11,7 @@ try {playwright = createRequire(import.meta.url)('playwright');}
 catch (error) {
   if (error.code !== 'MODULE_NOT_FOUND') throw error;
   playwright = createRequire(process.env.NUCLEILENS_READER_DEPS_PACKAGE ||
-    '/home/kali/Downloads/euradev/frontend/package.json')('playwright');
+    new URL('../frontend/package.json', import.meta.url))('playwright');
 }
 const {chromium} = playwright;
 
