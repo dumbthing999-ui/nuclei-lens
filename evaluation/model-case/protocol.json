@@ -1,0 +1,86 @@
+{
+  "protocol_id": "nucleilens-existing-training001-annotation-case-v1",
+  "declared_at": "2026-10-10T10:17:01.141180+00:00",
+  "study_type": "Descriptive single development-case diagnostic, not held-out comparison or preregistered study",
+  "selection": "Existing first official training field and all three already published masks; no new outcome-based selection. Counts and masks were visible before this declaration.",
+  "sample_id": "training-001",
+  "split": "training",
+  "manifest_position_one_based": 1,
+  "filename": "IXMtest_A06_s6_w1B9577918-4973-4A87-BA73-A168AA755527.png",
+  "image_source": "frontend/public/samples/training-001.tif",
+  "image_file_sha256": "f9a51ae558e53416980ca152c740ad9dced85eedbd105261841139aada16b77d",
+  "image_pixel_sha256": "a80d71b2fdce30809804b771d8334a917537413bd108fea2694fff861c1ae4da",
+  "dimensions": {
+    "width": 696,
+    "height": 520
+  },
+  "archive_sha256": {
+    "images": "6f30a5d4fe38c928ded972704f085975f8dc0d65d9aa366df00e5a9d449fddd7",
+    "masks": "f9e6043d8ca56344a4886f96a700d804d6ee982f31e2b2cd3194af2a053c2710",
+    "metadata": "a2c1f900bed9ba92a99553efd4c2ae98598433691c7401d818653ab61110deb2"
+  },
+  "source_sha256": {
+    "src/nuclei_lens/data.py": "6d94d5bc2bdfd7dca318698dbd8d9e2d2121683998fd2184f8e0265415f9e2e5",
+    "src/nuclei_lens/evaluate.py": "801d6447d019c4f339a0a825246b8964dee897605c80747ffbf9ff81050ae1fa",
+    "src/nuclei_lens/core.py": "1d1d9ad01334268c060a3d236c816c1b2ced3d2a742c75491f5efa7a8c64da08",
+    "src/nuclei_lens/graph.py": "40d92dd3ba3d5b2c45ca037f98e24b758bbd87ec4a64c90c5f3c22219078b08e"
+  },
+  "model_provenance_source": "frontend/public/model-examples/training-001/provenance.json",
+  "model_provenance_sha256": "09f99eb019cdef0e8df366de10ad8c11d8ac8a8526c391a47337b9327861cf04",
+  "methods": [
+    {
+      "id": "classical_baseline",
+      "source": "frontend/public/samples/training-001.json",
+      "sha256": "567fdedf103d3b35c4d6da7c20cf9bab7c6ce5628aec7713ed25240a0d845770",
+      "run_index": 0
+    },
+    {
+      "id": "cellpose_nuclei",
+      "source": "frontend/public/model-examples/training-001/cellpose_nuclei_mask.tif",
+      "sha256": "a7f2ff83ffdfbc9dc732e7eb0761896328fae1020e940536b3ab2944da4e403b",
+      "pixel_sha256": "5fe3c6abf04a14396272230148546eb1645734b2b09f5d7c9ea594a766756475",
+      "known_instance_count": 68
+    },
+    {
+      "id": "stardist_2d_fluo",
+      "source": "frontend/public/model-examples/training-001/stardist_2d_fluo_mask.tif",
+      "sha256": "d5546b4b0597533723cf8bae18ef636e0de0cf5f02b3cf8ffd41c4728b5f5fe1",
+      "pixel_sha256": "658f8368565602cea32f8a6a2e976dfe6c3c69afc98475cb7f2ecf5ee35f393b",
+      "known_instance_count": 68
+    }
+  ],
+  "matching": {
+    "iou_threshold": 0.5,
+    "objective": "Cardinality-first maximum-weight one-to-one matching using the frozen evaluator",
+    "merge_split_hypothesis_iou_threshold": 0.1,
+    "dense_label_remapping": "Ascending nonzero IDs -> consecutive uint32 IDs, background0; preserve partition/geometry"
+  },
+  "primary_metrics": [
+    "predicted_count",
+    "annotation_count",
+    "count_error",
+    "tp",
+    "fp",
+    "fn",
+    "f1",
+    "precision",
+    "recall"
+  ],
+  "secondary_metrics": [
+    "existing evaluator merge/split hypotheses at0.1IoU",
+    "pairwise foreground/background differing pixel count",
+    "pairwise one-to-one label-partition equivalence"
+  ],
+  "inference_boundary": "No new inference, parameters or weights. All predictions loaded and provenance checked before official annotation decoding. References may be used only to compute declared diagnostics.",
+  "output_path": "evaluation/model-case/result.json",
+  "failure_policy": "Retain failures; no parameter tuning, reranking, additional cases or rewritten original benchmark. No overwriting differing output.",
+  "limitations": [
+    "One already selected development field; descriptive only, no uncertainty interval or significance testing.",
+    "Model pretraining overlap with BBBC039 is unknown; no biological-group generalization or accuracy-superiority claim.",
+    "Official annotation agreement is not independent biological truth; reference quality and matching threshold affect results.",
+    "Merge/split counts are thresholded correspondence hypotheses, not clinically confirmed errors.",
+    "No human correction, recruitment, effort, benefit or scientific novelty is established.",
+    "Pairwise mask differences do not imply that either mask is wrong.",
+    "Protocol declared after original masks/counts were public; not a prospective independent study."
+  ]
+}
