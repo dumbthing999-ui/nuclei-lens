@@ -1,5 +1,26 @@
 # EurekaDev 2026 Workspace Instructions
 
+## Latest verified delivery — October10,2026
+
+PR16 is merged at application main f5afee773bf35888a6131f4373089670094676da,
+final-head CI38039691875/38039689807 success. Public SiteV9 source
+a3bab275967e5e3d91f0002873290bca3790ac81 has matching tree
+68197d8472ef6feadd4f23aaa1d9be209c1871df. Public core inference/edit/undo/export,
+external model QA/alignment, focus/reduced-motion and axe/mobile checks pass.
+Full keyboard edit/undo/hash passes locally/CI; the keyboard script refuses public
+origins, so no full public keyboard-edit claim. Video/footer links wrap on mobile.
+
+Owner's YouTube nik8WtPUrUc is preserved; README, Devpost top shortcuts and GitHub
+v0.2.0 release body link to it, with readbacks. No re-upload or retag. Devpost remains
+unsubmitted. Reader exercise is local software preparation on development fields:
+23 native tests, synthetic browser/CLI integration and deterministic22-file bundles
+pass; no recruited participants, observed sessions or human benefit. Do not fabricate
+study data or raise frozen scientific/judge scores. Reddit post1x2abm6 was accepted
+then removed_by_category=reddit. Do not repost, bypass moderation or claim public
+promotion succeeded. Saved draft/removal proof are in promotion/ and evaluation/checks/.
+
+Historical verified delivery observations below retain their original scope.
+
 ## Verified delivery state — October9,2026
 
 PR13 is merged after both final-head CI runs passed. Public SiteV7 includes the

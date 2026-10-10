@@ -303,3 +303,12 @@ is rejected by default scoring and accepted only with explicit synthetic validat
 Local application focus/reduced-motion and automated desktop/mobile axe checks pass.
 This is software evidence, not a human study or complete accessibility certification.
 Initial PR16 CI failure is retained in GitHub; final-head CI/deployment remain pending.
+
+## V9 verified release follow-up
+
+PR16 final-head CI38039691875 and38039689807 both pass, including native68,
+frontend22, dependency/static audits, build and the offline reader synthetic UI/CLI path.
+Public V9 browser/core and model QA pass; four-state axe observations have zero
+violations and focus/reduced-motion checks pass. The full keyboard-edit script refuses
+public origins; local and CI evidence do not become a public keyboard-edit assertion.
+See evaluation/checks/deployment-v9*.json and reader-merge.json.

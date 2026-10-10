@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-10T08:59:04.259340+00:00",
+  "archive_sha256": "bddf9ca456c34a0c1fd69f8e919e7b481622c8ec7bc4c634241b1e06072ee620",
+  "bytes": 35832939,
+  "files": 99,
+  "runtime_files_verified": 11,
+  "actual_neural_masks_included": true,
+  "source_tree_matches_candidate": true,
+  "candidate_head": "ad15f422f358bb09c0c2618c24c73c05ee39f0ab",
+  "source_commit": "a3bab275967e5e3d91f0002873290bca3790ac81",
+  "source_tree": "68197d8472ef6feadd4f23aaa1d9be209c1871df"
+}

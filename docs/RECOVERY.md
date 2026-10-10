@@ -102,3 +102,12 @@ a distinct hash/size; do not compare it as if it were the local compressed file.
 V6 restore-drill evidence above remains V6-specific. Use the same extraction
 commands with v8 filenames in a fresh empty directory; no separate V8 restore
 drill or backup public origin is implied by preservation/hash checks.
+
+## V9 backup — October10
+
+Checked archive: artifacts/nucleilens-site-v9.tar.gz (ignored local media), with
+tracked checksum artifacts/nucleilens-site-v9.tar.gz.sha256 and complete11-file
+runtime verification in evaluation/checks/static-package-v9.json. Source and
+GitHub application trees match at deployment. This verifies archive contents,
+not a V9 restoration drill or a second public deployment; the earlier restoration
+drill retains its V6 scope. Do not confuse compressed local and canonical server tar hashes.

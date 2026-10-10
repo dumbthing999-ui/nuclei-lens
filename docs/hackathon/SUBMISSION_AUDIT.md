@@ -77,3 +77,13 @@ match authenticated and fresh rendered readback. submitted_at=null. Custom answe
 and complete player viewing remain unverified; no fabricated human benefit or
 final19+/20 score. Source parity is recorded at deployment, not inferred after
 subsequent documentation commits.
+
+## October10 superseding delivery checks
+
+PR16 final-head runs38039691875/38039689807 pass. Public V9 verifies core inference,
+model QA, alignment judgment, edit/undo/hash exports, mobile footer bounds, axe and
+focus/reduced-motion. Backup contents/source parity pass; no new backup-origin or
+restore-drill claim. Video top shortcuts and GitHub release link read back.
+Reader exercise remains software preparation, not user-benefit evidence. Reddit
+post was removed by the platform. Custom draft fields remain owner-deferred and
+submitted_at remains null; this audit still does not authorize claiming perfection.
