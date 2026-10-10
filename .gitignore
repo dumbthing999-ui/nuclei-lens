@@ -38,3 +38,9 @@ model_output/
 
 # Regenerated keyboard download fixtures are retained as CI artifacts, not source.
 /artifacts/keyboard-smoke*/
+
+# Local reader preparation and pseudonymous raw sessions are not release assets.
+.reader-exercise/
+reader-exercise/generated/
+reader-exercise/records/
+evaluation/reader-sessions/

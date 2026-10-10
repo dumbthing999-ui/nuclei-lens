@@ -152,3 +152,19 @@ and public-field-only archives await this docs synchronization. Raw fresh judge
 scores remain unchanged by these fixes. Highest-value next evidence task is a
 blinded reader exercise interface; real consented participants and observations
 remain absent. Do not create fake study records or contact participants.
+
+## Active reader-tool preparation
+
+Isolated worktree /tmp/nucleilens-reader.BxKu0d, branch feature/reader-exercise.
+James owns prepare_reader_exercise.py/score_reader_exercise.py and native tests;
+Goodall waits for the asset/export contract before standalone UI implementation.
+Primary owns reader implementation docs. No real sessions or recruitment. Raw
+records and references must stay outside public served/Git roots; synthetic UI
+tests are flagged and refused by default scoring. PR15 docs proof merged: a33a93c38e7edc8c3a8b8445e291c42137f6fc3c, exact-head CI37972799296/37972723748passed. Application remains verifiedV8; docs-only merge needs no redeploy.
+
+## October 10 — owner video shortcut polish and reader software candidate
+
+- Owner-confirmed video nik8WtPUrUc preserved; Devpost top demo/video/code shortcuts now have authenticated text and fresh rendered URL readbacks. Not a final competition submission.
+- README shortcut links and app footer video/Devpost links prepared; app changes remain pending PR/CI/deployment.
+- Offline reader bundle uses development fields, separate served/private roots and six planned allocations. No actual participants or benefit results. Native reader tests23 pass; repeated22-file bundles are byte identical. Synthetic browser export passes explicit synthetic scoring and is rejected by default; raw synthetic export stays outside Git.
+- r/SideProject post1x2abm6 was accepted, then readback reports removed_by_category=reddit. Saved draft/proof; do not repost or describe promotion as publicly visible.

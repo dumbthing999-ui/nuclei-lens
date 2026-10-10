@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Offline microscopy reader exercise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to exercise</a>
+  <header><p class="eyebrow">LOCAL · VOLUNTARY · EXPLORATORY</p><h1>Microscopy reader exercise</h1>
+    <p id="synthetic" class="synthetic" hidden>SYNTHETIC SOFTWARE TEST — NOT HUMAN OBSERVATIONS</p>
+  </header>
+  <main id="main" tabindex="-1">
+    <aside class="notice"><strong>Memory only. No automatic upload.</strong>
+      <p>Closing or reloading loses entries. Export before leaving if you want a local copy. Downloaded files remain on your device; keep them private. Do not enter names, contact details, or other personal information in notes.</p>
+      <p>Participant codes, consent acknowledgements and timestamps are self-reported records. They do not independently authenticate participants.</p>
+    </aside>
+    <p id="loading" role="status">Loading the local manifest and export contract…</p>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section id="setup" hidden aria-labelledby="setup-title">
+      <h2 id="setup-title">Before beginning</h2>
+      <div class="operator"><strong>Operator: study not started.</strong><p>This software does not recruit anyone or establish that a study has occurred. Before any actual session, approve the fixed allocation, consent and retention procedure, and confirm applicable institutional review requirements. Keep private reference assets outside the served directory. Do not proceed with fields familiar to the reader.</p>
+        <label><input id="operator-ready" type="checkbox"> Operator readiness has been checked (software testing only in test mode).</label>
+      </div>
+      <p>This is an exploratory counting exercise, not a clinical assessment. Participation is voluntary: you may leave, stop a task, mark a tile unresolved, or withdraw without penalty. No human benefit has been established.</p>
+      <form id="consent-form">
+        <div class="form-grid">
+          <label>Assigned participant code<select id="participant" required><option value="">Choose assigned code</option></select></label>
+          <label>Microscopy/counting experience<select id="experience"><option value="unspecified">Prefer not to specify</option><option value="basic">Basic</option><option value="experienced">Experienced</option></select></label>
+          <label>Retention choice<select id="retention"><option value="">Choose explicitly</option><option value="retain">Permit operator retention for this exploratory exercise</option><option value="delete">Withdraw / request no retention</option></select></label>
+        </div>
+        <p>Withdrawal exports a request only, without task data. It does not delete previously downloaded files or operator copies. Communicate the request to the operator; follow their agreed deletion process. This page sends nothing automatically.</p>
+        <label><input id="consent" type="checkbox" required> I understand the purpose, voluntary participation, withdrawal and local retention choices, and acknowledge consent to continue (synthetic acknowledgement in test mode).</label>
+        <button id="continue" type="submit">Continue to common practice</button>
+      </form>
+    </section>
+    <section id="session" hidden aria-labelledby="session-title">
+      <div class="session-bar"><h2 id="session-title">Common practice</h2><div class="actions">
+        <button id="export" type="button">Export JSON</button><button id="stop" type="button">Stop exercise</button><button id="withdraw" type="button">Withdraw / request deletion</button>
+      </div></div>
+      <p id="progress" role="status"></p><p id="integrity"></p>
+      <p id="task-state" role="status"></p>
+      <p>Count nuclei whose <strong>centers fall inside the indicated tile</strong>. Enter your own tally. Outlines are segmentation proposals, not verified answers. All four assigned tiles remain in the record, including unresolved tiles.</p>
+      <div id="exercise" hidden>
+        <div class="viewer-controls">
+          <label><input id="baseline-visible" type="checkbox" checked> Baseline outlines</label>
+          <label id="alternative-label">Outline view<select id="alternative"><option value="0">Baseline only</option></select></label>
+          <button id="full-field" type="button" aria-pressed="false">Show full field</button>
+        </div>
+        <div class="layout">
+          <section class="image-section" aria-label="Microscopy tile viewer">
+            <svg id="viewer" role="img" aria-label="Microscopy field and assigned tile boundaries" xmlns="http://www.w3.org/2000/svg"></svg>
+            <p id="viewer-caption"></p><p id="events" role="status"></p>
+          </section>
+          <section aria-label="Four assigned tiles"><div id="tiles"></div></section>
+        </div>
+        <label for="comprehension">In your own words, what do the visible outlines tell you, and what remains uncertain? (optional, no personal details)</label>
+        <textarea id="comprehension" maxlength="500" rows="3"></textarea>
+        <label for="task-reason">Reason for an incomplete, failed or aborted task (required for those actions; no personal details)</label>
+        <textarea id="task-reason" maxlength="500" rows="2"></textarea>
+        <div class="actions">
+          <button id="start" type="button">Start task</button><button id="complete" type="button" disabled>Complete task</button>
+          <button id="incomplete" type="button" disabled>Finish incomplete task</button><button id="abort" type="button" disabled>Abort task</button><button id="fail" type="button" disabled>Mark task failed</button>
+          <button id="next" type="button" hidden>Load next task</button>
+        </div>
+      </div>
+      <p id="summary" role="status" hidden></p>
+      <p class="small">Export contains started assessment tasks only. Unstarted tasks are omitted and remain missing; practice is not exported. Timing begins only when you press Start task after all image assets load. Timing does not pause when the page is hidden; visibility transitions are recorded as elapsed offsets.</p>
+    </section>
+  </main>
+  <footer>Offline software preparation. No recruitment, actual sessions, human results or authenticated identity are implied.</footer>
+</body>
+</html>

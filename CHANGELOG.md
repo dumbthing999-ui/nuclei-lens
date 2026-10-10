@@ -87,3 +87,9 @@ v0.1.0 is a verified prototype prerelease, not the final competition release. Vi
 - Recognize CellSampler consensus and established segmentation/editor prior art.
 - Owner released the historical video hold. Reviewed3:35video is prepared; actual
   YouTube upload was quota-rejected and a guarded reset retry is scheduled.
+
+## Unreleased — October 10, 2026
+
+- Add a local reader-exercise bundle generator, browser UI and strict scorer; automated sessions are explicitly synthetic and rejected by default scoring. No measured human benefit.
+- Make video and project links easier to find in the README, Devpost and application footer.
+- Preserve Reddit removal evidence without reposting.
