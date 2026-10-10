@@ -1,18 +1,18 @@
 # Test report
 
-October10 existing-mask diagnostic: PR19 merged after final-head CI38045732748/
-38045730514 passed. Full native114 and frontend22 checks, actual one-field replay/
+October 10 existing-mask diagnostic: PR19 merged after final-head CI38045732748/
+38045730514 passed. Full native 114 and frontend 22 checks, actual one-field replay/
 byte comparison, audits/build and critical browser workflows pass. Local native
-run had one Starlette/httpx TestClient deprecation warning. New46 synthetic checks
+run had one Starlette/httpx TestClient deprecation warning. The 46 new synthetic checks
 are plumbing evidence; actual one-field results remain descriptively scoped.
 
 The reviewed 720p backup is now a public GitHub prerelease asset. A complete
-anonymous download matches all26,718,472 bytes and SHA256; the downloaded video/
-audio fully decode at1280×720,215seconds. This verifies the fallback file, not
+anonymous download matches all 26,718,472 bytes and SHA256; the downloaded video/
+audio fully decode at 1280×720 for 215 seconds. This verifies the fallback file, not
 all-region or complete YouTube-player availability. See
 `evaluation/checks/github-video-backup.json`.
 
-Current release evidence: native68/frontend22 tests passed at PR16/17 final heads.
+V9 application scope: native 68/frontend 22 tests passed at the PR16/17 final heads.
 Public V9 verifies browser-local numerical inference, component editing/undo/hash
 exports, actual model QA/alignment, mobile bounds, four-state axe and focus/motion.
 Full keyboard editing is verified locally/in CI; that test refuses public origins.

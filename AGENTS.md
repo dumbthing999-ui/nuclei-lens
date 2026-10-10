@@ -2,6 +2,20 @@
 
 ## Latest verified delivery — October10,2026
 
+PR18 audit and PR19 existing-mask diagnostic merged after both final-head CI runs
+passed. Native114/frontend22 and real annotation-case replay pass. Original model
+masks/frozen50/496 science and V9 application source remain unchanged. Public
+GitHub720p backup of the reviewed video fully downloads anonymously with matching
+size/hash and fully decodes video/audio215s; original YouTube/tag preserved. Devpost
+version13 entire narrative, diagnostic scope and backup/video links match auth and
+fresh public rendering. submitted_at remainsnull; custom draft fields owner-deferred.
+No human observations, scientific-first, general model ranking or19+/20 claim.
+Stop adding cosmetic features; missing practical benefit requires real consenting
+people. Preserve failed public-player probes and Reddit removal; no repeated
+uploads/posts or browser requests. Current status/proofs are in PROJECT_STATUS.md.
+
+## Historical V9 deployment checks — October10,2026
+
 PR16 is merged at application main f5afee773bf35888a6131f4373089670094676da,
 final-head CI38039691875/38039689807 success. Public SiteV9 source
 a3bab275967e5e3d91f0002873290bca3790ac81 has matching tree
@@ -20,20 +34,6 @@ then removed_by_category=reddit. Do not repost, bypass moderation or claim publi
 promotion succeeded. Saved draft/removal proof are in promotion/ and evaluation/checks/.
 
 Historical verified delivery observations below retain their original scope.
-
-## Latest verified delivery — October10,2026
-
-PR18 audit and PR19 existing-mask diagnostic merged after both final-head CI runs
-passed. Native114/frontend22 and real annotation-case replay pass. Original model
-masks/frozen50/496 science and V9 application source remain unchanged. Public
-GitHub720p backup of the reviewed video fully downloads anonymously with matching
-size/hash and fully decodes video/audio215s; original YouTube/tag preserved. Devpost
-version13 entire narrative, diagnostic scope and backup/video links match auth and
-fresh public rendering. submitted_at remainsnull; custom draft fields owner-deferred.
-No human observations, scientific-first, general model ranking or19+/20 claim.
-Stop adding cosmetic features; missing practical benefit requires real consenting
-people. Preserve failed public-player probes and Reddit removal; no repeated
-uploads/posts or browser requests. Current status/proofs are in PROJECT_STATUS.md.
 
 ## Current package audit — October10,2026
 
