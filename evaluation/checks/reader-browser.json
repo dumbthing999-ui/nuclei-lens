@@ -1,0 +1,27 @@
+{
+  "synthetic_test": true,
+  "evidence_label": "SYNTHETIC SOFTWARE TEST — NOT HUMAN OBSERVATIONS",
+  "target": "http://127.0.0.1:5181/?test=1",
+  "checks": [
+    "synthetic label, consent/operator gates, decoded assets before timing, common practice excluded",
+    "actual A/B baseline and eight alternative assets, assigned tiles, keyboard focus, bounded tallies, completed/unresolved/aborted/failed records, active snapshot, exact schema and baselines",
+    "responsive layout, withdrawal request only, no deletion claim",
+    "asset barrier prevents fabricated timing, voluntary practice stop, unstarted assessments omitted",
+    "asset-load error and reachable retry, public SHA-256 success/mismatch using actual bytes"
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "requested_assets": [
+    "",
+    "F01-A.json",
+    "F02-A.json",
+    "F03-B.json",
+    "F04-B.json",
+    "Q01-B.json",
+    "app.js",
+    "export-contract.json",
+    "manifest.json",
+    "style.css"
+  ],
+  "status": "passed"
+}

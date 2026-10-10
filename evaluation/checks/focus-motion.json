@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-09T17:50:57.268Z",
-  "target": "http://127.0.0.1:5174",
+  "checked_at": "2026-10-10T08:57:09.303Z",
+  "target": "http://127.0.0.1:5182",
   "scope": "Actual Chromium keyboard focus and reduced-motion CSS, not assistive-tech/physical-device study.",
   "skip_link": true,
   "disclosure_focus": {

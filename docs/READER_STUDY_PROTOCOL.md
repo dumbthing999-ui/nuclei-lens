@@ -1,6 +1,6 @@
 # Planned exploratory reader exercise
 
-**Status: protocol only. No participants recruited, sessions run, or benefits measured.**
+**Status: offline software candidate implemented; no participants recruited, sessions run, or benefits measured.**
 
 ## Question
 
@@ -27,7 +27,7 @@ any applicable institutional review requirements before conducting the exercise.
 
 This compares the complete review assistance workflow; it does not isolate graph
 explanations from ranking. A later ablation would require separate conditions.
-Study-specific condition presentation/blinding is not yet implemented. Hide all
+A separate offline condition interface hides references and condition names; visible assistance prevents complete participant blinding. Hide all
 reference counts, benchmark metrics and annotated overlays from both conditions.
 Do not use the familiar same-total demonstration as a blinded assessment field.
 
@@ -66,6 +66,12 @@ participants a clear retention choice. Publish only appropriately consented,
 non-identifying aggregates. Do not fabricate sessions, simulate people, or substitute
 algorithmic oracle correction for observed human behavior.
 
-No recruitment, consent, study-mode implementation or human result is implied by
+No recruitment, actual participant consent or human result is implied by
 this document. The owner released the video hold; delivery is documented in `demo/README.md`.
 This changes no reader-study status or benefit claim.
+
+Before sessions, retain primary local-count MAE and predeclare secondary
+same-assigned-tile baseline MAE/error reduction: conditions select different tiles
+and initial difficulty can differ. Report missingness/failed/unresolved tasks and
+complete paired participant summaries; no threshold here establishes efficacy.
+See [implementation scope](READER_EXERCISE_IMPLEMENTATION.md).

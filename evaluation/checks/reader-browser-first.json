@@ -1,0 +1,26 @@
+{
+  "synthetic_test": true,
+  "evidence_label": "SYNTHETIC SOFTWARE TEST — NOT HUMAN OBSERVATIONS",
+  "target": "http://127.0.0.1:5181/?test=1",
+  "checks": [
+    "synthetic label, consent/operator gates, decoded assets before timing, common practice excluded"
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "requested_assets": [
+    "",
+    "style.css",
+    "app.js",
+    "manifest.json",
+    "export-contract.json",
+    "Q01-B.json",
+    "F01-A.json",
+    "F02-A.json",
+    "F03-B.json"
+  ],
+  "status": "failed",
+  "error": {
+    "name": "AssertionError",
+    "message": "Actual browser lifecycle visibility interruption must be recorded"
+  }
+}

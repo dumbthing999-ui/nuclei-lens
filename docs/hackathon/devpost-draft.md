@@ -1,5 +1,7 @@
 ## Inspiration
 
+[Try the live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [Watch the 3:35 video](https://youtu.be/nik8WtPUrUc) · [View the code](https://github.com/dumbthing999-ui/nuclei-lens)
+
 A segmentation merges two nuclei. Elsewhere, it splits one nucleus into two masks. The total stays unchanged, while the objects differ.
 
 Try the public demo: **inspect** the opposing split and merge outlines, explicitly **confirm** alternatives to see the mask count change **74 → 75 → 74**, **undo** both edits, then **export** the label TIFF and audit JSON. Each alternative is a hypothesis, not verified truth. Cellpose, StarDist, napari and CellSampler already provide segmentation, editing or consensus methods; we make no scientific-first claim. The graph explains alternatives; a separately measured object-disagreement queue sets review order. Neither the alternatives nor queue capture establishes human benefit.

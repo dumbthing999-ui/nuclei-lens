@@ -24,6 +24,8 @@ jobs:
       - name: Verify complete additional-assessment records
         if: ${{ hashFiles('evaluation/additional/summary.json') != '' }}
         run: python scripts/check_additional.py
+      - name: Download hash-pinned BBBC039 reader fixtures
+        run: python scripts/download_data.py
       - run: pytest
       - run: ruff check src tests scripts
       - name: Python security AST checks in isolated tools environment
@@ -62,6 +64,13 @@ jobs:
           node frontend/tests/mask-qa-smoke.mjs
           node frontend/tests/focus-motion.mjs
           node frontend/tests/keyboard-smoke.mjs
+      - name: Offline reader UI and synthetic export integration
+        run: |
+          python scripts/prepare_reader_exercise.py --dataset data/raw/BBBC039 --served /tmp/reader-bundle/served --private /tmp/reader-bundle/private --assets-directory reader-exercise
+          python -m http.server 5181 --bind 127.0.0.1 --directory /tmp/reader-bundle/served > /tmp/reader-http.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:5181/manifest.json > /dev/null && break; sleep 1; done
+          NUCLEILENS_READER_SYNTHETIC_EXPORT=/tmp/reader-synthetic.json node reader-exercise/tests-reader-browser.mjs > evaluation/checks/reader-browser-ci.json
+          python scripts/score_reader_exercise.py --served /tmp/reader-bundle/served --private /tmp/reader-bundle/private --exports /tmp/reader-synthetic.json --output /tmp/reader-score.json --allow-synthetic
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -75,3 +84,4 @@ jobs:
             evaluation/checks/mask-qa-browser.json
             evaluation/checks/focus-motion-ci.json
             evaluation/checks/keyboard-smoke-ci.json
+            evaluation/checks/reader-browser-ci.json

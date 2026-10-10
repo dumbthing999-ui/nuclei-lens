@@ -5,6 +5,8 @@
 NucleiLens helps biology students and researchers inspect nuclei-count ambiguity
 by comparing local segmentation alternatives and recording human review decisions.
 
+[Live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [3:35 video](https://youtu.be/nik8WtPUrUc) · [Devpost](https://devpost.com/software/nucleilens)
+
 ![Actual NucleiLens microscopy review interface](artifacts/screenshots/desktop.png)
 
 ## Problem
@@ -64,7 +66,7 @@ hashes and compare the outlines. These are precomputed CPU predictions, not
 browser neural inference, ground truth or a comparative accuracy benchmark.
 You can also import up to three aligned, uncompressed unsigned label TIFFs.
 
-Inspect before confirming an external component. Existing conflict checks,
+Inspect the full-field overlay and explicitly acknowledge alignment before confirming an external component. This records your judgment, not independently verified alignment. Existing conflict checks,
 fresh IDs and exact undo protect mask integrity. Pixel area, centroid, grid-edge
 perimeter and border measurements recalculate from the actual edited mask.
 Export the CSV, TIFF and QA JSON to trace same-count differences and source hashes.

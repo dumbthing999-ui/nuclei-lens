@@ -293,3 +293,13 @@ axe/mobile, skip/disclosurefocus/reducedmotion pass. Full keyboard-only edit/exp
 remains local+CI evidence. No assistive-tech/physical-device/full-video-player or
 human-benefit validation. See deployment-v8*.json; subsequent docs do not change
 the deployed application source.
+
+## October10 reader exercise candidate
+
+Actual local full native suite68tests and frontend22tests pass; Ruff/release checks pass.
+Reader-only23tests also pass after correcting the dataset-path portability failure.
+Repeated22-file generated bundles match byte for byte; actual synthetic browser export
+is rejected by default scoring and accepted only with explicit synthetic validation.
+Local application focus/reduced-motion and automated desktop/mobile axe checks pass.
+This is software evidence, not a human study or complete accessibility certification.
+Initial PR16 CI failure is retained in GitHub; final-head CI/deployment remain pending.
