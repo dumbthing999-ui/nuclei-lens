@@ -1,5 +1,13 @@
 # Changelog
 
+## Existing-mask diagnostic — October10,2026
+
+- Add a bounded, hash-verified, reproducible annotation check of all three existing
+  masks on the first training field, with fixed matching and all outcomes retained.
+- Add44 synthetic diagnostic tests and2 chart tests; full native suite114passed.
+- Preserve frozen scientific source/results, original model masks and reviewed video.
+- Record actual public-player stream loss after42s without claiming global failure.
+
 ## Delivery updates after v0.2.0 — 2026-10-09
 
 - Publish complete-runtime V7 with keyboard-only edit/undo/export CI checks, skip

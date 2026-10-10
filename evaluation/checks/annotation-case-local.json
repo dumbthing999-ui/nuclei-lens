@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-10T10:30:42.897343+00:00",
+  "scope": "Existing single development training field/all3published masks, no new inference or held-out/general/human accuracy result.",
+  "protocol_published_commit": "d4d3e2c9aa7338248dcbeb8eca0fb2b0a0a52a9d",
+  "diagnostic_code_published_commit": "c15f4abbd38b399412bd75cd5e08e049c6c9c643",
+  "protocol_and_code_committed_before_new_metrics": true,
+  "same_environment_actual_repeat_byte_equal": true,
+  "same_environment_figure_repeat_byte_equal": true,
+  "native_suite": {
+    "passed": 114,
+    "failed": 0,
+    "warnings": 1,
+    "seconds": 56.12,
+    "warning": "Starlette httpx TestClient deprecation; no runtime failure"
+  },
+  "new_synthetic_tests": {
+    "diagnostic": 44,
+    "plot": 2,
+    "not_model_or_human_evidence": true
+  },
+  "ruff_passed": true,
+  "figure_visually_inspected": true,
+  "original_model_masks_unchanged": true,
+  "frozen_core_evaluator_50_496_unchanged": true,
+  "files": {
+    "evaluation/model-case/protocol.json": "779775a74557c5c23d3216c99fee61616219967195d87ddc5c1ee57d89657e3d",
+    "evaluation/model-case/result.json": "3098eb4bccfe84fed2197c0bf792cc665522875359cd92c6788c3e5faa82ee66",
+    "evaluation/model-case/figures/annotation-agreement.png": "c2b9bea1b9eff2208599b7e68776e2842d692e45d95be5ed3f2f723ae7549625",
+    "evaluation/model-case/figures/annotation-agreement.svg": "3a4f2a35fd317dfbdb371f1a88a9f43cbeef9b00c25b4b03b8e214ca27fe2169",
+    "scripts/annotated_model_case.py": "b264c3419c9672a58f7de4ac5166ca6c6e194293c8351e3f92b6ba373f481e93",
+    "scripts/plot_annotated_model_case.py": "44b83b44b21906a35c73a8b2f38d6f90cbc1e8f6905bb01997675caba417997c"
+  },
+  "derived_svg_whitespace_normalized_at": "2026-10-10T10:31:53.145982+00:00",
+  "derived_svg_normalization_scope": "Whitespace in SVG only; rendered PNG and numerical result unchanged. Plot repeated byte-identically after normalization."
+}

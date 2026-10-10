@@ -12,7 +12,9 @@ Application PR16 merged at f5afee773bf35888a6131f4373089670094676da after both
 final-head CI38039691875/38039689807 passed. Site source
 a3bab275967e5e3d91f0002873290bca3790ac81 shares application tree
 68197d8472ef6feadd4f23aaa1d9be209c1871df at deployment. PR17 documentation merge
-2f39f2669b8dde9bcf358fb223dae58796e274c8 has a newer whole tree; it needs no redeploy.
+2f39f2669b8dde9bcf358fb223dae58796e274c8 and PR18 audit merge
+8f35e7eb584a791599b92185dfe34b7134b98f8b have newer whole trees; no redeploy
+was needed. PR18 final-head CI38044520108/38044517745 passed.
 Verified v0.2.0 remains the earlier research prerelease, not a final submission tag.
 
 ## Winning Thesis
@@ -49,7 +51,9 @@ from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unme
   strict label import, separate tallies, actual geometry and uint32TIFF/CSV/hash audits.
 - Real local CPU Cellpose/StarDist outputs68each on one training field; different
   partitions are not confirmed errors or model-accuracy comparisons.
-- Native68/frontend22 tests, build, audits and CI pass. Actual public V9 core/model
+- Base native68/frontend22 and final-head CI pass; the separately prepared
+  annotation diagnostic adds46 synthetic checks (native114 locally, one
+  dependency deprecation warning). Its release CI is pending. Actual public V9 core/model
   QA, mobile bounds, axe, keyboard focus and reduced-motion pass. Full keyboard
   edit/undo/hash is local/CI evidence; its script refuses public origins.
 - V9 compressed backup includes all11 runtime files and real model masks. Fresh
@@ -63,8 +67,10 @@ from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unme
 
 ## In Progress
 
-Completion audit, refreshed competition research and verified restore documentation.
-User-benefit evidence
+Publish the separately scoped existing-mask annotation diagnostic after final-head
+CI. Three masks share absolute count error3, with unmatched-instance totals11/3/3.
+Cellpose/StarDist share count68/F10.978 despite different partitions; no general
+accuracy or human-benefit claim. User-benefit evidence
 is outstanding: six adult volunteers were proposed, but none have been recruited
 or observed. The owner question is pending; do not substitute synthetic/AI sessions.
 
@@ -85,8 +91,9 @@ requirements audit. Do not retune frozen test results or mechanically rescore.
 - Physical mobile, Safari and assistive-technology user studies remain unverified.
 - Full anonymous YouTube browser-player/all-region viewing remains unverified;
   later complete-media retrieval challenged sign-in. A normal clean browser played
-  the opening; full-player verification stopped on unexpected metadata after38s.
-  Its cause is undetermined. Do not bypass access controls.
+  the opening; full-player verification stopped on unexpected metadata after38s. A corrected
+  observer selected the main player and retained stream loss after42s. No ad
+  state was observed then; the cause is undetermined. Do not bypass access controls.
 
 ## Deployment
 

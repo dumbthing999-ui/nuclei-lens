@@ -171,3 +171,16 @@ disabling all external replacement (loses useful inspectable work). Checks verif
 matching/misaligned gate, cancellation without changes and audited replacement.
 No mask correctness, human benefit or automatic score increase follows. Frozen
 scientific inference and evaluations remain unchanged.
+
+## October10 — separate existing-mask annotation diagnostic
+
+Decision: score the one already public first training field and all three existing
+predictions under fixed0.5IoU matching. Protocol committed/published before new
+calculations, while explicitly acknowledging prior observable masks/counts. Do not
+call this a prospective independent study. Alternative: replace the frozen
+benchmark with a new neural comparison; rejected because that would change scope
+and invite post-outcome selection. Actual all-method results show equal absolute
+count error3, unmatched mass11/3/3, and equal neural aggregate metrics despite
+different partitions. Consequence: improve reproducible explanation, preserve
+all old results, and retain unproven human benefit/generalization. No quality-score
+increase, retuning, model installation or production redeployment follows.
