@@ -27,6 +27,14 @@ components include boundary hypotheses; they are not 69 verified errors or a mod
 accuracy comparison. View the actual source/model/weight/output hashes. These
 are precomputed CPU predictions; the browser does not run their networks.
 
+We separately checked all three existing masks against the annotation on this
+one training field. Each has absolute count error3, yet IoU≥0.5 matching leaves11
+unmatched instances in the classical mask and3 each for Cellpose/StarDist. The
+neural masks also tie on F10.978 despite different boundaries. This descriptive
+case uses previously visible predictions; it establishes no general model ranking
+or human benefit. All masks, hashes, the fixed protocol, chart and reproduction
+commands are retained in the [complete diagnostic](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/model-case).
+
 Import up to three aligned, uncompressed unsigned label TIFFs from a model or
 editor. Inspect the imported overlay, explicitly acknowledge its image alignment, then inspect a component before confirming replacement. Alignment acknowledgment records a user judgment, not independent verification.
 Existing conflict checks, fresh IDs and exact undo protect mask integrity.
