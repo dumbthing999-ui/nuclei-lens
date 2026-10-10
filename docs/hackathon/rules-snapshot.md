@@ -119,3 +119,37 @@ deadline and Discord membership for prize eligibility. No rule change was observ
 Sender domains were observed, not independently DKIM-verified; official public/MCP
 rules corroborate these details. Personal greetings, recipients and private links
 are excluded from public proof. See `evaluation/checks/organizer-email-review.json`.
+
+## October10 current refresh
+
+Fresh official Overview/Rules/Resources/Updates and the navigation-linked
+`https://eurekadev.devpost.com/forum_topics` were retrieved. The guessed
+`/discussions` URL returns404; it is not evidence that a forum has no topics.
+The correct forum displays no topics. Public updates remain a placeholder;
+authenticated `get_announcements` returned an empty list at09:20:30UTC.
+
+Fresh authenticated requirements retain required video<=4minutes, description,
+public code/README and the optional live link; field IDs28007/28008/28009 remain
+required track/category/email, with optional Discord username28010. No owner
+contact value is stored in public artifacts. Refreshed tool discovery still has
+no draft custom-answer save operation; `submit_project` is final submission.
+Preserve the owner's browser deferral. The project page remains published while
+the EurekaDev association is unsubmitted.
+
+Deadline is still2026-10-20T22:00:00Z:17:00CDT and2026-10-21,03:30IST. Judging and
+winner dates still show2027 in authenticated metadata; preserve the discrepancy
+rather than silently correcting it. Public gallery has41 visible entries over two
+linked pages (38previously). Three new descriptions are source/hash reviewed;
+linked demos/repos and their claims are not thereby verified.
+
+Gmail native read returned USER_NOT_LOGGED_IN; no mail contents were read through
+that connector. Alternate Composio Gmail successfully searched EurekaDev messages
+since September1 and reviewed two Devpost notices. These confirm Discord for prizes,
+solo participation, the deadline and an incomplete submission; no new rules were
+found in those two notices. This bounded query is not a complete mailbox or Discord
+announcement review. No email address, body, private link or message ID is published.
+Official Discord announcements remain inaccessible; membership
+is owner-confirmed. Sources/hashes and read scopes are recorded in
+research/competitors/gallery-refresh-2026-10-10.json and public field/date snapshots
+under docs/hackathon/archive/. Current eligibility/AI/originality/judging terms did
+not show a substantive change; earlier access failures in this file are historical.

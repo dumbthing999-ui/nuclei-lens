@@ -111,3 +111,14 @@ runtime verification in evaluation/checks/static-package-v9.json. Source and
 GitHub application trees match at deployment. This verifies archive contents,
 not a V9 restoration drill or a second public deployment; the earlier restoration
 drill retains its V6 scope. Do not confuse compressed local and canonical server tar hashes.
+
+## Fresh V9 restore drill — October10
+
+The compressed V9 archive was hash-checked and extracted into a new local
+directory. Only its dist/ was served with Python's standard-library HTTP server.
+Actual browser inference/count74, edit/undo/audit/TIFF/mobile/rerun/cancel and
+real model68/68 QA/alignment/measurements/CSV/hash checks passed. Full keyboard
+edit/undo/hash and focus/reduced-motion passed on that restored bundle too.
+Evidence: evaluation/checks/v9-restore*.json. The test harness reused installed
+Playwright/Chromium; this does not prove a new OS/hardware or backup public origin.
+This supersedes the earlier V6-only restoration scope for the V9 archive.

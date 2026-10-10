@@ -1,0 +1,14 @@
+{
+  "hackathon": {
+    "id": 30588,
+    "slug": "eurekadev",
+    "title": "EurekaDev 2026"
+  },
+  "data": {
+    "announcements": [],
+    "total_available": 0,
+    "limit_applied": 10
+  },
+  "data_completeness": "complete",
+  "fetched_at": "2026-10-10T09:20:30Z"
+}

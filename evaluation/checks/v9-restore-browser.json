@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-10T09:20:40.795Z",
+  "target": "http://127.0.0.1:5183",
+  "review_update": true,
+  "undo": true,
+  "audit_export": true,
+  "same_count_witness": true,
+  "additional_evidence_rendered": true,
+  "review_preserved_on_rerun": true,
+  "mask_split_merge_counts": [
+    74,
+    75,
+    74
+  ],
+  "mask_tiff_roundtrip": true,
+  "mask_audit_hash_verified": true,
+  "mask_preserved_on_rerun": true,
+  "mask_undo_exact": true,
+  "cancel_preserves_reference": true,
+  "stale_sample_failure_ignored": true,
+  "mobile_overflow": false,
+  "live_analysis_count": 74,
+  "cold_browser_ms": 25624,
+  "warm_browser_ms": 12257,
+  "non_read_requests": [],
+  "page_errors": []
+}

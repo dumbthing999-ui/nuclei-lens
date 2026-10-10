@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-10T09:24:00.889447+00:00",
+  "archive_sha256": "bddf9ca456c34a0c1fd69f8e919e7b481622c8ec7bc4c634241b1e06072ee620",
+  "fresh_directory_restore": true,
+  "served_only_dist": true,
+  "python_application_install_needed": false,
+  "core_browser_workflow_passed": true,
+  "model_qa_workflow_passed": true,
+  "scope": "Fresh local archive extraction and fresh Chromium browser contexts on the existing machine, not a new OS/hardware or second public origin. Restore server used Python stdlib only; test harness used existing Playwright/Chromium dependencies.",
+  "keyboard_real_edit_undo_hash_passed": true,
+  "focus_reduced_motion_passed": true
+}

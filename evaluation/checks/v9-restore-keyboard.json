@@ -1,0 +1,882 @@
+{
+  "status": "passed",
+  "target": "http://127.0.0.1:5183",
+  "tab_limit": 160,
+  "focus": [
+    {
+      "target": "Dense field BBBC039",
+      "direction": "Tab",
+      "tabs": 5,
+      "tag": "button",
+      "id": "",
+      "name": "Dense fieldBBBC039",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 216.59375,
+        "y": 267.296875,
+        "width": 100.046875,
+        "height": 53
+      }
+    },
+    {
+      "target": "First training field BBBC039",
+      "direction": "Shift+Tab",
+      "tabs": 1,
+      "tag": "button",
+      "id": "",
+      "name": "First training fieldBBBC039",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 72,
+        "y": 267.296875,
+        "width": 136.59375,
+        "height": 53
+      }
+    },
+    {
+      "target": "sensitivity selector",
+      "direction": "Tab",
+      "tabs": 12,
+      "tag": "select",
+      "id": "alternative",
+      "name": "baseline · 74 nucleilower threshold · 74 nucleihigher threshold · 74 nucleicloser seeds · 84 nucleiwider seeds · 71 nucleiless smoothing · 75 nucleimore smoothi",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 774,
+        "y": 521.59375,
+        "width": 211,
+        "height": 37
+      }
+    },
+    {
+      "target": "Inspect split · 1 → 2",
+      "direction": "Tab",
+      "tabs": 54,
+      "tag": "button",
+      "id": "",
+      "name": "Inspect split · 1 → 2",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 1043.4375,
+        "y": 415.234375,
+        "width": 140.921875,
+        "height": 35
+      }
+    },
+    {
+      "target": "Confirm split alternative · 1 → 2",
+      "direction": "Tab",
+      "tabs": 9,
+      "tag": "button",
+      "id": "",
+      "name": "Confirm split alternative · 1 → 2",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 95,
+        "y": 743.15625,
+        "width": 194.109375,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export label TIFF",
+      "direction": "Tab",
+      "tabs": 63,
+      "tag": "button",
+      "id": "",
+      "name": "Export label TIFF",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 867.1875,
+        "y": 603.53125,
+        "width": 117.8125,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export review JSON",
+      "direction": "Tab",
+      "tabs": 33,
+      "tag": "button",
+      "id": "",
+      "name": "Export review JSON",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 1220.96875,
+        "y": 768.4375,
+        "width": 126.03125,
+        "height": 30
+      }
+    },
+    {
+      "target": "Inspect merge · 2 → 1",
+      "direction": "Tab",
+      "tabs": 23,
+      "tag": "button",
+      "id": "",
+      "name": "Inspect merge · 2 → 1",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 1192.359375,
+        "y": 470.671875,
+        "width": 154.640625,
+        "height": 35
+      }
+    },
+    {
+      "target": "Confirm merge alternative · 2 → 1",
+      "direction": "Tab",
+      "tabs": 10,
+      "tag": "button",
+      "id": "",
+      "name": "Confirm merge alternative · 2 → 1",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(217, 197, 237)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 297.109375,
+        "y": 742.59375,
+        "width": 206.78125,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export label TIFF",
+      "direction": "Tab",
+      "tabs": 62,
+      "tag": "button",
+      "id": "",
+      "name": "Export label TIFF",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 867.1875,
+        "y": 603.53125,
+        "width": 117.8125,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export review JSON",
+      "direction": "Tab",
+      "tabs": 33,
+      "tag": "button",
+      "id": "",
+      "name": "Export review JSON",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 1220.96875,
+        "y": 768.4375,
+        "width": 126.03125,
+        "height": 30
+      }
+    },
+    {
+      "target": "Undo mask edit",
+      "direction": "Shift+Tab",
+      "tabs": 34,
+      "tag": "button",
+      "id": "",
+      "name": "Undo mask edit",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 751.8125,
+        "y": 625.53125,
+        "width": 109.375,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export label TIFF",
+      "direction": "Tab",
+      "tabs": 1,
+      "tag": "button",
+      "id": "",
+      "name": "Export label TIFF",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 867.1875,
+        "y": 625.53125,
+        "width": 117.8125,
+        "height": 34
+      }
+    },
+    {
+      "target": "Undo mask edit",
+      "direction": "Shift+Tab",
+      "tabs": 1,
+      "tag": "button",
+      "id": "",
+      "name": "Undo mask edit",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 751.8125,
+        "y": 625.53125,
+        "width": 109.375,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export label TIFF",
+      "direction": "Tab",
+      "tabs": 1,
+      "tag": "button",
+      "id": "",
+      "name": "Export label TIFF",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 867.1875,
+        "y": 625.09375,
+        "width": 117.8125,
+        "height": 34
+      }
+    },
+    {
+      "target": "Export review JSON",
+      "direction": "Tab",
+      "tabs": 33,
+      "tag": "button",
+      "id": "",
+      "name": "Export review JSON",
+      "focus_visible": true,
+      "outline": {
+        "style": "solid",
+        "width": "3px",
+        "color": "rgb(75, 121, 240)",
+        "offset": "3px"
+      },
+      "border": {
+        "top": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "right": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "bottom": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        },
+        "left": {
+          "style": "solid",
+          "width": "1px",
+          "color": "rgb(220, 225, 235)"
+        }
+      },
+      "outline_visible": true,
+      "visible": true,
+      "rect": {
+        "x": 1220.96875,
+        "y": 768,
+        "width": 126.03125,
+        "height": 30
+      }
+    }
+  ],
+  "steps": [
+    {
+      "action": "Dense field BBBC039",
+      "key": "Space"
+    },
+    {
+      "action": "First training field BBBC039",
+      "key": "Enter"
+    },
+    {
+      "mask_count": 74,
+      "mask": "74 instances",
+      "count_semantics": "BASELINE COUNT 74 REVIEW TALLY TOTAL 74",
+      "status": "No mask edits. Inspect an alternative before confirming it."
+    },
+    {
+      "action": "sensitivity selector",
+      "keys": [
+        "Home",
+        "ArrowDown",
+        "Enter",
+        "Home",
+        "Enter"
+      ],
+      "values": [
+        1,
+        0
+      ]
+    },
+    {
+      "action": "Inspect split · 1 → 2",
+      "key": "Enter"
+    },
+    {
+      "action": "Confirm split alternative · 1 → 2",
+      "key": "Space"
+    },
+    {
+      "mask_count": 75,
+      "mask": "75 instances",
+      "count_semantics": "BASELINE COUNT 74 REVIEW TALLY TOTAL 74",
+      "status": "Mask: 74 → 75 instances. Review tally total remains 74; mask edits do not change tally entries."
+    },
+    {
+      "action": "Inspect merge · 2 → 1",
+      "key": "Enter"
+    },
+    {
+      "action": "Confirm merge alternative · 2 → 1",
+      "key": "Enter"
+    },
+    {
+      "mask_count": 74,
+      "mask": "74 instances",
+      "count_semantics": "BASELINE COUNT 74 REVIEW TALLY TOTAL 74",
+      "status": "Mask: 75 → 74 instances. Review tally total remains 74; mask edits do not change tally entries."
+    },
+    {
+      "action": "Undo mask edit",
+      "key": "Space"
+    },
+    {
+      "mask_count": 75,
+      "mask": "75 instances",
+      "count_semantics": "BASELINE COUNT 74 REVIEW TALLY TOTAL 74",
+      "status": "Mask: 74 → 75 instances. Review tally total remains 74; mask edits do not change tally entries."
+    },
+    {
+      "action": "Undo mask edit",
+      "key": "Enter"
+    },
+    {
+      "mask_count": 74,
+      "mask": "74 instances",
+      "count_semantics": "BASELINE COUNT 74 REVIEW TALLY TOTAL 74",
+      "status": "Mask: 75 → 74 instances. Review tally total remains 74; mask edits do not change tally entries."
+    }
+  ],
+  "downloads": [
+    {
+      "action": "Export label TIFF",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/split.tif",
+      "suggested_filename": "nucleilens-labels-cf5b84a8d715.tif",
+      "bytes": 1447816,
+      "sha256": "c3ec58b718f9a528b5eb38c2105233d7b0b9d941fcc9b93f94c81e99e99a777d"
+    },
+    {
+      "action": "Export review JSON",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/split.json",
+      "suggested_filename": "nucleilens-review.json",
+      "bytes": 28498,
+      "sha256": "44ac5337913c1330af18eb501563dde99dd5d9fb3487247d2e5357c97a434a80"
+    },
+    {
+      "action": "Export label TIFF",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/split-merge.tif",
+      "suggested_filename": "nucleilens-labels-cf5b84a8d715.tif",
+      "bytes": 1447816,
+      "sha256": "79ae387629a6fa45911cd609a61db6934f4647448207b35c27982f6275e439a1"
+    },
+    {
+      "action": "Export review JSON",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/split-merge.json",
+      "suggested_filename": "nucleilens-review.json",
+      "bytes": 28942,
+      "sha256": "c27b8b3b29a94ffceb74d639fcdcb480d5be43f3795c4b342605600592b41025"
+    },
+    {
+      "action": "Export label TIFF",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/undo-merge.tif",
+      "suggested_filename": "nucleilens-labels-cf5b84a8d715.tif",
+      "bytes": 1447816,
+      "sha256": "c3ec58b718f9a528b5eb38c2105233d7b0b9d941fcc9b93f94c81e99e99a777d"
+    },
+    {
+      "action": "Export label TIFF",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/restored.tif",
+      "suggested_filename": "nucleilens-labels-cf5b84a8d715.tif",
+      "bytes": 1447816,
+      "sha256": "0156828b891433217039074821f28c685fcb732735c87cd47495abcd6dcc6648"
+    },
+    {
+      "action": "Export review JSON",
+      "key": "Enter",
+      "file": "artifacts/keyboard-smoke/restored.json",
+      "suggested_filename": "nucleilens-review.json",
+      "bytes": 27351,
+      "sha256": "79146d8902e90d5668fc46d72982f3e2894f9dccfc2d762c10d7895045ceca9d"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "failed_requests": [],
+  "sample_selection_keyboard": true,
+  "sensitivity_selection_keyboard": true,
+  "witness_inspection_keyboard": true,
+  "mask_counts": [
+    74,
+    75,
+    74
+  ],
+  "undo_counts": [
+    75,
+    74
+  ],
+  "exact_undo": true,
+  "json_hash_verified": true,
+  "uint32_tiff_verified": true,
+  "baseline_sha256": "38d40b35d2b6324dd00725455adbb2219aea47999674048c5f139f756fcbe1be"
+}

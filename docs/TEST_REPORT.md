@@ -1,13 +1,16 @@
 # Test report
 
-Latest local QA:45native/22frontend tests pass; actual model outputs and QA
-workflow verified. The saved V5 package directory lacks generated runtime assets;
-metadata success/source-tree parity alone did not verify fresh live inference.
-V6 now includes the full runtime and passed actual public browser inference/QA.
-See `evaluation/checks/deployment-v6-browser.json` and `deployment-v6-mask-qa.json`.
-Reviewed video is uploaded and attached to Devpost. HD processing and anonymous
-opening-sample audio/video decode pass. Full player viewing and human-benefit
-evidence remain outstanding. Historical V5 observations below retain their original scope.
+Current release evidence: native68/frontend22 tests passed at PR16/17 final heads.
+Public V9 verifies browser-local numerical inference, component editing/undo/hash
+exports, actual model QA/alignment, mobile bounds, four-state axe and focus/motion.
+Full keyboard editing is verified locally/in CI; that test refuses public origins.
+Fresh V9 archive restoration passes core/model/keyboard/focus on this machine.
+See `evaluation/checks/deployment-v9*.json` and `v9-restore*.json`.
+
+Video215s local full decode/audio/captions and anonymous opening playback pass.
+Full public player viewing and human-benefit evidence remain unverified. The
+following chronological reports retain their original version/test-count scopes;
+the old V5 runtime omission was repaired in V6 and checked on subsequent releases.
 
 ## October 8 UX clarification follow-up
 
@@ -312,3 +315,11 @@ Public V9 browser/core and model QA pass; four-state axe observations have zero
 violations and focus/reduced-motion checks pass. The full keyboard-edit script refuses
 public origins; local and CI evidence do not become a public keyboard-edit assertion.
 See evaluation/checks/deployment-v9*.json and reader-merge.json.
+
+## Fresh V9 archive restoration
+
+Real core/model-QA/keyboard/focus workflows pass after checked extraction into a
+new directory served by Python stdlib. No application Python installation or
+external inference API is required to serve this archive. Existing browser test
+harness dependencies were used; this is not an independent machine/device study.
+No new scientific, human-benefit or judge-score claim follows from the drill.
