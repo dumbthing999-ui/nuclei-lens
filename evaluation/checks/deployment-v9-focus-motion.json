@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-10T09:03:20.557Z",
+  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "scope": "Actual Chromium keyboard focus and reduced-motion CSS, not assistive-tech/physical-device study.",
+  "skip_link": true,
+  "disclosure_focus": {
+    "width": "3px",
+    "style": "solid",
+    "color": "rgb(75, 121, 240)"
+  },
+  "disclosure_keyboard": true,
+  "spinner_animation": "none",
+  "reduced_motion": true,
+  "status": "passed"
+}

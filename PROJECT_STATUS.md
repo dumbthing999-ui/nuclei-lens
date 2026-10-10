@@ -178,3 +178,20 @@ The added footer links initially overflowed mobile. Explicit flex wrapping and
 link destination/390px bounds checks now pass the full real browser demo and
 external model QA workflows locally. Updated axe/focus checks and frontend22
 also pass. Publish the repaired final PR head and await both CI runs.
+
+## Verified V9 delivery — October10
+
+PR16 merged after both final-head CI38039691875/38039689807 passed. Main
+f5afee773bf35888a6131f4373089670094676da matches source tree
+68197d8472ef6feadd4f23aaa1d9be209c1871df. V9 source
+a3bab275967e5e3d91f0002873290bca3790ac81 is deployed at the existing public URL.
+Actual public core/mask QA/focus/motion/axe/mobile proofs pass. Local/CI full keyboard
+workflow passes; public script deliberately refuses origins outside loopback.
+All11 runtime files, real model masks and archive/source parity verified.
+Video links now appear in README, app footer, Devpost top copy and v0.2.0 release
+body; authenticated/public readbacks retained. Original video and tag preserved.
+Reader tooling is software-only: no participants or benefit results. Reddit's
+accepted post was removed; no repost or public promotion success claim.
+Next: archive these delivery proofs on GitHub, review incoming owner/Reddit feedback,
+refresh competition before freeze and obtain real reader evidence only with consent.
+Owner-deferred custom fields and final legal/submission gates remain.

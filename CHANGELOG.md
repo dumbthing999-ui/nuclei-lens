@@ -93,3 +93,10 @@ v0.1.0 is a verified prototype prerelease, not the final competition release. Vi
 - Add a local reader-exercise bundle generator, browser UI and strict scorer; automated sessions are explicitly synthetic and rejected by default scoring. No measured human benefit.
 - Make video and project links easier to find in the README, Devpost and application footer.
 - Preserve Reddit removal evidence without reposting.
+
+### Verified October10 delivery
+
+- PR16 merged with two final-head CI successes; V9 deployed and actual public workflows checked.
+- Fixed mobile footer overflow caught by the real demo test, with link bounds regression checks.
+- Fixed reader dataset-path portability; CI now tests actual hash-pinned fixtures and synthetic export/scoring.
+- Preserved existing video/tag and archived Reddit removal without reposting.
