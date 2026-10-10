@@ -28,9 +28,10 @@ accuracy comparison. View the actual source/model/weight/output hashes. These
 are precomputed CPU predictions; the browser does not run their networks.
 
 We separately checked all three existing masks against the annotation on this
-one training field. Each has absolute count error3, yet IoU≥0.5 matching leaves11
-unmatched instances in the classical mask and3 each for Cellpose/StarDist. The
-neural masks also tie on F10.978 despite different boundaries. This descriptive
+one training field. Each has an absolute count error of 3, yet at IoU ≥ 0.5,
+matching leaves 11 unmatched instances in the classical mask and 3 each for
+Cellpose and StarDist. The neural masks also tie on an F1 of 0.978 despite different
+boundaries. This descriptive
 case uses previously visible predictions; it establishes no general model ranking
 or human benefit. All masks, hashes, the fixed protocol, chart and reproduction
 commands are retained in the [complete diagnostic](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/model-case).

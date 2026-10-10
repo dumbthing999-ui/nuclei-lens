@@ -155,9 +155,9 @@ Four test fields have exactly correct total counts while retaining **100 unmatch
 
 The unchanged pipeline was also assessed on **496 preselected BBBC038 images**:
 count MAE **6.54**, mean instance F1 **0.772**, object-queue capture **45.7%** at a
-20% tile budget, versus **39.3%** graph and **20.0%** expected random. All496 were
-retained, with zero structural reference/inference failures;37 have F1<0.5.
-Selection and source hashes were publicly frozen before inference.43 potential
+20% tile budget, versus **39.3%** graph and **20.0%** expected random. All 496 were
+retained, with zero structural reference/inference failures; 37 have F1<0.5.
+Selection and source hashes were publicly frozen before inference. 43 potential
 same-size content overlaps were excluded first; other shared biological sources
 may remain. This property-filtered labeled training archive is **not an independent
 biological-group test** or proof of human benefit. Original reference imperfections
@@ -166,9 +166,10 @@ remain in scoring. [Complete protocol, every field and difficult cases](evaluati
 ### Existing model-mask diagnostic
 
 On the first bundled training field, all three existing masks have absolute count
-error3. IoU≥0.5 matching gives11 unmatched instances for the classical mask and3
-each for Cellpose/StarDist. The neural masks have the same count68 andF10.978,
-yet differ at3,738foreground pixels; this does not establish an error in either.
+error of **3**. At IoU ≥ 0.5, matching leaves **11 unmatched instances** for the
+classical mask and **3** each for Cellpose and StarDist. The neural masks both
+count **68** and have an F1 of **0.978**, yet differ at **3,738 foreground pixels**.
+Those differences do not establish an error in either mask.
 This is one previously visible development field, not a general model ranking.
 [Reproduce the complete case and chart](evaluation/model-case/README.md).
 

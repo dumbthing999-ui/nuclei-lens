@@ -49,9 +49,9 @@ measurements do not change the frozen benchmark or establish accuracy gains.
 
 A separate descriptive examination of the already published first training field
 keeps all three masks and uses the frozen decoder/evaluator. Every mask has
-absolute count error3, while FP+FN is11 for the classical mask and3 each for
-Cellpose/StarDist. The neural outputs agree on count68 andF10.978 despite3,738
-foreground-differing pixels. Those differences are not proof of errors: eligible
+absolute count error of 3, while FP+FN is 11 for the classical mask and 3 each for
+Cellpose and StarDist. The neural outputs agree on a count of 68 and an F1 of 0.978
+despite 3,738 foreground-differing pixels. Those differences are not proof of errors: eligible
 instance matches survive. This supports separating count, geometry disagreement
 and annotation agreement. It does not establish general model accuracy, scientific
 novelty or reader benefit. See [full protocol/results](../evaluation/model-case/README.md).
