@@ -26,8 +26,10 @@
     "evaluation/model-case/protocol.json": "779775a74557c5c23d3216c99fee61616219967195d87ddc5c1ee57d89657e3d",
     "evaluation/model-case/result.json": "3098eb4bccfe84fed2197c0bf792cc665522875359cd92c6788c3e5faa82ee66",
     "evaluation/model-case/figures/annotation-agreement.png": "c2b9bea1b9eff2208599b7e68776e2842d692e45d95be5ed3f2f723ae7549625",
-    "evaluation/model-case/figures/annotation-agreement.svg": "c4c4d79b74e238e0f91e07616e0d5555158d39cfeb4b40b6ba48515bf5e50684",
+    "evaluation/model-case/figures/annotation-agreement.svg": "3a4f2a35fd317dfbdb371f1a88a9f43cbeef9b00c25b4b03b8e214ca27fe2169",
     "scripts/annotated_model_case.py": "b264c3419c9672a58f7de4ac5166ca6c6e194293c8351e3f92b6ba373f481e93",
-    "scripts/plot_annotated_model_case.py": "b6f2f984b2cf407beade8fc731c55313f295a5a236631040ed2458cec2cac212"
-  }
+    "scripts/plot_annotated_model_case.py": "44b83b44b21906a35c73a8b2f38d6f90cbc1e8f6905bb01997675caba417997c"
+  },
+  "derived_svg_whitespace_normalized_at": "2026-10-10T10:31:53.145982+00:00",
+  "derived_svg_normalization_scope": "Whitespace in SVG only; rendered PNG and numerical result unchanged. Plot repeated byte-identically after normalization."
 }

@@ -78,7 +78,10 @@ def render(result_path: Path, protocol_path: Path, output_directory: Path) -> No
         buffer = io.BytesIO()
         metadata = {'Date': None} if extension == 'svg' else {}
         fig.savefig(buffer, format=extension, dpi=180, metadata=metadata)
-        payloads[extension] = buffer.getvalue()
+        payload = buffer.getvalue()
+        if extension == 'svg':
+            payload = ('\n'.join(line.rstrip() for line in payload.decode().splitlines()) + '\n').encode()
+        payloads[extension] = payload
     plt.close(fig)
     # Validate every existing destination before making any writes.
     for extension, payload in payloads.items():

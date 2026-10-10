@@ -37,6 +37,7 @@ def test_synthetic_render_is_repeatable_and_preserves_differing_files(tmp_path):
     plot.render(result, protocol, output)
     assert first == {p.name: p.read_bytes() for p in output.iterdir()}
     assert set(first) == {'annotation-agreement.png', 'annotation-agreement.svg'}
+    assert all(line == line.rstrip() for line in first['annotation-agreement.svg'].splitlines())
     (output/'annotation-agreement.png').write_bytes(b'previous-artifact')
     with pytest.raises(ValueError, match='Refusing'):
         plot.render(result, protocol, output)

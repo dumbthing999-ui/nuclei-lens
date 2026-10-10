@@ -59,4 +59,3 @@ output is rejected. Figure byte equality was checked on this machine, not promis
 across operating systems/renderers. Synthetic tests cover hash/geometry/threshold/
 label-ID/annotation-ordering/overwrite guards; they are not model or human evidence.
 CI repeats the real case from hash-pinned official archives and compares the JSON.
-
