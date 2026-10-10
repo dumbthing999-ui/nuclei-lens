@@ -1,6 +1,6 @@
 ## Inspiration
 
-[Try the live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [Watch the 3:35 video](https://youtu.be/nik8WtPUrUc) · [View the code](https://github.com/dumbthing999-ui/nuclei-lens)
+[Try the live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [Watch the 3:35 video](https://youtu.be/nik8WtPUrUc) · [View the code](https://github.com/dumbthing999-ui/nuclei-lens) · [Video download backup (720p, 26.7 MB)](https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4)
 
 A segmentation merges two nuclei. Elsewhere, it splits one nucleus into two masks. The total stays unchanged, while the objects differ.
 

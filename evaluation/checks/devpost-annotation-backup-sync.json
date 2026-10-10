@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-10T10:52:14.447558+00:00",
+  "project_id": 1470185,
+  "project_url": "https://devpost.com/software/nucleilens",
+  "version": 13,
+  "authenticated_entire_text_readback_matches_prepared_copy": true,
+  "rendered_new_case_scope_and_all_links_match": true,
+  "rendered_snapshot_sha256": "e33c73c821e686eae50683b1819e416918ad6ccd72734fe8889cc229962a1664",
+  "existing_video_url_preserved": "https://www.youtube.com/watch?v=nik8WtPUrUc",
+  "public_github_backup_url_verified_in_rendered_description": true,
+  "eurekadev_submitted_at": null,
+  "custom_draft_fields_owner_deferred": true,
+  "before_write_guard_scope": "Archived/latest authenticated snapshot text compared locally before narrow description write. API read omits optimistic version; no server-atomic concurrency claim."
+}

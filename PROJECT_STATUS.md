@@ -15,7 +15,10 @@ a3bab275967e5e3d91f0002873290bca3790ac81 shares application tree
 2f39f2669b8dde9bcf358fb223dae58796e274c8 and PR18 audit merge
 8f35e7eb584a791599b92185dfe34b7134b98f8b have newer whole trees; no redeploy
 was needed. PR18 final-head CI38044520108/38044517745 passed.
-Verified v0.2.0 remains the earlier research prerelease, not a final submission tag.
+PR19 offline diagnostic merged3277b66a50cfd05f6f961c53bd82ad9259401014 after
+final-head CI38045732748/38045730514 passed. Public V9 application source is unchanged.
+Verified v0.2.0 remains the earlier research prerelease, not a final submission tag;
+its new reviewed-video backup asset and original tag have verified readbacks.
 
 ## Winning Thesis
 
@@ -51,9 +54,10 @@ from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unme
   strict label import, separate tallies, actual geometry and uint32TIFF/CSV/hash audits.
 - Real local CPU Cellpose/StarDist outputs68each on one training field; different
   partitions are not confirmed errors or model-accuracy comparisons.
-- Base native68/frontend22 and final-head CI pass; the separately prepared
-  annotation diagnostic adds46 synthetic checks (native114 locally, one
-  dependency deprecation warning). Its release CI is pending. Actual public V9 core/model
+- Native114/frontend22 and PR19 final-head CI pass, including the actual one-field
+  diagnostic replay. Local native run has one dependency deprecation warning.
+  Synthetic diagnostic/chart46checks do not establish model/human performance.
+  Actual public V9 core/model
   QA, mobile bounds, axe, keyboard focus and reduced-motion pass. Full keyboard
   edit/undo/hash is local/CI evidence; its script refuses public origins.
 - V9 compressed backup includes all11 runtime files and real model masks. Fresh
@@ -63,12 +67,14 @@ from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unme
   synthetic browser/CLI integration pass. No participants or human observations.
 - Owner video nik8WtPUrUc preserved, linked in README/app/Devpost/GitHub release.
  215s local decode/audio/captions and public opening-sample decoding are verified.
+  Public720p backup fully downloads anonymously with matching bytes/SHA256 and
+  full video/audio decode. Devpost narrative/links match authenticated/public reads.
 - PR17 documentation/screenshots merged after CI38040280805/38040230359 passed.
 
 ## In Progress
 
-Publish the separately scoped existing-mask annotation diagnostic after final-head
-CI. Three masks share absolute count error3, with unmatched-instance totals11/3/3.
+Existing-mask annotation diagnostic is published after green final-head CI.
+Three masks share absolute count error3, with unmatched-instance totals11/3/3.
 Cellpose/StarDist share count68/F10.978 despite different partitions; no general
 accuracy or human-benefit claim. User-benefit evidence
 is outstanding: six adult volunteers were proposed, but none have been recruited
@@ -114,7 +120,10 @@ Do not infer completion from publication of the project page.
 ## Demo Video
 
 https://youtu.be/nik8WtPUrUc ; existing upload processed/HD,215s local master
-(API216s rounding),39burned captions. Original master preserved. No re-upload,
+(API216s rounding),39burned captions. Original master preserved. Backup:
+https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4 . Anonymous full-file download/size/hash and215s720p video/audio decode
+pass. GitHub release and Devpost link it; no full YouTube-player/all-region claim.
+No re-upload,
 retag or new production instruction. Timestamped qualifications remain on Devpost.
 
 ## Deadline Readiness

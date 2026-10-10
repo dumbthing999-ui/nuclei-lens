@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-10T10:45:13.032Z",
+  "release_url": "https://github.com/dumbthing999-ui/nuclei-lens/releases/tag/v0.2.0",
+  "release_id": 407413536,
+  "tag": "v0.2.0",
+  "prerelease": true,
+  "asset_id": 627702297,
+  "name": "eurekadev-reviewed-720p.mp4",
+  "label": "Reviewed 3:35 demo \u2014 720p download backup (October 2026)",
+  "bytes": 26718472,
+  "sha256": "4df0f643595c0633d3f0122d68d8c38991c020c37622388db7a28480cd102071",
+  "content_type": "video/mp4",
+  "state": "uploaded",
+  "url": "https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4",
+  "api_hash_size_readback_verified": true,
+  "original_tag_preserved": true,
+  "youtube_reuploaded": false,
+  "anonymous_download_verified": true,
+  "anonymous_bytes": 26718472,
+  "anonymous_sha256": "4df0f643595c0633d3f0122d68d8c38991c020c37622388db7a28480cd102071",
+  "download_scope": "Complete anonymous HTTPS download through normal public redirects; no cookies/auth header, not all-region/player availability.",
+  "download_checked_at": "2026-10-10T10:53:05.654521+00:00",
+  "downloaded_full_video_audio_decode_verified": true,
+  "downloaded_media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "215.000000"
+    }
+  },
+  "decode_checked_at": "2026-10-10T10:54:26.881035+00:00"
+}
