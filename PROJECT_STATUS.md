@@ -173,3 +173,8 @@ PR16 initial CI failed because reader fixtures used a machine-specific dataset p
 Repaired configurable/default repository path; CI now downloads hash-pinned official archives
 and checks actual local reader browser export/scoring. Local23reader tests pass.
 The candidate remains pending final-head CI/merge and footer deployment.
+
+The added footer links initially overflowed mobile. Explicit flex wrapping and
+link destination/390px bounds checks now pass the full real browser demo and
+external model QA workflows locally. Updated axe/focus checks and frontend22
+also pass. Publish the repaired final PR head and await both CI runs.

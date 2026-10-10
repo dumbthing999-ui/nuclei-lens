@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "generated_at": "2026-10-08T18:36:50.982Z",
-  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "generated_at": "2026-10-10T08:56:44.079Z",
+  "target": "http://127.0.0.1:5182",
   "review_update": true,
   "undo": true,
   "audit_export": true,
@@ -21,15 +21,8 @@
   "stale_sample_failure_ignored": true,
   "mobile_overflow": false,
   "live_analysis_count": 74,
-  "cold_browser_ms": 27865,
-  "warm_browser_ms": 4890,
-  "non_read_requests": [
-    {
-      "method": "POST",
-      "origin": "https://nuclei-lens.dumbthing999.chatgpt.site",
-      "path": "/cdn-cgi/challenge-platform/"
-    }
-  ],
-  "page_errors": [],
-  "network_redaction": "Query strings and individual hosting-challenge path identifiers omitted; method/origin/route class retained."
+  "cold_browser_ms": 24576,
+  "warm_browser_ms": 5989,
+  "non_read_requests": [],
+  "page_errors": []
 }

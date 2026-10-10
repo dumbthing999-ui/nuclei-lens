@@ -58,6 +58,7 @@ await page.getByRole('button',{name:'Full field'}).click();
 await page.setViewportSize({width:390,height:844});
 await page.screenshot({path:path.join(root,shotDir,'mobile.png'),fullPage:true});
 if(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth))throw new Error('Mobile overflow');
+for(const [name,href] of [['Watch 3:35 demo','https://youtu.be/nik8WtPUrUc'],['Devpost project','https://devpost.com/software/nucleilens']]){const link=page.locator('footer').getByRole('link',{name,exact:true});if(await link.getAttribute('href')!==href)throw Error('Footer shortcut destination mismatch');const rect=await link.boundingBox();if(!rect||rect.x<0||rect.x+rect.width>390)throw Error('Footer shortcut outside mobile viewport');}
 await page.setViewportSize({width:1440,height:1080});
 await page.locator('#count').fill(String(Number(await page.locator('#count').inputValue())+1));
 await page.getByRole('button',{name:'Confirm region'}).click();
