@@ -1,5 +1,5 @@
 {
-  "audited_at": "2026-10-10T10:13:50.138941+00:00",
+  "audited_at": "2026-10-10T10:19:36.148797+00:00",
   "base_main": "2f39f2669b8dde9bcf358fb223dae58796e274c8",
   "scope": "User operating guide sections0-56 and named durable artifacts; source existence never substitutes for full completion.",
   "goal_complete": false,
@@ -72,8 +72,8 @@
     },
     {
       "path": "docs/TEST_REPORT.md",
-      "bytes": 20726,
-      "sha256": "f1cb48d0e0f5c79b3017c9cfa17f600c22dbeddc12bf4ccf5eb3429476095cda",
+      "bytes": 20876,
+      "sha256": "8347fd3856475da0ad488203baf3860883970a7819d8e12d74e5b67ea4079154",
       "evidence_scope": "Content existence/integrity, not completion of the claims inside."
     },
     {
