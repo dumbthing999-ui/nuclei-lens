@@ -2,11 +2,12 @@
 
 ## Latest verified delivery — October11,2026
 
-Public `main` is `ffc41790b7335bee086617ab3f9cfb2584701c74`. PR23's all-stage1
-BBBC038 overlap audit and PR24's post-merge status/readback correction are merged;
-both PRs passed their exact-head CI runs. The new scan matched 43 of 670 stage1
-images one-to-one to 43 distinct BBBC039 fields, agreeing with the workbook's
-43-image BBBC022 training aggregate. It reads no labels and runs no inference.
+The shared-agent handoff update was published through PR25. For current release
+SHAs and delivery state, use `PROJECT_STATUS.md` and its linked receipts. PR23's
+all-stage1 BBBC038 overlap audit and PR24's post-merge status/readback correction
+are merged; both PRs passed their exact-head CI runs. The new scan matched 43
+of 670 stage1 images one-to-one to 43 distinct BBBC039 fields, agreeing with the
+workbook's 43-image BBBC022 training aggregate. It reads no labels and runs no inference.
 This supports exclusion of the identified overlap group; it does not prove
 independent biological sources or absence of crop/resampling relationships.
 Frozen496-field results and V9 application source remain unchanged. Eight audit
