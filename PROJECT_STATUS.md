@@ -54,10 +54,13 @@ superiority and practical reader benefit have not been established.
 
 ## Latest Judge Scores
 
-Separate contexts of the same model family reviewed V7: Technical15.8/20,
-Research/Impact15.7, Skeptical15.5. They did not watch the full video or run live
-checks. Reports are in docs/hackathon/judges-v7/. No score increase is inferred
-from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unmet.
+October12 separate role-based Gemini3.8 Flash simulations reviewed the current
+docs/product evidence: Technical15.8/20, Research/Impact15.7, Skeptical15.7.
+Mean15.73/20: Innovation3.6–3.7, Impact3.3, Technical Execution4.5–4.6,
+Presentation4.2. These were document-only AI reviews, not official/human judges;
+they did not run the live app or watch the full video. Raw reports and corrections
+are in docs/hackathon/judges-v10/. Human benefit remains unmeasured and the
+internal19+/20 aspiration is unmet.
 
 ## Completed
 

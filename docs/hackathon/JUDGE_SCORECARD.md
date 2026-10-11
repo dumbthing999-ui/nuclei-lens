@@ -1,4 +1,23 @@
-# Current judge scorecard — October 9, 2026
+# Current judge scorecard — October 12, 2026
+
+Three fresh role-based Gemini3.8 Flash simulations reviewed the current package
+in separate contexts. These are not human/official judge scores; they did not
+run the live app or watch the full video. Raw reports and reviewed findings are
+in [judges-v10/REVIEW.md](judges-v10/REVIEW.md).
+
+| Criterion | Technical / Research-Impact / Skeptical | Mean | Evidence | Weakness | Highest-value next step |
+|---|---:|---:|---|---|---|
+| Innovation | 3.7 / 3.7 / 3.6 | 3.67 | Real same-total 74→75→74 example; auditable opposing component alternatives | Established methods; graph ranking underperformed simple object disagreement | Validate the audit workflow's practical distinction with real microscopy readers |
+| Impact & Relevance | 3.3 / 3.3 / 3.3 | 3.30 | Frozen 50-field and 496-field benchmark results; overlap audit | No measured human benefit, time savings, or adoption | Run the prepared consented reader comparison if readers are available |
+| Technical Execution | 4.6 / 4.5 / 4.6 | 4.57 | Browser-local core, real model-mask comparison, conflict-checked edits, undo, hashed exports, reproducible frozen evaluations | 2D grayscale scope; neural inference is optional local CLI, not browser-native; imported alignment requires human judgment | Broaden validation only with a predeclared, leakage-safe protocol |
+| Presentation | 4.2 / 4.2 / 4.2 | 4.20 | Working demo path, evidence-led README, uploaded 3:35 video and backup | Dense qualifications; full anonymous video-player viewing unverified | Preserve accurate caveats while improving the human-centered explanation |
+
+Mean total: **15.73/20**. Internal targets are not met. The reviewers share a
+strong memory hook but agree that impact and innovation remain limited by prior
+art and absent human evidence. These results supersede the score summary below
+for current-state AI simulation only; the V7 record is retained as historical.
+
+## Historical V7 judge scorecard — October 9, 2026
 
 Fresh V7 reviews use three separate contexts of the same model family, not
 independent human judges. Reading scopes, raw judgments and reviewed findings are
