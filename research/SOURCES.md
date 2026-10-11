@@ -90,3 +90,7 @@ Official rules/overview/resources/updates/discussions and both gallery pages wer
 52. ReportSimpleV2, EurekaDev project page: https://devpost.com/software/reportsimplev2 — page describes plain-language medical-report explanations and safety disclaimers; model, accuracy and clinical validation are not specified in the retrieved story. Retrieved October 12, 2026.
 53. HeatWise, EurekaDev project page: https://devpost.com/software/heatwise — page reports a Liljegren WBGT model, O(n) minimax window search, 49 tests and forecast-agreement figures. These are author-reported claims, not independently reproduced; the page distinguishes forecast agreement from physical sensor validation. Retrieved October 12, 2026.
 54. MatchEd, EurekaDev project page: https://devpost.com/software/matched-7hon0s — page describes student-opportunity discovery with swipe/save and localStorage; it explicitly says the listings are mock data and the automatic scraper was not implemented. Retrieved October 12, 2026.
+
+## Independent-data feasibility check — retrieved October 12, 2026
+
+55. Broad Bioimage Benchmark Collection, BBBC007v1, https://bbbc.broadinstitute.org/BBBC007 — official record describes Drosophila Kc167 DNA/actin images, manually outlined nuclei/cells, archive downloads, the recommended citation, and a CC0 waiver by Anne Carpenter for images and ground truth. NucleiLens uses a small path-selected DNA-channel subset for a separate exploratory check; the record states the dataset's primary focus is cell-boundary segmentation. Retrieved October 12, 2026.
