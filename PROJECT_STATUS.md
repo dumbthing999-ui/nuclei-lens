@@ -1,6 +1,6 @@
 # Current Status
 
-Updated October11,2026. Current application is V9; this file summarizes current
+Updated October12,2026. Current application is V9; this file summarizes current
 state. Earlier chronology is retained in
 [archived status](docs/hackathon/archive/project-status-before-consolidation-2026-10-10.md)
 and Git history. Neither working software nor AI scores prove winning quality.
@@ -92,6 +92,10 @@ internal19+/20 aspiration is unmet.
   workflows. This is not a new OS, physical device or second public origin.
 - Offline reader bundle/UI/scorer,23native tests, repeated22-file byte equality and
   synthetic browser/CLI integration pass. No participants or human observations.
+- October12 PR27 added three role-based Gemini judge simulations and current
+  scorecard; PR28 refreshed Devpost copy and archives. Both PRs passed two
+  exact-head CI runs before merge. Main is `a88d183ea75e9c1f70f81706a04d2bda63cc2c02`.
+  These changes do not alter application code or frozen scientific results.
 - Owner video nik8WtPUrUc preserved, linked in README/app/Devpost/GitHub release.
  215s local decode/audio/captions and public opening-sample decoding are verified.
   Public720p backup fully downloads anonymously with matching bytes/SHA256 and
@@ -100,10 +104,9 @@ internal19+/20 aspiration is unmet.
 
 ## In Progress
 
-The owner reactivated the goal on October11. This is the first resumed audit;
-delivery is not a completed competition submission. No genuine reader
-observations or new owner direction are available to resolve the outstanding
-gates.
+The owner reactivated the goal on October11. Delivery is not a completed
+competition submission. No genuine reader observations or new owner direction
+are available to resolve the outstanding gates.
 
 Engineering, source, live-demo, video-backup and Devpost delivery tasks above are
 verified. No feature/polish work remains scheduled. The consented-reader question
@@ -152,6 +155,13 @@ repository/live links and video are populated. Track/category/contact draft savi
 remains browser-only and owner-deferred; do not ask again or call final submit to
 save them. Connected-account contact email is authorized privately; never publish it.
 Do not infer completion from publication of the project page.
+
+On October12, the description was shortened and reorganized around the same-total
+example, workflow, benchmark results, model scope, and limitations. Authenticated
+readback and a fresh public scrape verified the copy and demo/repository/video/
+backup links. The existing YouTube URL was preserved; `submitted_at` remains null.
+Before/after text is archived under `docs/hackathon/archive/`; check details are in
+`evaluation/checks/devpost-copy-refresh-2026-10-12.json`.
 
 On October11, the authenticated API and fresh Firecrawl rendering both verified
 the new BBBC038/BBBC039 overlap qualification in the public description; the
