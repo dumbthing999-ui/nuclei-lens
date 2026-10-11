@@ -317,7 +317,8 @@ Repeated22-file generated bundles match byte for byte; actual synthetic browser 
 is rejected by default scoring and accepted only with explicit synthetic validation.
 Local application focus/reduced-motion and automated desktop/mobile axe checks pass.
 This is software evidence, not a human study or complete accessibility certification.
-Initial PR16 CI failure is retained in GitHub; final-head CI/deployment remain pending.
+The initial PR16 CI failure is retained in GitHub; the final-head CI and
+deployment results are recorded in the following section.
 
 ## V9 verified release follow-up
 
@@ -335,3 +336,22 @@ new directory served by Python stdlib. No application Python installation or
 external inference API is required to serve this archive. Existing browser test
 harness dependencies were used; this is not an independent machine/device study.
 No new scientific, human-benefit or judge-score claim follows from the drill.
+
+## Current delivery status — October 11, 2026
+
+The historical entries above that describe PR16 CI/deployment or video as
+pending are superseded. PR16 final-head CI runs 38039691875 and 38039689807
+passed; V9 deployment succeeded and its source tree matched GitHub main at
+deployment. The reviewed 215-second video is uploaded at
+https://youtu.be/nik8WtPUrUc. A public 720p backup is downloadable from the
+GitHub release and its full video/audio decode, size and SHA256 were verified.
+PR20 delivery documentation is merged with both final-head CI runs green.
+See `evaluation/checks/deployment-v9.json`,
+`evaluation/checks/github-video-backup.json`, and
+`evaluation/checks/video-backup-delivery-merge.json`.
+
+These delivery checks do not establish full anonymous YouTube-player playback,
+human reader benefit, updated judging scores, or a completed EurekaDev
+submission. The Devpost project is published but `submitted_at` is null; custom
+submission fields remain owner-deferred. Reader exercise software has only
+synthetic integration coverage, with no participant sessions.
