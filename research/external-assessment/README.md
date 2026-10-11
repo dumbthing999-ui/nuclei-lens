@@ -10,8 +10,12 @@ Same-sized raw content screening against all200 BBBC039 raw images found43
 potential overlaps, using conservative sampled/full-image intensity correlations
 and flips. They were excluded before performance evaluation. The remaining496
 images comprise the complete frozen assessment manifest, not a selected success
-subset. Crop/resampling/shared-experiment overlap may remain; this is additional
-image evidence, not proof of independent biological generalization.
+subset. The official BBBC039 record states that a small fraction of its images
+overlap BBBC038 but does not identify their IDs. The 43 excluded candidates are
+screen results, not a proven complete mapping of that official overlap. Crop,
+resampling, and shared-experiment overlap may remain; this is additional image
+evidence, not proof of independent biological generalization. See source records
+47–48 in `research/SOURCES.md` and the [dataset overlap provenance note](dataset-overlap-note-2026-10-11.md).
 
 The original inference configuration and scientific core remain unchanged. One
 original mask file defines one reference instance, including disconnected pixels.

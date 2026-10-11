@@ -56,9 +56,12 @@ Segmentation macro F1 is lower than the original BBBC039 frozen test (.772 versu
 
 ## What it does not support
 
-- Independent biological generalization: crop/resampling/shared-source overlap may
-  remain after43 potential same-size overlaps were excluded. Per-image cell/source
-  group identity is unknown; images are not proven statistically independent.
+- Independent biological generalization: the official BBBC039 record states that
+  a small fraction of BBBC039 images overlap BBBC038 but gives no image IDs. Our
+  43 excluded same-size candidates are not a proven complete mapping of that
+  overlap. Crop/resampling/shared-source overlap may remain; per-image group
+  identity is unknown and images are not proven statistically independent. See
+  the [dated provenance note](../../research/external-assessment/dataset-overlap-note-2026-10-11.md).
 - General microscopy/modality validity: monochrome/opaque/dark-background properties
   do not independently establish fluorescence; BBBC038 has mixed sources/modalities.
 - Human review accuracy, effort/time savings, clinical utility or corrected masks.

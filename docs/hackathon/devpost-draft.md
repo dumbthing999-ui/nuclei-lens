@@ -83,9 +83,13 @@ versus 39.3% graph and 20% expected random.37 fields had F1 below 0.5 and remain
 the aggregates. A visually sparse original reference is documented, not repaired
 or excluded after scoring. [4]
 
-This property-filtered labeled training archive is not an independent biological
-group test. Other shared sources, mixed modalities and reference imperfections
-remain; no universal accuracy or human benefit follows from these numbers.
+The official BBBC039 record says a small fraction of its images also appear in
+BBBC038, but does not name them. Our 43 same-size candidates flagged by the
+overlap screen are not proof that every known overlap was removed. This
+496-image assessment is not an independent biological-group test; crop or
+resampling overlap, shared source groups, mixed modalities and imperfect
+reference masks may remain. These results do not establish universal accuracy
+or human benefit. [1, 4]
 
 ## Accomplishments
 
