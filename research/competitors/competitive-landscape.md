@@ -84,3 +84,32 @@ stronger impact, originality or placement because other pages lack verification.
 Human review advantage remains its unresolved differentiator. Earlier listing
 counts/review dates above retain their historical scope. Matrix threat levels
 are thematic assessments, not probabilities of placing or inferred official scores.
+
+## October 12 gallery refresh
+
+Two cache-miss Firecrawl captures exposed 46 unique project links, five more
+than the prior 41-row matrix. Separate web-index pages, crawled two and three
+days earlier, rendered totals 40 and 38, so the 46 value is the number of links
+in these captures rather than a canonical current gallery total. All five newly
+identified public pages were reviewed and added to the matrix; their demos,
+repositories and videos were not independently executed. Details, page hashes
+and extraction limits are in `gallery-refresh-2026-10-12.json`.
+
+The most consequential new page is [HeatWise](https://devpost.com/software/heatwise).
+It describes a Liljegren WBGT physics model, an O(n) minimax safe-window search,
+49 dependency-free tests, and an NWS forecast comparison over 1,472 point-hours.
+Those are author-reported claims, not reproduced results. The page explicitly
+separates forecast agreement from ground-truth accuracy and reports the need for
+physical WBGT-meter validation. This is a high engineering/evidence bar in an
+adjacent safety domain, not a direct microscopy competitor or a placement
+prediction. PlateFix also describes a client-side linear program for affordable
+household nutrition; ReportSimpleV2 describes medical-report explanations;
+AquaQuest describes community waterway reporting; MatchEd discloses mock
+opportunity data and an unfinished scraper. Tracks/categories remain unknown
+when pages do not state them. No new page establishes NucleiLens reader benefit,
+scientific superiority or a reason to revise its measured scores.
+
+Official rules, deadline and announcements were refreshed October 12. The
+submission deadline is unchanged, no authenticated announcements were returned,
+and the public discussion page had no topics. Gallery count uncertainty is
+recorded rather than silently choosing one page's total.

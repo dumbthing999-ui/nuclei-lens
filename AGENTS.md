@@ -29,8 +29,15 @@ PR27 added three role-based Gemini judge simulations (15.7–15.8/20; document-o
 not human judges) and a current scorecard. PR28 shortened and reorganized the
 public Devpost narrative; authenticated readback and a fresh public render verify
 the caveats and live/GitHub/video/backup links. Both PRs passed two exact-head CI
-runs. Main is currently `a88d183ea75e9c1f70f81706a04d2bda63cc2c02`; check
-`PROJECT_STATUS.md` for any newer merge. No app or frozen science changed.
+runs. PR29 reconciled this handoff with current project status; check
+`PROJECT_STATUS.md` for the latest main SHA. No app or frozen science changed.
+
+October12 rules refresh found no material rule/deadline change, no authenticated
+announcements and no public discussion topics. The public-gallery crawl found five
+new project pages. Two cache-miss pages exposed 46 unique links, while older indexed
+pages disagreed on totals; do not state 46 as a canonical total. HeatWise's strong
+physics/validation claims are not independently verified. Updated matrix and
+provenance live in `research/competitors/`; preserve page-claim caveats.
 
 ## Historical V9 deployment checks — October10,2026
 
