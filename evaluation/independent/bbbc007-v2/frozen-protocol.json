@@ -1,0 +1,130 @@
+{
+  "frozen_at": "2026-10-11T19:50:20.394726+00:00",
+  "dataset": "BBBC007v1 Drosophila Kc167 fluorescence images; exploratory external-data evaluation, not an official test split",
+  "source_record": "https://bbbc.broadinstitute.org/BBBC007",
+  "license": "CC0 waiver stated by the official BBBC record",
+  "recommended_citation": "Jones et al., CVBIA 2005; BBBC007v1 via Ljosa et al., Nature Methods 2012",
+  "archives": {
+    "BBBC007_v1_images.zip": "b7009e2fce0a3152a5c9adda916eaa699d09696f4bd02a7d05d12d041e30c6d1",
+    "BBBC007_v1_outlines.zip": "6a5246f9a9d743d22eafdb409fae638a8461af97e9ff9c4a92f25eba236224d3"
+  },
+  "source_sha256": {
+    "src/nuclei_lens/core.py": "1d1d9ad01334268c060a3d236c816c1b2ced3d2a742c75491f5efa7a8c64da08",
+    "src/nuclei_lens/graph.py": "40d92dd3ba3d5b2c45ca037f98e24b758bbd87ec4a64c90c5f3c22219078b08e",
+    "src/nuclei_lens/evaluate.py": "801d6447d019c4f339a0a825246b8964dee897605c80747ffbf9ff81050ae1fa",
+    "evaluation/frozen/protocol.json": "5830da1bae2a2ca040ef618987d267c5ffd51e2ecdc584149e4ff8627e78fd6d",
+    "scripts/evaluate_bbbc007_v2.py": "ceb165091d5557e8feb15bafe421a6e4962fbab8d1f60f61b1d69e10feb24761"
+  },
+  "inference_config": {
+    "threshold_factor": 0.85,
+    "min_distance": 7,
+    "smoothing": 1.0,
+    "min_area": 40,
+    "background_sigma": 24.0,
+    "threshold_cap": 0.8,
+    "minimum_signal_ratio": 6.0
+  },
+  "selection": "Every archive member under BBBC007_v1_images whose relative filename ends exactly in _D_1UL.tif and has a same-relative-path member in BBBC007_v1_outlines. This selects explicitly marked DNA-channel fields and excludes actin (_F_2UL) and legacy filenames without channel markers. No image-content or result-based sampling.",
+  "n_selected": 11,
+  "images": [
+    {
+      "image_path": "BBBC007_v1_images/f96 (17)/17P1_POS0006_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f96 (17)/17P1_POS0006_D_1UL.tif",
+      "image_sha256": "7294a0db46240b7f79f430b03511692876b0440a23247dad49dad2d1502756d8",
+      "outline_sha256": "66cf145171a04bfd959733c4d60807da8160410985ca70728fc37879bd7d4a7f",
+      "image_archive_bytes": 672088,
+      "outline_archive_bytes": 49400
+    },
+    {
+      "image_path": "BBBC007_v1_images/f96 (17)/17P1_POS0007_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f96 (17)/17P1_POS0007_D_1UL.tif",
+      "image_sha256": "bee69d4ec89d6110ffc84c170dc947fd0982207f0608ca12c1e3c496a0f5bb9c",
+      "outline_sha256": "9db1411f53716bd75230ac2fe86ced4bf3559f84c082edca908430ea57c0ae15",
+      "image_archive_bytes": 105508,
+      "outline_archive_bytes": 55596
+    },
+    {
+      "image_path": "BBBC007_v1_images/f96 (17)/17P1_POS0011_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f96 (17)/17P1_POS0011_D_1UL.tif",
+      "image_sha256": "e38aebb811fefc25856fac2e8341dfea836351768deab9424ece7d06ab5ad624",
+      "outline_sha256": "a52fb4350f11ddaccd77e9fc5f3165bce4b58cc26fbddaa076a8e58d8aef5aba",
+      "image_archive_bytes": 122710,
+      "outline_archive_bytes": 58188
+    },
+    {
+      "image_path": "BBBC007_v1_images/f96 (17)/17P1_POS0013_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f96 (17)/17P1_POS0013_D_1UL.tif",
+      "image_sha256": "73ea2572aef950b0fc36136811857fb94157395eef13a2177c8cb0de88680bca",
+      "outline_sha256": "601beb0307918df2d5d09643b33e43340f41d811c80781ecb3d5be7510009ac9",
+      "image_archive_bytes": 107124,
+      "outline_archive_bytes": 51192
+    },
+    {
+      "image_path": "BBBC007_v1_images/f96 (17)/17P1_POS0014_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f96 (17)/17P1_POS0014_D_1UL.tif",
+      "image_sha256": "2519ab75c048c972f11e9c7b0206813a57b6f559c4289d1a6e7222d4bc207d1e",
+      "outline_sha256": "0e9766c56cb9b775e047e034c117f67830ff743b25708f7cd78e100e50e97822",
+      "image_archive_bytes": 733072,
+      "outline_archive_bytes": 54312
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0002_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0002_D_1UL.tif",
+      "image_sha256": "69b94ba95f8e57d7efff36bbd919aebe75dabd41a77f911ee48d75548a4cd1f0",
+      "outline_sha256": "ec36cadec8e9a1a7a890e7b68e222d109b3bb420f4a3661a5fd65461b0e247b1",
+      "image_archive_bytes": 127856,
+      "outline_archive_bytes": 56360
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0005_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0005_D_1UL.tif",
+      "image_sha256": "d00fc8e79d3fb2435a10eac737eb4e2bd95b0069a98c4a58081157a3a24ea1fe",
+      "outline_sha256": "a64948d4d3bac0c32a44a4c2f137ca4f9bf152f9dc4a8b2a6a4399588cc95103",
+      "image_archive_bytes": 709860,
+      "outline_archive_bytes": 51192
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0007_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0007_D_1UL.tif",
+      "image_sha256": "a09621c9d7be5c3b7226da1fa3dab628a9b0caa69a246afdf9a4c70b1a0cd684",
+      "outline_sha256": "703cf032392d1a3ca85167705380b215ba7e1ad7172f8ec005486c3cd27e1cd8",
+      "image_archive_bytes": 122102,
+      "outline_archive_bytes": 55640
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0008_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0008_D_1UL.tif",
+      "image_sha256": "80f5d289d4503b9d51eccba24705b0060a04a4566e367d1357bf5700cf24854c",
+      "outline_sha256": "5712602f9a322244673d72fff28d7b39779ae884eee22ad15dfe2f0a23ce8159",
+      "image_archive_bytes": 140394,
+      "outline_archive_bytes": 53224
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0010_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0010_D_1UL.tif",
+      "image_sha256": "167c958591407b7b7a3c963836eb72506dc26481e6eb6446b3f88fea47d0ff4b",
+      "outline_sha256": "8c55d4b42e8fd29a947b8cc34dc7a724830cfe36965a73f04ea1434bcd6e457b",
+      "image_archive_bytes": 724464,
+      "outline_archive_bytes": 53280
+    },
+    {
+      "image_path": "BBBC007_v1_images/f9620/20P1_POS0011_D_1UL.tif",
+      "outline_path": "BBBC007_v1_outlines/f9620/20P1_POS0011_D_1UL.tif",
+      "image_sha256": "433d0980e22135d88d5f7ca41995839f8c16ea0290e52434712c4fbd85b0a550",
+      "outline_sha256": "2ea67322d5c4c45f22a71b61dff806e602e6f15a470ba202fb72f56f27271e1c",
+      "image_archive_bytes": 749772,
+      "outline_archive_bytes": 54384
+    }
+  ],
+  "rgb_conversion": "For RGB/RGBA images use the browser luminance equation round(0.299 R + 0.587 G + 0.114 B); grayscale uint8 is unchanged. No learned color deconvolution or per-image tuning.",
+  "reference_conversion": "Treat nonzero pixels as the manually drawn outline. Fill enclosed holes, remove contour pixels, and label interior components with 4-connectivity. No contour repair, manual correction, or threshold tuning. Any conversion failure remains a failed manifest row.",
+  "primary_metrics": [
+    "count MAE",
+    "macro instance F1 at IoU >= 0.5",
+    "object-disagreement error-mass capture at 4 of 20 fixed centroid tiles"
+  ],
+  "comparators": "Keep the six existing evaluation comparators and tie handling unchanged; report only the preselected object-disagreement queue as the primary queue result.",
+  "failures": "Retain all selected fields; no post-result exclusions. Report conversion/inference errors separately.",
+  "independence_limit": "BBBC007 is a different Drosophila Kc167 assay from BBBC039 U2OS chemical-screen images, but this small subset does not establish laboratory independence, broad biological generalization, or human benefit.",
+  "feasibility_note": "Before protocol freeze, one _D_1UL outline was inspected for raster format/closed-loop feasibility. No model inference or benchmark outcome was computed during that feasibility check."
+}

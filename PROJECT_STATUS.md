@@ -5,6 +5,16 @@ state. Earlier chronology is retained in
 [archived status](docs/hackathon/archive/project-status-before-consolidation-2026-10-10.md)
 and Git history. Neither working software nor AI scores prove winning quality.
 
+October12 independent BBBC007 check: corrected v2 evaluates all 11 frozen,
+path-selected DNA-channel fields, with count MAE4.91, macro instance F10.870,
+and object-disagreement capture46.0% versus20.0% random at a20% tile budget.
+This is a small exploratory subset from an assay whose stated challenge is cell
+boundaries, not an independent biological-group validation or evidence of reader
+benefit. A v1 aggregate reporting bug is retained and disclosed; corrected v2
+changes only how per-field captured error mass is aggregated. Details and
+reproduction are in `evaluation/independent/bbbc007-v2/`. Application V9,
+frozen BBBC039/BBBC038 results, and production are unchanged.
+
 ## Current Release
 
 October11 full-archive pixel audit scanned all670 BBBC038 stage1 images against

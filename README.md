@@ -170,6 +170,20 @@ Original reference imperfections remain in scoring. [Complete protocol, every
 field and difficult cases](evaluation/additional/README.md); see the [reproducible
 overlap audit](research/external-assessment/dataset-overlap-note-2026-10-11.md).
 
+### Exploratory external-data check
+
+On 11 path-selected DNA-channel fields from BBBC007, the unchanged pipeline had
+count MAE **4.91** and macro instance F1 **0.870**. At a four-of-twenty-tile
+review budget, object disagreement captured **46.0%** of annotated error mass;
+the count-changing graph captured **42.5%**, and random review captured **20.0%**.
+All 11 selected fields ran successfully. BBBC007's primary challenge is
+cell-boundary segmentation, and this small, path-selected subset is not a
+dedicated nuclei benchmark, a held-out challenge split, broad biological
+validation, or evidence of researcher benefit. The first report's aggregation
+bug is preserved and explained; these figures come from the separately frozen
+corrected v2 run, which changes only summary aggregation. [Protocol, complete
+results, correction note, and reproduction](evaluation/independent/bbbc007-v2/README.md).
+
 ### Existing model-mask diagnostic
 
 On the first bundled training field, all three existing masks have absolute count
@@ -288,6 +302,7 @@ improves real reviewer outcomes. No reader-study benefit is claimed.
 ## Sources
 
 - [BBBC039 official dataset, partitions, and CC0 license](https://bbbc.broadinstitute.org/BBBC039)
+- [BBBC007 official record](https://bbbc.broadinstitute.org/BBBC007) — separate 11-field exploratory check; see its limitations above.
 - [Dataset-associated nuclei segmentation study](https://doi.org/10.1002/cyto.a.23863)
 - [Author's colored-mask decoder](https://gist.github.com/jccaicedo/15e811722fca51e3ae90e8b43057f075)
 - [Full research index](research/SOURCES.md)

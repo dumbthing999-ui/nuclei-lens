@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-10-11T19:49:19.426836+00:00",
+  "dataset": "BBBC007v1 Drosophila Kc167 fluorescence images; exploratory external-data evaluation, not an official test split",
+  "protocol_sha256": "d63210dccf007585b8e6ac5d075495769078e948eea59a11a211c657c2dd6f72",
+  "selected_fields": 11,
+  "evaluated_fields": 11,
+  "failed_fields": 0,
+  "complete_manifest_retained": true,
+  "count_mae": 4.909090909090909,
+  "macro_instance_f1_iou_0_5": 0.8700839086165683,
+  "total_fp_plus_fn": 202,
+  "error_mass_capture_at_4_of_20_tiles": {
+    "graph": 8.45601262912669,
+    "pixel_disagreement": 7.757425742574258,
+    "object_disagreement": 9.282178217821782,
+    "count_variation": 8.577154155043987,
+    "shape_flags": 8.504950495049505,
+    "random": 4.1683168316831685
+  },
+  "median_analysis_ms": 1474.96,
+  "failures": [],
+  "limitations": [
+    "BBBC007 is a different Drosophila Kc167 assay from BBBC039 U2OS chemical-screen images, but this small subset does not establish laboratory independence, broad biological generalization, or human benefit.",
+    "Treat nonzero pixels as the manually drawn outline. Fill enclosed holes, remove contour pixels, and label interior components with 4-connectivity. No contour repair, manual correction, or threshold tuning. Any conversion failure remains a failed manifest row.",
+    "Small, incomplete channel-marked subset; not a probability sample or held-out official challenge partition.",
+    "Results evaluate a classical intensity-based workflow against reconstructed manual outline interiors, not a claim of model superiority or reader benefit."
+  ]
+}
