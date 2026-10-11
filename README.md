@@ -160,10 +160,13 @@ count MAE **6.54**, mean instance F1 **0.772**, object-queue capture **45.7%** a
 20% tile budget, versus **39.3%** graph and **20.0%** expected random. All 496 were
 retained, with zero structural reference/inference failures; 37 have F1<0.5.
 Selection and source hashes were publicly frozen before inference. 43 potential
-same-size content overlaps were excluded first; other shared biological sources
-may remain. This property-filtered labeled training archive is **not an independent
-biological-group test** or proof of human benefit. Original reference imperfections
-remain in scoring. [Complete protocol, every field and difficult cases](evaluation/additional/README.md).
+same-size content overlaps were excluded first. The BBBC039 record says a small
+fraction of its images overlap BBBC038, but does not identify them; the 43 screen
+results do not prove that all overlap was removed. This property-filtered labeled
+training archive is **not an independent biological-group test** or proof of human
+benefit. Original reference imperfections remain in scoring. [Complete protocol,
+every field and difficult cases](evaluation/additional/README.md); see also the
+[dated overlap provenance note](research/external-assessment/dataset-overlap-note-2026-10-11.md).
 
 ### Existing model-mask diagnostic
 

@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-11T13:48:49.041-04:00",
+  "project_id": 1470185,
+  "project_slug": "nucleilens",
+  "description_normalized_readback_matches": true,
+  "normalization": "collapse repeated blank lines; Devpost normalized Markdown spacing",
+  "overlap_caveat_visible": true,
+  "original_video_url_preserved": true,
+  "submitted_at": null,
+  "description_sha256": "e9e738c3ace975073c88dacf62be20e0191822f49c29a9d38fa99ff5ed417042",
+  "public_rendered_page_verified": true,
+  "public_url": "https://devpost.com/software/nucleilens",
+  "firecrawl_scrape_id": "01a12c15-c82d-7778-9ae3-c700f009ee23",
+  "rendered_snapshot_sha256": "7ffbf0bf195487c31e0a0087b561a95e0d725b81fe45cba505ab70aa428c36be",
+  "rendered_markers": {
+    "official_source_overlap_claim_rendered": true,
+    "screen_scope_qualification_rendered": true,
+    "independent_biological_group_limit_rendered": true,
+    "canonical_video_rendered": true
+  }
+}
