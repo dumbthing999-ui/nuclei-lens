@@ -1,18 +1,28 @@
 # EurekaDev 2026 Workspace Instructions
 
-## Latest verified delivery — October10,2026
+## Latest verified delivery — October11,2026
 
-PR18 audit and PR19 existing-mask diagnostic merged after both final-head CI runs
-passed. Native114/frontend22 and real annotation-case replay pass. Original model
-masks/frozen50/496 science and V9 application source remain unchanged. Public
-GitHub720p backup of the reviewed video fully downloads anonymously with matching
-size/hash and fully decodes video/audio215s; original YouTube/tag preserved. Devpost
-version13 entire narrative, diagnostic scope and backup/video links match auth and
-fresh public rendering. submitted_at remainsnull; custom draft fields owner-deferred.
-No human observations, scientific-first, general model ranking or19+/20 claim.
-Stop adding cosmetic features; missing practical benefit requires real consenting
-people. Preserve failed public-player probes and Reddit removal; no repeated
-uploads/posts or browser requests. Current status/proofs are in PROJECT_STATUS.md.
+Public `main` is `ffc41790b7335bee086617ab3f9cfb2584701c74`. PR23's all-stage1
+BBBC038 overlap audit and PR24's post-merge status/readback correction are merged;
+both PRs passed their exact-head CI runs. The new scan matched 43 of 670 stage1
+images one-to-one to 43 distinct BBBC039 fields, agreeing with the workbook's
+43-image BBBC022 training aggregate. It reads no labels and runs no inference.
+This supports exclusion of the identified overlap group; it does not prove
+independent biological sources or absence of crop/resampling relationships.
+Frozen496-field results and V9 application source remain unchanged. Eight audit
+files and the corrected status/receipts were read back byte for byte. See
+`PROJECT_STATUS.md` and `evaluation/checks/` for receipts.
+
+The existing YouTube video `nik8WtPUrUc` and GitHub720p backup remain verified;
+never upload another copy. The authenticated Devpost description was updated and
+fresh public rendering verified, including the video link. `submitted_at` remains
+null; track/category/contact draft fields remain browser-only and owner-deferred.
+There are no observed human reader sessions or measured practical reader benefit;
+AI judge scores remain below the internal target, and no scientific-first or
+general model-ranking claim is supported. Do not add cosmetic features to imply
+those gates passed. Continue only material product/evidence work; human benefit
+requires consenting participants. Preserve failed public-player probes and the
+Reddit removal; do not repost, bypass moderation, or repeat uploads/browser probes.
 
 ## Historical V9 deployment checks — October10,2026
 
