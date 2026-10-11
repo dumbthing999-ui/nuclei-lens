@@ -1,11 +1,31 @@
 # Current Status
 
-Updated October10,2026. Current application is V9; this file summarizes current
+Updated October11,2026. Current application is V9; this file summarizes current
 state. Earlier chronology is retained in
 [archived status](docs/hackathon/archive/project-status-before-consolidation-2026-10-10.md)
 and Git history. Neither working software nor AI scores prove winning quality.
 
 ## Current Release
+
+October11 full-archive pixel audit scanned all670 BBBC038 stage1 images against
+all200 BBBC039 fields. It reproduced exactly the previous43 one-to-one matches
+to unique BBBC039 fields; metadata independently lists43 BBBC022 training
+images. This strongly supports that the known overlap group was excluded, while
+aggregate metadata lacks an image-ID crosswalk and crop/resampling/other source
+relationships remain possible. Frozen496-field manifest/results are unchanged.
+PR22 at `9fe563cc0d9fe41d4fce7880d32ddb83104b3e74` contains the earlier,
+more cautious qualification. PR23 will publish this stronger new evidence after
+CI. PR22's two CI runs passed and seven public files were read back byte for byte.
+
+Documentation PR21 merged at `dbc4d466fa0514119a87bdcc61de0c2996c22adf`;
+both exact-head CI runs 38160731858/38160715830 passed. Public `docs/TEST_REPORT.md`
+matches the corrected local file byte for byte. This corrects stale historical
+pending language without changing the V9 application or scientific results.
+
+Final delivery documentation PR20 merged at 42167844e062f9f318db30c963b6251f2d0a8307 after both
+final-head CI38046954201/38046829404 passed. Root is synchronized;
+post-merge receipt is local in evaluation/checks/video-backup-delivery-merge.json.
+No additional application deployment or scientific-result changes.
 
 Public V9: https://nuclei-lens.dumbthing999.chatgpt.site.
 Application PR16 merged at f5afee773bf35888a6131f4373089670094676da after both
@@ -73,6 +93,15 @@ from V8/V9, recovery, links or reader software. Internal19+/20 gates remain unme
 
 ## In Progress
 
+The owner reactivated the goal on October11. This is the first resumed audit;
+delivery is not a completed competition submission. No genuine reader
+observations or new owner direction are available to resolve the outstanding
+gates.
+
+Engineering, source, live-demo, video-backup and Devpost delivery tasks above are
+verified. No feature/polish work remains scheduled. The consented-reader question
+is still pending; do not create observations or retry owner-deferred form saving.
+
 Existing-mask annotation diagnostic is published after green final-head CI.
 Three masks share absolute count error3, with unmatched-instance totals11/3/3.
 Cellpose/StarDist share count68/F10.978 despite different partitions; no general
@@ -116,6 +145,17 @@ repository/live links and video are populated. Track/category/contact draft savi
 remains browser-only and owner-deferred; do not ask again or call final submit to
 save them. Connected-account contact email is authorized privately; never publish it.
 Do not infer completion from publication of the project page.
+
+On October11, the authenticated API and fresh Firecrawl rendering both verified
+the new BBBC038/BBBC039 overlap qualification in the public description; the
+canonical video URL was preserved. Before/after public descriptions are archived
+under `docs/hackathon/archive/`; see `evaluation/checks/devpost-dataset-overlap-update.json`.
+
+After a full 670-image pixel audit, the authenticated description and cache-busted
+public rendering were updated again. The public copy now reports the one-to-one
+43-field match, matching 43-image BBBC022 metadata count, and the aggregate-metadata
+crosswalk limitation. The video is intact; public rendering and exact normalized
+API readback are recorded in the same check file.
 
 ## Demo Video
 

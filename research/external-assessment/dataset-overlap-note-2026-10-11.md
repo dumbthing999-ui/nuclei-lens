@@ -20,25 +20,43 @@ model output, or metric.
 Both claims are supported by the dataset publisher and peer-reviewed primary
 paper. See [SOURCES.md entries 47–48](../SOURCES.md).
 
-## What the existing screen establishes
+## Complete-archive pixel cross-check
 
 Before any annotation decoding or inference, the frozen screen compared the 539
 image-property candidates against all 200 BBBC039 images using sampled intensity
 correlation, full-image same-size correlation, and horizontal/vertical/both
 flips. It flagged 43 potential same-size overlaps; these were excluded before
-evaluation. The screening protocol and its original result remain unchanged.
+evaluation. A separate reproducible scan of all 670 BBBC038 stage1 images
+reproduced exactly those 43 candidates and reference-image mappings. Each matched
+one distinct BBBC039 field; full-image Pearson correlations ranged from
+0.99895–0.99990. No additional same-size matches met the frozen thresholds.
 
-The official BBBC039 page does not identify which images overlap, so the 43
-screen flags cannot be claimed as a complete identification of the publisher's
-overlap. Nor does the screen detect all possible crops, resampling, or shared
+The official BBBC038 workbook separately reports 43 stage1 training images under
+`project_id=bbbc022`. The one-to-one pixel-match count and this source-group count
+agree exactly, consistent with the screen capturing the complete known BBBC022
+overlap group. The workbook is aggregate metadata and has no per-image ID
+crosswalk, so this is strong count-level corroboration rather than a publisher
+supplied identity map. Machine results and file hashes are in
+`overlap-audit-all-stage1-2026-10-11.json`; reproduce with:
+
+```bash
+mkdir -p data/raw/BBBC039
+curl --fail --location --output data/raw/BBBC038-stage1_train.zip https://data.broadinstitute.org/bbbc/BBBC038/stage1_train.zip
+curl --fail --location --output data/raw/BBBC038-metadata.xlsx https://data.broadinstitute.org/bbbc/BBBC038/metadata.xlsx
+curl --fail --location --output data/raw/BBBC039/images.zip https://data.broadinstitute.org/bbbc/BBBC039/images.zip
+.venv/bin/python scripts/audit_dataset_overlap.py
+```
+
+The 43-to-43 correspondence strongly supports that the known BBBC022 image group
+was identified and excluded. It does not establish absence of every possible
+crop/resampled copy, any related images from other BBBC038 sources, or shared
 biological experiments. The remaining 496-image analysis is therefore additional
 descriptive image evidence, not an independent biological-group validation.
 
 ## Interpretation and action
 
-No rerun or post-hoc exclusion is justified from this source statement alone:
-the overlapping IDs are not provided, the existing protocol froze the selection
-and evaluation before labels/inference, and changing membership after seeing the
-results would alter the declared assessment. Preserve all 496 results, state the
-overlap limitation, and seek a genuinely experiment-held-out dataset for any
-future generalization claim.
+No post-hoc exclusion is justified: the overlap candidates were excluded before
+labels/inference, and changing membership after seeing the results would alter
+the declared assessment. Preserve all 496 results, report the count-level
+corroboration and remaining source limitations, and use a genuinely
+experiment-held-out dataset for any future generalization claim.

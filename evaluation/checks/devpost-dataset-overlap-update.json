@@ -7,7 +7,7 @@
   "overlap_caveat_visible": true,
   "original_video_url_preserved": true,
   "submitted_at": null,
-  "description_sha256": "e9e738c3ace975073c88dacf62be20e0191822f49c29a9d38fa99ff5ed417042",
+  "description_sha256": "8f1889ce740dd07b75aa38513bc1ad2fc49e13105c4b8ac1121f60083e3dd18b",
   "public_rendered_page_verified": true,
   "public_url": "https://devpost.com/software/nucleilens",
   "firecrawl_scrape_id": "01a12c15-c82d-7778-9ae3-c700f009ee23",
@@ -17,5 +17,25 @@
     "screen_scope_qualification_rendered": true,
     "independent_biological_group_limit_rendered": true,
     "canonical_video_rendered": true
-  }
+  },
+  "full_archive_audit_update_readback": true,
+  "published_claim_markers": {
+    "all_670_scope": true,
+    "one_to_one_43": true,
+    "metadata_count": true,
+    "no_independent_generalization": true,
+    "video_preserved": true
+  },
+  "updated_at": "2026-10-11T14:00:21.794-04:00",
+  "normalization_note": "Devpost strips inline-code delimiters and collapses repeated blank lines.",
+  "full_archive_audit_public_rendered_readback": true,
+  "latest_public_scrape_id": "01a12c21-6dc7-73ba-8c2b-fe2882cb2b2b",
+  "latest_public_rendered_snapshot_sha256": "5cd060fc1c3031167b798c8c1a7d60277f1869bf1f2c4631b7dce58a68b7cbde",
+  "latest_public_rendered_markers": {
+    "all_670_vs_200_rendered": true,
+    "one_to_one_43_rendered": true,
+    "metadata_43_rendered": true,
+    "remaining_limit_rendered": true
+  },
+  "prior_snapshots_stale": true
 }
