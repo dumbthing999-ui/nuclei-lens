@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-10T08:57:09.303Z",
-  "target": "http://127.0.0.1:5182",
+  "checked_at": "2026-10-11T19:22:11.799Z",
+  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
   "scope": "Actual Chromium keyboard focus and reduced-motion CSS, not assistive-tech/physical-device study.",
   "skip_link": true,
   "disclosure_focus": {

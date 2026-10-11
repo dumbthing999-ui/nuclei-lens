@@ -355,3 +355,23 @@ human reader benefit, updated judging scores, or a completed EurekaDev
 submission. The Devpost project is published but `submitted_at` is null; custom
 submission fields remain owner-deferred. Reader exercise software has only
 synthetic integration coverage, with no participant sessions.
+
+## Fresh public browser checks — October 12, 2026
+
+The V9 public application passed the automated Chromium smoke workflow on the
+production URL. It exercised the same-count example, local analysis, mask
+split/merge (74 → 75 → 74), exact undo, TIFF round-trip, audit hash, cancel
+preservation, stale-sample failure handling, and mobile viewport bounds. No page
+errors were recorded. This run measured 25,585 ms cold and 5,021 ms warm analysis;
+these are single-run observations, not performance guarantees. The observed
+Cloudflare challenge POST is listed in the JSON report.
+
+Review found that a fixed 1.8-second test delay could capture the final sample
+while it was loading. The test now waits for its ready status and expected count.
+The corrected run passed and the replacement mobile screenshot shows the ready
+state. No application code changed. Axe reported zero violations in four
+automated states; keyboard focus, skip-link and reduced-motion checks also pass.
+These checks do not replace physical-device or assistive-technology user tests.
+Reports: `evaluation/checks/browser-smoke.json`,
+`evaluation/checks/accessibility.json`, and
+`evaluation/checks/focus-motion.json`.
