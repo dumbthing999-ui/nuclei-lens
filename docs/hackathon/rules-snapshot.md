@@ -1,6 +1,6 @@
 # EurekaDev 2026 Rules Snapshot
 
-**Initial retrieval:** 2026-10-07. **Refreshed:** 2026-10-08 (public overview, rules, resources, updates, discussions, and both gallery pages). Re-check before feature freeze and submission.
+**Initial retrieval:** 2026-10-07. **Latest refresh:** 2026-10-12 (authenticated overview/rules/key dates/announcements; public discussions and cache-miss gallery captures). Re-check before feature freeze and submission.
 
 ## Official sources checked
 
@@ -153,3 +153,23 @@ is owner-confirmed. Sources/hashes and read scopes are recorded in
 research/competitors/gallery-refresh-2026-10-10.json and public field/date snapshots
 under docs/hackathon/archive/. Current eligibility/AI/originality/judging terms did
 not show a substantive change; earlier access failures in this file are historical.
+
+
+## Authenticated and public refresh — October 12, 2026
+
+The authenticated Devpost overview and rules were fetched at 2026-10-11T19:07:10Z
+(October 12 IST). Eligibility, one-project-per-team, Discord, track/category, prize,
+AI/originality and four equally weighted judging terms showed no material change.
+The deadline remains 2026-10-20 22:00 UTC (5:00 PM CDT; October 21, 03:30 IST).
+The API continues to show judging on October 27–November 5, 2027 and winners on
+November 6, 2027; this inconsistency remains unresolved. Authenticated announcements
+returned an empty list. The public navigation-linked discussions page displayed no
+topics. Resources remain contact/Discord links.
+
+Two cache-miss Firecrawl gallery requests on October 12 returned24 and22 unique
+project links (46 total), with five projects absent from the previous41-row matrix.
+Other web-index pages showed stale totals40 and38, and direct unauthenticated
+urllib probes returned403. Therefore46 is a capture count only, not a certified
+canonical gallery total. Five new project pages were reviewed; claims remain
+page-authored and demos/repos/videos were not executed. See
+`research/competitors/gallery-refresh-2026-10-12.json` and `competitive-landscape.md`.

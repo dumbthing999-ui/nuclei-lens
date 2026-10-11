@@ -65,13 +65,18 @@ internal19+/20 aspiration is unmet.
 ## Completed
 
 - Owner confirmed high-school/age eligibility and official Discord membership.
-- Official pages, dates, requirements and announcements refreshed October10;
-  deadline remains October20,22:00UTC / October21,03:30IST. No public updates/forum
-  topics or authenticated announcements. Native Gmail is unavailable; alternate
-  Composio Gmail read three related messages and reviewed two Devpost notices.
-  They confirm the deadline, incomplete draft and Discord requirement.
-- Gallery41 visible projects across two linked pages; all41 have matrix rows.
-  Three new descriptions reviewed, with source hashes and unverified claims marked.
+- Official overview/rules/dates/announcements refreshed October12; the deadline
+  remains October20,22:00UTC / October21,03:30IST. The authenticated endpoint
+  returned no announcements; the public discussions page showed no topics. Its
+  metadata still places judging/winner dates in2027; preserve that discrepancy.
+  Earlier bounded mailbox results confirmed the deadline, incomplete draft and
+  Discord requirement; they are not a complete organizer-channel review.
+- Gallery refreshed October12: two cache-miss captures contained46 unique project
+  links, including five pages not in the prior41-row matrix. Other cached page
+  reads reported totals40 and38, so46 is the capture count, not a confirmed
+  canonical total. Matrix now has46 rows. HeatWise reports substantial model and
+  validation work, but its claims were not independently reproduced. See
+  `research/competitors/gallery-refresh-2026-10-12.json`.
 -25 initial concepts and top-five review retained. A clearly dated retrospective
  19-factor extension covers all25 concepts and50 finalist answers; subjective
   forecasts do not rewrite prebuild history or replace measured judge scores.

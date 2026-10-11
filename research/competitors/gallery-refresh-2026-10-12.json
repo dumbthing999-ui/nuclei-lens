@@ -1,0 +1,70 @@
+{
+  "retrieved_at_utc": "2026-10-11T19:07:10Z official metadata; gallery scrape completed 2026-10-12 Asia/Kolkata",
+  "previous_matrix_rows": 41,
+  "unique_gallery_project_links_in_two_scrapes": 46,
+  "new_matrix_rows_added": 5,
+  "gallery_pages": [
+    {
+      "page": "gallery_page_1",
+      "url": "https://eurekadev.devpost.com/project-gallery?refresh=20261012a",
+      "visible_project_links": 24,
+      "scrape_id": "01a12c5d-3f3e-718a-bb1a-a2e0dae76f65",
+      "snapshot_sha256": "09c3fb3fc1e99ef1450ad8f104ae4f61ffb3f3854fee1250a605e3fd8cc7ee1d",
+      "http_status": 200,
+      "cache_state": "miss"
+    },
+    {
+      "page": "gallery_page_2",
+      "url": "https://eurekadev.devpost.com/project-gallery?page=2&refresh=20261012a",
+      "visible_project_links": 22,
+      "scrape_id": "01a12c5d-3f1c-74bd-aa4f-9c0136a8bfe3",
+      "snapshot_sha256": "9d38b752c4a7ad9e2ba559826de1dd78932ac3877bd291ae8c4a12de8f4634e4",
+      "http_status": 200,
+      "cache_state": "miss"
+    }
+  ],
+  "new_projects": [
+    {
+      "name": "PlateFix",
+      "url": "https://devpost.com/software/platefix",
+      "retrieval_date": "2026-10-12",
+      "scrape_id": "01a12c5d-e830-72af-8c6f-e453e6ad0ca8",
+      "snapshot_sha256": "51482757f850f9d61692e008da0cdde532b53ab5d5a66b13f84e5df34564fc8d",
+      "review_scope": "Public project page content reviewed; no repository, live application or full video execution."
+    },
+    {
+      "name": "AquaQuest",
+      "url": "https://devpost.com/software/aquaquest",
+      "retrieval_date": "2026-10-12",
+      "scrape_id": "01a12c5d-e83f-701b-9470-ca5fbe9d86a3",
+      "snapshot_sha256": "f9380aef7d520b96867c69e3f99fbcc0e42a2b1f4ab6a161c6b3602524471c8f",
+      "review_scope": "Public project page content reviewed; no repository, live application or full video execution."
+    },
+    {
+      "name": "ReportSimpleV2",
+      "url": "https://devpost.com/software/reportsimplev2",
+      "retrieval_date": "2026-10-12",
+      "scrape_id": "01a12c5e-4115-71cf-bbcd-0309db5d0768",
+      "snapshot_sha256": "09e648116d36874c6390a1ab199439cc93893b855cb433d8a31d77ff783197c4",
+      "review_scope": "Public project page content reviewed; no repository, live application or full video execution."
+    },
+    {
+      "name": "HeatWise",
+      "url": "https://devpost.com/software/heatwise",
+      "retrieval_date": "2026-10-12",
+      "scrape_id": "01a12c5e-4106-7789-9932-0ec3b4c8823b",
+      "snapshot_sha256": "b7e54e743251b1e83dab7f75a924b0c11ed496dc67a61b50bd48785c460a4941",
+      "review_scope": "Public project page content reviewed; no repository, live application or full video execution."
+    },
+    {
+      "name": "MatchEd",
+      "url": "https://devpost.com/software/matched-7hon0s",
+      "retrieval_date": "2026-10-12",
+      "scrape_id": "01a12c5e-594c-7677-b82e-f1c62203e065",
+      "snapshot_sha256": "af809f3fffbdaf8a05cfbeea9da749b7f28229450fe4b59672315ef895cd7ed4",
+      "review_scope": "Public project page content reviewed; no repository, live application or full video execution."
+    }
+  ],
+  "count_discrepancy": "A separate web retrieval showed older cached page totals of 40 and 38. Treat 46 as the count of unique project links in these two cache-miss Firecrawl captures, not a confirmed canonical current total. Direct unauthenticated urllib probes returned 403.",
+  "limitations": "Project copy, stack tags, demonstrations and benchmark claims are not independent verification. Tracks/categories are left Unknown when not explicit. HeatWise reported validation and tests have not been reproduced."
+}
