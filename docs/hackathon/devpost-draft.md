@@ -83,13 +83,16 @@ versus 39.3% graph and 20% expected random.37 fields had F1 below 0.5 and remain
 the aggregates. A visually sparse original reference is documented, not repaired
 or excluded after scoring. [4]
 
-The official BBBC039 record says a small fraction of its images also appear in
-BBBC038, but does not name them. Our 43 same-size candidates flagged by the
-overlap screen are not proof that every known overlap was removed. This
-496-image assessment is not an independent biological-group test; crop or
-resampling overlap, shared source groups, mixed modalities and imperfect
-reference masks may remain. These results do not establish universal accuracy
-or human benefit. [1, 4]
+The official BBBC039 record notes overlap with BBBC038 but gives no image IDs.
+We scanned all 670 BBBC038 stage1 images against all 200 BBBC039 fields. The 43
+same-size high-correlation matches each mapped to a unique BBBC039 field, and
+were exactly the same 43 candidates excluded before inference. The BBBC038
+metadata lists 43 stage1 training images from project `bbbc022`, matching that
+cross-dataset count. This strongly supports exclusion of the known overlap group,
+but the workbook is aggregate metadata without a per-image crosswalk. Crop or
+resampling overlap, other shared source groups, mixed modalities and imperfect
+reference masks may remain. The 496-image assessment is not an independent
+biological-group test and does not establish universal accuracy or human benefit. [1, 4]
 
 ## Accomplishments
 

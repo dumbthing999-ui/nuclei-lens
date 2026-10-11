@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-11T17:55:59.906Z",
+  "pr": "https://github.com/dumbthing999-ui/nuclei-lens/pull/22",
+  "merged": true,
+  "main_sha": "9fe563cc0d9fe41d4fce7880d32ddb83104b3e74",
+  "exact_public_files": [
+    {
+      "path": "README.md",
+      "exact": true,
+      "sha": "d34ff6c6c0e2f0399ef3cbb0c03e862559f60706"
+    },
+    {
+      "path": "docs/hackathon/devpost-draft.md",
+      "exact": true,
+      "sha": "943394570d3234066bf6e93565d5931959e95aaa"
+    },
+    {
+      "path": "evaluation/additional/README.md",
+      "exact": true,
+      "sha": "51806c17e07827df9815b7619826dce3da986943"
+    },
+    {
+      "path": "research/SOURCES.md",
+      "exact": true,
+      "sha": "7dcc0e8b5a24c88e425b76fc6da4fa4f41a806f2"
+    },
+    {
+      "path": "research/external-assessment/README.md",
+      "exact": true,
+      "sha": "f883a6907e55da2354b10410c3934cc32487e6be"
+    },
+    {
+      "path": "research/external-assessment/dataset-overlap-note-2026-10-11.md",
+      "exact": true,
+      "sha": "6776300440fa2a2c1e22c051fa4f0652c44bb484"
+    },
+    {
+      "path": "evaluation/checks/devpost-dataset-overlap-update.json",
+      "exact": true,
+      "sha": "1349a836904a505c5d1447b5d66e75be18be01ac"
+    }
+  ]
+}

@@ -11,11 +11,13 @@ potential overlaps, using conservative sampled/full-image intensity correlations
 and flips. They were excluded before performance evaluation. The remaining496
 images comprise the complete frozen assessment manifest, not a selected success
 subset. The official BBBC039 record states that a small fraction of its images
-overlap BBBC038 but does not identify their IDs. The 43 excluded candidates are
-screen results, not a proven complete mapping of that official overlap. Crop,
-resampling, and shared-experiment overlap may remain; this is additional image
-evidence, not proof of independent biological generalization. See source records
-47–48 in `research/SOURCES.md` and the [dataset overlap provenance note](dataset-overlap-note-2026-10-11.md).
+overlap BBBC038 without listing IDs. A separate scan of all670 stage1 images
+reproduced the same43 candidates, each one-to-one with a unique BBBC039 field;
+the BBBC038 workbook also records43 training images under project `bbbc022`.
+This strongly supports exclusion of the known overlap group, although aggregate
+metadata provides no per-image crosswalk. Crop/resampling or other shared-source
+relationships may remain, so this is not proof of independent biological
+generalization. See source records47–49 and the [dataset overlap provenance note](dataset-overlap-note-2026-10-11.md).
 
 The original inference configuration and scientific core remain unchanged. One
 original mask file defines one reference instance, including disconnected pixels.
