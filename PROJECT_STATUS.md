@@ -13,9 +13,13 @@ to unique BBBC039 fields; metadata independently lists43 BBBC022 training
 images. This strongly supports that the known overlap group was excluded, while
 aggregate metadata lacks an image-ID crosswalk and crop/resampling/other source
 relationships remain possible. Frozen496-field manifest/results are unchanged.
-PR22 at `9fe563cc0d9fe41d4fce7880d32ddb83104b3e74` contains the earlier,
-more cautious qualification. PR23 will publish this stronger new evidence after
-CI. PR22's two CI runs passed and seven public files were read back byte for byte.
+PR22 at `9fe563cc0d9fe41d4fce7880d32ddb83104b3e74` contained the earlier,
+more cautious qualification. PR23 merged as `346da841030f129dbe05f779a2c2a8affa5456c6`
+after exact-head CI runs38162351035/38162327523 passed. Eight key public files
+were read back byte for byte; receipts are in
+`evaluation/checks/bbbc-overlap-merge.json` and
+`evaluation/checks/bbbc-overlap-public-readback.json`. PR22's two CI runs passed
+and seven public files were read back byte for byte.
 
 Documentation PR21 merged at `dbc4d466fa0514119a87bdcc61de0c2996c22adf`;
 both exact-head CI runs 38160731858/38160715830 passed. Public `docs/TEST_REPORT.md`

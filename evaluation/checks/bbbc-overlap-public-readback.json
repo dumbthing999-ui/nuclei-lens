@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-11T18:09:18.596303+00:00",
+  "repository": "https://github.com/dumbthing999-ui/nuclei-lens",
+  "main_sha": "346da841030f129dbe05f779a2c2a8affa5456c6",
+  "files": [
+    {
+      "path": "scripts/audit_dataset_overlap.py",
+      "bytes": 9582,
+      "sha256": "36da8d4a5983046acdbbcb3486fdd31aa9e618a21cf17673a95eb00bc627681f",
+      "matches_local": true
+    },
+    {
+      "path": "research/external-assessment/overlap-audit-all-stage1-2026-10-11.json",
+      "bytes": 19600,
+      "sha256": "fd2a689c99ad1651bdcc3fd351b13504c10d035a68f3b3b5a6a37c5ac5a4309e",
+      "matches_local": true
+    },
+    {
+      "path": "research/external-assessment/dataset-overlap-note-2026-10-11.md",
+      "bytes": 3550,
+      "sha256": "2dac33d775fcdcf2ac68c5065bc4e200f42812280d2f368f370c162e1e7bafb7",
+      "matches_local": true
+    },
+    {
+      "path": "research/external-assessment/README.md",
+      "bytes": 3348,
+      "sha256": "ddcd9ca297569acbde0fe6a63d0b8ab1c7f7346a5d13292cbbb073d989a7eb02",
+      "matches_local": true
+    },
+    {
+      "path": "evaluation/additional/README.md",
+      "bytes": 5673,
+      "sha256": "a7cfff8f7d89523640d78c10cef8c6a9b1fbb44f96a72bbc8b8d52422d171824",
+      "matches_local": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 16751,
+      "sha256": "6c25ac394eee2ff47ce2b17ae07f2c30208b3611d12e623a77be5af1e4e1b16f",
+      "matches_local": true
+    },
+    {
+      "path": "docs/hackathon/devpost-draft.md",
+      "bytes": 13486,
+      "sha256": "45e5aa5687832ddb0d74db5d669709d9f163e3f438a8c20f5628e1ed07c75524",
+      "matches_local": true
+    },
+    {
+      "path": "research/SOURCES.md",
+      "bytes": 20759,
+      "sha256": "04b475e0336f696f75137d9eac7ebd32491a5bc4ff0feb26be356336beca602b",
+      "matches_local": true
+    }
+  ]
+}
