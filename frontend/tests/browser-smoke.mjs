@@ -88,12 +88,14 @@ await page.waitForFunction(()=>document.querySelector('.status-row')?.textConten
 if(Number(await page.locator('.count-strip strong').first().textContent())!==74)throw new Error('Cancel discarded the usable reference analysis');
 await page.route('**/samples/training-002.json',async route=>{await new Promise(resolve=>setTimeout(resolve,1500));await route.abort('failed');});
 await page.getByRole('button',{name:'Dense field BBBC039'}).click();await page.getByRole('button',{name:'Cancel',exact:true}).click();
-await page.getByRole('button',{name:'First training field BBBC039'}).click();await page.waitForTimeout(1800);
+await page.getByRole('button',{name:'First training field BBBC039'}).click();
+await page.getByRole('button',{name:'Rerun on this device'}).waitFor({timeout:10000});
+await page.waitForFunction(()=>document.querySelector('.status-row')?.textContent?.includes('Real reference run · rerun to verify on your device')&&document.querySelector('.count-strip strong')?.textContent?.trim()==='74');
 if(await page.locator('[role=alert]').count())throw new Error('Stale sample failure affected a newer request');
 await page.unroute('**/samples/training-002.json');
 await page.screenshot({path:path.join(root,shotDir,'live-analysis.png'),fullPage:true});
 await mkdir(path.join(root,'evaluation/checks'),{recursive:true});
-await writeFile(reportPath,JSON.stringify({status:'passed',generated_at:new Date().toISOString(),target,review_update:true,undo:true,audit_export:true,same_count_witness:true,additional_evidence_rendered:true,review_preserved_on_rerun:true,mask_split_merge_counts:[74,75,74],mask_tiff_roundtrip:true,mask_audit_hash_verified:true,mask_preserved_on_rerun:true,mask_undo_exact:true,cancel_preserves_reference:true,stale_sample_failure_ignored:true,mobile_overflow:false,live_analysis_count:Number(result),cold_browser_ms:Math.round(coldMs),warm_browser_ms:Math.round(warmMs),non_read_requests:nonReadRequests,page_errors:errors},null,2));
+await writeFile(reportPath,JSON.stringify({status:'passed',generated_at:new Date().toISOString(),target,review_update:true,undo:true,audit_export:true,same_count_witness:true,additional_evidence_rendered:true,review_preserved_on_rerun:true,mask_split_merge_counts:[74,75,74],mask_tiff_roundtrip:true,mask_audit_hash_verified:true,mask_preserved_on_rerun:true,mask_undo_exact:true,cancel_preserves_reference:true,stale_sample_failure_ignored:true,final_sample_ready:true,mobile_overflow:false,live_analysis_count:Number(result),cold_browser_ms:Math.round(coldMs),warm_browser_ms:Math.round(warmMs),non_read_requests:nonReadRequests,page_errors:errors},null,2));
 if(errors.length)throw new Error(errors.join('\n'));
 console.log('PASS: review, undo, audit, mobile, actual browser-local analysis. Count '+result);
 

@@ -97,10 +97,21 @@ internal19+/20 aspiration is unmet.
   workflows. This is not a new OS, physical device or second public origin.
 - Offline reader bundle/UI/scorer,23native tests, repeated22-file byte equality and
   synthetic browser/CLI integration pass. No participants or human observations.
-- October12 PR27 added three role-based Gemini judge simulations and current
-  scorecard; PR28 refreshed Devpost copy and archives. Both PRs passed two
-  exact-head CI runs before merge. Main is `a88d183ea75e9c1f70f81706a04d2bda63cc2c02`.
-  These changes do not alter application code or frozen scientific results.
+- Fresh October12 public Chromium smoke passed: live analysis, mask split/merge
+  (74 → 75 → 74), undo, TIFF round-trip, audit hash, rerun/cancel preservation,
+  stale-request handling and mobile bounds. Axe reported zero violations in four
+  states; focus and reduced-motion checks passed. A test-only fixed-delay race
+  was replaced with a ready-state wait; corrected screenshot shows the completed
+  sample. No application behavior changed. See `evaluation/checks/browser-smoke.json`.
+- A clean-browser cold-run diagnostic measured 29,052 ms click-to-analysis and
+  33,043,967 response-body bytes across14 runtime/engine resources; worker timing
+  did not support per-request attribution. Treat this as a one-run observation.
+  No dependencies or frozen outputs changed. See
+  `evaluation/checks/cold-start-assets-2026-10-12.json`.
+- PR27–30 are merged, each with two passing exact-head CI runs. PR27 added three
+  role-based Gemini judge simulations; PR28 refreshed Devpost copy; PR29 updated
+  shared handoff; PR30 refreshed gallery research. Current main is
+  `d8c26df1f7509de239baf7036726513e3ba66e60`. No app/science changes in PR27–30.
 - Owner video nik8WtPUrUc preserved, linked in README/app/Devpost/GitHub release.
  215s local decode/audio/captions and public opening-sample decoding are verified.
   Public720p backup fully downloads anonymously with matching bytes/SHA256 and
@@ -187,6 +198,10 @@ null. Before/after text is archived under `docs/hackathon/archive/`, and
 `evaluation/checks/devpost-copy-refresh-2026-10-12.json` records the rendered
 markers and public snapshot hash.
 
+Fresh authenticated `get_project` read on October12 confirms the video URL
+`https://www.youtube.com/watch?v=nik8WtPUrUc`, published project page and
+`submitted_at=null`; this was a read-only check.
+
 ## Demo Video
 
 https://youtu.be/nik8WtPUrUc ; existing upload processed/HD,215s local master
@@ -208,3 +223,6 @@ remain open. Do not claim perfection or19+/20.
 Reddit post1x2abm6 was accepted then removed_by_category=reddit. Public visibility
 is not established. Saved copy and readback are in promotion/reddit-post.md and
 evaluation/checks/reddit-publication.json. Do not repost or bypass moderation.
+An alternative plain-language draft is saved in
+`promotion/reddit-draft-2026-10-12.md` for a community where project sharing is
+permitted; it has not been posted.
