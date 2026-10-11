@@ -375,3 +375,12 @@ These checks do not replace physical-device or assistive-technology user tests.
 Reports: `evaluation/checks/browser-smoke.json`,
 `evaluation/checks/accessibility.json`, and
 `evaluation/checks/focus-motion.json`.
+
+A separate clean Chromium cold run completed its first local analysis in 29,052
+ms and returned 33,043,967 response-body bytes across 14 Pyodide/runtime and
+local engine resources. SciPy and scikit-image wheels were the largest individual
+responses. Per-request latency could not be recovered from the worker timing
+interface, so this does not attribute the wait to network transfer versus
+initialization. This is a single-run observation. The dependencies and frozen
+numerical outputs were not changed. See
+`evaluation/checks/cold-start-assets-2026-10-12.json`.

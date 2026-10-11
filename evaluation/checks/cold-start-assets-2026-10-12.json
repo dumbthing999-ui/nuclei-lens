@@ -1,0 +1,39 @@
+{
+  "observed_on": "2026-10-12",
+  "target": "https://nuclei-lens.dumbthing999.chatgpt.site",
+  "scope": "One clean headless Chromium session; first click-to-analysis-complete on the bundled reference image. This is a single-run observation, not a performance guarantee.",
+  "cold_analysis_ms": 29052,
+  "resource_timing_breakdown": "Unavailable: the browser driver returned unset response-end timing for worker requests. No per-request latency attribution is made.",
+  "runtime_resource_count": 14,
+  "runtime_response_body_bytes": 33043967,
+  "largest_resources": [
+    {
+      "path": "/runtime/pyodide/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "http_status": 200,
+      "response_body_bytes": 14045893
+    },
+    {
+      "path": "/runtime/pyodide/scikit_image-0.26.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "http_status": 200,
+      "response_body_bytes": 9529827
+    },
+    {
+      "path": "/runtime/pyodide/pyodide.asm.wasm",
+      "http_status": 200,
+      "response_body_bytes": 3535200
+    },
+    {
+      "path": "/runtime/pyodide/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "http_status": 200,
+      "response_body_bytes": 2964019
+    },
+    {
+      "path": "/runtime/pyodide/python_stdlib.zip",
+      "http_status": 200,
+      "response_body_bytes": 2548615
+    }
+  ],
+  "application_source_changed": false,
+  "scientific_evaluation_changed": false,
+  "interpretation": "Cold-start runtime setup transfers substantial browser-local scientific dependencies. Existing click-time disclosure and warm cached runs remain; any prewarm or dependency change needs a separate data-use, mobile, cache, reproducibility, and frozen-result review."
+}

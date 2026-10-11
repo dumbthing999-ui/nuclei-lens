@@ -103,6 +103,11 @@ internal19+/20 aspiration is unmet.
   states; focus and reduced-motion checks passed. A test-only fixed-delay race
   was replaced with a ready-state wait; corrected screenshot shows the completed
   sample. No application behavior changed. See `evaluation/checks/browser-smoke.json`.
+- A clean-browser cold-run diagnostic measured 29,052 ms click-to-analysis and
+  33,043,967 response-body bytes across14 runtime/engine resources; worker timing
+  did not support per-request attribution. Treat this as a one-run observation.
+  No dependencies or frozen outputs changed. See
+  `evaluation/checks/cold-start-assets-2026-10-12.json`.
 - PR27–30 are merged, each with two passing exact-head CI runs. PR27 added three
   role-based Gemini judge simulations; PR28 refreshed Devpost copy; PR29 updated
   shared handoff; PR30 refreshed gallery research. Current main is
