@@ -1,6 +1,6 @@
 # EurekaDev 2026 Workspace Instructions
 
-## Latest verified delivery — October11,2026
+## Latest verified delivery — October12,2026
 
 The shared-agent handoff update was published through PR25. For current release
 SHAs and delivery state, use `PROJECT_STATUS.md` and its linked receipts. PR23's
@@ -25,6 +25,13 @@ those gates passed. Continue only material product/evidence work; human benefit
 requires consenting participants. Preserve failed public-player probes and the
 Reddit removal; do not repost, bypass moderation, or repeat uploads/browser probes.
 
+PR27 added three role-based Gemini judge simulations (15.7–15.8/20; document-only,
+not human judges) and a current scorecard. PR28 shortened and reorganized the
+public Devpost narrative; authenticated readback and a fresh public render verify
+the caveats and live/GitHub/video/backup links. Both PRs passed two exact-head CI
+runs. Main is currently `a88d183ea75e9c1f70f81706a04d2bda63cc2c02`; check
+`PROJECT_STATUS.md` for any newer merge. No app or frozen science changed.
+
 ## Historical V9 deployment checks — October10,2026
 
 PR16 is merged at application main f5afee773bf35888a6131f4373089670094676da,
@@ -46,7 +53,7 @@ promotion succeeded. Saved draft/removal proof are in promotion/ and evaluation/
 
 Historical verified delivery observations below retain their original scope.
 
-## Current package audit — October10,2026
+## Historical package audit — October10,2026
 
 Public V9 and PR16/17 are verified. Current status is consolidated in
 PROJECT_STATUS.md; prior chronological notes are archived. Fresh gallery41 and
@@ -58,7 +65,7 @@ unverified after a metadata mismatch. Reddit removed the single authorized post;
 do not repost. Original video, frozen scientific source and negative results
 remain intact. No human reader observations or final competition submission.
 
-## Verified delivery state — October9,2026
+## Historical verified delivery state — October9,2026
 
 PR13 is merged after both final-head CI runs passed. Public SiteV7 includes the
 keyboard skip link and explicit disclosure/scroll-region focus rings. Local/CI
