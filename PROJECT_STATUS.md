@@ -164,6 +164,14 @@ public rendering were updated again. The public copy now reports the one-to-one
 crosswalk limitation. The video is intact; public rendering and exact normalized
 API readback are recorded in the same check file.
 
+On October12, the description was shortened and reorganized around the same-total
+example, workflow, benchmark results, model scope, and limitations. Authenticated
+readback and a fresh public scrape verified those claims and the demo/repository/
+video/backup links. The existing YouTube URL was preserved; `submitted_at` remains
+null. Before/after text is archived under `docs/hackathon/archive/`, and
+`evaluation/checks/devpost-copy-refresh-2026-10-12.json` records the rendered
+markers and public snapshot hash.
+
 ## Demo Video
 
 https://youtu.be/nik8WtPUrUc ; existing upload processed/HD,215s local master
