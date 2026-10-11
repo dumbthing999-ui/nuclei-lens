@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-12",
+  "project_id": 1470185,
+  "project_url": "https://devpost.com/software/nucleilens",
+  "devpost_version": 16,
+  "description_chars": 5468,
+  "video_url": "https://www.youtube.com/watch?v=nik8WtPUrUc",
+  "submitted_at": null,
+  "public_render_verified": true,
+  "rendered_markers": {
+    "same_count_workflow": true,
+    "50_field_results": true,
+    "496_field_results": true,
+    "43_match_caveat": true,
+    "neural_browser_limit": true,
+    "human_benefit_limit": true,
+    "video_qualification": true,
+    "links": {
+      "live_demo": true,
+      "video": true,
+      "github": true,
+      "video_backup": true
+    }
+  },
+  "scrape_id": "01a12c4d-b002-716d-93cc-7e415a2dbf99",
+  "public_snapshot_sha256": "d415c636525bf9ad6f0640367f5c41e1407a343b5d4dd84448e50ce8a4f6c972",
+  "shortened_description_sha256": "a50bbb09885267986d05112e026d3079c0855a68a5ca34e269e94243802c1fb9"
+}

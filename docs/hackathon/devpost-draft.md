@@ -1,153 +1,62 @@
 ## Inspiration
 
-[Try the live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [Watch the 3:35 video](https://youtu.be/nik8WtPUrUc) · [View the code](https://github.com/dumbthing999-ui/nuclei-lens) · [Video download backup (720p, 26.7 MB)](https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4)
+[Try the live demo](https://nuclei-lens.dumbthing999.chatgpt.site) · [Watch the 3:35 video](https://youtu.be/nik8WtPUrUc) · [View the code](https://github.com/dumbthing999-ui/nuclei-lens) · [Download the 720p video](https://github.com/dumbthing999-ui/nuclei-lens/releases/download/v0.2.0/eurekadev-reviewed-720p.mp4)
 
-A segmentation merges two nuclei. Elsewhere, it splits one nucleus into two masks. The total stays unchanged, while the objects differ.
+Two segmentation runs can report the same number of nuclei while disagreeing about which objects are present. One region may merge two nuclei; another may split one into two. The errors can cancel in the total.
 
-Try the public demo: **inspect** the opposing split and merge outlines, explicitly **confirm** alternatives to see the mask count change **74 → 75 → 74**, **undo** both edits, then **export** the label TIFF and audit JSON. Each alternative is a hypothesis, not verified truth. Cellpose, StarDist, napari and CellSampler already provide segmentation, editing or consensus methods; we make no scientific-first claim. The graph explains alternatives; a separately measured object-disagreement queue sets review order. Neither the alternatives nor queue capture establishes human benefit.
-
-In our fixed assessment of 50 public microscopy fields, four fields had exactly correct total counts while retaining 100 unmatched instances under object-level evaluation. A plausible total can hide disagreement about which nuclei exist.
-
-We built NucleiLens for biology students and researchers who want to inspect the assumptions behind a count. The public BBBC039 benchmark and its associated study provide a concrete way to evaluate instance-level errors rather than rely on a convincing screenshot. [1,2]
+In our fixed 50-field test, four fields had the reference count but 100 unmatched instances by object-level evaluation. A correct total alone does not prove that the segmentation is correct. [1,2,3]
 
 ## What it does
 
-Open a real bundled field or your own single-field image. NucleiLens runs nine deterministic segmentation sensitivity probes on your device, compares their object correspondences, and shows the actual competing outlines.
+NucleiLens runs nine deterministic segmentation variations on a single image in your browser. It compares the resulting objects, highlights regions that changed, and shows possible split, merge, missing-object, or extra-object explanations.
 
-The signature example is real: two runs both count 74 nuclei, yet the graph contains a 1 → 2 split alternative and a 2 → 1 merge alternative. Click each explanation to inspect it. Neither alternative is automatically declared correct.
+The live example is real: two runs both count 74. Inspecting a split and a merge changes the reviewed mask count **74 → 75 → 74**. Each alternative is only a hypothesis. You choose whether to confirm it.
 
-A reviewer can select a region, compare candidate counts, confirm a tally, undo it, and export a record with the input hash and analysis configuration. Tally entries stay separate from mask geometry. After each mask confirmation or undo, the interface reports the new mask-instance count beside the unchanged review-tally total. A reviewer can also explicitly confirm a whole graph-component alternative, producing a real edited label map. Overlap with retained nuclei is rejected; fresh IDs and exact undo preserve integrity. Export a lossless unsigned 32-bit TIFF and a SHA256-linked audit. These human choices are not automatically correct.
-
-## Model comparison and measurements
-
-On the first training field, load two actual pretrained Cellpose and StarDist
-predictions. Both count 68 instances, but their foreground assignments differ at
-3,738pixels and their partitions differ in 69 correspondence components. These
-components include boundary hypotheses; they are not 69 verified errors or a model
-accuracy comparison. View the actual source/model/weight/output hashes. These
-are precomputed CPU predictions; the browser does not run their networks.
-
-We separately checked all three existing masks against the annotation on this
-one training field. Each has an absolute count error of 3, yet at IoU ≥ 0.5,
-matching leaves 11 unmatched instances in the classical mask and 3 each for
-Cellpose and StarDist. The neural masks also tie on an F1 of 0.978 despite different
-boundaries. This descriptive
-case uses previously visible predictions; it establishes no general model ranking
-or human benefit. All masks, hashes, the fixed protocol, chart and reproduction
-commands are retained in the [complete diagnostic](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/model-case).
-
-Import up to three aligned, uncompressed unsigned label TIFFs from a model or
-editor. Inspect the imported overlay, explicitly acknowledge its image alignment, then inspect a component before confirming replacement. Alignment acknowledgment records a user judgment, not independent verification.
-Existing conflict checks, fresh IDs and exact undo protect mask integrity.
-Area, pixel-center centroid, exposed grid-edge perimeter and border measurements
-recalculate from the actual reviewed mask after edits and undo. Export the CSV,
-label TIFF and QA JSON linking original/reviewed/source hashes and pairwise
-comparisons. Geometry alone does not establish alignment or correctness.
-
-Cellpose, StarDist and napari already provide segmentation and editing, while
-CellSampler combines segmentation methods. Model aggregation and shape
-measurement are established prior art, not a scientific-first claim. Our addition
-makes these comparisons and audit semantics concrete in the same review workflow;
-measured reader benefit remains future work. [6]
+A reviewer can record a separate count, correct a mask component, undo the edit, and export a label TIFF plus an audit report. The report links the original and reviewed masks with hashes. Measurements recalculate from the edited mask; the review tally remains separate.
 
 ## How we built it
 
-The shared Python core uses intensity normalization, background correction, Otsu thresholding, distance peaks, and marker-controlled watershed. Eight alternatives vary threshold, seed spacing, smoothing, and midtone intensity around the baseline.
+A Python image-analysis core runs locally in a browser worker through Pyodide and WebAssembly. It uses background correction, thresholding, distance peaks, watershed, and sparse object matching across sensitivity runs. Images are not sent to a NucleiLens inference service.
 
-Sparse bipartite overlap graphs connect baseline and alternate instances when their intersection covers at least 45% of the smaller object. Components with different object cardinalities expose local split, merge, missing, and additional-detection hypotheses; count-neutral boundary changes remain separate.
+The matching graph explains count-changing alternatives. It did **not** make the best review queue: on validation, it captured 38.4% of annotated error mass at a 20% tile budget, compared with 44.0% for simple object disagreement. We kept the graph as an explanation and use the better measured queue as the default. [3]
 
-A React/TypeScript interface runs the numerical Python code inside a dedicated Pyodide/WebAssembly worker. Scientific libraries and real samples are self-hosted. Images are not sent to a project inference service. TIFF preserves numeric precision; browser PNG/JPEG decoding uses 8-bit grayscale. A bounded local Python companion provides a separate recovery path.
+## Model comparison
 
-## The core innovation
+The browser includes actual precomputed Cellpose and StarDist predictions for one public training image. Both predict 68 instances, but their masks differ at 3,738 pixels and across 69 correspondence components. These are disagreements, not 69 verified errors or an accuracy ranking.
 
-The contribution is an original, inspectable count-audit workflow: identical aggregate counts can be unpacked into opposing local object explanations, linked to real alternate masks and explicit human decisions.
+The browser imports model masks; it does not run those neural networks. An optional local CLI runs Cellpose and StarDist on CPU and records model, weight, input, and output hashes. [5,6]
 
-Watershed, uncertainty review, graph matching, and sensitivity analysis are established methods. We do not claim a scientific first or state-of-the-art segmentation. The graph is an explanation layer; the review order is selected by measured comparison.
+## Results
 
-## Challenges we ran into
+On the frozen 50-field BBBC039 test set, count MAE was 5.12 and mean instance F1 was 0.827. At a fixed 20% tile-review budget, the selected object-disagreement queue contained 45.8% of annotated FP+FN error mass; the graph queue contained 39.5%, and random review is 20% in expectation. This measures error concentration, not human time saved or automatic correction. [1,2,3]
 
-Our initial full-validation run had count MAE 25.06. Saturated bright plateaus and weak-signal fields caused serious failures. Validation-guided safeguards reduced MAE to 5.10, with failure cases retained.
+A separate run on 496 BBBC038 fields had count MAE 6.54, mean instance F1 0.772, and object-queue error capture of 45.7% at the same budget. We scanned all 670 BBBC038 stage1 images against all 200 BBBC039 fields: 43 same-size matches mapped one-to-one to 43 distinct fields, agreeing with the BBBC038 workbook's 43-image BBBC022 training group. The workbook has no per-image crosswalk, and crop, resampling, or other source overlap may remain. This is not an independent biological-group validation. [1,4]
 
-Our original graph-ranking hypothesis also failed: simple object disagreement found more annotated error mass at the same budget. A bounded nonnegative ranker failed its adoption gate too. We kept the stronger simple queue, preserved the negative results, froze the protocol, and assessed all 50 test fields without test-driven tuning.
+## What is different
 
-Browser deployment required preserving 16-bit TIFF precision while running the same scientific code locally. We replaced the browser Pillow dependency with bounded TIFF/browser decoding and a small numerical PNG encoder, reducing runtime assets to about 39 MB.
+Cellpose and StarDist segment images; napari and other tools support mask review; consensus methods already combine segmentation results. NucleiLens focuses on one task: expose how opposing object changes can hide behind a plausible total, then let a person inspect and record a mask decision. We do not claim a new segmentation algorithm, better accuracy than existing tools, or measured reader benefit. [5,6]
 
-## Additional assessment
+## Challenges and what we learned
 
-We publicly froze the unchanged source, image-property filter and 496-field
-BBBC038 manifest before inference. 43 potential same-size content overlaps with
-BBBC039 were removed first. All 496 selected fields were retained: zero structural
-reference/inference failures, count MAE 6.54, mean instance F1 0.772. The preselected
-object queue captured 45.7% of annotated error mass at the same 20% tile budget,
-versus 39.3% graph and 20% expected random.37 fields had F1 below 0.5 and remain in
-the aggregates. A visually sparse original reference is documented, not repaired
-or excluded after scoring. [4]
+Our first idea was to rank review regions with the correspondence graph. It performed worse than simple object disagreement under the predeclared validation comparison, so we changed its role and retained the negative result. We also learned that a correct count can coexist with poor object correspondence, and sensitivity checks cannot detect every stable-but-wrong mask.
 
-The official BBBC039 record notes overlap with BBBC038 but gives no image IDs.
-We scanned all 670 BBBC038 stage1 images against all 200 BBBC039 fields. The 43
-same-size high-correlation matches each mapped to a unique BBBC039 field, and
-were exactly the same 43 candidates excluded before inference. The BBBC038
-metadata lists 43 stage1 training images from project `bbbc022`, matching that
-cross-dataset count. This strongly supports exclusion of the known overlap group,
-but the workbook is aggregate metadata without a per-image crosswalk. Crop or
-resampling overlap, other shared source groups, mixed modalities and imperfect
-reference masks may remain. The 496-image assessment is not an independent
-biological-group test and does not establish universal accuracy or human benefit. [1, 4]
+## Limitations and next steps
 
-## Accomplishments
+The current workflow is for bounded, single-channel 2D images. Alignment of an imported mask requires a person's visual judgment. We have not measured reader speed, correction accuracy, adoption, or downstream biological impact. A consented reader study and more independent source validation are needed before making those claims.
 
-- Actual device-local scientific analysis and a public, login-free review workflow.
-- A verified same-total opposing split/merge example from a real public image.
-- Complete frozen 50-field test: count MAE 5.12, mean instance F1 0.827.
-- The preselected object-disagreement queue captures 45.8% of annotated FP+FN error mass at a 20% tile-review budget, versus 20.0% expected random review. Graph ranking captures 39.5%; its inferiority is disclosed.
-- Full per-image results, fixed comparator budgets, tie averaging, image-bootstrap intervals, source/archive hashes, and reproducible commands.
-- Actual split/merge mask correction, exact undo, compatible reruns, lossless TIFF plus audit-hash readback on the deployment.
-- Actual Chromium and Firefox analysis, mask export/hash verification and compatible reruns.
-- Automated WCAG A/AA checks across desktop, expanded benchmark/additional assessment, and mobile layouts; manual accessibility checks remain.
-
-These are algorithm and workflow measurements, not evidence of human time savings, adoption, clinical benefit, or generalization to all microscopy.
-
-## Where it fits
-
-CellProfiler, ImageJ and QuPath already provide established segmentation/counting
-workflows. NucleiLens focuses on a small inspectable job: show the opposing object
-alternatives behind a plausible count, then record the reviewer's chosen label map
-without a project inference upload. It does not replace multichannel, stack or
-batch analysis. No head-to-head usability or accuracy advantage has been measured.
-The repository contains a sourced capability comparison. [5]
-
-## What we learned
-
-A better explanation is not automatically a better ranking policy. Our object graphs make opposing hypotheses visible, while a simpler overlap-based queue concentrates more benchmark errors. Treating those as separate responsibilities produced a more honest product.
-
-We also learned that a correct count can coexist with poor instance correspondence, and that uncertainty under chosen perturbations cannot detect every stable-but-wrong result.
-
-## What's next
-
-A controlled reader study and source-group-controlled external validation. We will measure those outcomes before claiming user-effort or scientific improvements.
+The video phrase “biological measurement is broken” at 0:06 refers to a possible object-level segmentation mismatch, not a demonstrated downstream biological outcome.
 
 ## Built with
 
-Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembly, GeoTIFF.js, FastAPI, pytest, Vitest, Playwright. Optional local adapters: Cellpose, StarDist, PyTorch CPU and TensorFlow CPU.
+Python, NumPy, SciPy, scikit-image, React, TypeScript, Vite, Pyodide, WebAssembly, GeoTIFF.js, FastAPI, pytest, Vitest, Playwright, Cellpose, StarDist.
 
-## Links
+## Sources
 
-- Live application: https://nuclei-lens.dumbthing999.chatgpt.site
-- Public source: https://github.com/dumbthing999-ui/nuclei-lens
-- Complete test evidence: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/test
+1. [BBBC039 dataset record](https://bbbc.broadinstitute.org/BBBC039) — public images, instance annotations, and official partitions.
+2. [Caicedo et al., nucleus segmentation evaluation](https://doi.org/10.1002/cyto.a.23863) — dataset-associated instance-segmentation evaluation.
+3. [Frozen protocol and results](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/frozen).
+4. [BBBC038 dataset record](https://bbbc.broadinstitute.org/BBBC038) — images and dataset metadata; full additional assessment is in the [repository](https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional).
+5. [Established-tool comparison](https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT_COMPARISON.md).
+6. [Cellpose/StarDist implementation notes and sources](https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/OPTIONAL_MODELS.md); [2025 consensus segmentation study](https://doi.org/10.3389/fgene.2025.1547788).
 
-## Sources and scope
-
-1. Broad Bioimage Benchmark Collection, BBBC039: https://bbbc.broadinstitute.org/BBBC039 — public CC0 U2 OS fluorescence images, instance annotations, official partitions.
-2. Caicedo et al., Evaluation of Deep Learning Strategies for Nucleus Segmentation: https://doi.org/10.1002/cyto.a.23863 — dataset-associated analysis of instance segmentation and error modes.
-3. Our fixed protocol and measured outputs: repository `evaluation/frozen/` and `evaluation/test/`.
-4. BBBC038v1 official record: https://bbbc.broadinstitute.org/BBBC038 — CC0 original labeled stage1 archive; full additional protocol/records: https://github.com/dumbthing999-ui/nuclei-lens/tree/main/evaluation/additional.
-5. Established-tool comparison with primary documentation: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/PRODUCT_COMPARISON.md.
-
-6. Robust consensus nuclear and cell segmentation, 2025: https://doi.org/10.3389/fgene.2025.1547788. Implementation/provenance and established-tool sources: https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/MASK_QA.md and https://github.com/dumbthing999-ui/nuclei-lens/blob/main/docs/OPTIONAL_MODELS.md.
-
-This is a research/education prototype, not a clinical diagnostic tool. AI assistance was used for development, research, review, and draft writing. Reported measurements come from reproducible program execution; human-reader benefits remain unmeasured.
-
-## Video wording qualifications
-
-The attached 3:35 video uses a schematic opening. At 0:06, “biological measurement is broken” refers to a possible object-level segmentation mismatch, not a demonstrated downstream biological outcome. At 0:32, “every automated count” describes the motivation; this tool supports bounded single-field images, and stable wrong masks can escape sensitivity probes. At 0:52, “simple boundary noise” means count-neutral correspondence differences; those boundaries may matter biologically. Any statement about where attention is “needed most” refers only to annotated FP+FN concentration at a fixed tile-review budget, not measured human effort, correction accuracy or benefit.
+NucleiLens is a research and education prototype, not a clinical diagnostic tool. AI tools assisted with development, research, review, and writing. All reported measurements come from reproducible program runs; human-reader benefits remain unmeasured.
